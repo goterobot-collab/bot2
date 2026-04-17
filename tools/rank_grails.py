@@ -14,12 +14,17 @@ OUT = Path("results/top_grails.md")
 
 
 def score(r):
+    """Composite score that penalizes small-sample luck and deep drawdowns.
+    PF capped at 5.0 so a 6-trade WR=100%/PF=999 can't dominate a 50-trade
+    WR=75%/PF=2.5 that's more likely to hold out-of-sample."""
     ret = r["ret"]; pf = r["pf"]; dd = r["dd"]; t = r["trades"]; wr = r["wr"]
     if ret <= 0 or pf <= 1 or wr <= 60 or dd <= -30 or t <= 5:
         return -1e9
-    trade_pen = 1.0 if t >= 8 else t / 8.0
-    dd_pen = 1.0 if dd > -15 else 0.6
-    return ret * pf * trade_pen * dd_pen
+    pf_capped = min(pf, 5.0)
+    # sigmoid-ish trade count penalty: 0.4 at 6 trades, 0.9 at 30, 1.0 at 100+
+    trade_pen = min(1.0, 0.4 + 0.6 * (t - 6) / (100 - 6)) if t >= 6 else 0.0
+    dd_pen = 1.0 if dd > -10 else (0.8 if dd > -20 else 0.6)
+    return ret * pf_capped * trade_pen * dd_pen
 
 
 def main():
