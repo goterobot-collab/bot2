@@ -123,3 +123,15 @@
 | 2 | `bb_trend_rejoin` | ETHUSD | 1h | 66 | 68.18 | 1.521 | 48.66 | -22.34 | `{"bb_len":80,"bb_mult":2.0,"trend":300}` | `{"sl_atr":3.0,"trail_atr":5.0,"timeout":96}` |
 | 4 | `bb_trend_rejoin` | ETHUSD | 1h | 174 | 68.39 | 1.119 | 12.21 | -21.54 | `{"bb_len":20,"bb_mult":2.25,"trend":100}` | `{"sl_atr":3.0,"tp_atr":5.0,"trail_atr":4.0,"timeout":72}` |
 | 11 | `bb_trend_rejoin` | ETHUSD | 1h | 110 | 64.55 | 1.087 | 6.17 | -28.99 | `{"bb_len":30,"bb_mult":2.25,"trend":125}` | `{"sl_atr":2.5,"tp_atr":8.0,"trail_atr":5.0,"timeout":72}` |
+| 10 | `bb_trend_rejoin` | ETHUSD | 1h | 106 | 71.7 | 1.48 | 34.28 | -10.64 | `{"bb_len":24,"bb_mult":2.25,"trend":75}` | `{"sl_atr":3.5,"tp_atr":6.0,"timeout":48}` |
+| 6 | `rsi2_regime` | ETHUSD | 1h | 210 | 68.57 | 1.094 | 13.24 | -19.32 | `{"rsi_len":5,"rsi_buy":25,"sma_trend":75,"slope_bars":50,"exit_sma":21}` | `{"sl_atr":2.5,"tp_atr":7.0,"trail_atr":3.5,"timeout":72}` |
+| 14 | `rsi2_regime` | ETHUSD | 1h | 110 | 70.0 | 1.346 | 30.91 | -15.15 | `{"rsi_len":3,"rsi_buy":8,"sma_trend":125,"slope_bars":20,"exit_sma":13}` | `{"sl_atr":5.0,"tp_atr":10.0,"trail_atr":5.0,"timeout":168}` |
+| 15 | `zscore_revert` | ETHUSD | 1h | 131 | 66.41 | 1.237 | 25.55 | -20.64 | `{"z_len":30,"z_enter":2.0,"trend":100}` | `{"sl_atr":2.0,"timeout":72}` |
+| 15 | `rsi2_regime` | ETHUSD | 1h | 81 | 64.2 | 1.178 | 10.23 | -16.63 | `{"rsi_len":3,"rsi_buy":8,"sma_trend":75,"slope_bars":5,"exit_sma":13}` | `{"sl_atr":3.5,"tp_atr":10.0,"trail_atr":3.5,"timeout":72}` |
+| 5 | `rsi2_regime` | ETHUSD | 1h | 82 | 75.61 | 1.6 | 37.45 | -15.45 | `{"rsi_len":4,"rsi_buy":15,"sma_trend":75,"slope_bars":100,"exit_sma":13}` | `{"sl_atr":3.5,"trail_atr":5.0,"timeout":72}` |
+| 9 | `rsi2_regime` | ETHUSD | 1h | 117 | 74.36 | 1.409 | 27.65 | -17.36 | `{"rsi_len":2,"rsi_buy":3,"sma_trend":100,"slope_bars":100,"exit_sma":8}` | `{"sl_atr":4.0,"tp_atr":5.0,"timeout":72}` |
+| 10 | `rsi2_regime` | ETHUSD | 1h | 194 | 68.04 | 1.357 | 70.94 | -21.05 | `{"rsi_len":3,"rsi_buy":12,"sma_trend":100,"slope_bars":80,"exit_sma":21}` | `{"sl_atr":2.5,"tp_atr":10.0,"timeout":48}` |
+| 16 | `rsi2_regime` | ETHUSD | 1h | 148 | 69.59 | 1.512 | 79.81 | -17.34 | `{"rsi_len":4,"rsi_buy":15,"sma_trend":100,"slope_bars":5,"exit_sma":21}` | `{"sl_atr":3.5,"tp_atr":10.0,"trail_atr":5.0,"timeout":120}` |
+| 6 | `bb_trend_rejoin` | ETHUSD | 1h | 87 | 73.56 | 1.544 | 43.06 | -21.49 | `{"bb_len":30,"bb_mult":2.25,"trend":100}` | `{"sl_atr":3.5,"trail_atr":5.0,"timeout":168}` |
+| 10 | `rsi2_regime` | ETHUSD | 1h | 81 | 76.54 | 1.851 | 60.23 | -15.24 | `{"rsi_len":4,"rsi_buy":15,"sma_trend":75,"slope_bars":100,"exit_sma":21}` | `{"sl_atr":3.5,"tp_atr":4.0,"trail_atr":4.0,"timeout":72}` |
+| 4 | `rsi2_regime` | ETHUSD | 1h | 186 | 66.67 | 1.052 | 2.84 | -22.12 | `{"rsi_len":4,"rsi_buy":20,"sma_trend":75,"slope_bars":100,"exit_sma":5}` | `{"sl_atr":2.0,"timeout":18}` |
