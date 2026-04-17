@@ -1,0 +1,121 @@
+//@version=5
+// GRAIL #1 v3 — rsi2_regime ETHUSD 1h — LONG + SHORT (risk-managed)
+// Versión simétrica: opera long en macro-bull, short en macro-bear.
+// Mismo motor de señal (RSI2 + trend slope) en ambas direcciones.
+strategy("GRAIL #1 v3 rsi2_regime ETHUSD 1h (L+S)",
+     overlay=true,
+     initial_capital=10000,
+     default_qty_type=strategy.percent_of_equity,
+     default_qty_value=100,
+     commission_type=strategy.commission.percent,
+     commission_value=0.05,
+     slippage=2,
+     process_orders_on_close=false)
+
+// === RIESGO ==============================================================
+riskPct    = input.float(1.0, "Riesgo por trade (%)", minval=0.1, maxval=5.0, step=0.1,
+                 tooltip="1% = si el SL se toca, pierdes 1% de equity")
+maxLossStk = input.int(3,   "Max pérdidas seguidas antes de pausar", minval=1)
+pauseBars  = input.int(24,  "Barras de pausa tras racha", minval=1)
+maxDDHalt  = input.float(20.0, "Halt si equity DD >", minval=5.0, maxval=50.0)
+
+// === DIRECCIÓN ===========================================================
+allowLong  = input.bool(true, "Permitir LONG")
+allowShort = input.bool(true, "Permitir SHORT")
+
+// === SEÑAL ===============================================================
+rsiLen    = input.int(2,   "RSI length")
+rsiBuy    = input.int(3,   "RSI buy threshold (long)")
+rsiSell   = input.int(97,  "RSI sell threshold (short)")
+smaTrend  = input.int(100, "Trend SMA length (1h)")
+slopeBars = input.int(5,   "Slope lookback")
+exitSma   = input.int(8,   "Exit SMA length")
+
+// === EXIT ================================================================
+slAtr     = input.float(2.5, "SL × ATR", minval=0.5, step=0.25)
+tpAtr     = input.float(4.0, "TP × ATR", minval=1.0, step=0.5)
+trailAtr  = input.float(3.0, "Trail × ATR", minval=1.0, step=0.5)
+
+// === FILTRO MACRO ========================================================
+useDailyFilter = input.bool(true, "Filtrar por EMA200 daily")
+dailyEmaLen    = input.int(200, "Daily EMA length")
+
+dailyEma = request.security(syminfo.tickerid, "D", ta.ema(close, dailyEmaLen), lookahead=barmerge.lookahead_off)
+dailyClose = request.security(syminfo.tickerid, "D", close[1], lookahead=barmerge.lookahead_off)
+macroBull = not useDailyFilter or (dailyClose > dailyEma)
+macroBear = not useDailyFilter or (dailyClose < dailyEma)
+
+// === INDICADORES =========================================================
+slow = ta.sma(close, smaTrend)
+fast = ta.sma(close, exitSma)
+r    = ta.rsi(close, rsiLen)
+rising  = slow > slow[slopeBars]
+falling = slow < slow[slopeBars]
+atrV = ta.atr(14)
+
+longSignal  = allowLong  and rising  and close > slow and r < rsiBuy  and macroBull
+shortSignal = allowShort and falling and close < slow and r > rsiSell and macroBear
+
+longExit  = close > fast
+shortExit = close < fast
+
+// === CIRCUIT BREAKER =====================================================
+var int lossStreak = 0
+var int pauseUntilBar = 0
+
+if strategy.closedtrades > strategy.closedtrades[1]
+    lastPnL = strategy.closedtrades.profit(strategy.closedtrades - 1)
+    if lastPnL < 0
+        lossStreak := lossStreak + 1
+    else
+        lossStreak := 0
+    if lossStreak >= maxLossStk
+        pauseUntilBar := bar_index + pauseBars
+        lossStreak := 0
+
+paused = bar_index < pauseUntilBar
+
+equityPeak = ta.max(strategy.equity)
+curDD = (equityPeak - strategy.equity) / equityPeak * 100
+halted = curDD > maxDDHalt
+
+// === SIZING POR RIESGO ===================================================
+riskUsd = strategy.equity * riskPct / 100.0
+stopDist = slAtr * atrV
+qty = stopDist > 0 ? riskUsd / stopDist : 0
+
+canTrade = not paused and not halted and qty > 0
+
+// === LONG ================================================================
+if longSignal and strategy.position_size == 0 and canTrade
+    strategy.entry("long", strategy.long, qty=qty)
+    strategy.exit("Lbrkt", "long",
+         stop  = strategy.position_avg_price - slAtr * atrV,
+         limit = strategy.position_avg_price + tpAtr * atrV,
+         trail_points = trailAtr * atrV / syminfo.mintick,
+         trail_offset = 0)
+
+if strategy.position_size > 0 and longExit
+    strategy.close("long", comment="exit SMA")
+
+// === SHORT ===============================================================
+if shortSignal and strategy.position_size == 0 and canTrade
+    strategy.entry("short", strategy.short, qty=qty)
+    strategy.exit("Sbrkt", "short",
+         stop  = strategy.position_avg_price + slAtr * atrV,
+         limit = strategy.position_avg_price - tpAtr * atrV,
+         trail_points = trailAtr * atrV / syminfo.mintick,
+         trail_offset = 0)
+
+if strategy.position_size < 0 and shortExit
+    strategy.close("short", comment="exit SMA")
+
+// === VISUAL ==============================================================
+plot(slow, "SMA trend", color=color.orange)
+plot(fast, "SMA exit",  color=color.blue)
+plot(dailyEma, "Daily EMA200", color=color.new(color.red, 50), linewidth=2)
+
+bgcolor(halted  ? color.new(color.red,    85) : na, title="HALT (DD)")
+bgcolor(paused  ? color.new(color.yellow, 90) : na, title="PAUSE (loss streak)")
+bgcolor(macroBull  ? color.new(color.green, 95) : na, title="Macro bull")
+bgcolor(macroBear  ? color.new(color.maroon,95) : na, title="Macro bear")
