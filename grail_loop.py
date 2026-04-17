@@ -331,6 +331,13 @@ try:
 except Exception as _e:
     print(f"[warn] could not load new_families: {_e}")
 
+# Plug round-2 families (CCI, CMF, Heikin-Ashi, Aroon, KAMA, Gap Fade).
+try:
+    from strategies.more_families import SPACES_MORE
+    SPACES.update(SPACES_MORE)
+except Exception as _e:
+    print(f"[warn] could not load more_families: {_e}")
+
 
 @dataclass
 class Grail:
@@ -459,14 +466,20 @@ def main():
     # User instruction: rsi2_regime and bb_trend_rejoin are CONFIRMED (top
     # plateau). Stop concentrating on them; bias hard toward UNEXPLORED
     # families to find new edges.
+    # User instruction (strong): "no las mismas, una vez que sabe que funciona
+    # en un activo pasa a cazar otras estrategias".
+    # Drop confirmed families to weight=0 so the hunt ONLY explores new edges.
     confirmed = {"rsi2_regime", "bb_trend_rejoin", "zscore_revert"}
     unexplored = {"supertrend_atr", "ema_cross_trend", "macd_trend",
                   "donchian_trail", "keltner_squeeze", "psar_trend",
                   "adx_pullback", "tsmom_voltarget",
-                  # new diversification families
+                  # round-1 diversification families
                   "connors_rsi", "williams_revert", "ichimoku",
-                  "hull_cross", "stoch_cross", "vol_breakout"}
-    family_weights = [1 if f in confirmed else (8 if f in unexplored else 4) for f in families]
+                  "hull_cross", "stoch_cross", "vol_breakout",
+                  # round-2 diversification families
+                  "cci_revert", "cmf_pullback", "heikin_trend",
+                  "aroon_cross", "kama_trend", "gap_fade"}
+    family_weights = [0 if f in confirmed else (8 if f in unexplored else 4) for f in families]
 
     stop = {"flag": False}
     def handler(*_): stop["flag"] = True; print("\n[interrupt] finishing current iter and exiting cleanly.")
