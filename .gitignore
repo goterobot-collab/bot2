@@ -4,6 +4,7 @@ data/
 # Grail loop raw log grows beyond GitHub's 100MB limit; keep only ranked outputs.
 # Reproduce locally with `python3 grail_loop.py` + `python3 tools/rank_grails.py`.
 results/grails_loop.jsonl
+results/grails_loop_wf.jsonl
 
 # Python
 __pycache__/
