@@ -454,6 +454,8 @@ def main():
     ap.add_argument("--fee", type=float, default=0.001)
     ap.add_argument("--slippage", type=float, default=0.0005)
     ap.add_argument("--assets", nargs="+", default=None)
+    ap.add_argument("--tfs", nargs="+", default=None,
+                    help="Restrict to specific timeframes (e.g. --tfs 1h 15m)")
     ap.add_argument("--report-every", type=int, default=50)
     args = ap.parse_args()
 
@@ -464,6 +466,8 @@ def main():
     jsonl_f = grails_jsonl.open("a")
 
     dfs = load_all(args.assets)
+    if args.tfs:
+        dfs = {k: v for k, v in dfs.items() if k[1] in args.tfs}
     if not dfs:
         print("No CSVs in data/. Run tools/convert_cryptopredictions.py first.")
         return
