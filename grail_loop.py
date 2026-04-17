@@ -338,6 +338,14 @@ try:
 except Exception as _e:
     print(f"[warn] could not load more_families: {_e}")
 
+# Plug NOVEL families (microstructure + state-space + cycle analysis,
+# specifically chosen to be absent from the user's V8 dashboard).
+try:
+    from strategies.novel_families import SPACES_NOVEL
+    SPACES.update(SPACES_NOVEL)
+except Exception as _e:
+    print(f"[warn] could not load novel_families: {_e}")
+
 
 @dataclass
 class Grail:
@@ -466,20 +474,29 @@ def main():
     # User instruction: rsi2_regime and bb_trend_rejoin are CONFIRMED (top
     # plateau). Stop concentrating on them; bias hard toward UNEXPLORED
     # families to find new edges.
-    # User instruction (strong): "no las mismas, una vez que sabe que funciona
-    # en un activo pasa a cazar otras estrategias".
-    # Drop confirmed families to weight=0 so the hunt ONLY explores new edges.
-    confirmed = {"rsi2_regime", "bb_trend_rejoin", "zscore_revert"}
-    unexplored = {"supertrend_atr", "ema_cross_trend", "macd_trend",
-                  "donchian_trail", "keltner_squeeze", "psar_trend",
-                  "adx_pullback", "tsmom_voltarget",
-                  # round-1 diversification families
-                  "connors_rsi", "williams_revert", "ichimoku",
-                  "hull_cross", "stoch_cross", "vol_breakout",
-                  # round-2 diversification families
-                  "cci_revert", "cmf_pullback", "heikin_trend",
-                  "aroon_cross", "kama_trend", "gap_fade"}
-    family_weights = [0 if f in confirmed else (8 if f in unexplored else 4) for f in families]
+    # User feedback: V8 dashboard already tests 24,431 grails across all
+    # VWAP / BB / RSI / Stoch / Williams / CCI / ConnorsRSI / ADX / Keltner /
+    # MACD / ATR-channel / MA-envelope / Rubber-band / TV_* families. So EVERY
+    # family we had before is V8-covered. The only fresh search space is the
+    # novel microstructure / state-space / cycle-analysis set.
+    v8_covered = {
+        # original 11
+        "rsi2_regime", "bb_trend_rejoin", "zscore_revert", "supertrend_atr",
+        "ema_cross_trend", "macd_trend", "donchian_trail", "keltner_squeeze",
+        "psar_trend", "adx_pullback", "tsmom_voltarget",
+        # round-1 diversification
+        "connors_rsi", "williams_revert", "ichimoku", "hull_cross",
+        "stoch_cross", "vol_breakout",
+        # round-2 diversification
+        "cci_revert", "cmf_pullback", "heikin_trend", "aroon_cross",
+        "kama_trend", "gap_fade",
+    }
+    novel = {
+        "hurst_regime", "kalman_residual", "ehlers_mama", "amihud_contrarian",
+        "vrp_proxy", "coint_pair", "corwin_schultz", "kyle_lambda",
+        "naked_poc", "bvc_ofi", "hawkes_burst",
+    }
+    family_weights = [0 if f in v8_covered else (10 if f in novel else 1) for f in families]
 
     stop = {"flag": False}
     def handler(*_): stop["flag"] = True; print("\n[interrupt] finishing current iter and exiting cleanly.")
