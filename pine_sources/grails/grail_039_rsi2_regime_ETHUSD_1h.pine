@@ -1,0 +1,52 @@
+//@version=5
+// AUTO-GENERATED FROM GRAIL LOOP  (tools/emit_pine.py)
+// Strategy family: rsi2_regime
+// Asset: ETHUSD   TF: 1h
+// In-sample metrics:  WR 78.85%  PF 1.831  ret 23.38%  DD -8.35%  trades 52
+// Params: {"rsi_len": 5, "rsi_buy": 15, "sma_trend": 100, "slope_bars": 15, "exit_sma": 8}
+// Exit:   {"sl_atr": 2.0, "trail_atr": 4.0, "timeout": 120}
+strategy("GRAIL #039 rsi2_regime ETHUSD 1h",
+     overlay=true,
+     initial_capital=10000,
+     default_qty_type=strategy.percent_of_equity,
+     default_qty_value=100,
+     commission_type=strategy.commission.percent,
+     commission_value=0.1,
+     slippage=2,
+     process_orders_on_close=false)
+
+useWindow = input.bool(true, "Apply in-sample window")
+startTs = timestamp(2018, 08, 02, 0, 0)
+inWindow = not useWindow or time >= startTs
+
+
+rsiLen   = 5
+rsiBuy   = 15
+smaTrend = 100
+slopeBars = 15
+exitSma   = 8
+
+slow = ta.sma(close, smaTrend)
+fast = ta.sma(close, exitSma)
+r    = ta.rsi(close, rsiLen)
+rising = slow > slow[slopeBars]
+
+longCond = inWindow and rising and close > slow and r < rsiBuy
+exitCond = close > fast
+
+atrV = ta.atr(14)
+var int entryBar = na
+if longCond and strategy.position_size == 0
+    strategy.entry("long", strategy.long)
+    entryBar := bar_index
+    strategy.exit("sltp", "long", stop=strategy.position_avg_price - 2.0*atrV, limit=na)
+    strategy.exit("trail", "long", trail_price=high - 4.0*atrV, trail_offset=0)
+if strategy.position_size > 0 and not na(entryBar) and bar_index - entryBar >= 120
+    strategy.close("long")
+    entryBar := na
+
+if strategy.position_size > 0 and exitCond
+    strategy.close("long")
+
+plot(slow, color=color.orange)
+plot(fast, color=color.blue)
