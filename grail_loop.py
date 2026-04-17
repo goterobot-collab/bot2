@@ -323,6 +323,14 @@ try:
 except Exception as _e:
     print(f"[warn] could not load tsmom: {_e}")
 
+# Plug 6 new diversification families (ConnorsRSI, Williams %R, Ichimoku,
+# Hull MA cross, Stochastic cross, Volatility breakout).
+try:
+    from strategies.new_families import SPACES_NEW
+    SPACES.update(SPACES_NEW)
+except Exception as _e:
+    print(f"[warn] could not load new_families: {_e}")
+
 
 @dataclass
 class Grail:
@@ -454,7 +462,10 @@ def main():
     confirmed = {"rsi2_regime", "bb_trend_rejoin", "zscore_revert"}
     unexplored = {"supertrend_atr", "ema_cross_trend", "macd_trend",
                   "donchian_trail", "keltner_squeeze", "psar_trend",
-                  "adx_pullback", "tsmom_voltarget"}
+                  "adx_pullback", "tsmom_voltarget",
+                  # new diversification families
+                  "connors_rsi", "williams_revert", "ichimoku",
+                  "hull_cross", "stoch_cross", "vol_breakout"}
     family_weights = [1 if f in confirmed else (8 if f in unexplored else 4) for f in families]
 
     stop = {"flag": False}
