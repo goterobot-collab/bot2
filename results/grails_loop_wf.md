@@ -1110,3 +1110,5 @@
 | 1 | `zscore_revert` | ETHUSD | 4h | 103 | 64.08 | 1.337 | 49.44 | -17.17 | `{"z_len":20,"z_enter":1.5,"trend":150}` | `{"sl_atr":1.5,"tp_atr":3.0,"trail_atr":3.0}` |
 | 2 | `zscore_revert` | ETHUSD | 4h | 71 | 71.83 | 1.819 | 101.64 | -14.8 | `{"z_len":20,"z_enter":2.0,"trend":150}` | `{"sl_atr":2.5,"tp_atr":5.0,"timeout":120}` |
 | 1 | `rsi2_regime` | ETHUSD | 1h | 239 | 69.46 | 1.263 | 60.89 | -18.69 | `{"rsi_len":4,"rsi_buy":20,"sma_trend":75,"slope_bars":30,"exit_sma":21}` | `{"sl_atr":3.5,"tp_atr":7.0,"trail_atr":3.5,"timeout":120}` |
+| 2 | `bb_trend_rejoin` | BTCUSD | 1d | 88 | 69.32 | 1.505 | 69.44 | -27.03 | `{"bb_len":8,"bb_mult":1.2,"trend":300}` | `{"sl_atr":3.0,"trail_atr":3.0,"timeout":36}` |
+| 2 | `zscore_revert` | BTCUSD | 4h | 77 | 68.83 | 1.138 | 9.88 | -19.73 | `{"z_len":50,"z_enter":1.5,"trend":300}` | `{"sl_atr":3.0,"tp_atr":5.0,"trail_atr":4.0,"timeout":72}` |
