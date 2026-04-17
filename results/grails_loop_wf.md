@@ -1241,3 +1241,4 @@
 | 1 | `williams_revert` | BTCUSD | 4h | 66 | 69.7 | 2.003 | 67.51 | -7.43 | `{"w_len":5,"os":95,"ob":30,"trend":150}` | `{"sl_atr":1.5,"tp_atr":3.0,"trail_atr":3.0,"timeout":72}` |
 | 2 | `stoch_cross` | ETHUSD | 1h | 82 | 69.51 | 1.482 | 45.06 | -16.37 | `{"k_len":14,"d_len":5,"os":20,"ob":85,"trend":200}` | `{"sl_atr":2.5,"tp_atr":3.0}` |
 | 1 | `williams_revert` | ETHUSD | 1h | 86 | 62.79 | 1.141 | 9.83 | -17.52 | `{"w_len":21,"os":95,"ob":50,"trend":200}` | `{"sl_atr":2.0,"tp_atr":4.0,"timeout":24}` |
+| 1 | `kalman_residual` | ETHUSD | 4h | 65 | 66.15 | 1.558 | 77.24 | -16.09 | `{"q":0.001,"r":2.0,"zwin":20,"zenter":2.5,"zexit":0.0,"trend":200}` | `{"sl_atr":2.5,"tp_atr":3.0}` |
