@@ -1112,3 +1112,13 @@
 | 1 | `rsi2_regime` | ETHUSD | 1h | 239 | 69.46 | 1.263 | 60.89 | -18.69 | `{"rsi_len":4,"rsi_buy":20,"sma_trend":75,"slope_bars":30,"exit_sma":21}` | `{"sl_atr":3.5,"tp_atr":7.0,"trail_atr":3.5,"timeout":120}` |
 | 2 | `bb_trend_rejoin` | BTCUSD | 1d | 88 | 69.32 | 1.505 | 69.44 | -27.03 | `{"bb_len":8,"bb_mult":1.2,"trend":300}` | `{"sl_atr":3.0,"trail_atr":3.0,"timeout":36}` |
 | 2 | `zscore_revert` | BTCUSD | 4h | 77 | 68.83 | 1.138 | 9.88 | -19.73 | `{"z_len":50,"z_enter":1.5,"trend":300}` | `{"sl_atr":3.0,"tp_atr":5.0,"trail_atr":4.0,"timeout":72}` |
+| 2 | `rsi2_regime` | ETHUSD | 1h | 577 | 61.53 | 1.169 | 80.62 | -22.63 | `{"rsi_len":3,"rsi_buy":20,"sma_trend":100,"slope_bars":80,"exit_sma":13}` | `{"sl_atr":1.25,"tp_atr":1.5,"trail_atr":3.5,"timeout":24}` |
+| 3 | `rsi2_regime` | ETHUSD | 1h | 188 | 70.21 | 1.192 | 31.55 | -20.93 | `{"rsi_len":4,"rsi_buy":20,"sma_trend":75,"slope_bars":80,"exit_sma":21}` | `{"sl_atr":3.0,"tp_atr":5.0,"trail_atr":4.0,"timeout":18}` |
+| 3 | `zscore_revert` | ETHUSD | 4h | 103 | 64.08 | 1.419 | 65.52 | -18.05 | `{"z_len":20,"z_enter":1.5,"trend":150}` | `{"sl_atr":1.5,"tp_atr":4.0,"trail_atr":4.0,"timeout":120}` |
+| 1 | `zscore_revert` | ETHUSD | 4h | 55 | 61.82 | 1.548 | 46.98 | -12.16 | `{"z_len":30,"z_enter":1.5,"trend":100}` | `{"sl_atr":1.5,"tp_atr":5.0,"trail_atr":2.0,"timeout":24}` |
+| 1 | `williams_revert` | BTCUSD | 4h | 56 | 69.64 | 2.1 | 86.84 | -10.53 | `{"w_len":7,"os":95,"ob":30,"trend":300}` | `{"sl_atr":2.0}` |
+| 1 | `stoch_cross` | BTCUSD | 4h | 117 | 70.09 | 1.308 | 46.75 | -29.16 | `{"k_len":9,"d_len":3,"os":25,"ob":70,"trend":300}` | `{"sl_atr":2.0,"tp_atr":4.0,"timeout":24}` |
+| 2 | `williams_revert` | BTCUSD | 4h | 70 | 65.71 | 1.599 | 54.24 | -14.91 | `{"w_len":5,"os":95,"ob":20,"trend":200}` | `{"sl_atr":2.0,"trail_atr":3.0,"timeout":48}` |
+| 1 | `stoch_cross` | BTCUSD | 4h | 67 | 65.67 | 1.482 | 42.41 | -21.25 | `{"k_len":9,"d_len":3,"os":20,"ob":70,"trend":300}` | `{"sl_atr":1.5,"tp_atr":2.0,"trail_atr":3.0,"timeout":24}` |
+| 1 | `stoch_cross` | BTCUSD | 4h | 62 | 74.19 | 2.119 | 105.66 | -10.44 | `{"k_len":9,"d_len":3,"os":20,"ob":80,"trend":300}` | `{"sl_atr":2.5,"tp_atr":4.0}` |
+| 1 | `williams_revert` | ETHUSD | 1h | 95 | 63.16 | 1.164 | 12.96 | -13.58 | `{"w_len":21,"os":95,"ob":50,"trend":300}` | `{"sl_atr":2.0,"tp_atr":5.0,"trail_atr":4.0,"timeout":24}` |
