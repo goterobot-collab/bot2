@@ -23,7 +23,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from grail_loop import SPACES, evaluate, load_all
 
 SRC = Path("results/grails_loop_wf.jsonl")
-OUT = Path("results/plateau_report.md")
+OUT = Path("results/plateau_full_pool.md")
 JITTERS = [-0.2, -0.1, 0.0, 0.1, 0.2]  # +/-20% in 10% steps
 PLATEAU_THR = 0.75  # fraction of neighbors that must pass
 

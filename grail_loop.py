@@ -316,6 +316,13 @@ SPACES = {
     },
 }
 
+# Plug TSMOM (registered out-of-band so the family table stays clean).
+try:
+    from strategies.tsmom import sig_tsmom_voltarget, PARAMS_GRID as _TSMOM_P, EXIT_GRID as _TSMOM_E
+    SPACES["tsmom_voltarget"] = {"sig": sig_tsmom_voltarget, "params": _TSMOM_P, "exit": _TSMOM_E}
+except Exception as _e:
+    print(f"[warn] could not load tsmom: {_e}")
+
 
 @dataclass
 class Grail:
@@ -441,14 +448,14 @@ def main():
 
     rng = random.Random(args.seed)
     families = list(SPACES.keys())
-    # Weighted sampling: after first 6500 iter of uniform search, bb_trend_rejoin
-    # and rsi2_regime accounted for ~90% of grails. Bias toward them so hit rate
-    # climbs from ~0.8% to ~3-5%.
-    # Boost proven high-yielders; give new families a fair shot (weight 2) so
-    # they get explored before uniform convergence.
-    hi = {"bb_trend_rejoin", "rsi2_regime"}
-    new_families = {"keltner_squeeze", "zscore_revert", "psar_trend", "adx_pullback"}
-    family_weights = [4 if f in hi else (2 if f in new_families else 1) for f in families]
+    # User instruction: rsi2_regime and bb_trend_rejoin are CONFIRMED (top
+    # plateau). Stop concentrating on them; bias hard toward UNEXPLORED
+    # families to find new edges.
+    confirmed = {"rsi2_regime", "bb_trend_rejoin", "zscore_revert"}
+    unexplored = {"supertrend_atr", "ema_cross_trend", "macd_trend",
+                  "donchian_trail", "keltner_squeeze", "psar_trend",
+                  "adx_pullback", "tsmom_voltarget"}
+    family_weights = [1 if f in confirmed else (8 if f in unexplored else 4) for f in families]
 
     stop = {"flag": False}
     def handler(*_): stop["flag"] = True; print("\n[interrupt] finishing current iter and exiting cleanly.")
