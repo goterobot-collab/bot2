@@ -12,3 +12,6 @@ __pycache__/
 .venv/
 venv/
 .env
+
+# Worker stdout logs (noisy, regenerated every run)
+logs/
