@@ -13,6 +13,13 @@ SRC = Path("results/grails_loop.jsonl")
 OUT = Path("results/top_grails.md")
 
 
+def count_by_family(d: dict) -> str:
+    fams = {}
+    for k in d:
+        fams[k[0]] = fams.get(k[0], 0) + 1
+    return ", ".join(f"{k}={v}" for k, v in sorted(fams.items(), key=lambda x: -x[1]))
+
+
 def score(r):
     """Composite score that penalizes small-sample luck and deep drawdowns.
     PF capped at 5.0 so a 6-trade WR=100%/PF=999 can't dominate a 50-trade
@@ -29,6 +36,7 @@ def score(r):
 
 def main():
     seen = {}
+    seen_cfg = {}  # dedup by (strategy, params, exit) ignoring asset/tf
     n_total = 0
     n_grail = 0
     for line in SRC.read_text().splitlines():
@@ -38,19 +46,25 @@ def main():
         n_total += 1
         if score(r) <= 0:
             continue
-        key = (r["strategy"], r["asset"], r["tf"],
-               json.dumps(r["params"], sort_keys=True),
-               json.dumps({k: v for k, v in r["exit_cfg"].items() if v is not None}, sort_keys=True))
+        params_k = json.dumps(r["params"], sort_keys=True)
+        exit_k = json.dumps({k: v for k, v in r["exit_cfg"].items() if v is not None}, sort_keys=True)
+        key = (r["strategy"], r["asset"], r["tf"], params_k, exit_k)
+        cfg_key = (r["strategy"], params_k, exit_k)
         if key not in seen or score(r) > score(seen[key]):
             seen[key] = r
             n_grail += 1
+        if cfg_key not in seen_cfg or score(r) > score(seen_cfg[cfg_key]):
+            seen_cfg[cfg_key] = r
     rows = sorted(seen.values(), key=score, reverse=True)
+    n_unique_cfg = len(seen_cfg)
 
     lines = [
         "# 🏆 TOP GRAILS (deduplicated & ranked)",
         "",
         f"- Source: `results/grails_loop.jsonl` ({n_total} total evaluations)",
-        f"- Unique grail configs: **{len(rows)}**",
+        f"- Unique **(strategy, asset, params, exit)** combos: **{len(rows)}**",
+        f"- Unique **strategy configs** (asset-agnostic): **{n_unique_cfg}**",
+        f"- Family breakdown (asset-agnostic configs): {count_by_family(seen_cfg)}",
         "- Score = `ret × PF × trade-penalty × DD-penalty` (rewards profit, consistency, low DD)",
         "- Filter: WR>60% AND PnL>0 AND maxDD>-30% AND PF>1 AND trades>5",
         "",

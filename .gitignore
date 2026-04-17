@@ -1,6 +1,10 @@
 # Downloaded OHLCV (populated by fetch_data.py locally)
 data/
 
+# Grail loop raw log grows beyond GitHub's 100MB limit; keep only ranked outputs.
+# Reproduce locally with `python3 grail_loop.py` + `python3 tools/rank_grails.py`.
+results/grails_loop.jsonl
+
 # Python
 __pycache__/
 *.pyc
