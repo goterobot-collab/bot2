@@ -1,0 +1,44 @@
+//@version=5
+// AUTO-GENERATED FROM GRAIL LOOP  (tools/emit_pine.py)
+// Strategy family: ema_cross_trend
+// Asset: ETHUSD   TF: 1h
+// In-sample metrics:  WR 62.4%  PF 1.53  ret 122.47%  DD -18.15%  trades 125
+// Params: {"fast": 34, "slow": 89, "trend": 300}
+// Exit:   {"tp_atr": 3.0}
+strategy("GRAIL #004 ema_cross_trend ETHUSD 1h",
+     overlay=true,
+     initial_capital=10000,
+     default_qty_type=strategy.percent_of_equity,
+     default_qty_value=100,
+     commission_type=strategy.commission.percent,
+     commission_value=0.1,
+     slippage=2,
+     process_orders_on_close=false)
+
+useWindow = input.bool(true, "Apply in-sample window")
+startTs = timestamp(2018, 08, 02, 0, 0)
+inWindow = not useWindow or time >= startTs
+
+
+fastLen = 34
+slowLen = 89
+trendLen = 300
+
+ef = ta.ema(close, fastLen)
+es = ta.ema(close, slowLen)
+et = ta.ema(close, trendLen)
+
+longCond = inWindow and ta.crossover(ef, es) and close > et
+exitCond = ta.crossunder(ef, es)
+
+atrV = ta.atr(14)
+if longCond and strategy.position_size == 0
+    strategy.entry("long", strategy.long)
+    strategy.exit("sltp", "long", stop=na, limit=strategy.position_avg_price + 3.0*atrV)
+
+if strategy.position_size > 0 and exitCond
+    strategy.close("long")
+
+plot(ef, color=color.blue)
+plot(es, color=color.orange)
+plot(et, color=color.gray)

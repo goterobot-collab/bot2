@@ -1,0 +1,43 @@
+//@version=5
+// AUTO-GENERATED FROM GRAIL LOOP  (tools/emit_pine.py)
+// Strategy family: supertrend_atr
+// Asset: ADAUSD   TF: 1h
+// In-sample metrics:  WR 61.36%  PF 2.375  ret 67.46%  DD -7.36%  trades 44
+// Params: {"st_atr": 20, "st_mult": 4.0, "ema_trend": 200}
+// Exit:   {"sl_atr": 2.0, "tp_atr": 3.0, "trail_atr": 5.0}
+strategy("GRAIL #016 supertrend_atr ADAUSD 1h",
+     overlay=true,
+     initial_capital=10000,
+     default_qty_type=strategy.percent_of_equity,
+     default_qty_value=100,
+     commission_type=strategy.commission.percent,
+     commission_value=0.1,
+     slippage=2,
+     process_orders_on_close=false)
+
+useWindow = input.bool(true, "Apply in-sample window")
+startTs = timestamp(2021, 09, 29, 0, 0)
+inWindow = not useWindow or time >= startTs
+
+
+stAtr    = 20
+stMult   = 4.0
+emaTrend = 200
+
+[_st, dir] = ta.supertrend(stMult, stAtr)
+trend = ta.ema(close, emaTrend)
+flipUp = dir == -1 and dir[1] == 1
+flipDn = dir == 1 and dir[1] == -1
+
+longCond = inWindow and flipUp and close > trend
+
+atrV = ta.atr(14)
+if longCond and strategy.position_size == 0
+    strategy.entry("long", strategy.long)
+    strategy.exit("sltp", "long", stop=strategy.position_avg_price - 2.0*atrV, limit=strategy.position_avg_price + 3.0*atrV)
+    strategy.exit("trail", "long", trail_price=high - 5.0*atrV, trail_offset=0)
+
+if strategy.position_size > 0 and flipDn
+    strategy.close("long")
+
+plot(trend, color=color.orange, title="Trend EMA")

@@ -98,6 +98,75 @@ def sig_bb_trend_rejoin(df, p):
     return entry.fillna(False), ex.fillna(False)
 
 
+def sig_keltner_squeeze(df, p):
+    """BB inside Keltner = squeeze; enter on breakout up + trend filter."""
+    c = df["close"]; h = df["high"]; l = df["low"]
+    # BB
+    bmid = sma(c, p["len"])
+    bstd = c.rolling(p["len"], min_periods=p["len"]).std(ddof=0)
+    bb_up = bmid + p["bb_mult"] * bstd
+    bb_dn = bmid - p["bb_mult"] * bstd
+    # Keltner
+    kmid = ema(c, p["len"])
+    a = atr(h, l, c, p["len"])
+    kc_up = kmid + p["kc_mult"] * a
+    kc_dn = kmid - p["kc_mult"] * a
+    squeeze = (bb_up < kc_up) & (bb_dn > kc_dn)
+    # squeeze released AND close breaking above recent range
+    released = squeeze.shift(1) & (~squeeze)
+    trend_ok = c > ema(c, p["trend"])
+    entry = released & (c > bmid) & trend_ok
+    ex = crossunder(c, bmid)
+    return entry.fillna(False), ex.fillna(False)
+
+
+def sig_zscore_revert(df, p):
+    """Z-score mean reversion with trend filter."""
+    c = df["close"]
+    m = sma(c, p["z_len"])
+    s = c.rolling(p["z_len"], min_periods=p["z_len"]).std(ddof=0)
+    z = (c - m) / s.replace(0, 1e-9)
+    t = ema(c, p["trend"])
+    # enter when z crosses up from deep oversold AND above trend EMA
+    entry = crossover(z, pd.Series(-p["z_enter"], index=c.index)) & (c > t)
+    ex = crossover(z, pd.Series(0.0, index=c.index))
+    return entry.fillna(False), ex.fillna(False)
+
+
+def sig_psar_trend(df, p):
+    """Breakout-of-N-bar-high with EMA trend and slope filter (PSAR-like)."""
+    c = df["close"]; h = df["high"]; l = df["low"]
+    breakout = c > h.rolling(p["hi_len"], min_periods=p["hi_len"]).max().shift(1)
+    t = ema(c, p["trend"])
+    entry = breakout & (c > t) & (t > t.shift(p["slope_bars"]))
+    ex = c < l.rolling(p["exit_len"], min_periods=p["exit_len"]).min().shift(1)
+    return entry.fillna(False), ex.fillna(False)
+
+
+def sig_adx_pullback(df, p):
+    """Trend-confirmed pullback: ADX>threshold + close pulls back to EMA + recovers."""
+    c = df["close"]; h = df["high"]; l = df["low"]
+    # ADX via DMI approximation inline
+    up = h.diff()
+    dn = -l.diff()
+    import numpy as _np
+    pdm = pd.Series(_np.where((up > dn) & (up > 0), up, 0.0), index=c.index)
+    mdm = pd.Series(_np.where((dn > up) & (dn > 0), dn, 0.0), index=c.index)
+    a = atr(h, l, c, p["adx_len"])
+    pdi = 100 * pdm.ewm(alpha=1.0/p["adx_len"], adjust=False, min_periods=p["adx_len"]).mean() / a
+    mdi = 100 * mdm.ewm(alpha=1.0/p["adx_len"], adjust=False, min_periods=p["adx_len"]).mean() / a
+    dx = 100 * (pdi - mdi).abs() / (pdi + mdi).replace(0, _np.nan)
+    adx = dx.ewm(alpha=1.0/p["adx_len"], adjust=False, min_periods=p["adx_len"]).mean()
+    e = ema(c, p["ema_len"])
+    touched = (l <= e).rolling(p["lookback"], min_periods=1).max().astype(bool)
+    trend_up = adx > p["adx_min"]
+    di_up = pdi > mdi
+    recovery = (c > c.shift(1)) & (c > e)
+    entry = trend_up & di_up & touched & recovery
+    ex = crossunder(c, e)
+    return entry.fillna(False), ex.fillna(False)
+
+
 # ---------- parameter spaces -------------------------------------------------
 # Each entry: builder + param grid + exit-config grid (sl/tp/trail/timeout)
 SPACES = {
@@ -184,6 +253,65 @@ SPACES = {
             "tp_atr":    [None, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 5.0, 6.0, 8.0],
             "trail_atr": [None, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 5.0],
             "timeout":   [None, 12, 18, 24, 36, 48, 72, 96, 120, 168],
+        },
+    },
+    "keltner_squeeze": {
+        "sig": sig_keltner_squeeze,
+        "params": {
+            "len":     [14, 20, 30, 50],
+            "bb_mult": [1.5, 2.0, 2.5],
+            "kc_mult": [1.0, 1.5, 2.0, 2.5],
+            "trend":   [50, 100, 150, 200, 300],
+        },
+        "exit": {
+            "sl_atr":    [1.0, 1.5, 2.0, 3.0],
+            "tp_atr":    [None, 2.0, 3.0, 4.0, 6.0],
+            "trail_atr": [None, 2.0, 3.0, 4.0],
+            "timeout":   [None, 24, 48, 72],
+        },
+    },
+    "zscore_revert": {
+        "sig": sig_zscore_revert,
+        "params": {
+            "z_len":   [10, 14, 20, 30, 50, 80],
+            "z_enter": [1.5, 2.0, 2.5, 3.0],
+            "trend":   [100, 150, 200, 250, 300],
+        },
+        "exit": {
+            "sl_atr":    [1.0, 1.5, 2.0, 2.5, 3.0],
+            "tp_atr":    [None, 2.0, 3.0, 4.0, 5.0],
+            "trail_atr": [None, 2.0, 3.0, 4.0],
+            "timeout":   [None, 24, 48, 72, 120],
+        },
+    },
+    "psar_trend": {
+        "sig": sig_psar_trend,
+        "params": {
+            "hi_len":     [10, 14, 20, 30, 40, 55],
+            "exit_len":   [5, 8, 10, 15, 20],
+            "trend":      [100, 150, 200, 300],
+            "slope_bars": [10, 20, 30, 50],
+        },
+        "exit": {
+            "sl_atr":    [None, 1.5, 2.0, 3.0],
+            "tp_atr":    [None, 3.0, 5.0, 8.0],
+            "trail_atr": [2.0, 3.0, 4.0, 5.0],
+            "timeout":   [None],
+        },
+    },
+    "adx_pullback": {
+        "sig": sig_adx_pullback,
+        "params": {
+            "adx_len":  [10, 14, 20],
+            "adx_min":  [20, 25, 30, 35, 40],
+            "ema_len":  [13, 20, 34, 50],
+            "lookback": [3, 5, 8, 12],
+        },
+        "exit": {
+            "sl_atr":    [0.75, 1.0, 1.5, 2.0],
+            "tp_atr":    [None, 2.0, 3.0, 4.0, 6.0],
+            "trail_atr": [None, 2.0, 3.0],
+            "timeout":   [None, 24, 48, 72],
         },
     },
 }
@@ -303,10 +431,11 @@ def main():
     # Weighted sampling: after first 6500 iter of uniform search, bb_trend_rejoin
     # and rsi2_regime accounted for ~90% of grails. Bias toward them so hit rate
     # climbs from ~0.8% to ~3-5%.
-    family_weights = [
-        1 if f not in ("bb_trend_rejoin", "rsi2_regime") else 4
-        for f in families
-    ]
+    # Boost proven high-yielders; give new families a fair shot (weight 2) so
+    # they get explored before uniform convergence.
+    hi = {"bb_trend_rejoin", "rsi2_regime"}
+    new_families = {"keltner_squeeze", "zscore_revert", "psar_trend", "adx_pullback"}
+    family_weights = [4 if f in hi else (2 if f in new_families else 1) for f in families]
 
     stop = {"flag": False}
     def handler(*_): stop["flag"] = True; print("\n[interrupt] finishing current iter and exiting cleanly.")

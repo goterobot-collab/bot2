@@ -226,6 +226,109 @@ plot(upper, color=color.teal, title="DC upper")
 """
 
 
+def emit_keltner_squeeze(p, e):
+    return f"""
+bbLen = {p['len']}
+bbMult = {p['bb_mult']}
+kcMult = {p['kc_mult']}
+trendLen = {p['trend']}
+
+bbMid = ta.sma(close, bbLen)
+bbStd = ta.stdev(close, bbLen)
+bbUp = bbMid + bbMult * bbStd
+bbDn = bbMid - bbMult * bbStd
+kcMid = ta.ema(close, bbLen)
+aK = ta.atr(bbLen)
+kcUp = kcMid + kcMult * aK
+kcDn = kcMid - kcMult * aK
+squeeze = bbUp < kcUp and bbDn > kcDn
+released = squeeze[1] and not squeeze
+t = ta.ema(close, trendLen)
+
+longCond = inWindow and released and close > bbMid and close > t
+exitCond = ta.crossunder(close, bbMid)
+
+{emit_exit_block(e)}
+
+if strategy.position_size > 0 and exitCond
+    strategy.close("long")
+
+plot(bbMid, color=color.orange)
+plot(t,     color=color.gray, title="Trend EMA")
+"""
+
+
+def emit_zscore_revert(p, e):
+    return f"""
+zLen    = {p['z_len']}
+zEnter  = {p['z_enter']}
+trendLen = {p['trend']}
+
+m  = ta.sma(close, zLen)
+sd = ta.stdev(close, zLen)
+z  = (close - m) / math.max(sd, 0.0000001)
+t  = ta.ema(close, trendLen)
+
+longCond = inWindow and ta.crossover(z, -zEnter) and close > t
+exitCond = ta.crossover(z, 0.0)
+
+{emit_exit_block(e)}
+
+if strategy.position_size > 0 and exitCond
+    strategy.close("long")
+
+plot(t, color=color.orange, title="Trend EMA")
+"""
+
+
+def emit_psar_trend(p, e):
+    return f"""
+hiLen  = {p['hi_len']}
+exitLen = {p['exit_len']}
+trendLen = {p['trend']}
+slopeBars = {p['slope_bars']}
+
+priorHigh = ta.highest(high, hiLen)[1]
+priorLow  = ta.lowest(low,  exitLen)[1]
+t = ta.ema(close, trendLen)
+trendUp = t > t[slopeBars]
+
+longCond = inWindow and close > priorHigh and close > t and trendUp
+exitCond = close < priorLow
+
+{emit_exit_block(e)}
+
+if strategy.position_size > 0 and exitCond
+    strategy.close("long")
+
+plot(t, color=color.orange, title="Trend EMA")
+"""
+
+
+def emit_adx_pullback(p, e):
+    return f"""
+adxLen   = {p['adx_len']}
+adxMin   = {p['adx_min']}
+emaLen   = {p['ema_len']}
+lookback = {p['lookback']}
+
+[di_p, di_m, adx] = ta.dmi(adxLen, adxLen)
+eP = ta.ema(close, emaLen)
+touched = ta.lowest(low, lookback) <= eP
+recovery = close > close[1] and close > eP
+
+longCond = inWindow and adx > adxMin and di_p > di_m and touched and recovery
+exitCond = ta.crossunder(close, eP)
+
+{emit_exit_block(e)}
+
+if strategy.position_size > 0 and exitCond
+    strategy.close("long")
+
+plot(eP, color=color.orange, title="EMA pullback")
+"""
+
+
 EMITTERS = {
     "bb_trend_rejoin":  emit_bb_trend_rejoin,
     "rsi2_regime":      emit_rsi2_regime,
@@ -233,6 +336,10 @@ EMITTERS = {
     "ema_cross_trend":  emit_ema_cross_trend,
     "macd_trend":       emit_macd_trend,
     "donchian_trail":   emit_donchian_trail,
+    "keltner_squeeze":  emit_keltner_squeeze,
+    "zscore_revert":    emit_zscore_revert,
+    "psar_trend":       emit_psar_trend,
+    "adx_pullback":     emit_adx_pullback,
 }
 
 
