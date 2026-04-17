@@ -1,0 +1,52 @@
+//@version=5
+// AUTO-GENERATED FROM GRAIL LOOP  (tools/emit_pine.py)
+// Strategy family: bb_trend_rejoin
+// Asset: ETHUSD   TF: 1h
+// In-sample metrics:  WR 62.77%  PF 1.406  ret 45.33%  DD -13.35%  trades 137
+// Params: {"bb_len": 30, "bb_mult": 2.0, "trend": 100}
+// Exit:   {"sl_atr": 1.5, "timeout": 24}
+strategy("GRAIL #021 bb_trend_rejoin ETHUSD 1h",
+     overlay=true,
+     initial_capital=10000,
+     default_qty_type=strategy.percent_of_equity,
+     default_qty_value=100,
+     commission_type=strategy.commission.percent,
+     commission_value=0.1,
+     slippage=2,
+     process_orders_on_close=false)
+
+useWindow = input.bool(true, "Apply in-sample window")
+startTs = timestamp(2018, 08, 02, 0, 0)
+inWindow = not useWindow or time >= startTs
+
+
+bbLen = 30
+bbMult = 2.0
+trendLen = 100
+
+basis = ta.sma(close, bbLen)
+dev = bbMult * ta.stdev(close, bbLen)
+lower = basis - dev
+upper = basis + dev
+t = ta.ema(close, trendLen)
+
+longCond = inWindow and ta.crossover(close, lower) and close > t
+exitCond = ta.crossover(close, basis)
+
+atrV = ta.atr(14)
+var int entryBar = na
+if longCond and strategy.position_size == 0
+    strategy.entry("long", strategy.long)
+    entryBar := bar_index
+    strategy.exit("sltp", "long", stop=strategy.position_avg_price - 1.5*atrV, limit=na)
+if strategy.position_size > 0 and not na(entryBar) and bar_index - entryBar >= 24
+    strategy.close("long")
+    entryBar := na
+
+if strategy.position_size > 0 and exitCond
+    strategy.close("long")
+
+plot(basis, color=color.orange)
+plot(lower, color=color.green)
+plot(upper, color=color.red)
+plot(t,     color=color.gray, title="Trend EMA")
