@@ -104,17 +104,17 @@ SPACES = {
     "rsi2_regime": {
         "sig": sig_rsi2_regime,
         "params": {
-            "rsi_len":    [2, 3, 4],
-            "rsi_buy":    [5, 8, 10, 12, 15, 20, 25],
-            "sma_trend":  [100, 150, 200, 250, 300],
-            "slope_bars": [10, 20, 30, 50, 80],
-            "exit_sma":   [3, 5, 8, 13],
+            "rsi_len":    [2, 3, 4, 5],
+            "rsi_buy":    [3, 5, 7, 8, 10, 12, 15, 18, 20, 25, 30],
+            "sma_trend":  [75, 100, 125, 150, 175, 200, 225, 250, 300, 400],
+            "slope_bars": [5, 10, 15, 20, 30, 40, 50, 65, 80, 100],
+            "exit_sma":   [2, 3, 5, 8, 13, 21],
         },
         "exit": {
-            "sl_atr":    [1.0, 1.5, 2.0, 2.5, 3.0, 4.0],
-            "tp_atr":    [None, 2.0, 3.0, 4.0, 5.0, 7.0],
-            "trail_atr": [None, 2.0, 3.0, 4.0],
-            "timeout":   [None, 12, 24, 36, 48, 72, 120],
+            "sl_atr":    [0.75, 1.0, 1.25, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 5.0],
+            "tp_atr":    [None, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0, 6.0, 7.0, 10.0],
+            "trail_atr": [None, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 5.0],
+            "timeout":   [None, 8, 12, 18, 24, 36, 48, 72, 96, 120, 168],
         },
     },
     "supertrend_atr": {
@@ -175,15 +175,15 @@ SPACES = {
     "bb_trend_rejoin": {
         "sig": sig_bb_trend_rejoin,
         "params": {
-            "bb_len":  [10, 20, 30, 50],
-            "bb_mult": [1.5, 2.0, 2.5, 3.0],
-            "trend":   [100, 150, 200, 250],
+            "bb_len":  [8, 10, 14, 20, 24, 30, 40, 50, 60, 80, 100],
+            "bb_mult": [1.2, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.5],
+            "trend":   [50, 75, 100, 125, 150, 175, 200, 250, 300],
         },
         "exit": {
-            "sl_atr":    [1.0, 1.5, 2.0, 3.0],
-            "tp_atr":    [None, 2.0, 3.0, 4.0],
-            "trail_atr": [None, 2.0, 3.0],
-            "timeout":   [None, 24, 48, 72],
+            "sl_atr":    [0.75, 1.0, 1.25, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0],
+            "tp_atr":    [None, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 5.0, 6.0, 8.0],
+            "trail_atr": [None, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 5.0],
+            "timeout":   [None, 12, 18, 24, 36, 48, 72, 96, 120, 168],
         },
     },
 }
@@ -300,6 +300,13 @@ def main():
 
     rng = random.Random(args.seed)
     families = list(SPACES.keys())
+    # Weighted sampling: after first 6500 iter of uniform search, bb_trend_rejoin
+    # and rsi2_regime accounted for ~90% of grails. Bias toward them so hit rate
+    # climbs from ~0.8% to ~3-5%.
+    family_weights = [
+        1 if f not in ("bb_trend_rejoin", "rsi2_regime") else 4
+        for f in families
+    ]
 
     stop = {"flag": False}
     def handler(*_): stop["flag"] = True; print("\n[interrupt] finishing current iter and exiting cleanly.")
@@ -311,7 +318,7 @@ def main():
     for i in range(1, args.iter + 1):
         if stop["flag"]:
             break
-        fam = rng.choice(families)
+        fam = rng.choices(families, weights=family_weights, k=1)[0]
         params = sample(SPACES[fam]["params"], rng)
         exit_cfg = sample(SPACES[fam]["exit"], rng)
         if not validate_exits(exit_cfg, fam):
