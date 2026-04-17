@@ -1092,3 +1092,4 @@
 | 1 | `zscore_revert` | ETHUSD | 1h | 127 | 70.87 | 1.408 | 47.75 | -17.34 | `{"z_len":30,"z_enter":2.0,"trend":100}` | `{"sl_atr":2.5,"tp_atr":4.0,"timeout":120}` |
 | 2 | `bb_trend_rejoin` | ETHUSD | 1h | 96 | 67.71 | 1.27 | 29.37 | -26.75 | `{"bb_len":60,"bb_mult":2.0,"trend":300}` | `{"sl_atr":3.5,"tp_atr":4.0,"trail_atr":3.5}` |
 | 1 | `bb_trend_rejoin` | ETHUSD | 1h | 150 | 66.67 | 1.239 | 21.84 | -9.84 | `{"bb_len":24,"bb_mult":2.0,"trend":75}` | `{"sl_atr":2.0,"tp_atr":8.0,"trail_atr":2.5,"timeout":24}` |
+| 1 | `zscore_revert` | ETHUSD | 1h | 131 | 66.41 | 1.413 | 48.03 | -16.0 | `{"z_len":30,"z_enter":2.0,"trend":100}` | `{"sl_atr":2.0,"tp_atr":3.0,"trail_atr":4.0,"timeout":24}` |
