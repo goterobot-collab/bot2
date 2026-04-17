@@ -2,8 +2,8 @@
 // AUTO-GENERATED FROM GRAIL LOOP  (tools/emit_pine.py)
 // Strategy family: bb_trend_rejoin
 // Asset: DOGEUSD   TF: 1h
-// In-sample metrics:  WR 82.61%  PF 3.442  ret 23.45%  DD -3.35%  trades 23
-// Params: {"bb_len": 20, "bb_mult": 2.5, "trend": 150}
+// In-sample metrics:  WR 66.67%  PF 2.244  ret 38.57%  DD -6.79%  trades 39
+// Params: {"bb_len": 24, "bb_mult": 2.0, "trend": 125}
 // Exit:   {"sl_atr": 2.0, "tp_atr": 4.0, "timeout": 48}
 strategy("GRAIL #041 bb_trend_rejoin DOGEUSD 1h",
      overlay=true,
@@ -20,9 +20,9 @@ startTs = timestamp(2021, 09, 29, 0, 0)
 inWindow = not useWindow or time >= startTs
 
 
-bbLen = 20
-bbMult = 2.5
-trendLen = 150
+bbLen = 24
+bbMult = 2.0
+trendLen = 125
 
 basis = ta.sma(close, bbLen)
 dev = bbMult * ta.stdev(close, bbLen)

@@ -2,9 +2,9 @@
 // AUTO-GENERATED FROM GRAIL LOOP  (tools/emit_pine.py)
 // Strategy family: bb_trend_rejoin
 // Asset: DOGEUSD   TF: 1h
-// In-sample metrics:  WR 62.0%  PF 2.584  ret 28.33%  DD -2.89%  trades 50
-// Params: {"bb_len": 8, "bb_mult": 2.25, "trend": 200}
-// Exit:   {"sl_atr": 2.5, "tp_atr": 4.0, "trail_atr": 3.0, "timeout": 168}
+// In-sample metrics:  WR 66.67%  PF 6.006  ret 32.68%  DD -6.08%  trades 6
+// Params: {"bb_len": 100, "bb_mult": 1.5, "trend": 175}
+// Exit:   {"sl_atr": 2.5, "tp_atr": 4.0, "trail_atr": 3.5, "timeout": 18}
 strategy("GRAIL #023 bb_trend_rejoin DOGEUSD 1h",
      overlay=true,
      initial_capital=10000,
@@ -20,9 +20,9 @@ startTs = timestamp(2021, 09, 29, 0, 0)
 inWindow = not useWindow or time >= startTs
 
 
-bbLen = 8
-bbMult = 2.25
-trendLen = 200
+bbLen = 100
+bbMult = 1.5
+trendLen = 175
 
 basis = ta.sma(close, bbLen)
 dev = bbMult * ta.stdev(close, bbLen)
@@ -39,8 +39,8 @@ if longCond and strategy.position_size == 0
     strategy.entry("long", strategy.long)
     entryBar := bar_index
     strategy.exit("sltp", "long", stop=strategy.position_avg_price - 2.5*atrV, limit=strategy.position_avg_price + 4.0*atrV)
-    strategy.exit("trail", "long", trail_price=high - 3.0*atrV, trail_offset=0)
-if strategy.position_size > 0 and not na(entryBar) and bar_index - entryBar >= 168
+    strategy.exit("trail", "long", trail_price=high - 3.5*atrV, trail_offset=0)
+if strategy.position_size > 0 and not na(entryBar) and bar_index - entryBar >= 18
     strategy.close("long")
     entryBar := na
 

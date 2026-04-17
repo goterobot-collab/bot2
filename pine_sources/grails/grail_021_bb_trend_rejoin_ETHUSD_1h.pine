@@ -2,9 +2,9 @@
 // AUTO-GENERATED FROM GRAIL LOOP  (tools/emit_pine.py)
 // Strategy family: bb_trend_rejoin
 // Asset: ETHUSD   TF: 1h
-// In-sample metrics:  WR 62.77%  PF 1.406  ret 45.33%  DD -13.35%  trades 137
-// Params: {"bb_len": 30, "bb_mult": 2.0, "trend": 100}
-// Exit:   {"sl_atr": 1.5, "timeout": 24}
+// In-sample metrics:  WR 71.03%  PF 1.593  ret 42.91%  DD -7.72%  trades 107
+// Params: {"bb_len": 24, "bb_mult": 2.25, "trend": 75}
+// Exit:   {"sl_atr": 2.0, "tp_atr": 3.5, "trail_atr": 3.5, "timeout": 120}
 strategy("GRAIL #021 bb_trend_rejoin ETHUSD 1h",
      overlay=true,
      initial_capital=10000,
@@ -20,9 +20,9 @@ startTs = timestamp(2018, 08, 02, 0, 0)
 inWindow = not useWindow or time >= startTs
 
 
-bbLen = 30
-bbMult = 2.0
-trendLen = 100
+bbLen = 24
+bbMult = 2.25
+trendLen = 75
 
 basis = ta.sma(close, bbLen)
 dev = bbMult * ta.stdev(close, bbLen)
@@ -38,8 +38,9 @@ var int entryBar = na
 if longCond and strategy.position_size == 0
     strategy.entry("long", strategy.long)
     entryBar := bar_index
-    strategy.exit("sltp", "long", stop=strategy.position_avg_price - 1.5*atrV, limit=na)
-if strategy.position_size > 0 and not na(entryBar) and bar_index - entryBar >= 24
+    strategy.exit("sltp", "long", stop=strategy.position_avg_price - 2.0*atrV, limit=strategy.position_avg_price + 3.5*atrV)
+    strategy.exit("trail", "long", trail_price=high - 3.5*atrV, trail_offset=0)
+if strategy.position_size > 0 and not na(entryBar) and bar_index - entryBar >= 120
     strategy.close("long")
     entryBar := na
 
