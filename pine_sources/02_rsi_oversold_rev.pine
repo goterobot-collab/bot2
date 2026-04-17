@@ -1,0 +1,30 @@
+//@version=5
+// RSI(14) oversold/overbought reversal — classic mean-reversion.
+// Backtest window: last 365 days (configurable). Target: ADA/DOGE/INJ/ETH × 5m/15m/1h.
+strategy("RSI14 Oversold Reversal",
+     overlay=false,
+     initial_capital=10000,
+     default_qty_type=strategy.percent_of_equity,
+     default_qty_value=100,
+     commission_type=strategy.commission.percent,
+     commission_value=0.1,
+     slippage=2)
+
+rsiLen    = input.int(14, "RSI length", minval=2)
+buyLvl    = input.int(30, "Oversold (buy cross up)")
+sellLvl   = input.int(70, "Overbought (exit cross down)")
+bars_back = input.int(365, "Backtest window (days)")
+
+startTs = timestamp(year(timenow) - bars_back/365, month(timenow), dayofmonth(timenow), 0, 0)
+inWindow = time >= startTs
+
+r = ta.rsi(close, rsiLen)
+
+if inWindow and ta.crossover(r, buyLvl) and strategy.position_size == 0
+    strategy.entry("long", strategy.long)
+if strategy.position_size > 0 and ta.crossunder(r, sellLvl)
+    strategy.close("long")
+
+hline(buyLvl,  "OS", color=color.green)
+hline(sellLvl, "OB", color=color.red)
+plot(r, title="RSI")

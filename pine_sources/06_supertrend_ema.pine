@@ -1,0 +1,34 @@
+//@version=5
+// Supertrend(10,3) + EMA200 trend filter. Long on flip-up with close > EMA200, exit on flip-down.
+strategy("Supertrend + EMA200",
+     overlay=true,
+     initial_capital=10000,
+     default_qty_type=strategy.percent_of_equity,
+     default_qty_value=100,
+     commission_type=strategy.commission.percent,
+     commission_value=0.1,
+     slippage=2)
+
+atrLen    = input.int(10,   "ATR length")
+mult      = input.float(3.0, "Factor")
+emaLen    = input.int(200,  "EMA filter")
+bars_back = input.int(365,  "Backtest window (days)")
+
+startTs = timestamp(year(timenow) - bars_back/365, month(timenow), dayofmonth(timenow), 0, 0)
+inWindow = time >= startTs
+
+[st, dir] = ta.supertrend(mult, atrLen)
+trend = ta.ema(close, emaLen)
+
+flipUp = dir == -1 and dir[1] == 1   // Pine's supertrend dir: -1 = bullish trail, 1 = bearish
+flipDn = dir == 1 and dir[1] == -1
+
+longCond = inWindow and flipUp and close > trend
+
+if longCond and strategy.position_size == 0
+    strategy.entry("long", strategy.long)
+if strategy.position_size > 0 and flipDn
+    strategy.close("long")
+
+plot(st,    color=color.new(color.teal, 0), title="Supertrend")
+plot(trend, color=color.orange,             title="EMA200")

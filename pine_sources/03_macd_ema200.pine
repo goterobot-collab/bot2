@@ -1,0 +1,33 @@
+//@version=5
+// MACD(12,26,9) crossover + EMA200 trend filter.
+// Long-only. Exit on MACD crossunder signal.
+strategy("MACD Cross + EMA200",
+     overlay=true,
+     initial_capital=10000,
+     default_qty_type=strategy.percent_of_equity,
+     default_qty_value=100,
+     commission_type=strategy.commission.percent,
+     commission_value=0.1,
+     slippage=2)
+
+fast      = input.int(12,  "MACD fast")
+slow      = input.int(26,  "MACD slow")
+sig       = input.int(9,   "Signal")
+emaLen    = input.int(200, "EMA trend filter")
+bars_back = input.int(365, "Backtest window (days)")
+
+startTs = timestamp(year(timenow) - bars_back/365, month(timenow), dayofmonth(timenow), 0, 0)
+inWindow = time >= startTs
+
+[macdLine, sigLine, _h] = ta.macd(close, fast, slow, sig)
+trend = ta.ema(close, emaLen)
+
+longCond = inWindow and ta.crossover(macdLine, sigLine) and close > trend
+exitCond = ta.crossunder(macdLine, sigLine)
+
+if longCond and strategy.position_size == 0
+    strategy.entry("long", strategy.long)
+if strategy.position_size > 0 and exitCond
+    strategy.close("long")
+
+plot(trend, color=color.orange, title="EMA200")
