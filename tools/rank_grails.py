@@ -9,7 +9,7 @@ Composite score = ret_pct * pf * (trades>=8 ? 1 : trades/8) * (dd>-15 ? 1 : 0.6)
 import json
 from pathlib import Path
 
-SRC = Path("results/grails_loop.jsonl")
+SRC = Path("results/grails_loop_wf.jsonl")  # walk-forward v2
 OUT = Path("results/top_grails.md")
 
 
@@ -21,17 +21,28 @@ def count_by_family(d: dict) -> str:
 
 
 def score(r):
-    """Composite score that penalizes small-sample luck and deep drawdowns.
-    PF capped at 5.0 so a 6-trade WR=100%/PF=999 can't dominate a 50-trade
-    WR=75%/PF=2.5 that's more likely to hold out-of-sample."""
+    """Walk-forward-aware score. Require grail filter on full + both halves.
+    Reward consistency between halves (penalize if one half is much worse).
+    """
     ret = r["ret"]; pf = r["pf"]; dd = r["dd"]; t = r["trades"]; wr = r["wr"]
-    if ret <= 0 or pf <= 1 or wr <= 60 or dd <= -30 or t <= 5:
+    if ret <= 0 or pf <= 1 or wr <= 60 or dd <= -30 or t < 50:
         return -1e9
+    # walk-forward constraints (if present in the row)
+    if "h1_wr" in r:
+        if r["h1_wr"] <= 60 or r["h2_wr"] <= 60: return -1e9
+        if r["h1_ret"] <= 0 or r["h2_ret"] <= 0: return -1e9
+        if r["h1_pf"] <= 1 or r["h2_pf"] <= 1:   return -1e9
+        if r["h1_dd"] <= -30 or r["h2_dd"] <= -30: return -1e9
+        if r["h1_trades"] < 20 or r["h2_trades"] < 20: return -1e9
     pf_capped = min(pf, 5.0)
-    # sigmoid-ish trade count penalty: 0.4 at 6 trades, 0.9 at 30, 1.0 at 100+
-    trade_pen = min(1.0, 0.4 + 0.6 * (t - 6) / (100 - 6)) if t >= 6 else 0.0
+    trade_pen = min(1.0, 0.4 + 0.6 * (t - 50) / (200 - 50)) if t >= 50 else 0.0
     dd_pen = 1.0 if dd > -10 else (0.8 if dd > -20 else 0.6)
-    return ret * pf_capped * trade_pen * dd_pen
+    # consistency bonus: reward when h1 and h2 WR are close
+    cons = 1.0
+    if "h1_wr" in r:
+        gap = abs(r["h1_wr"] - r["h2_wr"])
+        cons = 1.0 if gap < 10 else (0.85 if gap < 20 else 0.7)
+    return ret * pf_capped * trade_pen * dd_pen * cons
 
 
 def main():

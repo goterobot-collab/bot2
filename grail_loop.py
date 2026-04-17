@@ -348,17 +348,28 @@ def validate_exits(e: dict, fam: str) -> bool:
 
 
 def evaluate(df, fam, params, exit_cfg, fee, slippage, asset, tf):
+    """Walk-forward: split data 50/50. A grail must pass filter in BOTH
+    halves AND on full history. Returns dict with 3 metric sets or None."""
     builder = SPACES[fam]["sig"]
     try:
         ent, ex = builder(df, params)
     except Exception:
         return None
-    trades = simulate(df, ent, ex, fee=fee, slippage=slippage,
-                      sl_atr=exit_cfg.get("sl_atr"),
-                      tp_atr=exit_cfg.get("tp_atr"),
-                      trail_atr=exit_cfg.get("trail_atr"),
-                      timeout=exit_cfg.get("timeout"))
-    return metrics_from_trades(fam, asset, tf, trades, df)
+
+    def _eval(sub_df, sub_ent, sub_ex):
+        trades = simulate(sub_df, sub_ent, sub_ex, fee=fee, slippage=slippage,
+                          sl_atr=exit_cfg.get("sl_atr"),
+                          tp_atr=exit_cfg.get("tp_atr"),
+                          trail_atr=exit_cfg.get("trail_atr"),
+                          timeout=exit_cfg.get("timeout"))
+        return metrics_from_trades(fam, asset, tf, trades, sub_df)
+
+    n = len(df)
+    half = n // 2
+    m_full = _eval(df, ent, ex)
+    m1 = _eval(df.iloc[:half], ent.iloc[:half], ex.iloc[:half])
+    m2 = _eval(df.iloc[half:], ent.iloc[half:], ex.iloc[half:])
+    return {"full": m_full, "h1": m1, "h2": m2}
 
 
 def write_grail_header(path: Path, min_wr, grail_dd, min_pf):
@@ -405,7 +416,9 @@ def main():
     ap.add_argument("--iter", type=int, default=500)
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--min-wr", type=float, default=0.60)
-    ap.add_argument("--min-trades", type=int, default=5)
+    ap.add_argument("--min-trades", type=int, default=50,
+                    help="Minimum trades over full history (v2 walk-forward default: 50; "
+                         "each half must show >= min_trades/2)")
     ap.add_argument("--min-pf", type=float, default=1.0)
     ap.add_argument("--grail-dd", type=float, default=30.0)
     ap.add_argument("--fee", type=float, default=0.001)
@@ -415,8 +428,8 @@ def main():
     args = ap.parse_args()
 
     OUT_DIR.mkdir(exist_ok=True)
-    grails_md = OUT_DIR / "grails_loop.md"
-    grails_jsonl = OUT_DIR / "grails_loop.jsonl"
+    grails_md = OUT_DIR / "grails_loop_wf.md"
+    grails_jsonl = OUT_DIR / "grails_loop_wf.jsonl"
     write_grail_header(grails_md, args.min_wr, args.grail_dd, args.min_pf)
     jsonl_f = grails_jsonl.open("a")
 
@@ -455,27 +468,37 @@ def main():
         # pick a random (asset, tf)
         asset, tf = rng.choice(list(dfs.keys()))
         df = dfs[(asset, tf)]
-        m = evaluate(df, fam, params, exit_cfg, args.fee, args.slippage, asset, tf)
-        if m is None:
+        res = evaluate(df, fam, params, exit_cfg, args.fee, args.slippage, asset, tf)
+        if res is None:
             continue
+        m = res["full"]; m1 = res["h1"]; m2 = res["h2"]
         row = {
             "iter": i, "strategy": fam, "asset": asset, "tf": tf,
             "params": params, "exit_cfg": exit_cfg,
+            # full-history metrics
             "trades": m.trades, "wr": m.wr, "pf": m.profit_factor,
             "ret": m.total_return_pct, "dd": m.max_drawdown_pct,
+            # walk-forward halves
+            "h1_trades": m1.trades, "h1_wr": m1.wr, "h1_pf": m1.profit_factor,
+            "h1_ret": m1.total_return_pct, "h1_dd": m1.max_drawdown_pct,
+            "h2_trades": m2.trades, "h2_wr": m2.wr, "h2_pf": m2.profit_factor,
+            "h2_ret": m2.total_return_pct, "h2_dd": m2.max_drawdown_pct,
         }
         jsonl_f.write(json.dumps(row) + "\n")
 
-        # track best return seen
+        # track best full-history return
         if m.total_return_pct > best_ret and m.trades > args.min_trades:
             best_ret = m.total_return_pct; best_row = row
 
-        # grail?
-        is_grail = (m.trades > args.min_trades
-                    and m.wr > args.min_wr * 100
-                    and m.total_return_pct > 0
-                    and m.max_drawdown_pct > -args.grail_dd
-                    and m.profit_factor > args.min_pf)
+        # strict walk-forward grail: must pass filter on full AND both halves.
+        def passes(mm, min_tr):
+            return (mm.trades > min_tr and mm.wr > args.min_wr * 100
+                    and mm.total_return_pct > 0
+                    and mm.max_drawdown_pct > -args.grail_dd
+                    and mm.profit_factor > args.min_pf)
+        # require min_trades on full, and at least min_trades/2 in each half
+        half_min = max(10, args.min_trades // 2)
+        is_grail = passes(m, args.min_trades) and passes(m1, half_min) and passes(m2, half_min)
         if is_grail:
             grail_count += 1
             g = Grail(strategy=fam, asset=asset, tf=tf, params=params, exit_cfg=exit_cfg,
