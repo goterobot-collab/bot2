@@ -31,8 +31,13 @@ set -euo pipefail
 : "${GH_TOKEN:?need GH_TOKEN env var (ghp_xxx or github_pat_xxx)}"
 : "${GH_REPO:=goterobot-collab/bot2}"
 : "${GH_BRANCH:=claude/verify-trading-strategies-Fnf0P}"
+# Push snapshots here to avoid collisions with the sandbox branch.
+: "${PUSH_BRANCH:=hetz/sandbox-runs}"
 : "${WORK_DIR:=/root/bot2}"
 : "${COMMIT_EVERY_MIN:=30}"
+# Seed base: pick a range that does NOT overlap the sandbox (uses 100000-199999).
+# Default 200000+ for first Hetzner box; use 300000 for a second, etc.
+: "${SEED_BASE:=200000}"
 
 echo "== Grail Sandbox Setup =="
 echo "Repo:   $GH_REPO"
@@ -96,9 +101,9 @@ echo "[info] launching $N_WORKERS workers in tmux session 'grail'"
 
 mkdir -p "$WORK_DIR/logs"
 tmux kill-session -t grail 2>/dev/null || true
-tmux new-session -d -s grail -n w1 "cd $WORK_DIR && python3 grail_loop.py --iter 500000 --seed 100001 --report-every 50000 2>&1 | tee logs/hetz_w1.log"
+tmux new-session -d -s grail -n w1 "cd $WORK_DIR && python3 grail_loop.py --iter 500000 --seed $((SEED_BASE+1)) --report-every 50000 2>&1 | tee logs/hetz_w1.log"
 for i in $(seq 2 $N_WORKERS); do
-    tmux new-window -t grail -n "w$i" "cd $WORK_DIR && python3 grail_loop.py --iter 500000 --seed $((100000+i)) --report-every 50000 2>&1 | tee logs/hetz_w$i.log"
+    tmux new-window -t grail -n "w$i" "cd $WORK_DIR && python3 grail_loop.py --iter 500000 --seed $((SEED_BASE+i)) --report-every 50000 2>&1 | tee logs/hetz_w$i.log"
 done
 
 # ---- 7. committer service --------------------------------------------------
@@ -106,12 +111,17 @@ cat > /usr/local/bin/grail-commit.sh <<EOF
 #!/usr/bin/env bash
 set -e
 cd $WORK_DIR
+# ensure push branch exists (auto-create from current HEAD if missing)
+if ! git show-ref --verify --quiet refs/heads/$PUSH_BRANCH; then
+    git checkout -b $PUSH_BRANCH
+fi
+git checkout $PUSH_BRANCH
 git add results/*.md results/*.json 2>/dev/null || true
 if ! git diff --cached --quiet; then
     git -c user.email=hetz-sandbox@local \
         -c user.name="hetz-sandbox" \
-        commit -m "hetz: auto-snapshot \$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-    git push origin $GH_BRANCH || true
+        commit -m "hetz: auto-snapshot seed_base=$SEED_BASE \$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+    git push -u origin $PUSH_BRANCH || true
 fi
 EOF
 chmod +x /usr/local/bin/grail-commit.sh
