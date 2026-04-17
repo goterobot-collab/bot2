@@ -1192,3 +1192,11 @@
 | 7 | `williams_revert` | BTCUSD | 4h | 70 | 65.71 | 1.608 | 55.42 | -14.91 | `{"w_len":5,"os":95,"ob":20,"trend":200}` | `{"sl_atr":2.0,"tp_atr":5.0,"trail_atr":3.0}` |
 | 6 | `williams_revert` | BTCUSD | 4h | 264 | 63.26 | 1.095 | 13.23 | -27.37 | `{"w_len":7,"os":80,"ob":50,"trend":50}` | `{"sl_atr":2.5,"tp_atr":4.0,"timeout":48}` |
 | 8 | `williams_revert` | BTCUSD | 4h | 57 | 68.42 | 1.943 | 79.51 | -10.53 | `{"w_len":7,"os":95,"ob":20,"trend":300}` | `{"sl_atr":2.0,"tp_atr":3.0,"trail_atr":3.0,"timeout":72}` |
+| 1 | `williams_revert` | BTCUSD | 4h | 72 | 68.06 | 1.878 | 85.53 | -10.91 | `{"w_len":5,"os":95,"ob":20,"trend":300}` | `{"sl_atr":2.0,"trail_atr":4.0,"timeout":12}` |
+| 1 | `williams_revert` | BTCUSD | 4h | 56 | 66.07 | 2.12 | 68.12 | -9.2 | `{"w_len":5,"os":95,"ob":20,"trend":100}` | `{"sl_atr":2.5,"tp_atr":4.0}` |
+| 1 | `bb_trend_rejoin` | ETHUSD | 4h | 67 | 74.63 | 1.884 | 98.47 | -26.38 | `{"bb_len":20,"bb_mult":1.75,"trend":100}` | `{"sl_atr":2.0,"tp_atr":3.5,"trail_atr":3.5,"timeout":96}` |
+| 2 | `williams_revert` | ETHUSD | 1h | 91 | 70.33 | 1.287 | 22.9 | -16.61 | `{"w_len":21,"os":95,"ob":50,"trend":300}` | `{"sl_atr":3.0,"tp_atr":4.0,"trail_atr":4.0}` |
+| 1 | `stoch_cross` | BTCUSD | 4h | 73 | 63.01 | 1.295 | 34.56 | -29.86 | `{"k_len":14,"d_len":5,"os":25,"ob":85,"trend":200}` | `{"sl_atr":2.0,"tp_atr":3.0,"timeout":48}` |
+| 1 | `bb_trend_rejoin` | BTCUSD | 1d | 91 | 74.73 | 1.678 | 127.74 | -24.21 | `{"bb_len":8,"bb_mult":1.2,"trend":150}` | `{"sl_atr":2.0,"tp_atr":5.0,"trail_atr":2.0,"timeout":36}` |
+| 2 | `williams_revert` | BTCUSD | 4h | 149 | 66.44 | 1.176 | 19.99 | -24.35 | `{"w_len":5,"os":90,"ob":40,"trend":200}` | `{"sl_atr":2.5,"trail_atr":3.0,"timeout":72}` |
+| 2 | `stoch_cross` | BTCUSD | 4h | 61 | 67.21 | 1.895 | 94.84 | -13.42 | `{"k_len":9,"d_len":3,"os":20,"ob":85,"trend":300}` | `{"sl_atr":2.5,"tp_atr":4.0,"trail_atr":3.0,"timeout":72}` |
