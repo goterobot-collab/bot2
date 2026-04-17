@@ -1,0 +1,44 @@
+//@version=5
+// RSI pullback in established uptrend: EMA50 > EMA200, EMA200 rising, RSI
+// retraces to <40 and then crosses back above 40. 1.5×ATR SL + 2.5×ATR trail.
+strategy("RSI Pullback + Trend + ATR",
+     overlay=true, initial_capital=10000,
+     default_qty_type=strategy.percent_of_equity, default_qty_value=100,
+     commission_type=strategy.commission.percent, commission_value=0.1, slippage=2)
+
+rsiLen    = input.int(14,  "RSI length")
+rsiBuy    = input.int(40,  "RSI cross level")
+rsiExit   = input.int(70,  "RSI exit level")
+fastEma   = input.int(50,  "Fast EMA")
+slowEma   = input.int(200, "Slow EMA")
+slopeBars = input.int(20,  "EMA slope lookback")
+atrLen    = input.int(14,  "ATR length")
+slMult    = input.float(1.5, "Hard SL × ATR")
+trailMult = input.float(2.5, "Trail × ATR")
+bars_back = input.int(365, "Backtest window (days)")
+
+startTs = timestamp(year(timenow) - bars_back/365, month(timenow), dayofmonth(timenow), 0, 0)
+inWindow = time >= startTs
+
+e50  = ta.ema(close, fastEma)
+e200 = ta.ema(close, slowEma)
+ris  = e200 > e200[slopeBars]
+r    = ta.rsi(close, rsiLen)
+a    = ta.atr(atrLen)
+
+longCond = inWindow and e50 > e200 and ris and ta.crossover(r, rsiBuy)
+
+var float trail = na
+if longCond and strategy.position_size == 0
+    strategy.entry("long", strategy.long)
+    trail := close - trailMult*a
+    strategy.exit("sl", "long", stop=close - slMult*a)
+
+if strategy.position_size > 0
+    trail := math.max(nz(trail), high - trailMult*a)
+    if r > rsiExit or close < trail
+        strategy.close("long")
+        trail := na
+
+plot(e50,  color=color.blue)
+plot(e200, color=color.orange)

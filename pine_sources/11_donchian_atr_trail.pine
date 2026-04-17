@@ -1,0 +1,31 @@
+//@version=5
+// Donchian(20) breakout + 3×ATR(14) trailing stop. Turtle-style trend follower.
+strategy("Donchian(20) + ATR Trail",
+     overlay=true, initial_capital=10000,
+     default_qty_type=strategy.percent_of_equity, default_qty_value=100,
+     commission_type=strategy.commission.percent, commission_value=0.1, slippage=2)
+
+dcLen     = input.int(20,  "Donchian length")
+atrLen    = input.int(14,  "ATR length")
+trailMult = input.float(3.0, "Trail × ATR")
+bars_back = input.int(365, "Backtest window (days)")
+
+startTs = timestamp(year(timenow) - bars_back/365, month(timenow), dayofmonth(timenow), 0, 0)
+inWindow = time >= startTs
+
+upper = ta.highest(high, dcLen)[1]
+a     = ta.atr(atrLen)
+
+longCond = inWindow and close > upper
+
+var float trail = na
+if longCond and strategy.position_size == 0
+    strategy.entry("long", strategy.long)
+    trail := close - trailMult*a
+
+if strategy.position_size > 0
+    trail := math.max(nz(trail), high - trailMult*a)
+    strategy.exit("trail", "long", stop=trail)
+
+plot(upper, color=color.teal, title="DC upper")
+plot(strategy.position_size > 0 ? trail : na, color=color.red, title="Trail")

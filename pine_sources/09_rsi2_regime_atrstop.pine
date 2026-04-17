@@ -1,0 +1,42 @@
+//@version=5
+// RSI(2) Connors + rising-SMA200 regime filter + hard ATR stop + timeout.
+// "Grail-aim": cap losses so asymmetric R:R doesn't kill the 60%+ WR edge.
+strategy("RSI2 Regime + ATR Stop",
+     overlay=true, initial_capital=10000,
+     default_qty_type=strategy.percent_of_equity, default_qty_value=100,
+     commission_type=strategy.commission.percent, commission_value=0.1, slippage=2)
+
+rsiLen    = input.int(2,   "RSI length")
+rsiBuy    = input.int(10,  "RSI buy <")
+fastLen   = input.int(5,   "Exit SMA")
+slowLen   = input.int(200, "Trend SMA")
+slopeBars = input.int(20,  "SMA slope lookback")
+atrLen    = input.int(14,  "ATR length")
+slMult    = input.float(2.0, "Hard SL × ATR")
+tmo       = input.int(24,  "Timeout bars")
+bars_back = input.int(365, "Backtest window (days)")
+
+startTs = timestamp(year(timenow) - bars_back/365, month(timenow), dayofmonth(timenow), 0, 0)
+inWindow = time >= startTs
+
+slow   = ta.sma(close, slowLen)
+fast   = ta.sma(close, fastLen)
+r      = ta.rsi(close, rsiLen)
+rising = slow > slow[slopeBars]
+a      = ta.atr(atrLen)
+
+longCond = inWindow and rising and close > slow and r < rsiBuy
+sig_exit = close > fast
+
+var int entryBar = na
+if longCond and strategy.position_size == 0
+    strategy.entry("long", strategy.long)
+    entryBar := bar_index
+    strategy.exit("x", "long", stop=close - slMult*a)
+
+if strategy.position_size > 0 and (sig_exit or (not na(entryBar) and bar_index - entryBar >= tmo))
+    strategy.close("long")
+    entryBar := na
+
+plot(slow, color=color.orange)
+plot(fast, color=color.blue)
