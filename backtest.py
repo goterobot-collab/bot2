@@ -74,7 +74,8 @@ def simulate(df: pd.DataFrame, entry: pd.Series, exit_: pd.Series,
     e = entry.shift(1).fillna(False).values
     x = exit_.shift(1).fillna(False).values
     op = df["open"].values
-    ts = df.index.astype("int64") // 10**9
+    ts = ((df.index - pd.Timestamp("1970-01-01", tz="UTC"))
+          .total_seconds().astype("int64").values)
     n = len(df)
     trades: list[Trade] = []
     pos = False
@@ -178,20 +179,28 @@ def run_all(min_wr: float, min_trades: int, fee: float, slippage: float):
         for m in all_metrics:
             w.writerow(asdict(m))
 
-    # qualifying: WR>min_wr AND trades>min_trades AND total_return_pct>0
+    # qualifying: WR>min_wr AND trades>min_trades (per user spec — return is logged but not filtered)
     qual = [m for m in all_metrics
-            if m.trades > min_trades and m.wr > min_wr * 100 and m.total_return_pct > 0]
+            if m.trades > min_trades and m.wr > min_wr * 100]
     qual.sort(key=lambda x: (-x.wr, -x.profit_factor))
 
     # summary.md
     md = OUT_DIR / "summary.md"
+    losers = sum(1 for m in qual if m.total_return_pct <= 0)
     lines = [
         "# Backtest Summary — qualifying combos",
         "",
-        f"- Filter: WR > {min_wr*100:.0f}% AND trades > {min_trades} AND total return > 0",
+        f"- Filter: WR > {min_wr*100:.0f}% AND trades > {min_trades}",
         f"- Fees: {fee*100:.3f}%/side, slippage: {slippage*100:.3f}%/side",
         f"- Execution: next-bar open, long-only, one position at a time",
         f"- Qualifying combos: **{len(qual)}** / {len(all_metrics)}",
+    ]
+    if losers:
+        lines.append(
+            f"- ⚠ {losers} of {len(qual)} qualifying rows have **negative total return** — "
+            f"high WR with asymmetric R:R (big losses, small wins). WR alone is not an edge."
+        )
+    lines += [
         "",
         "| # | Strategy | Asset | TF | Trades | WR % | PF | Total Ret % | Max DD % |",
         "|---|----------|-------|----|--------|------|-----|-------------|----------|",
