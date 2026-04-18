@@ -367,7 +367,5 @@ def main():
 
     shortlist, grails = run(batches, label, sp, pp, prog)
     print(f"\n{label} DONE: {grails} grails, {len(shortlist)} tasks")
-
-
 if __name__ == "__main__":
     main()
