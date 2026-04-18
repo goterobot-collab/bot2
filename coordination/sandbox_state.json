@@ -1,6 +1,6 @@
 {
   "_doc": "Master loop state. Each task has stage, status (pending|running|done|failed), started_at, finished_at, log_file. Master loop reads this to know what to do next.",
-  "_updated_at": "2026-04-18T14:08:47+00:00",
+  "_updated_at": "2026-04-18T14:09:47+00:00",
   "_max_parallel_workers": 4,
   "_priority_queue": [
     "HUNTER1_5m_15m",
@@ -72,12 +72,13 @@
       "last_check": "2026-04-18T14:04:47+00:00"
     },
     "HUNTER3_5m_15m": {
-      "status": "running",
+      "status": "done",
       "cmd": "python3 tools/hunter_runner.py --wave h3 --tfs 5m 15m",
       "log_file": "logs/hunter3_5m15m.log",
       "next_on_done": "HUNTER2_1h_4h_1d",
       "started_at": "2026-04-18T14:04:47+00:00",
-      "last_check": "2026-04-18T14:04:47+00:00"
+      "last_check": "2026-04-18T14:04:47+00:00",
+      "finished_at": "2026-04-18T14:09:17+00:00"
     },
     "HUNTER2_1h_4h_1d": {
       "status": "running",

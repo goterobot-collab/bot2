@@ -1,0 +1,131 @@
+{
+  "TV_VolumeDelta_Imbalance": {
+    "best": {
+      "sym": "INJ",
+      "tf": "15m",
+      "wr": 100.0,
+      "trades": 4,
+      "pf": 999.0,
+      "params": {
+        "lookback": 96,
+        "thresh": 0.8344454576047019
+      }
+    },
+    "passing_combos": 5,
+    "all_passing": [
+      {
+        "sym": "INJ",
+        "tf": "15m",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "lookback": 96,
+          "thresh": 0.8344454576047019
+        }
+      },
+      {
+        "sym": "PENDLE",
+        "tf": "15m",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "lookback": 62,
+          "thresh": 0.8565276512871729
+        }
+      },
+      {
+        "sym": "SFP",
+        "tf": "15m",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "lookback": 73,
+          "thresh": 0.869211216508457
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "15m",
+        "wr": 87.5,
+        "trades": 8,
+        "pf": 31.93,
+        "params": {
+          "lookback": 48,
+          "thresh": 0.8596161954736332
+        }
+      },
+      {
+        "sym": "JTO",
+        "tf": "5m",
+        "wr": 72.7,
+        "trades": 11,
+        "pf": 1.22,
+        "params": {
+          "lookback": 71,
+          "thresh": 0.8611308166908993
+        }
+      }
+    ]
+  },
+  "TV_TOD_WR_Pocket": {
+    "best": {
+      "sym": "DYDX",
+      "tf": "15m",
+      "wr": 100.0,
+      "trades": 4,
+      "pf": 999.0,
+      "params": {
+        "lookback": 486,
+        "wr_thresh": 0.6323413584381942
+      }
+    },
+    "passing_combos": 1,
+    "all_passing": [
+      {
+        "sym": "DYDX",
+        "tf": "15m",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "lookback": 486,
+          "wr_thresh": 0.6323413584381942
+        }
+      }
+    ]
+  },
+  "TV_VPIN_Toxic_Flow": {
+    "best": {
+      "sym": "AVAX",
+      "tf": "5m",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "bucket": 193,
+        "sigma_len": 83,
+        "hi": 0.6879586568973222,
+        "lo": 0.21415457610152147
+      }
+    },
+    "passing_combos": 1,
+    "all_passing": [
+      {
+        "sym": "AVAX",
+        "tf": "5m",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "bucket": 193,
+          "sigma_len": 83,
+          "hi": 0.6879586568973222,
+          "lo": 0.21415457610152147
+        }
+      }
+    ]
+  }
+}
