@@ -1,6 +1,6 @@
 # Sandbox Canary Report (Paso 1)
 
-Generated: 2026-04-18T01:15:12.435047+00:00
+Generated: 2026-04-18T01:35:16.823056+00:00
 
 | ID | Strategy | Sym | TF | Expected WR | Observed WR | Gap | Status |
 |----|----------|-----|----|-------------|-------------|-----|--------|
