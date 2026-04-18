@@ -19,7 +19,7 @@
     "sandbox": {
       "host": "anthropic-sandbox-bot2",
       "role": "grail hunt (11 novel families) + anti-overfit pipeline",
-      "updated_at": "2026-04-18T00:00:00Z",
+      "updated_at": "2026-04-18T00:15:00Z",
       "claim": {
         "batch":          "novel_families_hunt",
         "assets":         ["BTCUSD", "ETHUSD", "ADAUSD", "DOGEUSD"],
@@ -29,7 +29,9 @@
         "iterations":     200000,
         "started_at":     "2026-04-18T00:05:00Z",
         "expected_end":   "2026-04-18T04:00:00Z",
-        "progress_file":  "results/sandbox_progress.json"
+        "progress_file":  "results/sandbox_progress.json",
+        "blocker":        "SETUP_FAIL reported to mac_inbox.jsonl: cannot fetch SFP/AGT/SWARMS/INJ/DYDX/GMX/OP/ARB/LINK/AVAX/MATIC/NEAR/FTM candles. All Binance endpoints 403. Paso 1 canary BLOCKED pending Mac push of candle CSVs or alternate canary assignment.",
+        "canary_status":  "BLOCKED_ON_DATA"
       }
     },
     "mac": {
