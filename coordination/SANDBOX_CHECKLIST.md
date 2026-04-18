@@ -5,6 +5,23 @@
 **Date**: 2026-04-17
 **Goal**: (1) validar que el pipeline corre bien usando **canarios conocidos**, (2) testear estrategias **nuevas** de HUNTER 1 y HUNTER 2.
 
+## 📊 Totales empíricos (counts canónicos via `len(mod.STRATEGY_EXPORT)`)
+
+| Fuente | Strategies | Combos (× 20 symbols × 5 TFs) |
+|--------|-----------|-------------------------------|
+| Canary (Paso 1, re-test conocidos) | **3** | 3 |
+| HUNTER 1 nuevas — batches 3566-3569 | **20** (5×4) | 2,000 |
+| HUNTER 2 nuevas — batch 3594 | **50** | 5,000 |
+| HUNTER 2 nuevas — batch 3598 | **49** | 4,900 |
+| **TOTAL NUEVAS** | **119 strategies** | **~11,900 combos** |
+| Re-validar ya-testeadas (Paso 5 opcional) | 38 grails | 38 |
+
+**Excluidos del checklist**:
+- Batches 3560-3565 (30 strats) — BLOQUEADOS por bug `fn` vs `gen` (esperando fix HUNTER 1)
+- Batches 3578/3579 — drafts sin `STRATEGY_EXPORT` (no runnables)
+- Batches micro legacy `tv2_batch_micro*` (~400 strats) — ya parcialmente testeados
+
+
 ---
 
 ## Flujo general
@@ -96,11 +113,13 @@ Params exactos en `coordination/already_tested_grails.json` + `coordination/alre
 
 **Qué son**: HUNTER 2 catálogo 26+ batches Pine convertidos a Python por HUNTER 1. Los más nuevos aún no testeados.
 
-**Batches `strategies_v7/` de origen HUNTER 2** (Pine→Python):
-- `strategies_tv2_batch3578.py` (20K, ~15-20 strats)
-- `strategies_tv2_batch3579.py` (20K)
-- `strategies_tv2_batch3594.py` — Time cycles + seasonality (25 strats)
-- `strategies_tv2_batch3598.py` — SMC/ICT + Harmonic + Patterns (49 strats)
+**Batches `strategies_v7/` de origen HUNTER 2 — counts canónicos via `len(mod.STRATEGY_EXPORT)`**:
+- ~~`strategies_tv2_batch3578.py`~~ ❌ sin STRATEGY_EXPORT (draft — skip)
+- ~~`strategies_tv2_batch3579.py`~~ ❌ sin STRATEGY_EXPORT (draft — skip)
+- `strategies_tv2_batch3594.py` — Time cycles + seasonality → **50 strats** ✓
+- `strategies_tv2_batch3598.py` — SMC/ICT + Harmonic + Patterns → **49 strats** ✓
+
+**Total HUNTER 2 runnable: 99 strategies**
 
 Batches micro legacy (HUNTER 2 anteriores, sub-set testeado):
 - `strategies_v7/tv2_batch_micro*.py` (20 archivos, ~400 strats totales)
@@ -115,7 +134,7 @@ Batches micro legacy (HUNTER 2 anteriores, sub-set testeado):
 - [ ] Cargar cada batch 3578/3579/3594/3598 vía importlib
 - [ ] Verificar helpers BB/RSI/VWAP/ATR siguen convenciones correctas (grep visual en el archivo)
 - [ ] Si ves un bug de conversión → abrir issue con prefijo `H2_CONVERSION_BUG:`
-- [ ] Armar queue: ~110 strats × 20 symbols × 5 TFs = **11,000 combos**
+- [ ] Armar queue: **99 strats × 20 symbols × 5 TFs = 9,900 combos**
 - [ ] Split en slices de 1,000 combos, reclamar 1 slice en `queue_claims.json`
 - [ ] Correr Optuna → forensic → R24 gate
 - [ ] Escribir `results/sandbox_h2_SHORTLIST.md`
