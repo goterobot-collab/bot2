@@ -65,22 +65,28 @@ CANARIES = [
 
 
 def load_candles(sym: str, src_tf: str, target_tf: str) -> pd.DataFrame:
-    """Load gzipped CSV, resample if needed, return df with DatetimeIndex."""
+    """Load gzipped CSV, resample if needed, return df with DatetimeIndex.
+
+    Keeps the `ts` column since some strategies (e.g. batch704 TV_*) need it.
+    """
     path = ROOT / "data" / "candles" / f"{sym}_{src_tf}.csv.gz"
     if not path.exists():
         raise FileNotFoundError(f"missing {path}")
     df = pd.read_csv(path, compression="gzip")
     df["dt"] = pd.to_datetime(df["ts"], unit="ms", utc=True)
     df = df.set_index("dt").sort_index()
-    df = df[["open", "high", "low", "close", "volume"]].astype(float)
+    df = df[["ts", "open", "high", "low", "close", "volume"]]
+    df["ts"] = df["ts"].astype("int64")
+    for col in ("open", "high", "low", "close", "volume"):
+        df[col] = df[col].astype(float)
     if src_tf == target_tf:
         return df
-    # Resample up
     rule = {"5m": "5min", "15m": "15min", "1h": "1h", "4h": "4h", "1d": "1D"}[target_tf]
     r = df.resample(rule).agg({
-        "open": "first", "high": "max", "low": "min",
+        "ts": "first", "open": "first", "high": "max", "low": "min",
         "close": "last", "volume": "sum",
     }).dropna()
+    r["ts"] = r["ts"].astype("int64")
     return r
 
 
@@ -112,7 +118,9 @@ def get_strategy_fn(name: str):
         from strategy_factory import gen_vwap_double
         return gen_vwap_double
     if name == "TV_Daily_Close_Signal":
-        return None  # impl not in repo
+        sys.path.insert(0, str(ROOT / "strategies_v7"))
+        from strategies_tv2_batch704 import gen_TV_Daily_Close_Signal
+        return gen_TV_Daily_Close_Signal
     return None
 
 
