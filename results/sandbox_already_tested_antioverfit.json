@@ -1,0 +1,1159 @@
+[
+  {
+    "strategy": "B5_MA_Envelope_3",
+    "symbol": "SFP/USDT:USDT",
+    "timeframe": "1d",
+    "best_params": {
+      "ema_period": 50,
+      "envelope_pct": 0.03389162051698195
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 85.2,
+    "full_pnl": 548.04,
+    "full_trades": 210,
+    "full_max_dd": 119.06,
+    "full_sharpe": 2.44,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 198,
+      "SL": 12
+    },
+    "lev_pnl": 548.04,
+    "candles": 1870,
+    "days": 1869.0,
+    "v3_original_wr": 84.6,
+    "v3_original_pnl": 740.26,
+    "wr_improvement": 0.6,
+    "status": "MATCH",
+    "observed_wr": 85.2,
+    "observed_trades": 210,
+    "gap_pp": 0.0
+  },
+  {
+    "strategy": "B2_MeanRev_EMA21",
+    "symbol": "SFP/USDT:USDT",
+    "timeframe": "1d",
+    "best_params": {
+      "ema_period": 48,
+      "buy_pct": -3.547253606674856,
+      "sell_pct": 1.0658626612227926
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 84.5,
+    "full_pnl": 560.48,
+    "full_trades": 220,
+    "full_max_dd": 147.52,
+    "full_sharpe": 2.36,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 206,
+      "SL": 14
+    },
+    "lev_pnl": 560.48,
+    "candles": 1870,
+    "days": 1869.0,
+    "v3_original_wr": 85.2,
+    "v3_original_pnl": 723.48,
+    "wr_improvement": -0.7,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B6_Rubber_Band_5",
+    "symbol": "SFP/USDT:USDT",
+    "timeframe": "1d",
+    "best_params": {
+      "ema_period": 47,
+      "buy_dist_pct": -3.507250684105686,
+      "sell_dist_pct": 2.0409974811853884
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 84.2,
+    "full_pnl": 526.27,
+    "full_trades": 221,
+    "full_max_dd": 150.64,
+    "full_sharpe": 2.24,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 208,
+      "SL": 13
+    },
+    "lev_pnl": 526.27,
+    "candles": 1870,
+    "days": 1869.0,
+    "v3_original_wr": 84.0,
+    "v3_original_pnl": 704.72,
+    "wr_improvement": 0.2,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B6_Rubber_Band_3",
+    "symbol": "BEL/USDT:USDT",
+    "timeframe": "1d",
+    "best_params": {
+      "ema_period": 48,
+      "buy_dist_pct": -2.9536708623516637,
+      "sell_dist_pct": 0.16265958487553722
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 75.6,
+    "full_pnl": 310.45,
+    "full_trades": 221,
+    "full_max_dd": 162.39,
+    "full_sharpe": 0.82,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 189,
+      "SL": 32
+    },
+    "lev_pnl": 310.45,
+    "candles": 1968,
+    "days": 1967.0,
+    "v3_original_wr": 77.4,
+    "v3_original_pnl": 288.2,
+    "wr_improvement": -1.8,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B5_MA_Envelope_5",
+    "symbol": "Q/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "ema_period": 47,
+      "envelope_pct": 0.06637954024628057
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 70.6,
+    "full_pnl": 154.93,
+    "full_trades": 204,
+    "full_max_dd": 161.38,
+    "full_sharpe": 0.98,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 196,
+      "SL": 8
+    },
+    "lev_pnl": 154.93,
+    "candles": 5235,
+    "days": 218.1,
+    "v3_original_wr": 66.9,
+    "v3_original_pnl": 243.78,
+    "wr_improvement": 3.7,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B6_Rubber_Band_5",
+    "symbol": "BEL/USDT:USDT",
+    "timeframe": "1d",
+    "best_params": {
+      "ema_period": 47,
+      "buy_dist_pct": -4.831956616803312,
+      "sell_dist_pct": -1.4199827608454791
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 76.7,
+    "full_pnl": 323.37,
+    "full_trades": 215,
+    "full_max_dd": 158.49,
+    "full_sharpe": 0.89,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 184,
+      "SL": 31
+    },
+    "lev_pnl": 323.37,
+    "candles": 1968,
+    "days": 1967.0,
+    "v3_original_wr": 73.7,
+    "v3_original_pnl": 234.41,
+    "wr_improvement": 3.0,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B5_MA_Envelope_5",
+    "symbol": "D/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "ema_period": 36,
+      "envelope_pct": 0.05347845324893199
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 72.8,
+    "full_pnl": 164.44,
+    "full_trades": 246,
+    "full_max_dd": 63.44,
+    "full_sharpe": 1.49,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 242,
+      "SL": 4
+    },
+    "lev_pnl": 164.44,
+    "candles": 10896,
+    "days": 454.0,
+    "v3_original_wr": 67.6,
+    "v3_original_pnl": 325.2,
+    "wr_improvement": 5.2,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "VWAP_Double",
+    "symbol": "SFP/USDT:USDT",
+    "timeframe": "4h",
+    "best_params": {
+      "dist_pct": 0.02219724190846105,
+      "session_len": 58
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 79.7,
+    "full_pnl": 285.9,
+    "full_trades": 537,
+    "full_max_dd": 122.28,
+    "full_sharpe": 1.04,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 527,
+      "SL": 10
+    },
+    "lev_pnl": 285.9,
+    "candles": 11216,
+    "days": 1869.2,
+    "v3_original_wr": 75.5,
+    "v3_original_pnl": 242.05,
+    "wr_improvement": 4.2,
+    "status": "MATCH",
+    "observed_wr": 79.7,
+    "observed_trades": 537,
+    "gap_pp": 0.0
+  },
+  {
+    "strategy": "VWAP_Double",
+    "symbol": "MASK/USDT:USDT",
+    "timeframe": "4h",
+    "best_params": {
+      "dist_pct": 0.07335130127758235,
+      "session_len": 73
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 81.9,
+    "full_pnl": 185.78,
+    "full_trades": 437,
+    "full_max_dd": 113.9,
+    "full_sharpe": 0.68,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 422,
+      "SL": 15
+    },
+    "lev_pnl": 185.78,
+    "candles": 11102,
+    "days": 1854.3,
+    "v3_original_wr": 77.2,
+    "v3_original_pnl": 199.31,
+    "wr_improvement": 4.7,
+    "status": "DATA_MISSING: MASK_4h",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B5_MA_Envelope_3",
+    "symbol": "BEL/USDT:USDT",
+    "timeframe": "1d",
+    "best_params": {
+      "ema_period": 47,
+      "envelope_pct": 0.04811535635356516
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 74.3,
+    "full_pnl": 262.16,
+    "full_trades": 191,
+    "full_max_dd": 178.61,
+    "full_sharpe": 0.79,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 163,
+      "SL": 28
+    },
+    "lev_pnl": 262.16,
+    "candles": 1968,
+    "days": 1967.0,
+    "v3_original_wr": 71.3,
+    "v3_original_pnl": 76.34,
+    "wr_improvement": 3.0,
+    "status": "DATA_MISSING: BEL_1d",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B5_MA_Envelope_3",
+    "symbol": "D/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "ema_period": 50,
+      "envelope_pct": 0.06269518534462334
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 76.4,
+    "full_pnl": 199.48,
+    "full_trades": 212,
+    "full_max_dd": 62.14,
+    "full_sharpe": 1.92,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 208,
+      "SL": 4
+    },
+    "lev_pnl": 199.48,
+    "candles": 10896,
+    "days": 454.0,
+    "v3_original_wr": 66.0,
+    "v3_original_pnl": 251.59,
+    "wr_improvement": 10.4,
+    "status": "DATA_MISSING: D_1h",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B5_MA_Envelope_3",
+    "symbol": "USTC/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "ema_period": 38,
+      "envelope_pct": 0.09308922861492797
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 78.4,
+    "full_pnl": 73.8,
+    "full_trades": 125,
+    "full_max_dd": 40.3,
+    "full_sharpe": 1.28,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 123,
+      "SL": 2
+    },
+    "lev_pnl": 73.8,
+    "candles": 20711,
+    "days": 862.9,
+    "v3_original_wr": 73.8,
+    "v3_original_pnl": 160.94,
+    "wr_improvement": 4.6,
+    "status": "DATA_MISSING: USTC_1h",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B5_MA_Envelope_5",
+    "symbol": "ALGO/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "ema_period": 16,
+      "envelope_pct": 0.08536252814638987
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 77.9,
+    "full_pnl": 207.82,
+    "full_trades": 163,
+    "full_max_dd": 14.98,
+    "full_sharpe": 6.87,
+    "sl": 0.37864241517701325,
+    "leverage": 2,
+    "exits": {
+      "SIG": 163
+    },
+    "lev_pnl": 415.63,
+    "candles": 50881,
+    "days": 2124.4,
+    "v3_original_wr": 70.2,
+    "v3_original_pnl": 166.83,
+    "wr_improvement": 7.7,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B5_MA_Envelope_5",
+    "symbol": "AGT/USDT:USDT",
+    "timeframe": "5m",
+    "best_params": {
+      "ema_period": 24,
+      "envelope_pct": 0.06589050417661756
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 72.4,
+    "full_pnl": 175.0,
+    "full_trades": 134,
+    "full_max_dd": 40.3,
+    "full_sharpe": 1.82,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 133,
+      "SL": 1
+    },
+    "lev_pnl": 175.0,
+    "candles": 93011,
+    "days": 323.0,
+    "v3_original_wr": 67.4,
+    "v3_original_pnl": 88.75,
+    "wr_improvement": 5.0,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B6_Rubber_Band_3",
+    "symbol": "NAORIS/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "ema_period": 44,
+      "buy_dist_pct": -0.7497663933728763,
+      "sell_dist_pct": -0.848652588596471
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 83.5,
+    "full_pnl": 310.71,
+    "full_trades": 759,
+    "full_max_dd": 145.72,
+    "full_sharpe": 0.8,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 740,
+      "SL": 19
+    },
+    "lev_pnl": 310.71,
+    "candles": 6022,
+    "days": 250.9,
+    "v3_original_wr": 76.1,
+    "v3_original_pnl": 210.55,
+    "wr_improvement": 7.4,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B6_Rubber_Band_5",
+    "symbol": "LPT/USDT:USDT",
+    "timeframe": "1d",
+    "best_params": {
+      "ema_period": 38,
+      "buy_dist_pct": -4.600143522936621,
+      "sell_dist_pct": -1.0278254788016659
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 80.5,
+    "full_pnl": 153.37,
+    "full_trades": 210,
+    "full_max_dd": 198.55,
+    "full_sharpe": 0.64,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 184,
+      "SL": 26
+    },
+    "lev_pnl": 153.37,
+    "candles": 1762,
+    "days": 1764.0,
+    "v3_original_wr": 74.4,
+    "v3_original_pnl": 174.81,
+    "wr_improvement": 6.1,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B5_MA_Envelope_3",
+    "symbol": "XMR/USDT:USDT",
+    "timeframe": "1d",
+    "best_params": {
+      "ema_period": 23,
+      "envelope_pct": 0.02172961825385112
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 78.8,
+    "full_pnl": 170.89,
+    "full_trades": 307,
+    "full_max_dd": 121.89,
+    "full_sharpe": 0.74,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 291,
+      "SL": 16
+    },
+    "lev_pnl": 170.89,
+    "candles": 2257,
+    "days": 2256.0,
+    "v3_original_wr": 75.0,
+    "v3_original_pnl": 132.69,
+    "wr_improvement": 3.8,
+    "status": "DATA_MISSING: XMR_1d",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B6_Rubber_Band_3",
+    "symbol": "C98/USDT:USDT",
+    "timeframe": "1d",
+    "best_params": {
+      "ema_period": 50,
+      "buy_dist_pct": -1.6493813548763285,
+      "sell_dist_pct": -1.1854719329161798
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 79.6,
+    "full_pnl": 86.16,
+    "full_trades": 137,
+    "full_max_dd": 181.27,
+    "full_sharpe": 0.54,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 118,
+      "SL": 19
+    },
+    "lev_pnl": 86.16,
+    "candles": 1689,
+    "days": 1688.0,
+    "v3_original_wr": 76.9,
+    "v3_original_pnl": 165.74,
+    "wr_improvement": 2.7,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B2_MeanRev_EMA21",
+    "symbol": "TST/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "ema_period": 41,
+      "buy_pct": -7.7107962244752155,
+      "sell_pct": 2.9255383417203173
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 74.2,
+    "full_pnl": 154.97,
+    "full_trades": 318,
+    "full_max_dd": 88.06,
+    "full_sharpe": 1.06,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 312,
+      "SL": 6
+    },
+    "lev_pnl": 154.97,
+    "candles": 10150,
+    "days": 422.9,
+    "v3_original_wr": 66.3,
+    "v3_original_pnl": 93.01,
+    "wr_improvement": 7.9,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B6_Rubber_Band_5",
+    "symbol": "HANA/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "ema_period": 50,
+      "buy_dist_pct": -3.7818372694491638,
+      "sell_dist_pct": 1.6387091991031069
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 76.4,
+    "full_pnl": 42.99,
+    "full_trades": 339,
+    "full_max_dd": 93.17,
+    "full_sharpe": 0.26,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 331,
+      "SL": 8
+    },
+    "lev_pnl": 42.99,
+    "candles": 4655,
+    "days": 193.9,
+    "v3_original_wr": 71.5,
+    "v3_original_pnl": 142.76,
+    "wr_improvement": 4.9,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B6_Rubber_Band_5",
+    "symbol": "TST/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "ema_period": 45,
+      "buy_dist_pct": -5.495081401586384,
+      "sell_dist_pct": -1.477196584319752
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 79.6,
+    "full_pnl": 180.95,
+    "full_trades": 579,
+    "full_max_dd": 101.9,
+    "full_sharpe": 0.77,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 570,
+      "SL": 9
+    },
+    "lev_pnl": 180.95,
+    "candles": 10150,
+    "days": 422.9,
+    "v3_original_wr": 68.1,
+    "v3_original_pnl": 93.76,
+    "wr_improvement": 11.5,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "VWAP_Double",
+    "symbol": "XVG/USDT:USDT",
+    "timeframe": "4h",
+    "best_params": {
+      "dist_pct": 0.005956845801319922,
+      "session_len": 98
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 84.0,
+    "full_pnl": 170.06,
+    "full_trades": 225,
+    "full_max_dd": 120.9,
+    "full_sharpe": 1.12,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SL": 9,
+      "SIG": 216
+    },
+    "lev_pnl": 170.06,
+    "candles": 6048,
+    "days": 1007.8,
+    "v3_original_wr": 77.2,
+    "v3_original_pnl": 91.36,
+    "wr_improvement": 6.8,
+    "status": "DATA_MISSING: XVG_4h",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B6_Rubber_Band_7",
+    "symbol": "AGT/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "ema_period": 46,
+      "buy_dist_pct": -1.00291980197311,
+      "sell_dist_pct": 3.0868530335183477
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 76.0,
+    "full_pnl": 63.73,
+    "full_trades": 608,
+    "full_max_dd": 257.37,
+    "full_sharpe": 0.3,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 602,
+      "SL": 6
+    },
+    "lev_pnl": 63.73,
+    "candles": 7752,
+    "days": 323.0,
+    "v3_original_wr": 71.5,
+    "v3_original_pnl": 103.74,
+    "wr_improvement": 4.5,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B6_Rubber_Band_3",
+    "symbol": "TST/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "ema_period": 21,
+      "buy_dist_pct": -5.417221729013887,
+      "sell_dist_pct": -1.3590753126572335
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 77.5,
+    "full_pnl": 208.79,
+    "full_trades": 652,
+    "full_max_dd": 112.94,
+    "full_sharpe": 0.86,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 646,
+      "SL": 6
+    },
+    "lev_pnl": 208.79,
+    "candles": 10150,
+    "days": 422.9,
+    "v3_original_wr": 66.6,
+    "v3_original_pnl": 102.94,
+    "wr_improvement": 10.9,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "VWAP_Double",
+    "symbol": "AGT/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "dist_pct": 0.0757608409089568,
+      "session_len": 99
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 82.2,
+    "full_pnl": 79.77,
+    "full_trades": 253,
+    "full_max_dd": 129.11,
+    "full_sharpe": 0.78,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 249,
+      "SL": 4
+    },
+    "lev_pnl": 79.77,
+    "candles": 7752,
+    "days": 323.0,
+    "v3_original_wr": 73.0,
+    "v3_original_pnl": 82.53,
+    "wr_improvement": 9.2,
+    "status": "MATCH",
+    "observed_wr": 82.2,
+    "observed_trades": 253,
+    "gap_pp": 0.0
+  },
+  {
+    "strategy": "VWAP_Double",
+    "symbol": "KERNEL/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "dist_pct": 0.0568863382722788,
+      "session_len": 74
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 80.3,
+    "full_pnl": 104.96,
+    "full_trades": 304,
+    "full_max_dd": 75.87,
+    "full_sharpe": 1.15,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 303,
+      "SL": 1
+    },
+    "lev_pnl": 104.96,
+    "candles": 8614,
+    "days": 358.9,
+    "v3_original_wr": 75.6,
+    "v3_original_pnl": 70.16,
+    "wr_improvement": 4.7,
+    "status": "DATA_MISSING: KERNEL_1h",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B5_MA_Envelope_3",
+    "symbol": "Q/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "ema_period": 39,
+      "envelope_pct": 0.007815223957932091
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 76.1,
+    "full_pnl": 43.42,
+    "full_trades": 557,
+    "full_max_dd": 266.47,
+    "full_sharpe": 0.14,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 542,
+      "SL": 15
+    },
+    "lev_pnl": 43.42,
+    "candles": 5235,
+    "days": 218.1,
+    "v3_original_wr": 69.8,
+    "v3_original_pnl": 206.16,
+    "wr_improvement": 6.3,
+    "status": "DATA_MISSING: Q_1h",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "VWAP_Double",
+    "symbol": "QNT/USDT:USDT",
+    "timeframe": "4h",
+    "best_params": {
+      "dist_pct": 0.0647183902784805,
+      "session_len": 71
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 83.6,
+    "full_pnl": 148.47,
+    "full_trades": 298,
+    "full_max_dd": 40.3,
+    "full_sharpe": 1.8,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 297,
+      "SL": 1
+    },
+    "lev_pnl": 148.47,
+    "candles": 7599,
+    "days": 1266.3,
+    "v3_original_wr": 71.9,
+    "v3_original_pnl": 56.76,
+    "wr_improvement": 11.7,
+    "status": "DATA_MISSING: QNT_4h",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B5_MA_Envelope_5",
+    "symbol": "SOL/USDT:USDT",
+    "timeframe": "5m",
+    "best_params": {
+      "ema_period": 33,
+      "envelope_pct": 0.055202544882645886
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 73.9,
+    "full_pnl": 305.32,
+    "full_trades": 425,
+    "full_max_dd": 26.05,
+    "full_sharpe": 4.46,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 425
+    },
+    "lev_pnl": 305.32,
+    "candles": 532535,
+    "days": 1854.4,
+    "v3_original_wr": 71.9,
+    "v3_original_pnl": 285.08,
+    "wr_improvement": 2.0,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B2_BB_1Std",
+    "symbol": "D/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "bb_period": 38,
+      "bb_std": 0.44431890977004235
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 72.1,
+    "full_pnl": 114.25,
+    "full_trades": 1032,
+    "full_max_dd": 147.57,
+    "full_sharpe": 0.36,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 1026,
+      "SL": 6
+    },
+    "lev_pnl": 114.25,
+    "candles": 10896,
+    "days": 454.0,
+    "v3_original_wr": 69.9,
+    "v3_original_pnl": 135.52,
+    "wr_improvement": 2.2,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B5_MA_Envelope_3",
+    "symbol": "ALGO/USDT:USDT",
+    "timeframe": "5m",
+    "best_params": {
+      "ema_period": 50,
+      "envelope_pct": 0.08897590571912796
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 81.8,
+    "full_pnl": 289.38,
+    "full_trades": 148,
+    "full_max_dd": 32.44,
+    "full_sharpe": 5.15,
+    "sl": 0.32144919748479917,
+    "leverage": 2,
+    "exits": {
+      "SIG": 147,
+      "SL": 1
+    },
+    "lev_pnl": 578.77,
+    "candles": 610288,
+    "days": 2124.4,
+    "v3_original_wr": 70.1,
+    "v3_original_pnl": 238.69,
+    "wr_improvement": 11.7,
+    "status": "DATA_MISSING: ALGO_5m",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B2_MeanRev_EMA21",
+    "symbol": "AIO/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "ema_period": 47,
+      "buy_pct": -0.6778054267443614,
+      "sell_pct": 1.167410099966018
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 73.1,
+    "full_pnl": 18.47,
+    "full_trades": 521,
+    "full_max_dd": 153.37,
+    "full_sharpe": 0.09,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 514,
+      "SL": 7
+    },
+    "lev_pnl": 18.47,
+    "candles": 5711,
+    "days": 237.9,
+    "v3_original_wr": 65.7,
+    "v3_original_pnl": 62.91,
+    "wr_improvement": 7.4,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B5_MA_Envelope_3",
+    "symbol": "XMR/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "ema_period": 49,
+      "envelope_pct": 0.0657150772127458
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 67.5,
+    "full_pnl": 52.87,
+    "full_trades": 406,
+    "full_max_dd": 55.66,
+    "full_sharpe": 0.43,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 404,
+      "SL": 2
+    },
+    "lev_pnl": 52.87,
+    "candles": 54147,
+    "days": 2256.1,
+    "v3_original_wr": 64.9,
+    "v3_original_pnl": 19.59,
+    "wr_improvement": 2.6,
+    "status": "DATA_MISSING: XMR_1h",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B6_Rubber_Band_7",
+    "symbol": "MLN/USDT:USDT",
+    "timeframe": "1h",
+    "best_params": {
+      "ema_period": 25,
+      "buy_dist_pct": -7.149133018067565,
+      "sell_dist_pct": -1.837184525653591
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 81.1,
+    "full_pnl": 8.55,
+    "full_trades": 371,
+    "full_max_dd": 140.72,
+    "full_sharpe": 0.07,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 367,
+      "SL": 4
+    },
+    "lev_pnl": 8.55,
+    "candles": 8954,
+    "days": 373.0,
+    "v3_original_wr": 66.3,
+    "v3_original_pnl": 50.06,
+    "wr_improvement": 14.8,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B2_MeanRev_EMA21",
+    "symbol": "LTC/USDT:USDT",
+    "timeframe": "5m",
+    "best_params": {
+      "ema_period": 21,
+      "buy_pct": -4.276665578540687,
+      "sell_pct": 7.905651614242574
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 70.9,
+    "full_pnl": 98.83,
+    "full_trades": 196,
+    "full_max_dd": 44.19,
+    "full_sharpe": 1.95,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 195,
+      "SL": 1
+    },
+    "lev_pnl": 98.83,
+    "candles": 636212,
+    "days": 2214.4,
+    "v3_original_wr": 64.9,
+    "v3_original_pnl": 110.19,
+    "wr_improvement": 6.0,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "VWAP_Double",
+    "symbol": "RLC/USDT:USDT",
+    "timeframe": "4h",
+    "best_params": {
+      "dist_pct": 0.04030116580659017,
+      "session_len": 27
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 76.5,
+    "full_pnl": 66.96,
+    "full_trades": 752,
+    "full_max_dd": 190.9,
+    "full_sharpe": 0.18,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 738,
+      "SL": 14
+    },
+    "lev_pnl": 66.96,
+    "candles": 12464,
+    "days": 2077.2,
+    "v3_original_wr": 73.1,
+    "v3_original_pnl": 21.85,
+    "wr_improvement": 3.4,
+    "status": "DATA_MISSING: RLC_4h",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B5_MA_Envelope_5",
+    "symbol": "XRP/USDT:USDT",
+    "timeframe": "5m",
+    "best_params": {
+      "ema_period": 50,
+      "envelope_pct": 0.0933100276114163
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 77.4,
+    "full_pnl": 113.46,
+    "full_trades": 177,
+    "full_max_dd": 53.64,
+    "full_sharpe": 1.43,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 174,
+      "SL": 3
+    },
+    "lev_pnl": 113.46,
+    "candles": 636217,
+    "days": 2214.4,
+    "v3_original_wr": 66.1,
+    "v3_original_pnl": 90.62,
+    "wr_improvement": 11.3,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  },
+  {
+    "strategy": "B2_MeanRev_EMA21",
+    "symbol": "XRP/USDT:USDT",
+    "timeframe": "5m",
+    "best_params": {
+      "ema_period": 35,
+      "buy_pct": -5.067351969299182,
+      "sell_pct": 7.905317325630316
+    },
+    "source": "FULLHISTORY_OPTUNA_V3_VALIDATED",
+    "full_wr": 72.5,
+    "full_pnl": 79.4,
+    "full_trades": 386,
+    "full_max_dd": 77.52,
+    "full_sharpe": 0.63,
+    "sl": 0.4,
+    "leverage": 1,
+    "exits": {
+      "SIG": 383,
+      "SL": 3
+    },
+    "lev_pnl": 79.4,
+    "candles": 636217,
+    "days": 2214.4,
+    "v3_original_wr": 65.1,
+    "v3_original_pnl": 48.1,
+    "wr_improvement": 7.4,
+    "status": "IMPL_MISSING",
+    "observed_wr": null,
+    "gap_pp": null
+  }
+]
