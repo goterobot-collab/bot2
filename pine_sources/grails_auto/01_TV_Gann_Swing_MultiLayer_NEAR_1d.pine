@@ -1,8 +1,8 @@
 //@version=5
 // Auto-emitted from sandbox_master_ranking #1
 // Strategy: TV_Gann_Swing_MultiLayer  Sym: NEAR  TF: 1d
-// Observed: WR 73.1%  trades 52  PF 9.01  Plateau: no
-// Score: 2614.96
+// Observed: WR 75.4%  trades 57  PF 9.02  Plateau: YES
+// Score: 4142.31
 //
 // NOTE: This is a TEMPLATE. The signal logic must be ported manually from
 // strategies_v7/ Python to Pine. The risk wrapper below is canonical.

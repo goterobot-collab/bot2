@@ -1,13 +1,13 @@
 //@version=5
-// Auto-emitted from sandbox_master_ranking #3
-// Strategy: TV_ABCD_Pattern_Daveatt  Sym: NEAR  TF: 1d
-// Observed: WR 85.0%  trades 20  PF 8.992  Plateau: YES
-// Score: 3490.48
+// Auto-emitted from sandbox_master_ranking #6
+// Strategy: TV_Pivot_Reversal_Backtest  Sym: GMX  TF: 1d
+// Observed: WR 71.5%  trades 123  PF 4.539  Plateau: YES
+// Score: 2346.55
 //
 // NOTE: This is a TEMPLATE. The signal logic must be ported manually from
 // strategies_v7/ Python to Pine. The risk wrapper below is canonical.
 
-strategy("TV_ABCD_Pattern_Daveatt NEAR 1d", overlay=true,
+strategy("TV_Pivot_Reversal_Backtest GMX 1d", overlay=true,
      initial_capital=10000,
      default_qty_type=strategy.percent_of_equity,
      default_qty_value=100,
@@ -32,7 +32,7 @@ curDD      = (equityPeak - strategy.equity) / equityPeak * 100
 halted     = curDD > maxDDHalt
 
 // === SIGNAL LOGIC (PORT FROM PYTHON HERE) ================================
-// TODO: implement TV_ABCD_Pattern_Daveatt signal in Pine (see strategies_v7/strategies_tv2_batch*.py)
+// TODO: implement TV_Pivot_Reversal_Backtest signal in Pine (see strategies_v7/strategies_tv2_batch*.py)
 longSignal  = false  // placeholder
 shortSignal = false  // placeholder
 

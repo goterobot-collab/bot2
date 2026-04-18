@@ -1,13 +1,13 @@
 //@version=5
-// Auto-emitted from sandbox_master_ranking #3
-// Strategy: TV_ABCD_Pattern_Daveatt  Sym: NEAR  TF: 1d
-// Observed: WR 85.0%  trades 20  PF 8.992  Plateau: YES
-// Score: 3490.48
+// Auto-emitted from sandbox_master_ranking #7
+// Strategy: TV_Cointegration_PairsTrading  Sym: WLD  TF: 1d
+// Observed: WR 85.7%  trades 14  PF 12.1  Plateau: no
+// Score: 2320.8
 //
 // NOTE: This is a TEMPLATE. The signal logic must be ported manually from
 // strategies_v7/ Python to Pine. The risk wrapper below is canonical.
 
-strategy("TV_ABCD_Pattern_Daveatt NEAR 1d", overlay=true,
+strategy("TV_Cointegration_PairsTrading WLD 1d", overlay=true,
      initial_capital=10000,
      default_qty_type=strategy.percent_of_equity,
      default_qty_value=100,
@@ -32,7 +32,7 @@ curDD      = (equityPeak - strategy.equity) / equityPeak * 100
 halted     = curDD > maxDDHalt
 
 // === SIGNAL LOGIC (PORT FROM PYTHON HERE) ================================
-// TODO: implement TV_ABCD_Pattern_Daveatt signal in Pine (see strategies_v7/strategies_tv2_batch*.py)
+// TODO: implement TV_Cointegration_PairsTrading signal in Pine (see strategies_v7/strategies_tv2_batch*.py)
 longSignal  = false  // placeholder
 shortSignal = false  // placeholder
 
