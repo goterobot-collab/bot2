@@ -6,14 +6,17 @@
     "hetzner": {
       "host": "ubuntu@hetzner-cx32",
       "role": "production backtest queue (V7/V8 bots, optuna, forensic)",
-      "updated_at": "2026-04-17T21:20:00Z",
+      "updated_at": "2026-04-18T11:59:00Z",
       "claim": {
         "batch": "mac_survivors_20260417",
-        "combos_range": [0, 3579],
+        "combos_range": [
+          0,
+          3579
+        ],
         "queue_file": "coordination/hetzner_queue_mac_survivors_20260417.json",
         "progress_file": "results/hetzner_mac_survivors_progress.json",
-        "status": "running",
-        "note": "3579 combos, 6 workers, already produced 6 grails -> 1 CONFIRMED R24 (SWARMS 15m)"
+        "status": "stale_no_heartbeat",
+        "note": "No commits 24h+, no progress file in repo. COORDINADORA marking stale 2026-04-18T11:59Z. Claim reclaimable."
       }
     },
     "sandbox": {
@@ -21,18 +24,30 @@
       "role": "grail hunt (11 novel families) + anti-overfit pipeline",
       "updated_at": "2026-04-18T00:15:00Z",
       "claim": {
-        "batch":          "novel_families_hunt",
-        "assets":         ["BTCUSD", "ETHUSD", "ADAUSD", "DOGEUSD"],
-        "tfs":            ["5m", "15m", "1h"],
-        "families":       "novel",
-        "seed_range":     [160000, 160012],
-        "iterations":     200000,
-        "started_at":     "2026-04-18T00:05:00Z",
-        "expected_end":   "2026-04-18T04:00:00Z",
-        "progress_file":  "results/sandbox_progress.json",
-        "paso_1_status":  "2/3 PASS - C1 B5_MA_Envelope_3 SFP 1d: +0.0pp (210/210 trades, 12/12 SL hits) | C2 VWAP_Double AGT 1h: +0.0pp (253/253 trades) | C3 TV_Daily_Close_Signal: IMPL_MISSING - see mac_inbox.jsonl",
+        "batch": "novel_families_hunt",
+        "assets": [
+          "BTCUSD",
+          "ETHUSD",
+          "ADAUSD",
+          "DOGEUSD"
+        ],
+        "tfs": [
+          "5m",
+          "15m",
+          "1h"
+        ],
+        "families": "novel",
+        "seed_range": [
+          160000,
+          160012
+        ],
+        "iterations": 200000,
+        "started_at": "2026-04-18T00:05:00Z",
+        "expected_end": "2026-04-18T04:00:00Z",
+        "progress_file": "results/sandbox_progress.json",
+        "paso_1_status": "2/3 PASS - C1 B5_MA_Envelope_3 SFP 1d: +0.0pp (210/210 trades, 12/12 SL hits) | C2 VWAP_Double AGT 1h: +0.0pp (253/253 trades) | C3 TV_Daily_Close_Signal: IMPL_MISSING - see mac_inbox.jsonl",
         "pipeline_validated": true,
-        "canary_status":  "2_OF_3_EXACT_MATCH_BLOCKED_ON_C3_IMPL"
+        "canary_status": "2_OF_3_EXACT_MATCH_BLOCKED_ON_C3_IMPL"
       }
     },
     "mac": {
@@ -51,7 +66,10 @@
     "mac_survivors_20260417": {
       "total_combos": 3579,
       "slices_assigned": {
-        "hetzner": [0, 3579]
+        "hetzner": [
+          0,
+          3579
+        ]
       },
       "queue_file": "coordination/hetzner_queue_mac_survivors_20260417.json",
       "status": "running_on_hetzner"
@@ -71,12 +89,18 @@
       "total_combos": "50 batches x ~5 strats each = ~250 strategies",
       "slices_assigned": {},
       "note": "Available for Sandbox (Prioridad B). See SANDBOX_ASSIGNMENT.md. Suggested assets not covered by novel_families_hunt: INJ/DYDX/GMX/OP/ARB/LINK/AVAX/MATIC/NEAR/FTM",
-      "tfs_required": ["5m", "15m", "1h", "4h", "1d"]
+      "tfs_required": [
+        "5m",
+        "15m",
+        "1h",
+        "4h",
+        "1d"
+      ]
     }
   },
   "already_tested_reference": {
     "grails_fullhistory_final": "coordination/already_tested_grails.json (38 grails, fullhistory-validated +5.7pp WR)",
-    "forensic_mac_survivors":   "coordination/already_tested_forensic_mac_survivors.json (6 grails, 1 CONFIRMED R24)",
-    "batch_registry":           "coordination/BATCH_REGISTRY.md (status per-batch)"
+    "forensic_mac_survivors": "coordination/already_tested_forensic_mac_survivors.json (6 grails, 1 CONFIRMED R24)",
+    "batch_registry": "coordination/BATCH_REGISTRY.md (status per-batch)"
   }
 }
