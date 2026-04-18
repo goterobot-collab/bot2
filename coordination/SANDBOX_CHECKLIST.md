@@ -34,6 +34,20 @@
   4. Reportar resultados + anti-overfit pipeline
 ```
 
+## 🎯 LÓGICA DE PROMOCIÓN (regla clave)
+
+**Gate WR≥70%** se aplica per-combo (strategy × symbol × TF).
+
+**Si AL MENOS 1 combo pasa** (en cualquier symbol × TF) → la estrategia entera se marca **PROMOTED** y se incluye en `sandbox_promoted_strategies.json` para que Hetzner/Mac la corran contra el universo completo (563 symbols × 5 TFs).
+
+- Ej: `B1_RSI_Range` da WR=0% en 20 symbols y WR=78% en 1 (`LINK 15m`) → PROMOTED ✅
+- Lógica: un edge puede existir SOLO en un par — no descartar la estrategia por WR promedio bajo
+- El combo ganador específico → directo a `mac_inbox.jsonl` con CONFIRMED
+
+**Output extra por paso**:
+- `results/sandbox_<paso>_PROMOTED.json` — lista de strategies con ≥1 combo WR≥70%
+- `results/sandbox_<paso>_CONFIRMED.jsonl` — combos específicos que pasaron R24
+
 Cada paso tiene checkbox. Marcar `[x]` cuando complete + commit el checklist.
 
 ---
@@ -105,6 +119,7 @@ Params exactos en `coordination/already_tested_grails.json` + `coordination/alre
 - [ ] Forensic backtest sobre grails (fees 0.30% round-trip)
 - [ ] Gate R24: gap Optuna→Forensic ≤ 10pp, sino RECHAZADO
 - [ ] Escribir resultados: `results/sandbox_h1_3566_3569_SHORTLIST.md`
+- [ ] **PROMOTED**: si ≥1 combo (symbol×TF) pasa WR≥70% → estrategia a `results/sandbox_h1_PROMOTED.json` para full-universe scan
 - [ ] Append CONFIRMED a `coordination/mac_inbox.jsonl`
 
 ---
@@ -138,6 +153,7 @@ Batches micro legacy (HUNTER 2 anteriores, sub-set testeado):
 - [ ] Split en slices de 1,000 combos, reclamar 1 slice en `queue_claims.json`
 - [ ] Correr Optuna → forensic → R24 gate
 - [ ] Escribir `results/sandbox_h2_SHORTLIST.md`
+- [ ] **PROMOTED**: estrategias con ≥1 combo WR≥70% → `results/sandbox_h2_PROMOTED.json` (full-universe queue)
 
 ---
 
