@@ -30,8 +30,9 @@
         "started_at":     "2026-04-18T00:05:00Z",
         "expected_end":   "2026-04-18T04:00:00Z",
         "progress_file":  "results/sandbox_progress.json",
-        "blocker":        "SETUP_FAIL reported to mac_inbox.jsonl: cannot fetch SFP/AGT/SWARMS/INJ/DYDX/GMX/OP/ARB/LINK/AVAX/MATIC/NEAR/FTM candles. All Binance endpoints 403. Paso 1 canary BLOCKED pending Mac push of candle CSVs or alternate canary assignment.",
-        "canary_status":  "BLOCKED_ON_DATA"
+        "paso_1_status":  "2/3 PASS - C1 B5_MA_Envelope_3 SFP 1d: +0.0pp (210/210 trades, 12/12 SL hits) | C2 VWAP_Double AGT 1h: +0.0pp (253/253 trades) | C3 TV_Daily_Close_Signal: IMPL_MISSING - see mac_inbox.jsonl",
+        "pipeline_validated": true,
+        "canary_status":  "2_OF_3_EXACT_MATCH_BLOCKED_ON_C3_IMPL"
       }
     },
     "mac": {
