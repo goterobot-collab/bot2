@@ -1,0 +1,52 @@
+{
+  "_schema": "v1",
+  "_doc": "Claims registry so that Hetzner, Sandbox and the Mac dev env don't duplicate backtest work. Each node appends/updates its own section. Stale claims (> max_stale_hours) may be reclaimed by others.",
+  "_max_stale_hours": 6,
+  "nodes": {
+    "hetzner": {
+      "host": "ubuntu@hetzner-cx32",
+      "role": "production backtest queue (V7/V8 bots, optuna, forensic)",
+      "updated_at": null,
+      "claim": null
+    },
+    "sandbox": {
+      "host": "anthropic-sandbox-bot2",
+      "role": "grail hunt (11 novel families) + anti-overfit pipeline",
+      "updated_at": "2026-04-18T00:00:00Z",
+      "claim": {
+        "batch":          "novel_families_hunt",
+        "assets":         ["BTCUSD", "ETHUSD", "ADAUSD", "DOGEUSD"],
+        "tfs":            ["5m", "15m", "1h"],
+        "families":       "novel",
+        "seed_range":     [160000, 160012],
+        "iterations":     200000,
+        "started_at":     "2026-04-18T00:05:00Z",
+        "expected_end":   "2026-04-18T04:00:00Z",
+        "progress_file":  "results/sandbox_progress.json"
+      }
+    },
+    "mac": {
+      "host": "user-macbook",
+      "role": "V8 production dev + handoff orchestrator",
+      "updated_at": null,
+      "claim": null
+    }
+  },
+  "batches": {
+    "_doc": "Registry of known batches of strategy/param combos. Each batch has an integer combo index space; nodes claim a slice via combos_range to avoid duplication.",
+    "mac_survivors_20260417": {
+      "total_combos": 3579,
+      "slices_assigned": {}
+    },
+    "tv2_3560_pilot": {
+      "total_combos": 1000,
+      "slices_assigned": {}
+    },
+    "novel_families_hunt": {
+      "total_combos": "random_search",
+      "slices_assigned": {
+        "sandbox": "seed_range 160000-160012"
+      }
+    }
+  }
+}
