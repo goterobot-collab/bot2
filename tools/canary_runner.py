@@ -72,7 +72,19 @@ def load_candles(sym: str, src_tf: str, target_tf: str) -> pd.DataFrame:
     path = ROOT / "data" / "candles" / f"{sym}_{src_tf}.csv.gz"
     if not path.exists():
         raise FileNotFoundError(f"missing {path}")
-    df = pd.read_csv(path, compression="gzip")
+    try:
+        df = pd.read_csv(path, compression="gzip")
+    except (UnicodeDecodeError, pd.errors.ParserError):
+        # Some candle files have a trailing corrupt row with binary bytes.
+        # Read raw, drop bad lines.
+        import gzip, io
+        with gzip.open(path, "rb") as f:
+            raw = f.read()
+        clean = raw.decode("utf-8", errors="ignore")
+        df = pd.read_csv(io.StringIO(clean), on_bad_lines="skip")
+    df = df.dropna(subset=["ts", "open", "high", "low", "close"])
+    df["ts"] = pd.to_numeric(df["ts"], errors="coerce")
+    df = df.dropna(subset=["ts"])
     df["dt"] = pd.to_datetime(df["ts"], unit="ms", utc=True)
     df = df.set_index("dt").sort_index()
     df = df[["ts", "open", "high", "low", "close", "volume"]]
@@ -141,6 +153,14 @@ def backtest_signal_exit(df: pd.DataFrame, gen_fn, params: dict,
         return {"error": f"gen_fn raised: {e}", "wr": None, "trades": []}
     if signals is None or len(signals) == 0:
         return {"error": "no signals", "wr": None, "trades": []}
+    # batches 3566-3569 return a DataFrame with a 'signal' column; extract it
+    if isinstance(signals, pd.DataFrame):
+        if "signal" in signals.columns:
+            signals = signals["signal"]
+        elif "direction" in signals.columns:
+            signals = signals["direction"]
+        else:
+            return {"error": "DataFrame lacks signal/direction column", "wr": None, "trades": []}
     sig = signals.values if hasattr(signals, "values") else np.array(signals)
     opens = df["open"].values
     highs = df["high"].values
@@ -205,7 +225,13 @@ def backtest_signal_exit(df: pd.DataFrame, gen_fn, params: dict,
         return {"wr": None, "trades": 0, "total_pnl_pct": 0, "error": "no trades"}
     wins = sum(1 for t in trades if t["win"])
     wr = 100.0 * wins / len(trades)
-    total_pnl = sum(t["pnl"] for t in trades) * 100
+    pnls = [t["pnl"] for t in trades]
+    total_pnl = sum(pnls) * 100
+    win_sum = sum(p for p in pnls if p > 0)
+    loss_sum = -sum(p for p in pnls if p <= 0)
+    pf = (win_sum / loss_sum) if loss_sum > 0 else (999.0 if win_sum > 0 else 0.0)
+    avg_win = (win_sum / wins * 100) if wins > 0 else 0.0
+    avg_loss = (-loss_sum / (len(trades) - wins) * 100) if (len(trades) - wins) > 0 else 0.0
     return {
         "wr": round(wr, 1),
         "trades": len(trades),
@@ -214,6 +240,9 @@ def backtest_signal_exit(df: pd.DataFrame, gen_fn, params: dict,
         "losses": len(trades) - wins,
         "sl_hits": sl_hits,
         "sig_exits": sig_exits,
+        "pf": round(pf, 3),
+        "avg_win_pct": round(avg_win, 3),
+        "avg_loss_pct": round(avg_loss, 3),
     }
 
 
