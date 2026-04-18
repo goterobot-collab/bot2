@@ -1,0 +1,6250 @@
+{
+  "name": "hetzner_batch_a_warmstart_confirmed_20260418",
+  "source": "Sandbox HUNTER1 confirmed grails (n>=20) expandido a full universe",
+  "created_at": "2026-04-18T12:00Z",
+  "strategies": [
+    "TV_Cointegration_PairsTrading",
+    "TV_VolumeProfile_Reversion",
+    "TV_VolatilityAdaptive_Reversal",
+    "TV_VolatilityCluster_Fade",
+    "TV_FairValueGap_Trading",
+    "TV_AlternatingSignals_MultiTFConfirm"
+  ],
+  "symbols": [
+    "SFP/USDT:USDT",
+    "AGT/USDT:USDT",
+    "SWARMS/USDT:USDT",
+    "INJ/USDT:USDT",
+    "DYDX/USDT:USDT",
+    "GMX/USDT:USDT",
+    "OP/USDT:USDT",
+    "ARB/USDT:USDT",
+    "LINK/USDT:USDT",
+    "AVAX/USDT:USDT",
+    "NEAR/USDT:USDT",
+    "APT/USDT:USDT",
+    "SUI/USDT:USDT",
+    "TIA/USDT:USDT",
+    "SEI/USDT:USDT",
+    "JUP/USDT:USDT",
+    "PYTH/USDT:USDT",
+    "JTO/USDT:USDT",
+    "ONDO/USDT:USDT",
+    "WLD/USDT:USDT",
+    "PENDLE/USDT:USDT",
+    "BTC/USDT:USDT",
+    "ETH/USDT:USDT",
+    "SOL/USDT:USDT",
+    "BNB/USDT:USDT",
+    "XRP/USDT:USDT",
+    "ADA/USDT:USDT",
+    "DOGE/USDT:USDT",
+    "MATIC/USDT:USDT",
+    "ATOM/USDT:USDT",
+    "LTC/USDT:USDT",
+    "DOT/USDT:USDT",
+    "FIL/USDT:USDT",
+    "RUNE/USDT:USDT",
+    "AAVE/USDT:USDT",
+    "UNI/USDT:USDT",
+    "CRV/USDT:USDT",
+    "SNX/USDT:USDT",
+    "COMP/USDT:USDT",
+    "MKR/USDT:USDT",
+    "LDO/USDT:USDT"
+  ],
+  "timeframes": [
+    "5m",
+    "15m",
+    "1h",
+    "4h",
+    "1d"
+  ],
+  "combos": [
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_VolatilityCluster_Fade",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SFP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SWARMS/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "INJ/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "DYDX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "GMX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ARB/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "AVAX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "NEAR/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "APT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SUI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "TIA/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SEI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "JUP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "PYTH/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "JTO/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "WLD/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "PENDLE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "BTC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ETH/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SOL/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "BNB/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "XRP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ADA/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "DOGE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "MATIC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "ATOM/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "LTC/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "DOT/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "FIL/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "RUNE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "AAVE/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "UNI/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "CRV/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "SNX/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "COMP/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "MKR/USDT:USDT",
+      "timeframe": "1d"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "5m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "15m"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "1h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "4h"
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "LDO/USDT:USDT",
+      "timeframe": "1d"
+    }
+  ],
+  "warm_start_seed_grails": [
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SFP/USDT:USDT",
+      "tf": "4h",
+      "wr": 72.0,
+      "n": 493,
+      "pf": 1.31
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "NEAR/USDT:USDT",
+      "tf": "4h",
+      "wr": 70.0,
+      "n": 80,
+      "pf": 1.84
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SFP/USDT:USDT",
+      "tf": "1d",
+      "wr": 82.1,
+      "n": 234,
+      "pf": 1.36
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "TIA/USDT:USDT",
+      "tf": "1d",
+      "wr": 77.5,
+      "n": 111,
+      "pf": 1.27
+    }
+  ],
+  "notes": "R30: 15m incluido. Warm-start desde 4 grails n>=20 confirmados por sandbox. Expansion a 41 symbols (21 sandbox + 20 majors). Sandbox SOLO testea 21 sym - Hetzner expande a majors (BTC/ETH/SOL/etc). NO overlap."
+}
