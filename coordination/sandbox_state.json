@@ -99,32 +99,33 @@
       "finished_at": "2026-04-18T14:36:00+00:00"
     },
     "MONTE_CARLO_500": {
-      "status": "pending",
+      "status": "done",
       "cmd": "python3 tools/monte_carlo_grails.py",
       "log_file": "logs/monte_carlo.log",
-      "next_on_done": "SENSITIVITY_FEES",
-      "last_check": "2026-04-18T14:07:17+00:00"
+      "result": "10 plateau survivors x 500 perm. p-values 0.43-0.64 (MC not discriminative for this trade count).",
+      "finished_at": "2026-04-18T15:02:00+00:00"
     },
     "SENSITIVITY_FEES": {
-      "status": "pending",
+      "status": "done",
       "cmd": "python3 tools/sensitivity_fees.py",
       "log_file": "logs/sensitivity.log",
-      "next_on_done": "FINAL_MASTER_LIST",
-      "last_check": "2026-04-18T14:05:17+00:00"
+      "result": "10 survivors x 3 fee tiers (0.30/0.45/0.60% RT). WR degradation 3-11pp.",
+      "finished_at": "2026-04-18T15:02:00+00:00"
     },
     "PLATEAU_FULL_POOL": {
-      "status": "running",
+      "status": "done",
       "cmd": "python3 tools/plateau_on_hunter_grails.py --all-waves",
       "log_file": "logs/plateau_full.log",
-      "next_on_done": "MONTE_CARLO_500",
-      "last_check": "2026-04-18T14:50:49+00:00",
-      "started_at": "2026-04-18T14:50:49+00:00"
+      "result": "10 PLATEAU (of 46 n>=20 grails) across 4 hunter waves",
+      "started_at": "2026-04-18T14:50:49+00:00",
+      "finished_at": "2026-04-18T14:58:00+00:00"
     },
     "FINAL_MASTER_LIST": {
-      "status": "pending",
+      "status": "done",
       "cmd": "python3 tools/build_final_master.py",
       "log_file": "logs/final.log",
-      "last_check": "2026-04-18T14:05:47+00:00"
+      "result": "30 grails (0 tier A + 10 tier B plateau + 20 tier C n>=30) committed to coordination/SANDBOX_FINAL_MASTER_V8_GRAILS.json",
+      "finished_at": "2026-04-18T15:03:00+00:00"
     }
   }
 }
