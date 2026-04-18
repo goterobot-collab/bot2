@@ -277,9 +277,17 @@ def _flush(progress_path, shortlist, n_done, total, grails):
         progress_path.write_text(json.dumps({
             "n_done": n_done, "total": total, "grails": grails,
             "shortlist": shortlist,
-        }))
+        }, default=_json_safe))
     except Exception as e:
         print(f"[WARN] progress flush: {e}")
+
+
+def _json_safe(o):
+    if hasattr(o, "item"):
+        return o.item()
+    if isinstance(o, (np.bool_, np.integer, np.floating)):
+        return o.item()
+    return str(o)
 
 
 def _write_reports(shortlist, label, batches, shortlist_path, promoted_path, t0):
@@ -333,21 +341,29 @@ def _write_reports(shortlist, label, batches, shortlist_path, promoted_path, t0)
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--wave", choices=["h1", "h2"], required=True)
+    ap.add_argument("--tfs", nargs="+", default=None,
+                    help="Restrict to specific TFs (e.g. --tfs 5m 15m)")
     args = ap.parse_args()
     (ROOT / "results").mkdir(exist_ok=True)
 
+    tfs_label = ""
+    if args.tfs:
+        global TFS
+        TFS = [tf for tf in TFS if tf in args.tfs]
+        tfs_label = "_" + "_".join(args.tfs)
+
     if args.wave == "h1":
         batches = ["3566", "3567", "3568", "3569"]
-        label = "HUNTER1"
-        sp = ROOT / "results" / "sandbox_h1_3566_3569_SHORTLIST.md"
-        pp = ROOT / "results" / "sandbox_h1_PROMOTED.json"
-        prog = ROOT / "results" / "sandbox_h1_progress.json"
+        label = "HUNTER1" + tfs_label
+        sp = ROOT / "results" / f"sandbox_h1{tfs_label}_SHORTLIST.md"
+        pp = ROOT / "results" / f"sandbox_h1{tfs_label}_PROMOTED.json"
+        prog = ROOT / "results" / f"sandbox_h1{tfs_label}_progress.json"
     else:
         batches = ["3594", "3598"]
-        label = "HUNTER2"
-        sp = ROOT / "results" / "sandbox_h2_3594_3598_SHORTLIST.md"
-        pp = ROOT / "results" / "sandbox_h2_PROMOTED.json"
-        prog = ROOT / "results" / "sandbox_h2_progress.json"
+        label = "HUNTER2" + tfs_label
+        sp = ROOT / "results" / f"sandbox_h2{tfs_label}_SHORTLIST.md"
+        pp = ROOT / "results" / f"sandbox_h2{tfs_label}_PROMOTED.json"
+        prog = ROOT / "results" / f"sandbox_h2{tfs_label}_progress.json"
 
     shortlist, grails = run(batches, label, sp, pp, prog)
     print(f"\n{label} DONE: {grails} grails, {len(shortlist)} tasks")
