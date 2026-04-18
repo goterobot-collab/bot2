@@ -203,3 +203,16 @@ Si llega autorización:
 ---
 
 **Mantenedor**: COORDINADORA. Cualquier otra sesión que quiera cambiar el estado de un batch → BUZON a COORDINADORA, no editar directamente.
+
+---
+
+## Sandbox Rol B HUNTER batches (2026-04-18)
+
+| Batch | Theme | Strats | Source | Status |
+|-------|-------|--------|--------|--------|
+| 3601 | Order flow proxies (CVD, VolDelta, Kyle, VPIN, Footprint) | 5 | Kyle 1985, Easley-LdP-O'Hara 2012, TradingView docs | NOT_TESTED |
+| 3602 | Wyckoff (Spring, Upthrust, Accum, Distrib, Test) | 5 | StockCharts Wyckoff method + schematics | NOT_TESTED |
+| 3603 | Seasonality (TOD, DOW, US-session, weekend-gap, funding-arb) | 5 | SSRN time-of-day 3310817, NYSE session, Binance funding | NOT_TESTED |
+
+Pickle-safe verified via `importlib` + `len(mod.STRATEGY_EXPORT)==5` for all three.
+All 15 `gen_*` run on SFP 1h without exceptions; smoke WR range 0-71% (tuning needed).

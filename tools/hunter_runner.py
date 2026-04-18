@@ -340,7 +340,7 @@ def _write_reports(shortlist, label, batches, shortlist_path, promoted_path, t0)
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--wave", choices=["h1", "h2"], required=True)
+    ap.add_argument("--wave", choices=["h1", "h2", "h3"], required=True)
     ap.add_argument("--tfs", nargs="+", default=None,
                     help="Restrict to specific TFs (e.g. --tfs 5m 15m)")
     args = ap.parse_args()
@@ -358,12 +358,18 @@ def main():
         sp = ROOT / "results" / f"sandbox_h1{tfs_label}_SHORTLIST.md"
         pp = ROOT / "results" / f"sandbox_h1{tfs_label}_PROMOTED.json"
         prog = ROOT / "results" / f"sandbox_h1{tfs_label}_progress.json"
-    else:
+    elif args.wave == "h2":
         batches = ["3594", "3598"]
         label = "HUNTER2" + tfs_label
         sp = ROOT / "results" / f"sandbox_h2{tfs_label}_SHORTLIST.md"
         pp = ROOT / "results" / f"sandbox_h2{tfs_label}_PROMOTED.json"
         prog = ROOT / "results" / f"sandbox_h2{tfs_label}_progress.json"
+    else:  # h3 = new Rol B Hunter batches 3601-3603
+        batches = ["3601", "3602", "3603"]
+        label = "HUNTER3" + tfs_label
+        sp = ROOT / "results" / f"sandbox_h3{tfs_label}_SHORTLIST.md"
+        pp = ROOT / "results" / f"sandbox_h3{tfs_label}_PROMOTED.json"
+        prog = ROOT / "results" / f"sandbox_h3{tfs_label}_progress.json"
 
     shortlist, grails = run(batches, label, sp, pp, prog)
     print(f"\n{label} DONE: {grails} grails, {len(shortlist)} tasks")
