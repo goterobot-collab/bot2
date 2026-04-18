@@ -1,0 +1,76 @@
+# .gitignore STRICTO para bot_v7/  (copiar al .gitignore raíz del repo
+# antes del primer push desde la Mac)
+
+# === SECRETOS — nunca commitear ===
+.env
+.env.*
+*.secret
+*.secrets
+credentials.json
+credentials.yaml
+credentials.yml
+api_keys.*
+*.pem
+*.key
+id_rsa*
+*token*.json
+*token*.yaml
+
+# === Config de producción — nunca commitear ===
+v8_bots.json
+v8_bots_*.json
+v7_bots.json
+v6_optimized_sl_tp.json
+production.json
+live_config.*
+
+# === Bases de datos — demasiado grandes / datos privados ===
+*.db
+*.sqlite
+*.sqlite3
+activos_binance.db
+trades_v7.db
+unified_bot_v7.db
+bot_state.db
+
+# === Logs y runtime ===
+*.log
+logs/
+log/
+nohup.out
+pm2.log
+.pm2/
+
+# === Parquet / pickle — no portable entre nodos ===
+*.parquet
+*.pkl
+*.pickle
+*.feather
+
+# === Cachés / builds ===
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# === IDE / OS ===
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# === Export intermedios — podés subir sólo los hetzner_queue_*.json finales ===
+bot_v7/exports_tmp/
+bot_v7/*_intermediate/
+
+# === Extra: cualquier archivo > 50 MB GitHub lo rechaza ===
+# Si tenés archivos grandes legítimos, usá git-lfs con track explícito.
+# NO ignores blanket; conscientemente lista.
