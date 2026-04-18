@@ -1,0 +1,119 @@
+{
+  "_doc": "Master loop state. Each task has stage, status (pending|running|done|failed), started_at, finished_at, log_file. Master loop reads this to know what to do next.",
+  "_updated_at": "2026-04-18T13:00:00Z",
+  "_max_parallel_workers": 4,
+  "_priority_queue": [
+    "HUNTER1_5m_15m",
+    "HUNTER2_5m_15m",
+    "HUNTER3_5m_15m",
+    "HUNTER1_1h",
+    "HUNTER2_1h",
+    "HUNTER3_1h",
+    "HUNTER1_4h_1d",
+    "HUNTER2_4h_1d",
+    "HUNTER3_4h_1d",
+    "PLATEAU_full",
+    "MONTE_CARLO",
+    "SENSITIVITY_FEES",
+    "RANKER",
+    "PINE_EMITTER",
+    "PAIRS_EXPAND",
+    "REGIME_CONDITIONAL",
+    "CORRELATION_CLUSTER",
+    "RESEARCH_C3",
+    "STRESS_TESTS",
+    "SHADOW_METRICS",
+    "FINAL_MASTER_LIST"
+  ],
+  "tasks": {
+    "PASO_1_CANARIES": {
+      "status": "done",
+      "result": "3/3 PASS",
+      "log_file": "results/sandbox_canary_report.md"
+    },
+    "ETAPA_5_BUILD_3601_3606": {
+      "status": "done",
+      "result": "30 strats pickle-safe across 6 batches",
+      "log_file": "coordination/BATCH_REGISTRY.md"
+    },
+    "ETAPA_7_REVALIDATE_38": {
+      "status": "done",
+      "result": "3 MATCH, 23 IMPL_MISSING, 12 DATA_MISSING",
+      "log_file": "results/sandbox_already_tested_antioverfit.md"
+    },
+    "PLATEAU_HUNTER1_INTERIM": {
+      "status": "done",
+      "result": "8/20 PLATEAU survivors",
+      "log_file": "results/sandbox_h1_plateau.md"
+    },
+    "FETCH_BITFINEX_ETH_LTC_XRP": {
+      "status": "done",
+      "result": "3 new symbols 5m+1h committed",
+      "log_file": "logs/fetch_bitfinex.log"
+    },
+    "HUNTER1_1h_4h_1d": {
+      "status": "done",
+      "result": "102 grails (1d=51, 4h=32, 1h=19) - n>=20 subset is 20",
+      "log_file": "logs/hunter1_mp.log"
+    },
+    "HUNTER1_5m_15m": {
+      "status": "running",
+      "log_file": "logs/hunter1_5m15m.log",
+      "started_at": "2026-04-18T13:30:00Z",
+      "next_on_done": "HUNTER2_5m_15m"
+    },
+    "HUNTER2_5m_15m": {
+      "status": "pending",
+      "cmd": "python3 tools/hunter_runner.py --wave h2 --tfs 5m 15m",
+      "log_file": "logs/hunter2_5m15m.log",
+      "next_on_done": "HUNTER3_5m_15m"
+    },
+    "HUNTER3_5m_15m": {
+      "status": "pending",
+      "cmd": "python3 tools/hunter_runner.py --wave h3 --tfs 5m 15m",
+      "log_file": "logs/hunter3_5m15m.log",
+      "next_on_done": "HUNTER2_1h_4h_1d"
+    },
+    "HUNTER2_1h_4h_1d": {
+      "status": "pending",
+      "cmd": "python3 tools/hunter_runner.py --wave h2 --tfs 1h 4h 1d",
+      "log_file": "logs/hunter2_high.log",
+      "next_on_done": "HUNTER3_1h_4h_1d"
+    },
+    "HUNTER3_1h_4h_1d": {
+      "status": "pending",
+      "cmd": "python3 tools/hunter_runner.py --wave h3 --tfs 1h 4h 1d",
+      "log_file": "logs/hunter3_high.log",
+      "next_on_done": "MONTE_CARLO_500"
+    },
+    "MONTE_CARLO_500": {
+      "status": "pending",
+      "cmd": "python3 tools/monte_carlo_grails.py",
+      "log_file": "logs/monte_carlo.log",
+      "next_on_done": "SENSITIVITY_FEES"
+    },
+    "SENSITIVITY_FEES": {
+      "status": "pending",
+      "cmd": "python3 tools/sensitivity_fees.py",
+      "log_file": "logs/sensitivity.log",
+      "next_on_done": "RANKER"
+    },
+    "RANKER": {
+      "status": "pending",
+      "cmd": "python3 tools/rank_all_grails.py",
+      "log_file": "logs/ranker.log",
+      "next_on_done": "PINE_EMITTER"
+    },
+    "PINE_EMITTER": {
+      "status": "pending",
+      "cmd": "python3 tools/emit_pine_top_grails.py",
+      "log_file": "logs/pine.log",
+      "next_on_done": "FINAL_MASTER_LIST"
+    },
+    "FINAL_MASTER_LIST": {
+      "status": "pending",
+      "cmd": "python3 tools/build_final_master.py",
+      "log_file": "logs/final.log"
+    }
+  }
+}
