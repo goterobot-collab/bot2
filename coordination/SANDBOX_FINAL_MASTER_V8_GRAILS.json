@@ -2,10 +2,10 @@
   "_doc": "Sandbox final master grail list for V8 injection",
   "_generated_at": "auto",
   "_filters": "tier A: plateau+MC<.05 | tier B: plateau OR MC<.05 | tier C: n>=30 & WR>=65 & PF>=1.3",
-  "_count": 43,
+  "_count": 44,
   "_count_by_tier": {
     "A": 0,
-    "B": 17,
+    "B": 18,
     "C": 26
   },
   "grails": [
@@ -65,21 +65,20 @@
       "ready_for_v8": true
     },
     {
-      "strategy": "TV_Gann_Swing_MultiLayer",
-      "symbol": "NEAR",
+      "strategy": "TV_ABCD_Pattern_Daveatt",
+      "symbol": "DYDX",
       "tf": "1d",
-      "wr": 75.4,
-      "trades": 57,
-      "pf": 9.02,
+      "wr": 82.6,
+      "trades": 23,
+      "pf": 7.828,
       "source": "sandbox_h2_1h_4h_1d_progress.json",
-      "plateau": false,
-      "score": 2761.54,
+      "plateau": true,
+      "score": 3082.36,
       "mc_p_value": null,
       "plateau_confirmed": true,
       "tier": "B",
       "validation": [
-        "plateau",
-        "n_threshold"
+        "plateau"
       ],
       "ready_for_v8": true
     },
@@ -137,24 +136,6 @@
       "validation": [
         "plateau",
         "n_threshold"
-      ],
-      "ready_for_v8": true
-    },
-    {
-      "strategy": "TV_ABCD_Pattern_Daveatt",
-      "symbol": "DYDX",
-      "tf": "1d",
-      "wr": 82.6,
-      "trades": 23,
-      "pf": 7.828,
-      "source": "sandbox_h2_1h_4h_1d_progress.json",
-      "plateau": false,
-      "score": 2054.91,
-      "mc_p_value": null,
-      "plateau_confirmed": true,
-      "tier": "B",
-      "validation": [
-        "plateau"
       ],
       "ready_for_v8": true
     },
@@ -310,6 +291,25 @@
       "ready_for_v8": true
     },
     {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ONDO",
+      "tf": "4h",
+      "wr": 77.8,
+      "trades": 63,
+      "pf": 2.16,
+      "source": "hunter1_mp.log",
+      "plateau": false,
+      "score": 698.89,
+      "mc_p_value": null,
+      "plateau_confirmed": true,
+      "tier": "B",
+      "validation": [
+        "plateau",
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
       "strategy": "TV_VolumeProfile_Reversion",
       "symbol": "TIA",
       "tf": "1d",
@@ -329,15 +329,33 @@
       "ready_for_v8": true
     },
     {
-      "strategy": "TV_ABCD_Pattern_Daveatt",
-      "symbol": "SUI",
-      "tf": "4h",
-      "wr": 78.4,
-      "trades": 37,
-      "pf": 8.172,
+      "strategy": "TV_Momentum_Strategy_REV",
+      "symbol": "AGT",
+      "tf": "1d",
+      "wr": 75.0,
+      "trades": 28,
+      "pf": 1.922,
       "source": "sandbox_h2_1h_4h_1d_progress.json",
       "plateau": false,
-      "score": 2330.55,
+      "score": 485.4,
+      "mc_p_value": null,
+      "plateau_confirmed": true,
+      "tier": "B",
+      "validation": [
+        "plateau"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Gann_Swing_MultiLayer",
+      "symbol": "NEAR",
+      "tf": "1d",
+      "wr": 75.4,
+      "trades": 57,
+      "pf": 9.02,
+      "source": "sandbox_h2_1h_4h_1d_progress.json",
+      "plateau": true,
+      "score": 4142.31,
       "mc_p_value": null,
       "plateau_confirmed": false,
       "tier": "C",
@@ -347,15 +365,15 @@
       "ready_for_v8": true
     },
     {
-      "strategy": "TV_Double_Top_Bottom",
-      "symbol": "ONDO",
+      "strategy": "TV_ABCD_Pattern_Daveatt",
+      "symbol": "SUI",
       "tf": "4h",
-      "wr": 72.4,
-      "trades": 76,
-      "pf": 4.916,
+      "wr": 78.4,
+      "trades": 37,
+      "pf": 8.172,
       "source": "sandbox_h2_1h_4h_1d_progress.json",
-      "plateau": true,
-      "score": 2319.06,
+      "plateau": false,
+      "score": 2330.55,
       "mc_p_value": null,
       "plateau_confirmed": false,
       "tier": "C",
@@ -410,6 +428,24 @@
       "source": "sandbox_h2_1h_4h_1d_progress.json",
       "plateau": false,
       "score": 1603.01,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Double_Top_Bottom",
+      "symbol": "ONDO",
+      "tf": "4h",
+      "wr": 72.4,
+      "trades": 76,
+      "pf": 4.916,
+      "source": "sandbox_h2_1h_4h_1d_progress.json",
+      "plateau": false,
+      "score": 1546.04,
       "mc_p_value": null,
       "plateau_confirmed": false,
       "tier": "C",
@@ -554,24 +590,6 @@
       "source": "sandbox_h2_1h_4h_1d_progress.json",
       "plateau": false,
       "score": 805.71,
-      "mc_p_value": null,
-      "plateau_confirmed": false,
-      "tier": "C",
-      "validation": [
-        "n_threshold"
-      ],
-      "ready_for_v8": true
-    },
-    {
-      "strategy": "TV_Cointegration_PairsTrading",
-      "symbol": "ONDO",
-      "tf": "4h",
-      "wr": 77.8,
-      "trades": 63,
-      "pf": 2.16,
-      "source": "hunter1_mp.log",
-      "plateau": false,
-      "score": 698.89,
       "mc_p_value": null,
       "plateau_confirmed": false,
       "tier": "C",
