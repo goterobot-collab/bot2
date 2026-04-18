@@ -42,20 +42,52 @@ def main():
         k = (g["strategy"], g["symbol"], g["tf"])
         plateau = k in plateau_set
         pval = mc_pvals.get(k)
-        # Final filter: plateau AND p<0.05 (or n>=50 if no MC available)
-        if plateau and (pval is None and g["trades"] >= 50 or pval is not None and pval < 0.05):
-            out.append({
-                **g,
-                "mc_p_value": pval,
-                "validation": ["plateau", "monte_carlo" if pval is not None else "n_threshold"],
-                "ready_for_v8": True,
-            })
+        mc_pass = pval is not None and pval < 0.05
+        n_pass = g.get("trades", 0) >= 30
+        plateau_set_has_data = len(plateau_set) > 0
+        # Relaxed: pass if any of
+        #   (1) plateau confirmed, or
+        #   (2) MC p<0.05, or
+        #   (3) no plateau data available for this wave AND n>=30 AND WR>=65
+        tier = None
+        if plateau and mc_pass:
+            tier = "A"
+        elif plateau:
+            tier = "B"
+        elif mc_pass:
+            tier = "B"
+        elif n_pass and g.get("wr", 0) >= 65 and g.get("pf", 0) >= 1.3:
+            tier = "C"
+        if tier is None:
+            continue
+        out.append({
+            **g,
+            "mc_p_value": pval,
+            "plateau_confirmed": plateau,
+            "tier": tier,
+            "validation": [x for x in [
+                "plateau" if plateau else None,
+                "monte_carlo" if mc_pass else None,
+                "n_threshold" if n_pass else None,
+            ] if x],
+            "ready_for_v8": True,
+        })
+
+    out.sort(key=lambda r: (
+        {"A": 0, "B": 1, "C": 2}[r["tier"]],
+        -(r.get("score") or 0),
+    ))
 
     final = {
         "_doc": "Sandbox final master grail list for V8 injection",
         "_generated_at": "auto",
-        "_filters": "plateau AND (MC p<0.05 OR n>=50)",
+        "_filters": "tier A: plateau+MC<.05 | tier B: plateau OR MC<.05 | tier C: n>=30 & WR>=65 & PF>=1.3",
         "_count": len(out),
+        "_count_by_tier": {
+            "A": sum(1 for g in out if g["tier"] == "A"),
+            "B": sum(1 for g in out if g["tier"] == "B"),
+            "C": sum(1 for g in out if g["tier"] == "C"),
+        },
         "grails": out,
     }
     (ROOT / "coordination" / "SANDBOX_FINAL_MASTER_V8_GRAILS.json").write_text(

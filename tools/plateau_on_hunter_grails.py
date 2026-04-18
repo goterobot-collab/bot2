@@ -29,8 +29,14 @@ MIN_PF_NBR = 1.1
 PLATEAU_THR = 0.60
 
 
-def parse_interim_grails():
-    """Parse logs/hunter1_mp.log for grails (since progress.json bugged)."""
+def parse_interim_grails(all_waves: bool = False):
+    """Parse grails — either HUNTER1 log (legacy) or master ranking (all waves)."""
+    if all_waves:
+        ranking_path = ROOT / "results" / "sandbox_master_ranking.json"
+        if ranking_path.exists():
+            rows = json.loads(ranking_path.read_text())
+            # n>=20 subset + dedup already by ranker
+            return [g for g in rows if g.get("trades", 0) >= 20]
     grails = []
     for log_name in ["hunter1_mp.log"]:
         path = ROOT / "logs" / log_name
@@ -102,8 +108,17 @@ def run_grail_plateau(g, spec):
 
 
 def main():
-    grails = parse_interim_grails()
-    print(f"Loaded {len(grails)} HUNTER1 grails (n>=20)")
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--all-waves", action="store_true",
+                    help="aggregate grails from all waves via master ranking")
+    ap.add_argument("--limit", type=int, default=0,
+                    help="only test first N grails (for speed)")
+    args = ap.parse_args()
+    grails = parse_interim_grails(all_waves=args.all_waves)
+    if args.limit:
+        grails = grails[: args.limit]
+    print(f"Loaded {len(grails)} grails (n>=20, all_waves={args.all_waves})")
     try:
         df_sfp = load_candles("SFP", "1h", "1h")
     except Exception:
@@ -162,9 +177,19 @@ def main():
                      f"{r['wr']:.1f}% | {r['trades']} | {r['pf']:.2f} | "
                      f"{r.get('neighbors', 0)} | {r.get('passing', 0)} | "
                      f"{frac} | {r.get('status', '?')} |")
-    (ROOT / "results" / "sandbox_h1_plateau.md").write_text("\n".join(lines) + "\n")
-    (ROOT / "results" / "sandbox_h1_plateau.json").write_text(json.dumps(results, indent=2, default=str))
-    print(f"\nWrote results/sandbox_h1_plateau.md/json")
+    suffix = "_all" if args.all_waves else ""
+    out_md = ROOT / "results" / f"sandbox_h1_plateau{suffix}.md"
+    out_json = ROOT / "results" / f"sandbox_h1_plateau{suffix}.json"
+    out_md.write_text("\n".join(lines) + "\n")
+    out_json.write_text(json.dumps(results, indent=2, default=str))
+    print(f"\nWrote {out_md.name} / {out_json.name}")
+    # When --all-waves, also overwrite the canonical plateau file so that
+    # build_final_master.py picks up the broader data.
+    if args.all_waves:
+        (ROOT / "results" / "sandbox_h1_plateau.json").write_text(
+            json.dumps(results, indent=2, default=str))
+        print("  (also updated sandbox_h1_plateau.json)")
+    print(f"PLATEAU_FULL_POOL DONE")
 
 
 if __name__ == "__main__":
