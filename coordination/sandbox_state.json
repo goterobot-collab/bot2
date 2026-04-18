@@ -1,6 +1,6 @@
 {
   "_doc": "Master loop state. Each task has stage, status (pending|running|done|failed), started_at, finished_at, log_file. Master loop reads this to know what to do next.",
-  "_updated_at": "2026-04-18T13:00:00Z",
+  "_updated_at": "2026-04-18T14:08:17+00:00",
   "_max_parallel_workers": 4,
   "_priority_queue": [
     "HUNTER1_5m_15m",
@@ -57,63 +57,83 @@
       "log_file": "logs/hunter1_mp.log"
     },
     "HUNTER1_5m_15m": {
-      "status": "running",
+      "status": "stalled",
       "log_file": "logs/hunter1_5m15m.log",
       "started_at": "2026-04-18T13:30:00Z",
-      "next_on_done": "HUNTER2_5m_15m"
+      "next_on_done": "HUNTER2_5m_15m",
+      "last_check": "2026-04-18T14:04:47+00:00"
     },
     "HUNTER2_5m_15m": {
-      "status": "pending",
+      "status": "running",
       "cmd": "python3 tools/hunter_runner.py --wave h2 --tfs 5m 15m",
       "log_file": "logs/hunter2_5m15m.log",
-      "next_on_done": "HUNTER3_5m_15m"
+      "next_on_done": "HUNTER3_5m_15m",
+      "started_at": "2026-04-18T14:04:47+00:00",
+      "last_check": "2026-04-18T14:04:47+00:00"
     },
     "HUNTER3_5m_15m": {
-      "status": "pending",
+      "status": "running",
       "cmd": "python3 tools/hunter_runner.py --wave h3 --tfs 5m 15m",
       "log_file": "logs/hunter3_5m15m.log",
-      "next_on_done": "HUNTER2_1h_4h_1d"
+      "next_on_done": "HUNTER2_1h_4h_1d",
+      "started_at": "2026-04-18T14:04:47+00:00",
+      "last_check": "2026-04-18T14:04:47+00:00"
     },
     "HUNTER2_1h_4h_1d": {
-      "status": "pending",
+      "status": "running",
       "cmd": "python3 tools/hunter_runner.py --wave h2 --tfs 1h 4h 1d",
       "log_file": "logs/hunter2_high.log",
-      "next_on_done": "HUNTER3_1h_4h_1d"
+      "next_on_done": "HUNTER3_1h_4h_1d",
+      "started_at": "2026-04-18T14:05:47+00:00",
+      "last_check": "2026-04-18T14:05:47+00:00"
     },
     "HUNTER3_1h_4h_1d": {
-      "status": "pending",
+      "status": "done",
       "cmd": "python3 tools/hunter_runner.py --wave h3 --tfs 1h 4h 1d",
       "log_file": "logs/hunter3_high.log",
-      "next_on_done": "MONTE_CARLO_500"
+      "next_on_done": "MONTE_CARLO_500",
+      "started_at": "2026-04-18T14:05:47+00:00",
+      "last_check": "2026-04-18T14:05:47+00:00",
+      "finished_at": "2026-04-18T14:06:47+00:00"
     },
     "MONTE_CARLO_500": {
-      "status": "pending",
+      "status": "stalled",
       "cmd": "python3 tools/monte_carlo_grails.py",
       "log_file": "logs/monte_carlo.log",
-      "next_on_done": "SENSITIVITY_FEES"
+      "next_on_done": "SENSITIVITY_FEES",
+      "started_at": "2026-04-18T14:06:47+00:00",
+      "last_check": "2026-04-18T14:07:17+00:00"
     },
     "SENSITIVITY_FEES": {
-      "status": "pending",
+      "status": "stalled",
       "cmd": "python3 tools/sensitivity_fees.py",
       "log_file": "logs/sensitivity.log",
-      "next_on_done": "RANKER"
+      "next_on_done": "RANKER",
+      "started_at": "2026-04-18T14:04:47+00:00",
+      "last_check": "2026-04-18T14:05:17+00:00"
     },
     "RANKER": {
-      "status": "pending",
+      "status": "stalled",
       "cmd": "python3 tools/rank_all_grails.py",
       "log_file": "logs/ranker.log",
-      "next_on_done": "PINE_EMITTER"
+      "next_on_done": "PINE_EMITTER",
+      "started_at": "2026-04-18T14:04:47+00:00",
+      "last_check": "2026-04-18T14:05:17+00:00"
     },
     "PINE_EMITTER": {
-      "status": "pending",
+      "status": "stalled",
       "cmd": "python3 tools/emit_pine_top_grails.py",
       "log_file": "logs/pine.log",
-      "next_on_done": "FINAL_MASTER_LIST"
+      "next_on_done": "FINAL_MASTER_LIST",
+      "started_at": "2026-04-18T14:05:17+00:00",
+      "last_check": "2026-04-18T14:05:47+00:00"
     },
     "FINAL_MASTER_LIST": {
-      "status": "pending",
+      "status": "stalled",
       "cmd": "python3 tools/build_final_master.py",
-      "log_file": "logs/final.log"
+      "log_file": "logs/final.log",
+      "started_at": "2026-04-18T14:05:17+00:00",
+      "last_check": "2026-04-18T14:05:47+00:00"
     }
   }
 }
