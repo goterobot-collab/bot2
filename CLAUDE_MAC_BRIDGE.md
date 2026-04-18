@@ -187,3 +187,54 @@ conciso, directo al grano (instrucciones 1, 3, 6 del CLAUDE.md del repo).
   commit y push después de cada paso
 - No pusheés a `main` ni hagas force-push sin permiso del usuario
 - Ver `CLAUDE.md` en el root del repo para las reglas completas
+
+## Recursos del sandbox (capacidad real)
+
+| Recurso | Cantidad |
+|---------|----------|
+| CPU | 16 vCPU @ 2.1 GHz |
+| RAM | 21 GB (sin swap) |
+| Disco | 30 GB disponibles |
+| Throughput grail-hunt | ~300 it/s total (12 workers) |
+| Uso actual del repo | 1.7 GB |
+
+**Podés mandarme hasta ~20 GB de dump** (data OHLCV + backtests JSONL).
+Por encima de eso procesalo en chunks o mandame diffs incrementales.
+
+**Archivos > 50 MB**: NO los commitees al git. Subilos a un dataset
+público de HuggingFace (el sandbox alcanza `huggingface.co/datasets/.../resolve/main/...`
+si el repo es público) o a `codeload.github.com` si cabe en el repo.
+
+## Cómo me indicás sobre qué operar
+
+Cuando el usuario te pida lanzar una búsqueda dirigida, pasame un JSON
+así de claro al sandbox:
+
+```json
+{
+  "action": "hunt",
+  "assets": ["BTCUSDT", "ETHUSDT", "SOLUSDT"],
+  "tfs": ["5m", "15m"],
+  "families": "novel",
+  "min_trades": 50,
+  "min_wr": 62,
+  "max_dd": 25,
+  "iterations": 500000,
+  "workers": 12
+}
+```
+
+Mapeo:
+- `action`: `hunt` | `validate` (plateau+MC sobre lo que ya hay) | `rerank`
+- `assets`: símbolos a cargar — tengo que tener los CSVs en `data/` antes,
+  así que si son exóticos (SOLUSDT) me los pusheás primero o me mandás
+  URL raw de GitHub/HF para fetch
+- `tfs`: cualquier subset de `1m 5m 15m 30m 1h 4h 1d`
+- `families`: `novel` (solo las 11 microestructura/state-space), `all` (34),
+  o lista explícita `["hurst_regime","bvc_ofi"]`
+- `min_trades`, `min_wr`, `max_dd`: filtros del WF grail filter
+- `iterations`: total random samples (se divide entre workers)
+- `workers`: 1-14 (dejo 2 para OS/monitoreo)
+
+Yo arranco los workers con `--tfs 5m 15m --assets BTCUSDT ETHUSDT SOLUSDT`
+y reporto cada 30 min.
