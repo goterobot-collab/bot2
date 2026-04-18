@@ -6,8 +6,15 @@
     "hetzner": {
       "host": "ubuntu@hetzner-cx32",
       "role": "production backtest queue (V7/V8 bots, optuna, forensic)",
-      "updated_at": null,
-      "claim": null
+      "updated_at": "2026-04-17T21:20:00Z",
+      "claim": {
+        "batch": "mac_survivors_20260417",
+        "combos_range": [0, 3579],
+        "queue_file": "coordination/hetzner_queue_mac_survivors_20260417.json",
+        "progress_file": "results/hetzner_mac_survivors_progress.json",
+        "status": "running",
+        "note": "3579 combos, 6 workers, already produced 6 grails -> 1 CONFIRMED R24 (SWARMS 15m)"
+      }
     },
     "sandbox": {
       "host": "anthropic-sandbox-bot2",
@@ -28,25 +35,45 @@
     "mac": {
       "host": "user-macbook",
       "role": "V8 production dev + handoff orchestrator",
-      "updated_at": null,
-      "claim": null
+      "updated_at": "2026-04-17T21:20:00Z",
+      "claim": {
+        "batch": "orchestration_only",
+        "status": "uploaded optuna_v7 + forensic_backtest + 188 tv2_batch strategies + hetzner_queue_mac_survivors_20260417.json + already_tested_grails.json + SANDBOX_ASSIGNMENT.md",
+        "note": "Mac does NOT run heavy loops. Only orchestrates Hetzner + Sandbox via this repo and injects validated grails to v8_bots.json offline."
+      }
     }
   },
   "batches": {
     "_doc": "Registry of known batches of strategy/param combos. Each batch has an integer combo index space; nodes claim a slice via combos_range to avoid duplication.",
     "mac_survivors_20260417": {
       "total_combos": 3579,
-      "slices_assigned": {}
+      "slices_assigned": {
+        "hetzner": [0, 3579]
+      },
+      "queue_file": "coordination/hetzner_queue_mac_survivors_20260417.json",
+      "status": "running_on_hetzner"
     },
     "tv2_3560_pilot": {
       "total_combos": 1000,
-      "slices_assigned": {}
+      "slices_assigned": {},
+      "note": "HUNTER1 R1 batches 3560-3569 - 30 strats BLOCKED by fn/gen bug (3560-3565), 20 strats runnable (3566-3569)"
     },
     "novel_families_hunt": {
       "total_combos": "random_search",
       "slices_assigned": {
         "sandbox": "seed_range 160000-160012"
       }
+    },
+    "tv2_legacy_50_99": {
+      "total_combos": "50 batches x ~5 strats each = ~250 strategies",
+      "slices_assigned": {},
+      "note": "Available for Sandbox (Prioridad B). See SANDBOX_ASSIGNMENT.md. Suggested assets not covered by novel_families_hunt: INJ/DYDX/GMX/OP/ARB/LINK/AVAX/MATIC/NEAR/FTM",
+      "tfs_required": ["5m", "15m", "1h", "4h", "1d"]
     }
+  },
+  "already_tested_reference": {
+    "grails_fullhistory_final": "coordination/already_tested_grails.json (38 grails, fullhistory-validated +5.7pp WR)",
+    "forensic_mac_survivors":   "coordination/already_tested_forensic_mac_survivors.json (6 grails, 1 CONFIRMED R24)",
+    "batch_registry":           "coordination/BATCH_REGISTRY.md (status per-batch)"
   }
 }
