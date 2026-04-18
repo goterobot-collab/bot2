@@ -42,12 +42,48 @@ def score(g, plateau_set):
     return round(base * (1 + bonus), 2)
 
 
+def parse_grails_from_progress(prog_path: Path):
+    """Parse passing grails from a hunter progress.json shortlist."""
+    grails = []
+    if not prog_path.exists():
+        return grails
+    try:
+        d = json.loads(prog_path.read_text())
+    except Exception:
+        return grails
+    for s in d.get("shortlist", []):
+        if not s.get("passes"):
+            continue
+        m = s.get("metrics", {})
+        try:
+            grails.append({
+                "strategy": s["strategy"], "symbol": s["symbol"], "tf": s["tf"],
+                "wr": float(m["wr"]),
+                "trades": int(m["trades"]),
+                "pf": float(m["pf"]),
+                "source": prog_path.name,
+            })
+        except (KeyError, ValueError, TypeError):
+            continue
+    return grails
+
+
 def main():
     all_grails = []
     for log_name in ("hunter1_mp.log", "hunter1_5m15m.log",
                       "hunter2_5m15m.log", "hunter2_high.log",
                       "hunter3_5m15m.log", "hunter3_high.log"):
         all_grails.extend(parse_grails_from_log(ROOT / "logs" / log_name))
+    # Also include grails from progress.json shortlists (resumable hunters
+    # write per-200-task heartbeats; logs may be rotated on restart).
+    for prog_name in (
+        "sandbox_h1_5m_15m_progress.json",
+        "sandbox_h2_5m_15m_progress.json",
+        "sandbox_h2_1h_4h_1d_progress.json",
+        "sandbox_h3_5m_15m_progress.json",
+        "sandbox_h3_1h_4h_1d_progress.json",
+    ):
+        all_grails.extend(parse_grails_from_progress(ROOT / "results" / prog_name))
 
     # dedup (strategy, symbol, tf) -> best WR
     best = {}

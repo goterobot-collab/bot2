@@ -1,0 +1,51 @@
+//@version=5
+// Auto-emitted from sandbox_master_ranking #1
+// Strategy: TV_ABCD_Pattern_Daveatt  Sym: NEAR  TF: 1d
+// Observed: WR 85.0%  trades 20  PF 8.992  Plateau: YES
+// Score: 3490.48
+//
+// NOTE: This is a TEMPLATE. The signal logic must be ported manually from
+// strategies_v7/ Python to Pine. The risk wrapper below is canonical.
+
+strategy("TV_ABCD_Pattern_Daveatt NEAR 1d", overlay=true,
+     initial_capital=10000,
+     default_qty_type=strategy.percent_of_equity,
+     default_qty_value=100,
+     commission_type=strategy.commission.percent,
+     commission_value=0.1,
+     slippage=2,
+     process_orders_on_close=false)
+
+// === RISK MANAGEMENT (canonical V8 wrapper) ==============================
+riskPct      = input.float(1.0, "Risk per trade %", minval=0.1, maxval=5.0)
+maxDDHalt    = input.float(20.0, "Halt at equity DD%")
+slPct        = input.float(40.0, "Stop loss %", minval=1.0)
+useRegime    = input.bool(true, "Daily EMA200 regime filter")
+
+// Daily regime
+dailyEma200 = request.security(syminfo.tickerid, "D", ta.ema(close, 200))
+macroBull   = not useRegime or close > dailyEma200
+
+// Equity halt
+equityPeak = ta.max(strategy.equity)
+curDD      = (equityPeak - strategy.equity) / equityPeak * 100
+halted     = curDD > maxDDHalt
+
+// === SIGNAL LOGIC (PORT FROM PYTHON HERE) ================================
+// TODO: implement TV_ABCD_Pattern_Daveatt signal in Pine (see strategies_v7/strategies_tv2_batch*.py)
+longSignal  = false  // placeholder
+shortSignal = false  // placeholder
+
+// === ENTRY / EXIT ========================================================
+canTrade = macroBull and not halted
+
+if longSignal and canTrade and strategy.position_size == 0
+    strategy.entry("L", strategy.long)
+    strategy.exit("L_sl", "L", stop = strategy.position_avg_price * (1 - slPct/100))
+
+if shortSignal and canTrade and strategy.position_size == 0
+    strategy.entry("S", strategy.short)
+    strategy.exit("S_sl", "S", stop = strategy.position_avg_price * (1 + slPct/100))
+
+bgcolor(halted ? color.new(color.red, 80) : na, title="HALTED")
+bgcolor(not macroBull ? color.new(color.gray, 92) : na, title="Macro bear")
