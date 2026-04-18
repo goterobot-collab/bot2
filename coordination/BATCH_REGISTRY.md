@@ -216,3 +216,13 @@ Si llega autorización:
 
 Pickle-safe verified via `importlib` + `len(mod.STRATEGY_EXPORT)==5` for all three.
 All 15 `gen_*` run on SFP 1h without exceptions; smoke WR range 0-71% (tuning needed).
+
+## Sandbox Rol B HUNTER batches round 2 (2026-04-18)
+
+| Batch | Theme | Strats | Sources | Status |
+|-------|-------|--------|---------|--------|
+| 3604 | Fractal/multi-scale (Hurst R/S, DFA, Higuchi FD, ZigZag, Williams Fractal) | 5 | Hurst 1951, Peng 1994, Higuchi 1988 | NOT_TESTED |
+| 3605 | Ehlers cycles (MAMA/FAMA, Sine wave, Fisher, Super Smoother, Trend Mode) | 5 | Ehlers MESA papers 2001-2013 | NOT_TESTED |
+| 3606 | ML-lite closed-form (LR channel, Kernel-Ridge, OLS residual, AR1, IC) | 5 | Avellaneda-Lee 2010, Nadaraya-Watson | NOT_TESTED |
+
+Pickle-safe all 15. Smoke on SFP 1h: 13/15 generate trades (ZigZag + IC need wider params).
