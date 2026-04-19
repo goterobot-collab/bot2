@@ -9,24 +9,9 @@
     "source": "hunter1_5m15m.log",
     "plateau": true,
     "score": 3909.72,
-    "plateau_frac": 0.64,
+    "plateau_frac": 0.52,
     "neighbors": 25,
-    "passing": 16,
-    "status": "PLATEAU"
-  },
-  {
-    "strategy": "TV_Double_Top_Bottom",
-    "symbol": "JTO",
-    "tf": "4h",
-    "wr": 85.0,
-    "trades": 20,
-    "pf": 10.838,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": true,
-    "score": 3881.77,
-    "plateau_frac": 0.56,
-    "neighbors": 25,
-    "passing": 14,
+    "passing": 13,
     "status": "spike"
   },
   {
@@ -39,10 +24,25 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": true,
     "score": 3702.47,
-    "plateau_frac": 0.96,
+    "plateau_frac": 1.0,
     "neighbors": 25,
-    "passing": 24,
+    "passing": 25,
     "status": "PLATEAU"
+  },
+  {
+    "strategy": "TV_ABCD_Pattern_Daveatt",
+    "symbol": "SUI",
+    "tf": "4h",
+    "wr": 78.4,
+    "trades": 37,
+    "pf": 8.172,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": true,
+    "score": 3495.82,
+    "plateau_frac": 0.52,
+    "neighbors": 25,
+    "passing": 13,
+    "status": "spike"
   },
   {
     "strategy": "TV_ABCD_Pattern_Daveatt",
@@ -54,9 +54,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": true,
     "score": 3490.48,
-    "plateau_frac": 0.76,
+    "plateau_frac": 0.84,
     "neighbors": 25,
-    "passing": 19,
+    "passing": 21,
     "status": "PLATEAU"
   },
   {
@@ -69,10 +69,10 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": true,
     "score": 3082.36,
-    "plateau_frac": 0.68,
+    "plateau_frac": 0.48,
     "neighbors": 25,
-    "passing": 17,
-    "status": "PLATEAU"
+    "passing": 12,
+    "status": "spike"
   },
   {
     "strategy": "TV_Gann_Swing_MultiLayer",
@@ -84,10 +84,25 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 2761.54,
-    "plateau_frac": 0.52,
+    "plateau_frac": 0.48,
     "neighbors": 25,
-    "passing": 13,
+    "passing": 12,
     "status": "spike"
+  },
+  {
+    "strategy": "TV_Double_Top_Bottom",
+    "symbol": "JTO",
+    "tf": "4h",
+    "wr": 85.0,
+    "trades": 20,
+    "pf": 10.838,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 2587.84,
+    "plateau_frac": 0.72,
+    "neighbors": 25,
+    "passing": 18,
+    "status": "PLATEAU"
   },
   {
     "strategy": "TV_Pivot_Reversal_Backtest",
@@ -99,24 +114,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": true,
     "score": 2346.55,
-    "plateau_frac": 0.92,
+    "plateau_frac": 0.76,
     "neighbors": 25,
-    "passing": 23,
-    "status": "PLATEAU"
-  },
-  {
-    "strategy": "TV_ABCD_Pattern_Daveatt",
-    "symbol": "SUI",
-    "tf": "4h",
-    "wr": 78.4,
-    "trades": 37,
-    "pf": 8.172,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": false,
-    "score": 2330.55,
-    "plateau_frac": 0.64,
-    "neighbors": 25,
-    "passing": 16,
+    "passing": 19,
     "status": "PLATEAU"
   },
   {
@@ -129,9 +129,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": true,
     "score": 2222.08,
-    "plateau_frac": 1.0,
+    "plateau_frac": 0.96,
     "neighbors": 25,
-    "passing": 25,
+    "passing": 24,
     "status": "PLATEAU"
   },
   {
@@ -144,9 +144,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 2213.85,
-    "plateau_frac": 0.36,
+    "plateau_frac": 0.28,
     "neighbors": 25,
-    "passing": 9,
+    "passing": 7,
     "status": "spike"
   },
   {
@@ -159,9 +159,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": true,
     "score": 2183.8,
-    "plateau_frac": 0.88,
+    "plateau_frac": 0.96,
     "neighbors": 25,
-    "passing": 22,
+    "passing": 24,
     "status": "PLATEAU"
   },
   {
@@ -174,9 +174,9 @@
     "source": "hunter3_high.log",
     "plateau": false,
     "score": 1876.32,
-    "plateau_frac": 0.2,
+    "plateau_frac": 0.28,
     "neighbors": 25,
-    "passing": 5,
+    "passing": 7,
     "status": "spike"
   },
   {
@@ -204,9 +204,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": true,
     "score": 1715.14,
-    "plateau_frac": 0.72,
+    "plateau_frac": 0.76,
     "neighbors": 25,
-    "passing": 18,
+    "passing": 19,
     "status": "PLATEAU"
   },
   {
@@ -264,9 +264,9 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 1500.99,
-    "plateau_frac": 0.48,
+    "plateau_frac": 0.2,
     "neighbors": 25,
-    "passing": 12,
+    "passing": 5,
     "status": "spike"
   },
   {
@@ -279,9 +279,9 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 1456.81,
-    "plateau_frac": 0.12,
+    "plateau_frac": 0.2,
     "neighbors": 25,
-    "passing": 3,
+    "passing": 5,
     "status": "spike"
   },
   {
@@ -294,9 +294,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 1451.73,
-    "plateau_frac": 0.2,
+    "plateau_frac": 0.24,
     "neighbors": 25,
-    "passing": 5,
+    "passing": 6,
     "status": "spike"
   },
   {
@@ -339,9 +339,9 @@
     "source": "hunter1_mp.log",
     "plateau": true,
     "score": 1243.72,
-    "plateau_frac": 0.84,
+    "plateau_frac": 0.88,
     "neighbors": 25,
-    "passing": 21,
+    "passing": 22,
     "status": "PLATEAU"
   },
   {
@@ -354,9 +354,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": true,
     "score": 1196.53,
-    "plateau_frac": 0.96,
+    "plateau_frac": 0.92,
     "neighbors": 25,
-    "passing": 24,
+    "passing": 23,
     "status": "PLATEAU"
   },
   {
@@ -384,9 +384,9 @@
     "source": "hunter3_high.log",
     "plateau": false,
     "score": 1179.82,
-    "plateau_frac": 0.05,
+    "plateau_frac": 0.0,
     "neighbors": 21,
-    "passing": 1,
+    "passing": 0,
     "status": "spike"
   },
   {
@@ -429,9 +429,9 @@
     "source": "hunter3_high.log",
     "plateau": false,
     "score": 1082.63,
-    "plateau_frac": 0.04,
+    "plateau_frac": 0.12,
     "neighbors": 25,
-    "passing": 1,
+    "passing": 3,
     "status": "spike"
   },
   {
@@ -444,9 +444,9 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 1069.56,
-    "plateau_frac": 0.12,
+    "plateau_frac": 0.08,
     "neighbors": 25,
-    "passing": 3,
+    "passing": 2,
     "status": "spike"
   },
   {
@@ -459,9 +459,9 @@
     "source": "hunter1_mp.log",
     "plateau": true,
     "score": 1059.92,
-    "plateau_frac": 0.72,
+    "plateau_frac": 0.68,
     "neighbors": 25,
-    "passing": 18,
+    "passing": 17,
     "status": "PLATEAU"
   },
   {
@@ -474,9 +474,9 @@
     "source": "hunter3_high.log",
     "plateau": false,
     "score": 954.76,
-    "plateau_frac": 0.21,
-    "neighbors": 24,
-    "passing": 5,
+    "plateau_frac": 0.12,
+    "neighbors": 25,
+    "passing": 3,
     "status": "spike"
   },
   {
@@ -564,9 +564,9 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 839.06,
-    "plateau_frac": 0.16,
+    "plateau_frac": 0.12,
     "neighbors": 25,
-    "passing": 4,
+    "passing": 3,
     "status": "spike"
   },
   {
@@ -579,9 +579,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 813.68,
-    "plateau_frac": 0.12,
+    "plateau_frac": 0.16,
     "neighbors": 25,
-    "passing": 3,
+    "passing": 4,
     "status": "spike"
   },
   {
@@ -594,9 +594,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 806.49,
-    "plateau_frac": 0.2,
+    "plateau_frac": 0.28,
     "neighbors": 25,
-    "passing": 5,
+    "passing": 7,
     "status": "spike"
   },
   {
@@ -609,9 +609,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 805.71,
-    "plateau_frac": 0.12,
+    "plateau_frac": 0.08,
     "neighbors": 25,
-    "passing": 3,
+    "passing": 2,
     "status": "spike"
   },
   {
@@ -624,10 +624,25 @@
     "source": "hunter1_mp.log",
     "plateau": true,
     "score": 765.44,
-    "plateau_frac": 0.6,
+    "plateau_frac": 0.64,
     "neighbors": 25,
-    "passing": 15,
+    "passing": 16,
     "status": "PLATEAU"
+  },
+  {
+    "strategy": "TV_Momentum_Strategy_REV",
+    "symbol": "AGT",
+    "tf": "1d",
+    "wr": 75.0,
+    "trades": 28,
+    "pf": 1.922,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": true,
+    "score": 728.09,
+    "plateau_frac": 0.4,
+    "neighbors": 25,
+    "passing": 10,
+    "status": "spike"
   },
   {
     "strategy": "TV_Double_Top_Bottom",
@@ -639,9 +654,9 @@
     "source": "hunter2_high.log",
     "plateau": false,
     "score": 719.04,
-    "plateau_frac": 0.0,
+    "plateau_frac": 0.04,
     "neighbors": 25,
-    "passing": 0,
+    "passing": 1,
     "status": "spike"
   },
   {
@@ -654,9 +669,9 @@
     "source": "hunter1_5m15m.log",
     "plateau": false,
     "score": 708.44,
-    "plateau_frac": 0.04,
+    "plateau_frac": 0.12,
     "neighbors": 25,
-    "passing": 1,
+    "passing": 3,
     "status": "spike"
   },
   {
@@ -669,9 +684,9 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 698.89,
-    "plateau_frac": 0.4,
+    "plateau_frac": 0.52,
     "neighbors": 25,
-    "passing": 10,
+    "passing": 13,
     "status": "spike"
   },
   {
@@ -684,9 +699,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 682.1,
-    "plateau_frac": 0.12,
+    "plateau_frac": 0.16,
     "neighbors": 25,
-    "passing": 3,
+    "passing": 4,
     "status": "spike"
   },
   {
@@ -699,9 +714,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 676.86,
-    "plateau_frac": 0.04,
+    "plateau_frac": 0.24,
     "neighbors": 25,
-    "passing": 1,
+    "passing": 6,
     "status": "spike"
   },
   {
@@ -714,9 +729,9 @@
     "source": "hunter3_high.log",
     "plateau": false,
     "score": 676.8,
-    "plateau_frac": 0.11,
+    "plateau_frac": 0.06,
     "neighbors": 18,
-    "passing": 2,
+    "passing": 1,
     "status": "spike"
   },
   {
@@ -729,9 +744,9 @@
     "source": "hunter3_high.log",
     "plateau": false,
     "score": 671.28,
-    "plateau_frac": 0.2,
+    "plateau_frac": 0.08,
     "neighbors": 25,
-    "passing": 5,
+    "passing": 2,
     "status": "spike"
   },
   {
@@ -759,9 +774,9 @@
     "source": "hunter4_high.log",
     "plateau": false,
     "score": 639.87,
-    "plateau_frac": 0.25,
-    "neighbors": 8,
-    "passing": 2,
+    "plateau_frac": 0.11,
+    "neighbors": 9,
+    "passing": 1,
     "status": "spike"
   },
   {
@@ -774,9 +789,9 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 619.55,
-    "plateau_frac": 0.36,
+    "plateau_frac": 0.48,
     "neighbors": 25,
-    "passing": 9,
+    "passing": 12,
     "status": "spike"
   },
   {
@@ -789,9 +804,9 @@
     "source": "hunter3_high.log",
     "plateau": false,
     "score": 609.31,
-    "plateau_frac": 0.2,
-    "neighbors": 20,
-    "passing": 4,
+    "plateau_frac": 0.05,
+    "neighbors": 19,
+    "passing": 1,
     "status": "spike"
   },
   {
@@ -804,9 +819,9 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 585.02,
-    "plateau_frac": 0.24,
+    "plateau_frac": 0.2,
     "neighbors": 25,
-    "passing": 6,
+    "passing": 5,
     "status": "spike"
   },
   {
@@ -834,9 +849,9 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 566.01,
-    "plateau_frac": 0.12,
+    "plateau_frac": 0.04,
     "neighbors": 25,
-    "passing": 3,
+    "passing": 1,
     "status": "spike"
   },
   {
@@ -849,9 +864,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 557.39,
-    "plateau_frac": 0.16,
+    "plateau_frac": 0.24,
     "neighbors": 25,
-    "passing": 4,
+    "passing": 6,
     "status": "spike"
   },
   {
@@ -864,9 +879,9 @@
     "source": "hunter3_high.log",
     "plateau": false,
     "score": 533.68,
-    "plateau_frac": 0.11,
-    "neighbors": 18,
-    "passing": 2,
+    "plateau_frac": 0.0,
+    "neighbors": 12,
+    "passing": 0,
     "status": "spike"
   },
   {
@@ -879,9 +894,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 526.92,
-    "plateau_frac": 0.0,
+    "plateau_frac": 0.04,
     "neighbors": 25,
-    "passing": 0,
+    "passing": 1,
     "status": "spike"
   },
   {
@@ -909,9 +924,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 520.45,
-    "plateau_frac": 0.04,
+    "plateau_frac": 0.0,
     "neighbors": 25,
-    "passing": 1,
+    "passing": 0,
     "status": "spike"
   },
   {
@@ -924,9 +939,9 @@
     "source": "hunter2_high.log",
     "plateau": false,
     "score": 508.74,
-    "plateau_frac": 0.0,
+    "plateau_frac": 0.04,
     "neighbors": 25,
-    "passing": 0,
+    "passing": 1,
     "status": "spike"
   },
   {
@@ -939,9 +954,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 506.35,
-    "plateau_frac": 0.04,
+    "plateau_frac": 0.16,
     "neighbors": 25,
-    "passing": 1,
+    "passing": 4,
     "status": "spike"
   },
   {
@@ -960,21 +975,6 @@
     "status": "spike"
   },
   {
-    "strategy": "TV_Momentum_Strategy_REV",
-    "symbol": "AGT",
-    "tf": "1d",
-    "wr": 75.0,
-    "trades": 28,
-    "pf": 1.922,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": false,
-    "score": 485.4,
-    "plateau_frac": 0.68,
-    "neighbors": 25,
-    "passing": 17,
-    "status": "PLATEAU"
-  },
-  {
     "strategy": "TV_Cointegration_PairsTrading",
     "symbol": "SUI",
     "tf": "4h",
@@ -984,9 +984,9 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 479.0,
-    "plateau_frac": 0.2,
+    "plateau_frac": 0.08,
     "neighbors": 25,
-    "passing": 5,
+    "passing": 2,
     "status": "spike"
   },
   {
@@ -999,9 +999,9 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 468.65,
-    "plateau_frac": 0.08,
+    "plateau_frac": 0.12,
     "neighbors": 25,
-    "passing": 2,
+    "passing": 3,
     "status": "spike"
   },
   {
@@ -1014,9 +1014,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 468.43,
-    "plateau_frac": 0.0,
+    "plateau_frac": 0.08,
     "neighbors": 25,
-    "passing": 0,
+    "passing": 2,
     "status": "spike"
   },
   {
@@ -1029,10 +1029,10 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 464.42,
-    "plateau_frac": 0.52,
+    "plateau_frac": 0.6,
     "neighbors": 25,
-    "passing": 13,
-    "status": "spike"
+    "passing": 15,
+    "status": "PLATEAU"
   },
   {
     "strategy": "TV_VolSpread_Arbitrage",
@@ -1044,8 +1044,8 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 453.28,
-    "plateau_frac": 0.29,
-    "neighbors": 7,
+    "plateau_frac": 0.5,
+    "neighbors": 4,
     "passing": 2,
     "status": "spike"
   },
@@ -1059,9 +1059,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 451.33,
-    "plateau_frac": 0.0,
+    "plateau_frac": 0.08,
     "neighbors": 25,
-    "passing": 0,
+    "passing": 2,
     "status": "spike"
   },
   {
@@ -1074,9 +1074,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 438.21,
-    "plateau_frac": 0.08,
+    "plateau_frac": 0.0,
     "neighbors": 25,
-    "passing": 2,
+    "passing": 0,
     "status": "spike"
   },
   {
@@ -1089,9 +1089,9 @@
     "source": "hunter3_high.log",
     "plateau": false,
     "score": 396.02,
-    "plateau_frac": 0.4,
+    "plateau_frac": 0.28,
     "neighbors": 25,
-    "passing": 10,
+    "passing": 7,
     "status": "spike"
   },
   {
@@ -1104,9 +1104,9 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 313.84,
-    "plateau_frac": 0.12,
+    "plateau_frac": 0.2,
     "neighbors": 25,
-    "passing": 3,
+    "passing": 5,
     "status": "spike"
   }
 ]
