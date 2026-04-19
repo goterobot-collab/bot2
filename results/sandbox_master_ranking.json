@@ -34,6 +34,17 @@
   },
   {
     "strategy": "TV_ABCD_Pattern_Daveatt",
+    "symbol": "SUI",
+    "tf": "4h",
+    "wr": 78.4,
+    "trades": 37,
+    "pf": 8.172,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": true,
+    "score": 3495.82
+  },
+  {
+    "strategy": "TV_ABCD_Pattern_Daveatt",
     "symbol": "NEAR",
     "tf": "1d",
     "wr": 85.0,
@@ -97,17 +108,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": true,
     "score": 2346.55
-  },
-  {
-    "strategy": "TV_ABCD_Pattern_Daveatt",
-    "symbol": "SUI",
-    "tf": "4h",
-    "wr": 78.4,
-    "trades": 37,
-    "pf": 8.172,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": false,
-    "score": 2330.55
   },
   {
     "strategy": "TV_Cointegration_PairsTrading",
@@ -2253,6 +2253,17 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 1299.86
+  },
+  {
+    "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+    "symbol": "WLD",
+    "tf": "1d",
+    "wr": 75.0,
+    "trades": 20,
+    "pf": 3.78,
+    "source": "hunter1_mp.log",
+    "plateau": true,
+    "score": 1294.68
   },
   {
     "strategy": "TV_Wyckoff_Test_After_Spring",
@@ -4521,17 +4532,6 @@
     "score": 864.84
   },
   {
-    "strategy": "TV_AlternatingSignals_MultiTFConfirm",
-    "symbol": "WLD",
-    "tf": "1d",
-    "wr": 75.0,
-    "trades": 20,
-    "pf": 3.78,
-    "source": "hunter1_mp.log",
-    "plateau": false,
-    "score": 863.12
-  },
-  {
     "strategy": "TV_Cointegration_PairsTrading",
     "symbol": "ARB",
     "tf": "4h",
@@ -4686,17 +4686,6 @@
     "score": 731.5
   },
   {
-    "strategy": "TV_Momentum_Strategy_REV",
-    "symbol": "AGT",
-    "tf": "1d",
-    "wr": 75.0,
-    "trades": 28,
-    "pf": 1.922,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": true,
-    "score": 728.09
-  },
-  {
     "strategy": "TV_Double_Top_Bottom",
     "symbol": "PENDLE",
     "tf": "1h",
@@ -4728,6 +4717,17 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 698.89
+  },
+  {
+    "strategy": "TV_VolumeProfile_Reversion",
+    "symbol": "TIA",
+    "tf": "1d",
+    "wr": 77.5,
+    "trades": 111,
+    "pf": 1.27,
+    "source": "hunter1_mp.log",
+    "plateau": true,
+    "score": 696.63
   },
   {
     "strategy": "TV_MACD_Divergence_MTF_EMA",
@@ -5159,6 +5159,17 @@
     "score": 488.43
   },
   {
+    "strategy": "TV_Momentum_Strategy_REV",
+    "symbol": "AGT",
+    "tf": "1d",
+    "wr": 75.0,
+    "trades": 28,
+    "pf": 1.922,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 485.4
+  },
+  {
     "strategy": "TV_Footprint_Volume_Climax",
     "symbol": "INJ",
     "tf": "1d",
@@ -5234,17 +5245,6 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 466.15
-  },
-  {
-    "strategy": "TV_VolumeProfile_Reversion",
-    "symbol": "TIA",
-    "tf": "1d",
-    "wr": 77.5,
-    "trades": 111,
-    "pf": 1.27,
-    "source": "hunter1_mp.log",
-    "plateau": false,
-    "score": 464.42
   },
   {
     "strategy": "TV_Cointegration_PairsTrading",

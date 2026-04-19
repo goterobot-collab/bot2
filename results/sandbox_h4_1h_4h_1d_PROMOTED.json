@@ -1,0 +1,391 @@
+{
+  "TV_Funding_Rate_Fade": {
+    "best": {
+      "sym": "LINK",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "jerk_len": 56,
+        "z_len": 76,
+        "z_thresh": 3.2811051025438465,
+        "smooth": 1
+      }
+    },
+    "passing_combos": 16,
+    "all_passing": [
+      {
+        "sym": "LINK",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "jerk_len": 56,
+          "z_len": 76,
+          "z_thresh": 3.2811051025438465,
+          "smooth": 1
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "jerk_len": 51,
+          "z_len": 368,
+          "z_thresh": 2.0261848444644244,
+          "smooth": 5
+        }
+      },
+      {
+        "sym": "AGT",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 5,
+        "pf": 999.0,
+        "params": {
+          "jerk_len": 57,
+          "z_len": 256,
+          "z_thresh": 2.034134958646196,
+          "smooth": 12
+        }
+      },
+      {
+        "sym": "ARB",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 6,
+        "pf": 999.0,
+        "params": {
+          "jerk_len": 75,
+          "z_len": 392,
+          "z_thresh": 2.7150827441892766,
+          "smooth": 6
+        }
+      },
+      {
+        "sym": "INJ",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "jerk_len": 67,
+          "z_len": 268,
+          "z_thresh": 3.052359752173384,
+          "smooth": 11
+        }
+      },
+      {
+        "sym": "GMX",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "jerk_len": 94,
+          "z_len": 307,
+          "z_thresh": 3.3056861741950865,
+          "smooth": 8
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "jerk_len": 22,
+          "z_len": 136,
+          "z_thresh": 2.936473825868503,
+          "smooth": 8
+        }
+      },
+      {
+        "sym": "PENDLE",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "jerk_len": 68,
+          "z_len": 149,
+          "z_thresh": 2.774172286569444,
+          "smooth": 2
+        }
+      },
+      {
+        "sym": "SEI",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "jerk_len": 74,
+          "z_len": 303,
+          "z_thresh": 1.7638966954210504,
+          "smooth": 12
+        }
+      },
+      {
+        "sym": "PYTH",
+        "tf": "4h",
+        "wr": 83.3,
+        "trades": 12,
+        "pf": 5.177,
+        "params": {
+          "jerk_len": 46,
+          "z_len": 205,
+          "z_thresh": 2.552209998104156,
+          "smooth": 7
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "1d",
+        "wr": 76.9,
+        "trades": 13,
+        "pf": 23.327,
+        "params": {
+          "jerk_len": 52,
+          "z_len": 72,
+          "z_thresh": 1.831131365605823,
+          "smooth": 10
+        }
+      },
+      {
+        "sym": "TIA",
+        "tf": "4h",
+        "wr": 75.0,
+        "trades": 8,
+        "pf": 738.618,
+        "params": {
+          "jerk_len": 35,
+          "z_len": 270,
+          "z_thresh": 2.7056267769342868,
+          "smooth": 2
+        }
+      },
+      {
+        "sym": "PYTH",
+        "tf": "1h",
+        "wr": 75.0,
+        "trades": 12,
+        "pf": 4.825,
+        "params": {
+          "jerk_len": 79,
+          "z_len": 108,
+          "z_thresh": 3.466393103008998,
+          "smooth": 12
+        }
+      },
+      {
+        "sym": "APT",
+        "tf": "4h",
+        "wr": 75.0,
+        "trades": 8,
+        "pf": 1.323,
+        "params": {
+          "jerk_len": 94,
+          "z_len": 168,
+          "z_thresh": 3.131554429978491,
+          "smooth": 10
+        }
+      },
+      {
+        "sym": "WLD",
+        "tf": "4h",
+        "wr": 72.7,
+        "trades": 11,
+        "pf": 12.147,
+        "params": {
+          "jerk_len": 96,
+          "z_len": 377,
+          "z_thresh": 2.5217943236955387,
+          "smooth": 11
+        }
+      },
+      {
+        "sym": "DYDX",
+        "tf": "4h",
+        "wr": 71.4,
+        "trades": 14,
+        "pf": 24.5,
+        "params": {
+          "jerk_len": 88,
+          "z_len": 337,
+          "z_thresh": 2.7770807168124643,
+          "smooth": 10
+        }
+      }
+    ]
+  },
+  "TV_OrderFlow_Momentum_Proxy": {
+    "best": {
+      "sym": "APT",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 3,
+      "pf": 999.0,
+      "params": {
+        "ofm_thresh": 0.6567562570792378,
+        "run_len": 3,
+        "vol_sma": 81
+      }
+    },
+    "passing_combos": 8,
+    "all_passing": [
+      {
+        "sym": "APT",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "ofm_thresh": 0.6567562570792378,
+          "run_len": 3,
+          "vol_sma": 81
+        }
+      },
+      {
+        "sym": "ARB",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "ofm_thresh": 0.646291020226168,
+          "run_len": 3,
+          "vol_sma": 17
+        }
+      },
+      {
+        "sym": "JTO",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "ofm_thresh": 0.7226401103567996,
+          "run_len": 3,
+          "vol_sma": 45
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "ofm_thresh": 0.7826565199484277,
+          "run_len": 3,
+          "vol_sma": 15
+        }
+      },
+      {
+        "sym": "PYTH",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "ofm_thresh": 0.6264708853718683,
+          "run_len": 5,
+          "vol_sma": 76
+        }
+      },
+      {
+        "sym": "INJ",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "ofm_thresh": 0.5808578640862372,
+          "run_len": 6,
+          "vol_sma": 42
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "ofm_thresh": 0.43641551277113616,
+          "run_len": 6,
+          "vol_sma": 96
+        }
+      },
+      {
+        "sym": "DYDX",
+        "tf": "1d",
+        "wr": 77.3,
+        "trades": 22,
+        "pf": 2.638,
+        "params": {
+          "ofm_thresh": 0.5919893816015795,
+          "run_len": 3,
+          "vol_sma": 90
+        }
+      }
+    ]
+  },
+  "TV_Session_Vol_Regime": {
+    "best": {
+      "sym": "ONDO",
+      "tf": "1d",
+      "wr": 76.9,
+      "trades": 13,
+      "pf": 5.324,
+      "params": {
+        "atr_len": 8,
+        "q_len": 448,
+        "q_lo": 0.16559308571796483,
+        "q_hi": 0.834527879216922,
+        "ema_fast": 27,
+        "ema_slow": 128
+      }
+    },
+    "passing_combos": 2,
+    "all_passing": [
+      {
+        "sym": "ONDO",
+        "tf": "1d",
+        "wr": 76.9,
+        "trades": 13,
+        "pf": 5.324,
+        "params": {
+          "atr_len": 8,
+          "q_len": 448,
+          "q_lo": 0.16559308571796483,
+          "q_hi": 0.834527879216922,
+          "ema_fast": 27,
+          "ema_slow": 128
+        }
+      },
+      {
+        "sym": "PYTH",
+        "tf": "1d",
+        "wr": 73.5,
+        "trades": 34,
+        "pf": 6.446,
+        "params": {
+          "atr_len": 49,
+          "q_len": 252,
+          "q_lo": 0.16343338408829544,
+          "q_hi": 0.8258362565384796,
+          "ema_fast": 32,
+          "ema_slow": 140
+        }
+      }
+    ]
+  }
+}
