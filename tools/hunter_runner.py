@@ -45,7 +45,7 @@ MIN_WR = 70.0
 MIN_PF = 1.2
 MIN_TRADES_FLOOR = 8
 TRIALS_PER_COMBO = 20
-WORKERS = 4
+WORKERS = 5
 COMBO_TIMEOUT_S = 30
 PROGRESS_EVERY = 200  # combos between progress flushes
 
@@ -214,8 +214,10 @@ def run(batches, label, shortlist_path, promoted_path, progress_path):
     ) as pool:
         futures = {}
         task_iter = iter(tasks)
-        # prime queue
-        for _ in range(WORKERS * 4):
+        # prime queue: keep pulling until we have WORKERS*4 live futures OR exhaust
+        primed = 0
+        target_primed = WORKERS * 4
+        while primed < target_primed:
             try:
                 _, b, name, pkl, sym, tf = next(task_iter)
             except StopIteration:
@@ -225,6 +227,7 @@ def run(batches, label, shortlist_path, promoted_path, progress_path):
             seed = hash((name, sym, tf, b)) & 0xFFFFFFFF
             fut = pool.submit(_w_job, b, name, pkl, sym, tf, TRIALS_PER_COMBO, seed)
             futures[fut] = (b, name, sym, tf)
+            primed += 1
 
         n_done = len(done_keys)
         while futures:
