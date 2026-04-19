@@ -23,6 +23,17 @@
   },
   {
     "strategy": "TV_ABCD_Pattern_Daveatt",
+    "symbol": "SUI",
+    "tf": "4h",
+    "wr": 78.4,
+    "trades": 37,
+    "pf": 8.172,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": true,
+    "score": 3495.82
+  },
+  {
+    "strategy": "TV_ABCD_Pattern_Daveatt",
     "symbol": "NEAR",
     "tf": "1d",
     "wr": 85.0,
@@ -86,17 +97,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": true,
     "score": 2346.55
-  },
-  {
-    "strategy": "TV_ABCD_Pattern_Daveatt",
-    "symbol": "SUI",
-    "tf": "4h",
-    "wr": 78.4,
-    "trades": 37,
-    "pf": 8.172,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": false,
-    "score": 2330.55
   },
   {
     "strategy": "TV_Cointegration_PairsTrading",
@@ -4455,17 +4455,6 @@
     "score": 698.89
   },
   {
-    "strategy": "TV_VolumeProfile_Reversion",
-    "symbol": "TIA",
-    "tf": "1d",
-    "wr": 77.5,
-    "trades": 111,
-    "pf": 1.27,
-    "source": "hunter1_mp.log",
-    "plateau": true,
-    "score": 696.63
-  },
-  {
     "strategy": "TV_MACD_Divergence_MTF_EMA",
     "symbol": "APT",
     "tf": "1d",
@@ -4959,6 +4948,17 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 466.15
+  },
+  {
+    "strategy": "TV_VolumeProfile_Reversion",
+    "symbol": "TIA",
+    "tf": "1d",
+    "wr": 77.5,
+    "trades": 111,
+    "pf": 1.27,
+    "source": "hunter1_mp.log",
+    "plateau": false,
+    "score": 464.42
   },
   {
     "strategy": "TV_Cointegration_PairsTrading",
