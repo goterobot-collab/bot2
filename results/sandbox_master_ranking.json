@@ -1,16 +1,5 @@
 [
   {
-    "strategy": "TV_Gann_Swing_MultiLayer",
-    "symbol": "NEAR",
-    "tf": "1d",
-    "wr": 75.4,
-    "trades": 57,
-    "pf": 9.02,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": true,
-    "score": 4142.31
-  },
-  {
     "strategy": "TV_Double_Top_Bottom",
     "symbol": "JTO",
     "tf": "4h",
@@ -53,6 +42,17 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": true,
     "score": 3082.36
+  },
+  {
+    "strategy": "TV_Gann_Swing_MultiLayer",
+    "symbol": "NEAR",
+    "tf": "1d",
+    "wr": 75.4,
+    "trades": 57,
+    "pf": 9.02,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 2761.54
   },
   {
     "strategy": "TV_ABCD_Pattern_Daveatt",
@@ -887,6 +887,17 @@
     "trades": 4,
     "pf": 999.0,
     "source": "hunter1_mp.log",
+    "plateau": false,
+    "score": 1609.44
+  },
+  {
+    "strategy": "TV_SupplyDemandStrategy",
+    "symbol": "WLD",
+    "tf": "1h",
+    "wr": 100.0,
+    "trades": 4,
+    "pf": 999.0,
+    "source": "hunter2_high.log",
     "plateau": false,
     "score": 1609.44
   },
@@ -2574,6 +2585,28 @@
     "score": 1098.61
   },
   {
+    "strategy": "TV_SupplyDemandStrategy",
+    "symbol": "JTO",
+    "tf": "1h",
+    "wr": 100.0,
+    "trades": 2,
+    "pf": 999.0,
+    "source": "hunter2_high.log",
+    "plateau": false,
+    "score": 1098.61
+  },
+  {
+    "strategy": "TV_SupplyDemandStrategy",
+    "symbol": "TIA",
+    "tf": "1h",
+    "wr": 100.0,
+    "trades": 2,
+    "pf": 999.0,
+    "source": "hunter2_high.log",
+    "plateau": false,
+    "score": 1098.61
+  },
+  {
     "strategy": "TV_VolumeDelta_Imbalance",
     "symbol": "PENDLE",
     "tf": "15m",
@@ -4026,17 +4059,6 @@
     "score": 1059.92
   },
   {
-    "strategy": "TV_Cointegration_PairsTrading",
-    "symbol": "ONDO",
-    "tf": "4h",
-    "wr": 77.8,
-    "trades": 63,
-    "pf": 2.16,
-    "source": "hunter1_mp.log",
-    "plateau": true,
-    "score": 1048.34
-  },
-  {
     "strategy": "TV_CamarillaPivotsV2",
     "symbol": "OP",
     "tf": "4h",
@@ -4112,17 +4134,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 967.43
-  },
-  {
-    "strategy": "TV_CVD_Crossover",
-    "symbol": "GMX",
-    "tf": "1d",
-    "wr": 70.6,
-    "trades": 34,
-    "pf": 2.56,
-    "source": "hunter3_high.log",
-    "plateau": true,
-    "score": 963.87
   },
   {
     "strategy": "TV_Footprint_Volume_Climax",
@@ -4433,6 +4444,17 @@
     "score": 731.5
   },
   {
+    "strategy": "TV_Cointegration_PairsTrading",
+    "symbol": "ONDO",
+    "tf": "4h",
+    "wr": 77.8,
+    "trades": 63,
+    "pf": 2.16,
+    "source": "hunter1_mp.log",
+    "plateau": false,
+    "score": 698.89
+  },
+  {
     "strategy": "TV_VolumeProfile_Reversion",
     "symbol": "TIA",
     "tf": "1d",
@@ -4541,6 +4563,17 @@
     "source": "hunter3_high.log",
     "plateau": false,
     "score": 644.34
+  },
+  {
+    "strategy": "TV_CVD_Crossover",
+    "symbol": "GMX",
+    "tf": "1d",
+    "wr": 70.6,
+    "trades": 34,
+    "pf": 2.56,
+    "source": "hunter3_high.log",
+    "plateau": false,
+    "score": 642.58
   },
   {
     "strategy": "TV_ADX_DMI_Trend",
