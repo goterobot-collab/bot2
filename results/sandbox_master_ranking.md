@@ -1,35 +1,35 @@
 # Sandbox Master Ranking (all HUNTER waves + plateau bonus)
 
-- Total unique grails: 514
-- Plateau-confirmed: 16
+- Total unique grails: 515
+- Plateau-confirmed: 17
 
 Score = WR × log(1+trades) × min(PF,10) × (1.5 if plateau else 1)
 
 | # | Strategy | Sym | TF | WR | n | PF | Plateau | Score |
 |---|----------|-----|----|-----|---|-----|---------|-------|
-| 1 | `TV_Gann_Swing_MultiLayer` | NEAR | 1d | 75.4% | 57 | 9.02 | Y | 4142 |
-| 2 | `TV_Double_Top_Bottom` | JTO | 4h | 85.0% | 20 | 10.84 | Y | 3882 |
-| 3 | `TV_Pivot_Reversal_Backtest` | SWARMS | 1d | 80.6% | 36 | 8.48 | Y | 3702 |
+| 1 | `TV_Double_Top_Bottom` | JTO | 4h | 85.0% | 20 | 10.84 | Y | 3882 |
+| 2 | `TV_Pivot_Reversal_Backtest` | SWARMS | 1d | 80.6% | 36 | 8.48 | Y | 3702 |
+| 3 | `TV_ABCD_Pattern_Daveatt` | SUI | 4h | 78.4% | 37 | 8.17 | Y | 3496 |
 | 4 | `TV_ABCD_Pattern_Daveatt` | NEAR | 1d | 85.0% | 20 | 8.99 | Y | 3490 |
-| 5 | `TV_ABCD_Pattern_Daveatt` | SUI | 1d | 84.2% | 19 | 19.53 |  | 2522 |
-| 6 | `TV_ABCD_Harmonic_BullBear` | SEI | 4h | 86.7% | 15 | 46.78 |  | 2404 |
-| 7 | `TV_Pivot_Reversal_Backtest` | GMX | 1d | 71.5% | 123 | 4.54 | Y | 2347 |
-| 8 | `TV_ABCD_Pattern_Daveatt` | SUI | 4h | 78.4% | 37 | 8.17 |  | 2331 |
-| 9 | `TV_Cointegration_PairsTrading` | WLD | 1d | 85.7% | 14 | 12.10 |  | 2321 |
-| 10 | `TV_ABCD_Harmonic_BullBear` | JUP | 1d | 90.9% | 11 | 65.52 |  | 2259 |
-| 11 | `TV_ABCD_Pattern_Daveatt` | OP | 1d | 90.9% | 11 | 365.14 |  | 2259 |
-| 12 | `TV_TOD_WR_Pocket` | SWARMS | 4h | 84.6% | 13 | 12.73 |  | 2233 |
-| 13 | `TV_Pivot_Reversal_Backtest` | ONDO | 1d | 75.3% | 89 | 4.37 | Y | 2222 |
-| 14 | `TV_ABCD_Pattern_Daveatt` | PYTH | 1d | 78.8% | 33 | 7.97 |  | 2214 |
-| 15 | `TV_Cointegration_PairsTrading` | AGT | 1d | 100.0% | 8 | 999.00 |  | 2197 |
-| 16 | `TV_Pivot_Reversal_Backtest` | LINK | 1d | 71.1% | 173 | 3.97 | Y | 2184 |
-| 17 | `TV_FairValueGap_Trading` | AGT | 1d | 90.0% | 10 | 10.35 |  | 2158 |
-| 18 | `TV_PriceAction_Pattern_Breakout` | AGT | 1d | 90.0% | 10 | 10.35 |  | 2158 |
-| 19 | `TV_DrawOnLiquidity` | GMX | 1d | 83.3% | 12 | 25.24 |  | 2137 |
-| 20 | `TV_ABCD_Pattern_Daveatt` | TIA | 4h | 78.6% | 14 | 12.77 |  | 2129 |
-| 21 | `TV_Weekend_Gap_Fade` | SWARMS | 4h | 100.0% | 7 | 999.00 |  | 2079 |
-| 22 | `TV_RSI_Divergence_Alifer` | SUI | 1d | 100.0% | 7 | 999.00 |  | 2079 |
-| 23 | `TV_ABCD_Pattern_Daveatt` | DYDX | 1d | 82.6% | 23 | 7.83 |  | 2055 |
+| 5 | `TV_ABCD_Pattern_Daveatt` | DYDX | 1d | 82.6% | 23 | 7.83 | Y | 3082 |
+| 6 | `TV_Gann_Swing_MultiLayer` | NEAR | 1d | 75.4% | 57 | 9.02 |  | 2762 |
+| 7 | `TV_ABCD_Pattern_Daveatt` | SUI | 1d | 84.2% | 19 | 19.53 |  | 2522 |
+| 8 | `TV_ABCD_Harmonic_BullBear` | SEI | 4h | 86.7% | 15 | 46.78 |  | 2404 |
+| 9 | `TV_Pivot_Reversal_Backtest` | GMX | 1d | 71.5% | 123 | 4.54 | Y | 2347 |
+| 10 | `TV_Cointegration_PairsTrading` | WLD | 1d | 85.7% | 14 | 12.10 |  | 2321 |
+| 11 | `TV_ABCD_Harmonic_BullBear` | JUP | 1d | 90.9% | 11 | 65.52 |  | 2259 |
+| 12 | `TV_ABCD_Pattern_Daveatt` | OP | 1d | 90.9% | 11 | 365.14 |  | 2259 |
+| 13 | `TV_TOD_WR_Pocket` | SWARMS | 4h | 84.6% | 13 | 12.73 |  | 2233 |
+| 14 | `TV_Pivot_Reversal_Backtest` | ONDO | 1d | 75.3% | 89 | 4.37 | Y | 2222 |
+| 15 | `TV_ABCD_Pattern_Daveatt` | PYTH | 1d | 78.8% | 33 | 7.97 |  | 2214 |
+| 16 | `TV_Cointegration_PairsTrading` | AGT | 1d | 100.0% | 8 | 999.00 |  | 2197 |
+| 17 | `TV_Pivot_Reversal_Backtest` | LINK | 1d | 71.1% | 173 | 3.97 | Y | 2184 |
+| 18 | `TV_FairValueGap_Trading` | AGT | 1d | 90.0% | 10 | 10.35 |  | 2158 |
+| 19 | `TV_PriceAction_Pattern_Breakout` | AGT | 1d | 90.0% | 10 | 10.35 |  | 2158 |
+| 20 | `TV_DrawOnLiquidity` | GMX | 1d | 83.3% | 12 | 25.24 |  | 2137 |
+| 21 | `TV_ABCD_Pattern_Daveatt` | TIA | 4h | 78.6% | 14 | 12.77 |  | 2129 |
+| 22 | `TV_Weekend_Gap_Fade` | SWARMS | 4h | 100.0% | 7 | 999.00 |  | 2079 |
+| 23 | `TV_RSI_Divergence_Alifer` | SUI | 1d | 100.0% | 7 | 999.00 |  | 2079 |
 | 24 | `TV_Footprint_Volume_Climax` | PYTH | 1d | 88.9% | 9 | 20.26 |  | 2047 |
 | 25 | `TV_Ichimoku_Long_Only` | SWARMS | 1d | 88.9% | 9 | 30.15 |  | 2047 |
 | 26 | `TV_DrawOnLiquidity` | SUI | 4h | 88.9% | 9 | 9.99 |  | 2046 |
@@ -202,8 +202,8 @@ Score = WR × log(1+trades) × min(PF,10) × (1.5 if plateau else 1)
 | 193 | `TV_ABCD_Pattern_Daveatt` | JUP | 4h | 77.8% | 9 | 7.68 |  | 1377 |
 | 194 | `TV_DrawOnLiquidity` | TIA | 4h | 88.9% | 9 | 6.36 |  | 1301 |
 | 195 | `TV_DominantCycleLibrary` | WLD | 1d | 70.6% | 17 | 6.37 |  | 1300 |
-| 196 | `TV_AlternatingSignals_MultiTFConfirm` | WLD | 1d | 75.0% | 20 | 3.78 | Y | 1295 |
-| 197 | `TV_Wyckoff_Test_After_Spring` | SFP | 1d | 75.0% | 20 | 5.63 |  | 1286 |
-| 198 | `TV_Cointegration_PairsTrading` | AGT | 4h | 79.2% | 48 | 2.69 | Y | 1244 |
-| 199 | `TV_MTFBreakOfStructure` | AVAX | 1d | 87.5% | 16 | 4.90 |  | 1214 |
-| 200 | `TV_Pivot_Reversal_Backtest` | JUP | 1d | 71.7% | 113 | 2.35 | Y | 1197 |
+| 196 | `TV_Wyckoff_Test_After_Spring` | SFP | 1d | 75.0% | 20 | 5.63 |  | 1286 |
+| 197 | `TV_Cointegration_PairsTrading` | AGT | 4h | 79.2% | 48 | 2.69 | Y | 1244 |
+| 198 | `TV_MTFBreakOfStructure` | AVAX | 1d | 87.5% | 16 | 4.90 |  | 1214 |
+| 199 | `TV_Pivot_Reversal_Backtest` | JUP | 1d | 71.7% | 113 | 2.35 | Y | 1197 |
+| 200 | `TV_VolumeDelta_Imbalance` | APT | 1h | 81.8% | 22 | 4.60 |  | 1180 |
