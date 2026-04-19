@@ -1,16 +1,5 @@
 [
   {
-    "strategy": "TV_Double_Top_Bottom",
-    "symbol": "JTO",
-    "tf": "4h",
-    "wr": 85.0,
-    "trades": 20,
-    "pf": 10.838,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": true,
-    "score": 3881.77
-  },
-  {
     "strategy": "TV_Pivot_Reversal_Backtest",
     "symbol": "SWARMS",
     "tf": "1d",
@@ -20,17 +9,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": true,
     "score": 3702.47
-  },
-  {
-    "strategy": "TV_ABCD_Pattern_Daveatt",
-    "symbol": "SUI",
-    "tf": "4h",
-    "wr": 78.4,
-    "trades": 37,
-    "pf": 8.172,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": true,
-    "score": 3495.82
   },
   {
     "strategy": "TV_ABCD_Pattern_Daveatt",
@@ -66,6 +44,17 @@
     "score": 2761.54
   },
   {
+    "strategy": "TV_Double_Top_Bottom",
+    "symbol": "JTO",
+    "tf": "4h",
+    "wr": 85.0,
+    "trades": 20,
+    "pf": 10.838,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 2587.84
+  },
+  {
     "strategy": "TV_ABCD_Pattern_Daveatt",
     "symbol": "SUI",
     "tf": "1d",
@@ -97,6 +86,17 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": true,
     "score": 2346.55
+  },
+  {
+    "strategy": "TV_ABCD_Pattern_Daveatt",
+    "symbol": "SUI",
+    "tf": "4h",
+    "wr": 78.4,
+    "trades": 37,
+    "pf": 8.172,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 2330.55
   },
   {
     "strategy": "TV_Cointegration_PairsTrading",
@@ -4574,6 +4574,17 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 662.46
+  },
+  {
+    "strategy": "TV_LuxAlgo_SMC_Ultimate",
+    "symbol": "PENDLE",
+    "tf": "1h",
+    "wr": 75.0,
+    "trades": 8,
+    "pf": 4.01,
+    "source": "hunter2_high.log",
+    "plateau": false,
+    "score": 660.82
   },
   {
     "strategy": "TV_VolatilityCluster_Fade",
