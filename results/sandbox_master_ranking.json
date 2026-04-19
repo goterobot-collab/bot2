@@ -2112,6 +2112,17 @@
     "score": 1299.86
   },
   {
+    "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+    "symbol": "WLD",
+    "tf": "1d",
+    "wr": 75.0,
+    "trades": 20,
+    "pf": 3.78,
+    "source": "hunter1_mp.log",
+    "plateau": true,
+    "score": 1294.68
+  },
+  {
     "strategy": "TV_Wyckoff_Test_After_Spring",
     "symbol": "SFP",
     "tf": "1d",
@@ -4222,17 +4233,6 @@
     "source": "hunter1_mp.log",
     "plateau": true,
     "score": 864.84
-  },
-  {
-    "strategy": "TV_AlternatingSignals_MultiTFConfirm",
-    "symbol": "WLD",
-    "tf": "1d",
-    "wr": 75.0,
-    "trades": 20,
-    "pf": 3.78,
-    "source": "hunter1_mp.log",
-    "plateau": false,
-    "score": 863.12
   },
   {
     "strategy": "TV_Cointegration_PairsTrading",

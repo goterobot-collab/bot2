@@ -1,7 +1,7 @@
 # Sandbox Master Ranking (all HUNTER waves + plateau bonus)
 
 - Total unique grails: 505
-- Plateau-confirmed: 17
+- Plateau-confirmed: 18
 
 Score = WR × log(1+trades) × min(PF,10) × (1.5 if plateau else 1)
 
@@ -199,11 +199,11 @@ Score = WR × log(1+trades) × min(PF,10) × (1.5 if plateau else 1)
 | 190 | `TV_ABCD_Pattern_Daveatt` | JUP | 4h | 77.8% | 9 | 7.68 |  | 1377 |
 | 191 | `TV_DrawOnLiquidity` | TIA | 4h | 88.9% | 9 | 6.36 |  | 1301 |
 | 192 | `TV_DominantCycleLibrary` | WLD | 1d | 70.6% | 17 | 6.37 |  | 1300 |
-| 193 | `TV_Wyckoff_Test_After_Spring` | SFP | 1d | 75.0% | 20 | 5.63 |  | 1286 |
-| 194 | `TV_Cointegration_PairsTrading` | AGT | 4h | 79.2% | 48 | 2.69 | Y | 1244 |
-| 195 | `TV_MTFBreakOfStructure` | AVAX | 1d | 87.5% | 16 | 4.90 |  | 1214 |
-| 196 | `TV_Pivot_Reversal_Backtest` | JUP | 1d | 71.7% | 113 | 2.35 | Y | 1197 |
-| 197 | `TV_VolumeDelta_Imbalance` | APT | 1h | 81.8% | 22 | 4.60 |  | 1180 |
-| 198 | `TV_Footprint_Volume_Climax` | SUI | 4h | 76.5% | 34 | 4.32 |  | 1175 |
-| 199 | `TV_MTFBreakOfStructure` | ONDO | 1d | 77.8% | 9 | 6.47 |  | 1160 |
-| 200 | `TV_MACD_Divergence_MTF_EMA` | SUI | 1d | 70.8% | 24 | 4.96 |  | 1130 |
+| 193 | `TV_AlternatingSignals_MultiTFConfirm` | WLD | 1d | 75.0% | 20 | 3.78 | Y | 1295 |
+| 194 | `TV_Wyckoff_Test_After_Spring` | SFP | 1d | 75.0% | 20 | 5.63 |  | 1286 |
+| 195 | `TV_Cointegration_PairsTrading` | AGT | 4h | 79.2% | 48 | 2.69 | Y | 1244 |
+| 196 | `TV_MTFBreakOfStructure` | AVAX | 1d | 87.5% | 16 | 4.90 |  | 1214 |
+| 197 | `TV_Pivot_Reversal_Backtest` | JUP | 1d | 71.7% | 113 | 2.35 | Y | 1197 |
+| 198 | `TV_VolumeDelta_Imbalance` | APT | 1h | 81.8% | 22 | 4.60 |  | 1180 |
+| 199 | `TV_Footprint_Volume_Climax` | SUI | 4h | 76.5% | 34 | 4.32 |  | 1175 |
+| 200 | `TV_MTFBreakOfStructure` | ONDO | 1d | 77.8% | 9 | 6.47 |  | 1160 |
