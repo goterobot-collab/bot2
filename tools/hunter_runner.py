@@ -416,7 +416,7 @@ def _write_reports(shortlist, label, batches, shortlist_path, promoted_path, t0)
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--wave", choices=["h1", "h2", "h3", "h4"], required=True)
+    ap.add_argument("--wave", choices=["h1", "h2", "h3", "h4", "h5"], required=True)
     ap.add_argument("--tfs", nargs="+", default=None,
                     help="Restrict to specific TFs (e.g. --tfs 5m 15m)")
     ap.add_argument("--batches", nargs="+", default=None,
@@ -448,12 +448,18 @@ def main():
         sp = ROOT / "results" / f"sandbox_h3{tfs_label}_SHORTLIST.md"
         pp = ROOT / "results" / f"sandbox_h3{tfs_label}_PROMOTED.json"
         prog = ROOT / "results" / f"sandbox_h3{tfs_label}_progress.json"
-    else:  # h4 = crypto-microstructure / novel families (batch 3607+)
+    elif args.wave == "h4":  # h4 = crypto-microstructure / novel families (batch 3607)
         batches = ["3607"]
         label = "HUNTER4" + tfs_label
         sp = ROOT / "results" / f"sandbox_h4{tfs_label}_SHORTLIST.md"
         pp = ROOT / "results" / f"sandbox_h4{tfs_label}_PROMOTED.json"
         prog = ROOT / "results" / f"sandbox_h4{tfs_label}_progress.json"
+    else:  # h5 = fractal/Ehlers/regression families (batches 3604-3606)
+        batches = ["3604", "3605", "3606"]
+        label = "HUNTER5" + tfs_label
+        sp = ROOT / "results" / f"sandbox_h5{tfs_label}_SHORTLIST.md"
+        pp = ROOT / "results" / f"sandbox_h5{tfs_label}_PROMOTED.json"
+        prog = ROOT / "results" / f"sandbox_h5{tfs_label}_progress.json"
 
     if args.batches:
         batches = list(args.batches)
