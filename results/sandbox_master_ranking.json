@@ -45,6 +45,17 @@
   },
   {
     "strategy": "TV_ABCD_Pattern_Daveatt",
+    "symbol": "DYDX",
+    "tf": "1d",
+    "wr": 82.6,
+    "trades": 23,
+    "pf": 7.828,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": true,
+    "score": 3082.36
+  },
+  {
+    "strategy": "TV_ABCD_Pattern_Daveatt",
     "symbol": "SUI",
     "tf": "1d",
     "wr": 84.2,
@@ -240,17 +251,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 2079.44
-  },
-  {
-    "strategy": "TV_ABCD_Pattern_Daveatt",
-    "symbol": "DYDX",
-    "tf": "1d",
-    "wr": 82.6,
-    "trades": 23,
-    "pf": 7.828,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": false,
-    "score": 2054.91
   },
   {
     "strategy": "TV_Footprint_Volume_Climax",
@@ -2552,6 +2552,28 @@
     "score": 1098.61
   },
   {
+    "strategy": "TV_PeriodHighlighterPro",
+    "symbol": "LINK",
+    "tf": "1h",
+    "wr": 100.0,
+    "trades": 2,
+    "pf": 999.0,
+    "source": "hunter2_high.log",
+    "plateau": false,
+    "score": 1098.61
+  },
+  {
+    "strategy": "TV_PeriodHighlighterPro",
+    "symbol": "WLD",
+    "tf": "1h",
+    "wr": 100.0,
+    "trades": 2,
+    "pf": 999.0,
+    "source": "hunter2_high.log",
+    "plateau": false,
+    "score": 1098.61
+  },
+  {
     "strategy": "TV_VolumeDelta_Imbalance",
     "symbol": "PENDLE",
     "tf": "15m",
@@ -4092,6 +4114,17 @@
     "score": 967.43
   },
   {
+    "strategy": "TV_CVD_Crossover",
+    "symbol": "GMX",
+    "tf": "1d",
+    "wr": 70.6,
+    "trades": 34,
+    "pf": 2.56,
+    "source": "hunter3_high.log",
+    "plateau": true,
+    "score": 963.87
+  },
+  {
     "strategy": "TV_Footprint_Volume_Climax",
     "symbol": "ARB",
     "tf": "1d",
@@ -4422,17 +4455,6 @@
     "score": 682.1
   },
   {
-    "strategy": "TV_VolSpread_Arbitrage",
-    "symbol": "JTO",
-    "tf": "1d",
-    "wr": 73.9,
-    "trades": 23,
-    "pf": 1.93,
-    "source": "hunter1_mp.log",
-    "plateau": true,
-    "score": 679.91
-  },
-  {
     "strategy": "TV_MACD_Divergence_MTF_EMA",
     "symbol": "TIA",
     "tf": "1d",
@@ -4519,17 +4541,6 @@
     "source": "hunter3_high.log",
     "plateau": false,
     "score": 644.34
-  },
-  {
-    "strategy": "TV_CVD_Crossover",
-    "symbol": "GMX",
-    "tf": "1d",
-    "wr": 70.6,
-    "trades": 34,
-    "pf": 2.56,
-    "source": "hunter3_high.log",
-    "plateau": false,
-    "score": 642.58
   },
   {
     "strategy": "TV_ADX_DMI_Trend",
@@ -4948,6 +4959,17 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 455.31
+  },
+  {
+    "strategy": "TV_VolSpread_Arbitrage",
+    "symbol": "JTO",
+    "tf": "1d",
+    "wr": 73.9,
+    "trades": 23,
+    "pf": 1.93,
+    "source": "hunter1_mp.log",
+    "plateau": false,
+    "score": 453.28
   },
   {
     "strategy": "TV_MarketStructureBOSCHoCH",
