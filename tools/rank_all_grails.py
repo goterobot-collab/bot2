@@ -70,18 +70,23 @@ def parse_grails_from_progress(prog_path: Path):
 
 def main():
     all_grails = []
-    for log_name in ("hunter1_mp.log", "hunter1_5m15m.log",
+    for log_name in ("hunter1_mp.log", "hunter1_5m15m.log", "hunter1_high.log",
                       "hunter2_5m15m.log", "hunter2_high.log",
-                      "hunter3_5m15m.log", "hunter3_high.log"):
+                      "hunter3_5m15m.log", "hunter3_high.log",
+                      "hunter4_high.log", "hunter4_5m15m.log"):
         all_grails.extend(parse_grails_from_log(ROOT / "logs" / log_name))
     # Also include grails from progress.json shortlists (resumable hunters
     # write per-200-task heartbeats; logs may be rotated on restart).
     for prog_name in (
         "sandbox_h1_5m_15m_progress.json",
+        "sandbox_h1_15m_5m_progress.json",
+        "sandbox_h1_1h_4h_1d_progress.json",
         "sandbox_h2_5m_15m_progress.json",
         "sandbox_h2_1h_4h_1d_progress.json",
         "sandbox_h3_5m_15m_progress.json",
         "sandbox_h3_1h_4h_1d_progress.json",
+        "sandbox_h4_1h_4h_1d_progress.json",
+        "sandbox_h4_5m_15m_progress.json",
     ):
         all_grails.extend(parse_grails_from_progress(ROOT / "results" / prog_name))
 
