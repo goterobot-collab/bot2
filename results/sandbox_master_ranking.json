@@ -891,17 +891,6 @@
     "score": 1609.44
   },
   {
-    "strategy": "TV_SupplyDemandStrategy",
-    "symbol": "WLD",
-    "tf": "1h",
-    "wr": 100.0,
-    "trades": 4,
-    "pf": 999.0,
-    "source": "hunter2_high.log",
-    "plateau": false,
-    "score": 1609.44
-  },
-  {
     "strategy": "TV_VolumeDelta_Imbalance",
     "symbol": "INJ",
     "tf": "15m",
@@ -1232,6 +1221,17 @@
     "score": 1609.44
   },
   {
+    "strategy": "TV_SupplyDemandStrategy",
+    "symbol": "WLD",
+    "tf": "1h",
+    "wr": 100.0,
+    "trades": 4,
+    "pf": 999.0,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 1609.44
+  },
+  {
     "strategy": "TV_ABCD_Harmonic_BullBear",
     "symbol": "JTO",
     "tf": "4h",
@@ -1525,17 +1525,6 @@
     "trades": 3,
     "pf": 999.0,
     "source": "hunter1_mp.log",
-    "plateau": false,
-    "score": 1386.29
-  },
-  {
-    "strategy": "TV_FloorPivots",
-    "symbol": "SFP",
-    "tf": "1h",
-    "wr": 100.0,
-    "trades": 3,
-    "pf": 999.0,
-    "source": "hunter2_high.log",
     "plateau": false,
     "score": 1386.29
   },
@@ -2101,6 +2090,17 @@
     "score": 1386.29
   },
   {
+    "strategy": "TV_FloorPivots",
+    "symbol": "SFP",
+    "tf": "1h",
+    "wr": 100.0,
+    "trades": 3,
+    "pf": 999.0,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 1386.29
+  },
+  {
     "strategy": "TV_ABCD_Pattern_Daveatt",
     "symbol": "JUP",
     "tf": "4h",
@@ -2559,50 +2559,6 @@
     "trades": 2,
     "pf": 999.0,
     "source": "hunter1_mp.log",
-    "plateau": false,
-    "score": 1098.61
-  },
-  {
-    "strategy": "TV_PeriodHighlighterPro",
-    "symbol": "LINK",
-    "tf": "1h",
-    "wr": 100.0,
-    "trades": 2,
-    "pf": 999.0,
-    "source": "hunter2_high.log",
-    "plateau": false,
-    "score": 1098.61
-  },
-  {
-    "strategy": "TV_PeriodHighlighterPro",
-    "symbol": "WLD",
-    "tf": "1h",
-    "wr": 100.0,
-    "trades": 2,
-    "pf": 999.0,
-    "source": "hunter2_high.log",
-    "plateau": false,
-    "score": 1098.61
-  },
-  {
-    "strategy": "TV_SupplyDemandStrategy",
-    "symbol": "JTO",
-    "tf": "1h",
-    "wr": 100.0,
-    "trades": 2,
-    "pf": 999.0,
-    "source": "hunter2_high.log",
-    "plateau": false,
-    "score": 1098.61
-  },
-  {
-    "strategy": "TV_SupplyDemandStrategy",
-    "symbol": "TIA",
-    "tf": "1h",
-    "wr": 100.0,
-    "trades": 2,
-    "pf": 999.0,
-    "source": "hunter2_high.log",
     "plateau": false,
     "score": 1098.61
   },
@@ -3984,6 +3940,50 @@
   {
     "strategy": "TV_CombinedStrategyRSIADXSMA",
     "symbol": "LINK",
+    "tf": "1h",
+    "wr": 100.0,
+    "trades": 2,
+    "pf": 999.0,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 1098.61
+  },
+  {
+    "strategy": "TV_PeriodHighlighterPro",
+    "symbol": "LINK",
+    "tf": "1h",
+    "wr": 100.0,
+    "trades": 2,
+    "pf": 999.0,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 1098.61
+  },
+  {
+    "strategy": "TV_PeriodHighlighterPro",
+    "symbol": "WLD",
+    "tf": "1h",
+    "wr": 100.0,
+    "trades": 2,
+    "pf": 999.0,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 1098.61
+  },
+  {
+    "strategy": "TV_SupplyDemandStrategy",
+    "symbol": "JTO",
+    "tf": "1h",
+    "wr": 100.0,
+    "trades": 2,
+    "pf": 999.0,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 1098.61
+  },
+  {
+    "strategy": "TV_SupplyDemandStrategy",
+    "symbol": "TIA",
     "tf": "1h",
     "wr": 100.0,
     "trades": 2,
