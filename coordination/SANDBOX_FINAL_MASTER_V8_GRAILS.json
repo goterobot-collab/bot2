@@ -65,6 +65,42 @@
       "ready_for_v8": true
     },
     {
+      "strategy": "TV_ABCD_Pattern_Daveatt",
+      "symbol": "DYDX",
+      "tf": "1d",
+      "wr": 82.6,
+      "trades": 23,
+      "pf": 7.828,
+      "source": "sandbox_h2_1h_4h_1d_progress.json",
+      "plateau": true,
+      "score": 3082.36,
+      "mc_p_value": null,
+      "plateau_confirmed": true,
+      "tier": "B",
+      "validation": [
+        "plateau"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "DYDX",
+      "tf": "15m",
+      "wr": 80.0,
+      "trades": 25,
+      "pf": 13.39,
+      "source": "hunter1_5m15m.log",
+      "plateau": false,
+      "score": 2606.48,
+      "mc_p_value": null,
+      "plateau_confirmed": true,
+      "tier": "B",
+      "validation": [
+        "plateau"
+      ],
+      "ready_for_v8": true
+    },
+    {
       "strategy": "TV_Pivot_Reversal_Backtest",
       "symbol": "GMX",
       "tf": "1d",
@@ -122,24 +158,6 @@
       "ready_for_v8": true
     },
     {
-      "strategy": "TV_ABCD_Pattern_Daveatt",
-      "symbol": "DYDX",
-      "tf": "1d",
-      "wr": 82.6,
-      "trades": 23,
-      "pf": 7.828,
-      "source": "sandbox_h2_1h_4h_1d_progress.json",
-      "plateau": false,
-      "score": 2054.91,
-      "mc_p_value": null,
-      "plateau_confirmed": true,
-      "tier": "B",
-      "validation": [
-        "plateau"
-      ],
-      "ready_for_v8": true
-    },
-    {
       "strategy": "TV_Double_Top_Bottom",
       "symbol": "PYTH",
       "tf": "4h",
@@ -155,24 +173,6 @@
       "validation": [
         "plateau",
         "n_threshold"
-      ],
-      "ready_for_v8": true
-    },
-    {
-      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
-      "symbol": "WLD",
-      "tf": "1d",
-      "wr": 75.0,
-      "trades": 20,
-      "pf": 3.78,
-      "source": "hunter1_mp.log",
-      "plateau": true,
-      "score": 1294.68,
-      "mc_p_value": 0.44,
-      "plateau_confirmed": true,
-      "tier": "B",
-      "validation": [
-        "plateau"
       ],
       "ready_for_v8": true
     },
