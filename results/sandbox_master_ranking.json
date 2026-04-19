@@ -1,5 +1,16 @@
 [
   {
+    "strategy": "TV_VolatilityAdaptive_Reversal",
+    "symbol": "DYDX",
+    "tf": "15m",
+    "wr": 80.0,
+    "trades": 25,
+    "pf": 13.39,
+    "source": "hunter1_5m15m.log",
+    "plateau": true,
+    "score": 3909.72
+  },
+  {
     "strategy": "TV_Double_Top_Bottom",
     "symbol": "JTO",
     "tf": "4h",
@@ -53,17 +64,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 2761.54
-  },
-  {
-    "strategy": "TV_VolatilityAdaptive_Reversal",
-    "symbol": "DYDX",
-    "tf": "15m",
-    "wr": 80.0,
-    "trades": 25,
-    "pf": 13.39,
-    "source": "hunter1_5m15m.log",
-    "plateau": false,
-    "score": 2606.48
   },
   {
     "strategy": "TV_VolatilityAdaptive_Reversal",
@@ -2374,17 +2374,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 1299.86
-  },
-  {
-    "strategy": "TV_AlternatingSignals_MultiTFConfirm",
-    "symbol": "WLD",
-    "tf": "1d",
-    "wr": 75.0,
-    "trades": 20,
-    "pf": 3.78,
-    "source": "hunter1_mp.log",
-    "plateau": true,
-    "score": 1294.68
   },
   {
     "strategy": "TV_Wyckoff_Test_After_Spring",
@@ -4807,6 +4796,17 @@
     "score": 864.84
   },
   {
+    "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+    "symbol": "WLD",
+    "tf": "1d",
+    "wr": 75.0,
+    "trades": 20,
+    "pf": 3.78,
+    "source": "hunter1_mp.log",
+    "plateau": false,
+    "score": 863.12
+  },
+  {
     "strategy": "TV_Cointegration_PairsTrading",
     "symbol": "ARB",
     "tf": "4h",
@@ -4926,6 +4926,17 @@
     "source": "hunter1_5m15m.log",
     "plateau": false,
     "score": 761.81
+  },
+  {
+    "strategy": "TV_Elder_Ray_Bear_Power",
+    "symbol": "SFP",
+    "tf": "15m",
+    "wr": 80.0,
+    "trades": 10,
+    "pf": 3.96,
+    "source": "hunter2_5m15m.log",
+    "plateau": false,
+    "score": 759.65
   },
   {
     "strategy": "TV_Gann_Trend_Oscillator",
