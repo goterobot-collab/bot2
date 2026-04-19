@@ -1,7 +1,7 @@
 # Sandbox Master Ranking (all HUNTER waves + plateau bonus)
 
 - Total unique grails: 646
-- Plateau-confirmed: 20
+- Plateau-confirmed: 19
 
 Score = WR × log(1+trades) × min(PF,10) × (1.5 if plateau else 1)
 

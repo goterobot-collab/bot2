@@ -2729,6 +2729,17 @@
   },
   {
     "strategy": "TV_Linear_Regression_Channel",
+    "symbol": "ONDO",
+    "tf": "4h",
+    "wr": 78.4,
+    "trades": 51,
+    "pf": 2.86,
+    "source": "hunter5_high.log",
+    "plateau": true,
+    "score": 1328.95
+  },
+  {
+    "strategy": "TV_Linear_Regression_Channel",
     "symbol": "INJ",
     "tf": "4h",
     "wr": 78.9,
@@ -5445,17 +5456,6 @@
     "score": 893.28
   },
   {
-    "strategy": "TV_Linear_Regression_Channel",
-    "symbol": "ONDO",
-    "tf": "4h",
-    "wr": 78.4,
-    "trades": 51,
-    "pf": 2.86,
-    "source": "hunter5_high.log",
-    "plateau": false,
-    "score": 885.96
-  },
-  {
     "strategy": "TV_SR_Trendlines",
     "symbol": "TIA",
     "tf": "4h",
@@ -5599,17 +5599,6 @@
     "score": 777.27
   },
   {
-    "strategy": "TV_Cointegration_PairsTrading",
-    "symbol": "LINK",
-    "tf": "1d",
-    "wr": 80.0,
-    "trades": 35,
-    "pf": 1.78,
-    "source": "hunter1_mp.log",
-    "plateau": true,
-    "score": 765.44
-  },
-  {
     "strategy": "TV_Ehlers_Super_Smoother",
     "symbol": "INJ",
     "tf": "1d",
@@ -5685,17 +5674,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 731.5
-  },
-  {
-    "strategy": "TV_Momentum_Strategy_REV",
-    "symbol": "AGT",
-    "tf": "1d",
-    "wr": 75.0,
-    "trades": 28,
-    "pf": 1.922,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": true,
-    "score": 728.09
   },
   {
     "strategy": "TV_Double_Top_Bottom",
@@ -6226,6 +6204,17 @@
     "score": 513.64
   },
   {
+    "strategy": "TV_Cointegration_PairsTrading",
+    "symbol": "LINK",
+    "tf": "1d",
+    "wr": 80.0,
+    "trades": 35,
+    "pf": 1.78,
+    "source": "hunter1_mp.log",
+    "plateau": false,
+    "score": 510.29
+  },
+  {
     "strategy": "TV_SR_Trendlines",
     "symbol": "WLD",
     "tf": "1h",
@@ -6290,6 +6279,17 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 488.43
+  },
+  {
+    "strategy": "TV_Momentum_Strategy_REV",
+    "symbol": "AGT",
+    "tf": "1d",
+    "wr": 75.0,
+    "trades": 28,
+    "pf": 1.922,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 485.4
   },
   {
     "strategy": "TV_Footprint_Volume_Climax",
