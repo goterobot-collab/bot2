@@ -103,11 +103,60 @@ def sample_params(space, rng):
 
 # Worker-global cache
 _W_CACHE = {}
+_W_WARMSTART = {}  # (strategy, sym, tf) -> list[params dict]
+EARLY_ABORT_STREAK = 5  # if first N trials all return 0 trades, abort combo
 
 
-def _w_init(candles_paths):
-    """Called once per worker: load candles into process memory."""
-    global _W_CACHE
+def _load_warmstart():
+    """Scan progress.json files for known-good params — seed random-search."""
+    out = {}
+    prog_names = [
+        "sandbox_h1_1h_4h_1d_progress.json",
+        "sandbox_h1_15m_5m_progress.json",
+        "sandbox_h1_5m_15m_progress.json",
+        "sandbox_h2_1h_4h_1d_progress.json",
+        "sandbox_h2_5m_15m_progress.json",
+        "sandbox_h3_1h_4h_1d_progress.json",
+        "sandbox_h3_5m_15m_progress.json",
+        "sandbox_h4_1h_4h_1d_progress.json",
+        "sandbox_h4_5m_15m_progress.json",
+    ]
+    for name in prog_names:
+        p = ROOT / "results" / name
+        if not p.exists():
+            continue
+        try:
+            data = json.loads(p.read_text())
+        except Exception:
+            continue
+        for r in data.get("shortlist", []):
+            if not r.get("passes"):
+                continue
+            k = (r.get("strategy"), r.get("symbol"), r.get("tf"))
+            if not all(k) or "params" not in r:
+                continue
+            out.setdefault(k, []).append(r["params"])
+    # Dedup + cap at 3 per key (top trials)
+    for k, plist in list(out.items()):
+        seen = set()
+        uniq = []
+        for pd_ in plist:
+            try:
+                h = tuple(sorted((str(kk), str(vv)) for kk, vv in pd_.items()))
+            except Exception:
+                continue
+            if h not in seen:
+                seen.add(h)
+                uniq.append(pd_)
+        out[k] = uniq[:3]
+    return out
+
+
+def _w_init(candles_paths, warmstart=None):
+    """Called once per worker: load candles + warmstart params into process memory."""
+    global _W_CACHE, _W_WARMSTART
+    if warmstart:
+        _W_WARMSTART = warmstart
     for (sym, tf), path in candles_paths.items():
         try:
             df = load_candles(sym, SOURCE_TF[tf], tf)
@@ -118,7 +167,12 @@ def _w_init(candles_paths):
 
 
 def _w_job(batch_id, strat_name, spec_pkl, sym, tf, n_trials, seed):
-    """Run N trials for one (strat, sym, tf). Return best combo."""
+    """Run N trials for one (strat, sym, tf). Return best combo.
+
+    Improvements:
+      - Warmstart: if known-good params exist for this (strat,sym,tf), try them first.
+      - Early abort: if first EARLY_ABORT_STREAK trials all yield 0 trades, stop.
+    """
     import pickle
     spec = pickle.loads(spec_pkl)
     gen_fn, space = spec["gen"], spec["space"]
@@ -127,9 +181,21 @@ def _w_job(batch_id, strat_name, spec_pkl, sym, tf, n_trials, seed):
         return None
     rng = random.Random(seed)
     best = None
-    for _ in range(n_trials):
+    warm = list(_W_WARMSTART.get((strat_name, sym, tf), []))
+    zero_streak = 0
+    for trial_idx in range(n_trials):
         try:
-            params = sample_params(space, rng)
+            if trial_idx < len(warm):
+                params = dict(warm[trial_idx])
+                # fill missing keys from space (strategy signature may have grown)
+                try:
+                    full = sample_params(space, rng)
+                    for k, v in full.items():
+                        params.setdefault(k, v)
+                except Exception:
+                    pass
+            else:
+                params = sample_params(space, rng)
         except Exception:
             continue
         try:
@@ -137,7 +203,11 @@ def _w_job(batch_id, strat_name, spec_pkl, sym, tf, n_trials, seed):
         except Exception:
             continue
         if r.get("trades", 0) == 0 or r.get("wr") is None:
+            zero_streak += 1
+            if zero_streak >= EARLY_ABORT_STREAK and best is None:
+                break  # combo is hopeless: abort remaining trials
             continue
+        zero_streak = 0
         if best is None or r["wr"] > best["metrics"]["wr"]:
             best = {"params": params, "metrics": {
                 "wr": r["wr"], "trades": r["trades"], "pf": r["pf"],
@@ -209,8 +279,11 @@ def run(batches, label, shortlist_path, promoted_path, progress_path):
     grails = sum(1 for r in shortlist if r["passes"])
     t0 = time.time()
 
+    warmstart = _load_warmstart()
+    print(f"[{label}] warmstart: {len(warmstart)} (strat,sym,tf) keys with known params")
+
     with ProcessPoolExecutor(
-        max_workers=WORKERS, initializer=_w_init, initargs=(cand_paths,)
+        max_workers=WORKERS, initializer=_w_init, initargs=(cand_paths, warmstart)
     ) as pool:
         futures = {}
         task_iter = iter(tasks)
