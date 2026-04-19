@@ -68,12 +68,13 @@
       "finished_at": "2026-04-18T14:09:17+00:00"
     },
     "HUNTER2_1h_4h_1d": {
-      "status": "running",
+      "status": "done",
       "cmd": "python3 tools/hunter_runner.py --wave h2 --tfs 1h 4h 1d",
       "log_file": "logs/hunter2_high.log",
       "next_on_done": "HUNTER3_1h_4h_1d",
-      "started_at": "2026-04-19T06:10:13+00:00",
-      "last_check": "2026-04-19T06:10:13+00:00"
+      "started_at": "2026-04-18T22:24:40+00:00",
+      "finished_at": "2026-04-19T07:54:00+00:00",
+      "result": "294 grails / 5410 tasks / 99 strats x 63 pairs x 3 TFs"
     },
     "HUNTER3_1h_4h_1d": {
       "status": "done",
