@@ -1,20 +1,20 @@
 # Sandbox Master Ranking (all HUNTER waves + plateau bonus)
 
-- Total unique grails: 644
-- Plateau-confirmed: 19
+- Total unique grails: 646
+- Plateau-confirmed: 20
 
 Score = WR × log(1+trades) × min(PF,10) × (1.5 if plateau else 1)
 
 | # | Strategy | Sym | TF | WR | n | PF | Plateau | Score |
 |---|----------|-----|----|-----|---|-----|---------|-------|
 | 1 | `TV_Linear_Regression_Channel` | AGT | 4h | 95.0% | 20 | 205.25 | Y | 4338 |
-| 2 | `TV_Gann_Swing_MultiLayer` | NEAR | 1d | 75.4% | 57 | 9.02 | Y | 4142 |
+| 2 | `TV_VolatilityAdaptive_Reversal` | DYDX | 15m | 80.0% | 25 | 13.39 | Y | 3910 |
 | 3 | `TV_Double_Top_Bottom` | JTO | 4h | 85.0% | 20 | 10.84 | Y | 3882 |
 | 4 | `TV_Pivot_Reversal_Backtest` | SWARMS | 1d | 80.6% | 36 | 8.48 | Y | 3702 |
 | 5 | `TV_ABCD_Pattern_Daveatt` | NEAR | 1d | 85.0% | 20 | 8.99 | Y | 3490 |
 | 6 | `TV_ABCD_Pattern_Daveatt` | DYDX | 1d | 82.6% | 23 | 7.83 | Y | 3082 |
 | 7 | `TV_Linear_Regression_Channel` | JUP | 4h | 90.5% | 21 | 28.23 |  | 2797 |
-| 8 | `TV_VolatilityAdaptive_Reversal` | DYDX | 15m | 80.0% | 25 | 13.39 |  | 2606 |
+| 8 | `TV_Gann_Swing_MultiLayer` | NEAR | 1d | 75.4% | 57 | 9.02 |  | 2762 |
 | 9 | `TV_VolatilityAdaptive_Reversal` | AVAX | 15m | 93.3% | 15 | 220.29 |  | 2587 |
 | 10 | `TV_Linear_Regression_Channel` | AGT | 1d | 93.8% | 16 | 9.55 |  | 2538 |
 | 11 | `TV_ABCD_Pattern_Daveatt` | SUI | 1d | 84.2% | 19 | 19.53 |  | 2522 |
