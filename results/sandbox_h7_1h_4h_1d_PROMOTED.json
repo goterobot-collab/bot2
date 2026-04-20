@@ -1,0 +1,335 @@
+{
+  "TV_BB_Squeeze_Breakout": {
+    "best": {
+      "sym": "AVAX",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 3,
+      "pf": 999.0,
+      "params": {
+        "bb_len": 16,
+        "bb_mult": 2.9198201050472035,
+        "kc_len": 18,
+        "kc_mult": 1.4574950029876506
+      }
+    },
+    "passing_combos": 9,
+    "all_passing": [
+      {
+        "sym": "AVAX",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "bb_len": 16,
+          "bb_mult": 2.9198201050472035,
+          "kc_len": 18,
+          "kc_mult": 1.4574950029876506
+        }
+      },
+      {
+        "sym": "JTO",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "bb_len": 46,
+          "bb_mult": 1.626248042597004,
+          "kc_len": 23,
+          "kc_mult": 1.9443115281102799
+        }
+      },
+      {
+        "sym": "INJ",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "bb_len": 26,
+          "bb_mult": 2.3933504873139406,
+          "kc_len": 59,
+          "kc_mult": 1.8535135038899266
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "bb_len": 55,
+          "bb_mult": 2.175118157798088,
+          "kc_len": 40,
+          "kc_mult": 1.9359144971155606
+        }
+      },
+      {
+        "sym": "LTC",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "bb_len": 55,
+          "bb_mult": 1.8755689209388424,
+          "kc_len": 44,
+          "kc_mult": 1.7409571492458484
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "bb_len": 30,
+          "bb_mult": 2.2919177417885948,
+          "kc_len": 30,
+          "kc_mult": 1.6119653197893835
+        }
+      },
+      {
+        "sym": "GMX",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "bb_len": 22,
+          "bb_mult": 2.571035139976029,
+          "kc_len": 13,
+          "kc_mult": 1.2321969447311514
+        }
+      },
+      {
+        "sym": "LINK",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "bb_len": 54,
+          "bb_mult": 2.8690880222638375,
+          "kc_len": 11,
+          "kc_mult": 1.8035694392680024
+        }
+      },
+      {
+        "sym": "XRP",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "bb_len": 42,
+          "bb_mult": 1.8876263629640253,
+          "kc_len": 12,
+          "kc_mult": 1.0902645602533207
+        }
+      }
+    ]
+  },
+  "TV_RSI_Divergence": {
+    "best": {
+      "sym": "ONDO",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "rsi_len": 12,
+        "lookback": 50
+      }
+    },
+    "passing_combos": 5,
+    "all_passing": [
+      {
+        "sym": "ONDO",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "rsi_len": 12,
+          "lookback": 50
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "1d",
+        "wr": 78.6,
+        "trades": 14,
+        "pf": 5.219,
+        "params": {
+          "rsi_len": 14,
+          "lookback": 17
+        }
+      },
+      {
+        "sym": "XRP",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 8,
+        "pf": 4.117,
+        "params": {
+          "rsi_len": 23,
+          "lookback": 59
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "1d",
+        "wr": 71.4,
+        "trades": 28,
+        "pf": 1.905,
+        "params": {
+          "rsi_len": 9,
+          "lookback": 47
+        }
+      },
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 70.0,
+        "trades": 10,
+        "pf": 4.43,
+        "params": {
+          "rsi_len": 7,
+          "lookback": 10
+        }
+      }
+    ]
+  },
+  "TV_OBV_Momentum": {
+    "best": {
+      "sym": "SUI",
+      "tf": "1d",
+      "wr": 78.6,
+      "trades": 14,
+      "pf": 4.594,
+      "params": {
+        "ema_len": 115,
+        "smooth": 8
+      }
+    },
+    "passing_combos": 2,
+    "all_passing": [
+      {
+        "sym": "SUI",
+        "tf": "1d",
+        "wr": 78.6,
+        "trades": 14,
+        "pf": 4.594,
+        "params": {
+          "ema_len": 115,
+          "smooth": 8
+        }
+      },
+      {
+        "sym": "XRP",
+        "tf": "1d",
+        "wr": 73.5,
+        "trades": 34,
+        "pf": 3.225,
+        "params": {
+          "ema_len": 69,
+          "smooth": 7
+        }
+      }
+    ]
+  },
+  "TV_VolumeSpike_Reversal": {
+    "best": {
+      "sym": "JTO",
+      "tf": "1d",
+      "wr": 77.8,
+      "trades": 9,
+      "pf": 4.579,
+      "params": {
+        "vol_len": 23,
+        "z_thresh": 3.6224645467337435,
+        "body_len": 2
+      }
+    },
+    "passing_combos": 6,
+    "all_passing": [
+      {
+        "sym": "JTO",
+        "tf": "1d",
+        "wr": 77.8,
+        "trades": 9,
+        "pf": 4.579,
+        "params": {
+          "vol_len": 23,
+          "z_thresh": 3.6224645467337435,
+          "body_len": 2
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 12,
+        "pf": 6.039,
+        "params": {
+          "vol_len": 34,
+          "z_thresh": 3.242676720435791,
+          "body_len": 15
+        }
+      },
+      {
+        "sym": "PYTH",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 8,
+        "pf": 3.082,
+        "params": {
+          "vol_len": 108,
+          "z_thresh": 3.4436648038573185,
+          "body_len": 11
+        }
+      },
+      {
+        "sym": "GMX",
+        "tf": "1d",
+        "wr": 72.2,
+        "trades": 18,
+        "pf": 3.448,
+        "params": {
+          "vol_len": 132,
+          "z_thresh": 2.688073994298105,
+          "body_len": 8
+        }
+      },
+      {
+        "sym": "APT",
+        "tf": "1d",
+        "wr": 70.0,
+        "trades": 20,
+        "pf": 3.961,
+        "params": {
+          "vol_len": 121,
+          "z_thresh": 3.553366254338802,
+          "body_len": 6
+        }
+      },
+      {
+        "sym": "SEI",
+        "tf": "4h",
+        "wr": 70.0,
+        "trades": 10,
+        "pf": 2.495,
+        "params": {
+          "vol_len": 47,
+          "z_thresh": 3.9920090809466666,
+          "body_len": 15
+        }
+      }
+    ]
+  }
+}
