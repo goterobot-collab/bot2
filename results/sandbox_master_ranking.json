@@ -11,6 +11,17 @@
     "score": 4338.44
   },
   {
+    "strategy": "TV_VolatilityAdaptive_Reversal",
+    "symbol": "DYDX",
+    "tf": "15m",
+    "wr": 80.0,
+    "trades": 25,
+    "pf": 13.39,
+    "source": "hunter1_5m15m.log",
+    "plateau": true,
+    "score": 3909.72
+  },
+  {
     "strategy": "TV_Double_Top_Bottom",
     "symbol": "JTO",
     "tf": "4h",
@@ -44,6 +55,17 @@
     "score": 3490.48
   },
   {
+    "strategy": "TV_ABCD_Pattern_Daveatt",
+    "symbol": "DYDX",
+    "tf": "1d",
+    "wr": 82.6,
+    "trades": 23,
+    "pf": 7.828,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": true,
+    "score": 3082.36
+  },
+  {
     "strategy": "TV_Linear_Regression_Channel",
     "symbol": "JUP",
     "tf": "4h",
@@ -64,17 +86,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 2761.54
-  },
-  {
-    "strategy": "TV_VolatilityAdaptive_Reversal",
-    "symbol": "DYDX",
-    "tf": "15m",
-    "wr": 80.0,
-    "trades": 25,
-    "pf": 13.39,
-    "source": "hunter1_5m15m.log",
-    "plateau": false,
-    "score": 2606.48
   },
   {
     "strategy": "TV_VolatilityAdaptive_Reversal",
@@ -361,17 +372,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 2079.44
-  },
-  {
-    "strategy": "TV_ABCD_Pattern_Daveatt",
-    "symbol": "DYDX",
-    "tf": "1d",
-    "wr": 82.6,
-    "trades": 23,
-    "pf": 7.828,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": false,
-    "score": 2054.91
   },
   {
     "strategy": "TV_Footprint_Volume_Climax",
@@ -6391,6 +6391,17 @@
     "score": 598.36
   },
   {
+    "strategy": "TV_Weekend_Gap_Fade",
+    "symbol": "NEAR",
+    "tf": "4h",
+    "wr": 74.2,
+    "trades": 31,
+    "pf": 1.54,
+    "source": "hunter3_high.log",
+    "plateau": true,
+    "score": 594.03
+  },
+  {
     "strategy": "TV_Detrended_Fluctuation",
     "symbol": "LINK",
     "tf": "1d",
@@ -7016,17 +7027,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 397.28
-  },
-  {
-    "strategy": "TV_Weekend_Gap_Fade",
-    "symbol": "NEAR",
-    "tf": "4h",
-    "wr": 74.2,
-    "trades": 31,
-    "pf": 1.54,
-    "source": "hunter3_high.log",
-    "plateau": false,
-    "score": 396.02
   },
   {
     "strategy": "TV_BTC_Beta_Residual",
