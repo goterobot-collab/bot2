@@ -11,17 +11,6 @@
     "score": 4338.44
   },
   {
-    "strategy": "TV_VolatilityAdaptive_Reversal",
-    "symbol": "DYDX",
-    "tf": "15m",
-    "wr": 80.0,
-    "trades": 25,
-    "pf": 13.39,
-    "source": "hunter1_5m15m.log",
-    "plateau": true,
-    "score": 3909.72
-  },
-  {
     "strategy": "TV_Double_Top_Bottom",
     "symbol": "JTO",
     "tf": "4h",
@@ -45,17 +34,6 @@
   },
   {
     "strategy": "TV_ABCD_Pattern_Daveatt",
-    "symbol": "SUI",
-    "tf": "4h",
-    "wr": 78.4,
-    "trades": 37,
-    "pf": 8.172,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": true,
-    "score": 3495.82
-  },
-  {
-    "strategy": "TV_ABCD_Pattern_Daveatt",
     "symbol": "NEAR",
     "tf": "1d",
     "wr": 85.0,
@@ -64,6 +42,17 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": true,
     "score": 3490.48
+  },
+  {
+    "strategy": "TV_ABCD_Pattern_Daveatt",
+    "symbol": "DYDX",
+    "tf": "1d",
+    "wr": 82.6,
+    "trades": 23,
+    "pf": 7.828,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": true,
+    "score": 3082.36
   },
   {
     "strategy": "TV_Linear_Regression_Channel",
@@ -86,6 +75,17 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 2761.54
+  },
+  {
+    "strategy": "TV_VolatilityAdaptive_Reversal",
+    "symbol": "DYDX",
+    "tf": "15m",
+    "wr": 80.0,
+    "trades": 25,
+    "pf": 13.39,
+    "source": "hunter1_5m15m.log",
+    "plateau": false,
+    "score": 2606.48
   },
   {
     "strategy": "TV_VolatilityAdaptive_Reversal",
@@ -152,6 +152,17 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": true,
     "score": 2346.55
+  },
+  {
+    "strategy": "TV_ABCD_Pattern_Daveatt",
+    "symbol": "SUI",
+    "tf": "4h",
+    "wr": 78.4,
+    "trades": 37,
+    "pf": 8.172,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 2330.55
   },
   {
     "strategy": "TV_Cointegration_PairsTrading",
@@ -361,17 +372,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 2079.44
-  },
-  {
-    "strategy": "TV_ABCD_Pattern_Daveatt",
-    "symbol": "DYDX",
-    "tf": "1d",
-    "wr": 82.6,
-    "trades": 23,
-    "pf": 7.828,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": false,
-    "score": 2054.91
   },
   {
     "strategy": "TV_Footprint_Volume_Climax",
@@ -2794,6 +2794,17 @@
     "score": 1285.55
   },
   {
+    "strategy": "TV_Kernel_Ridge_Score",
+    "symbol": "OP",
+    "tf": "15m",
+    "wr": 70.0,
+    "trades": 10,
+    "pf": 7.47,
+    "source": "hunter5_5m15m.log",
+    "plateau": false,
+    "score": 1253.86
+  },
+  {
     "strategy": "TV_Cointegration_PairsTrading",
     "symbol": "AGT",
     "tf": "4h",
@@ -3335,6 +3346,17 @@
   {
     "strategy": "TV_CamarillaPivots",
     "symbol": "SFP",
+    "tf": "5m",
+    "wr": 100.0,
+    "trades": 2,
+    "pf": 999.0,
+    "source": "hunter2_5m15m.log",
+    "plateau": false,
+    "score": 1098.61
+  },
+  {
+    "strategy": "TV_CombinedStrategyRSIADXSMA",
+    "symbol": "SEI",
     "tf": "5m",
     "wr": 100.0,
     "trades": 2,
@@ -4226,6 +4248,28 @@
   {
     "strategy": "TV_Kernel_Ridge_Score",
     "symbol": "INJ",
+    "tf": "15m",
+    "wr": 100.0,
+    "trades": 2,
+    "pf": 999.0,
+    "source": "hunter5_5m15m.log",
+    "plateau": false,
+    "score": 1098.61
+  },
+  {
+    "strategy": "TV_Kernel_Ridge_Score",
+    "symbol": "APT",
+    "tf": "15m",
+    "wr": 100.0,
+    "trades": 2,
+    "pf": 999.0,
+    "source": "hunter5_5m15m.log",
+    "plateau": false,
+    "score": 1098.61
+  },
+  {
+    "strategy": "TV_Kernel_Ridge_Score",
+    "symbol": "JTO",
     "tf": "15m",
     "wr": 100.0,
     "trades": 2,
@@ -5247,17 +5291,6 @@
     "score": 1059.92
   },
   {
-    "strategy": "TV_Cointegration_PairsTrading",
-    "symbol": "ONDO",
-    "tf": "4h",
-    "wr": 77.8,
-    "trades": 63,
-    "pf": 2.16,
-    "source": "hunter1_mp.log",
-    "plateau": true,
-    "score": 1048.34
-  },
-  {
     "strategy": "TV_CamarillaPivotsV2",
     "symbol": "OP",
     "tf": "4h",
@@ -5784,6 +5817,17 @@
     "source": "hunter1_5m15m.log",
     "plateau": false,
     "score": 708.44
+  },
+  {
+    "strategy": "TV_Cointegration_PairsTrading",
+    "symbol": "ONDO",
+    "tf": "4h",
+    "wr": 77.8,
+    "trades": 63,
+    "pf": 2.16,
+    "source": "hunter1_mp.log",
+    "plateau": false,
+    "score": 698.89
   },
   {
     "strategy": "TV_VolumeProfile_Reversion",
