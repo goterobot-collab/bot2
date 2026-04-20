@@ -176,6 +176,17 @@
     "score": 2320.8
   },
   {
+    "strategy": "TV_Double_Top_Bottom",
+    "symbol": "ONDO",
+    "tf": "4h",
+    "wr": 72.4,
+    "trades": 76,
+    "pf": 4.916,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": true,
+    "score": 2319.06
+  },
+  {
     "strategy": "TV_ABCD_Harmonic_BullBear",
     "symbol": "JUP",
     "tf": "1d",
@@ -1760,17 +1771,6 @@
     "score": 1551.52
   },
   {
-    "strategy": "TV_Double_Top_Bottom",
-    "symbol": "ONDO",
-    "tf": "4h",
-    "wr": 72.4,
-    "trades": 76,
-    "pf": 4.916,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": false,
-    "score": 1546.04
-  },
-  {
     "strategy": "TV_SeasonalityCustomInterval",
     "symbol": "AGT",
     "tf": "1d",
@@ -2839,6 +2839,17 @@
   },
   {
     "strategy": "TV_Linear_Regression_Channel",
+    "symbol": "ONDO",
+    "tf": "4h",
+    "wr": 78.4,
+    "trades": 51,
+    "pf": 2.86,
+    "source": "hunter5_high.log",
+    "plateau": true,
+    "score": 1328.95
+  },
+  {
+    "strategy": "TV_Linear_Regression_Channel",
     "symbol": "INJ",
     "tf": "4h",
     "wr": 78.9,
@@ -2869,17 +2880,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 1299.86
-  },
-  {
-    "strategy": "TV_AlternatingSignals_MultiTFConfirm",
-    "symbol": "WLD",
-    "tf": "1d",
-    "wr": 75.0,
-    "trades": 20,
-    "pf": 3.78,
-    "source": "hunter1_mp.log",
-    "plateau": true,
-    "score": 1294.68
   },
   {
     "strategy": "TV_Wyckoff_Test_After_Spring",
@@ -5544,17 +5544,6 @@
     "score": 1059.92
   },
   {
-    "strategy": "TV_Cointegration_PairsTrading",
-    "symbol": "ONDO",
-    "tf": "4h",
-    "wr": 77.8,
-    "trades": 63,
-    "pf": 2.16,
-    "source": "hunter1_mp.log",
-    "plateau": true,
-    "score": 1048.34
-  },
-  {
     "strategy": "TV_CamarillaPivotsV2",
     "symbol": "OP",
     "tf": "4h",
@@ -5819,17 +5808,6 @@
     "score": 893.28
   },
   {
-    "strategy": "TV_Linear_Regression_Channel",
-    "symbol": "ONDO",
-    "tf": "4h",
-    "wr": 78.4,
-    "trades": 51,
-    "pf": 2.86,
-    "source": "hunter5_high.log",
-    "plateau": false,
-    "score": 885.96
-  },
-  {
     "strategy": "TV_SR_Trendlines",
     "symbol": "TIA",
     "tf": "4h",
@@ -5861,6 +5839,17 @@
     "source": "hunter1_mp.log",
     "plateau": true,
     "score": 864.84
+  },
+  {
+    "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+    "symbol": "WLD",
+    "tf": "1d",
+    "wr": 75.0,
+    "trades": 20,
+    "pf": 3.78,
+    "source": "hunter1_mp.log",
+    "plateau": false,
+    "score": 863.12
   },
   {
     "strategy": "TV_Cointegration_PairsTrading",
@@ -6105,6 +6094,17 @@
     "score": 708.44
   },
   {
+    "strategy": "TV_Cointegration_PairsTrading",
+    "symbol": "ONDO",
+    "tf": "4h",
+    "wr": 77.8,
+    "trades": 63,
+    "pf": 2.16,
+    "source": "hunter1_mp.log",
+    "plateau": false,
+    "score": 698.89
+  },
+  {
     "strategy": "TV_VolumeProfile_Reversion",
     "symbol": "TIA",
     "tf": "1d",
@@ -6224,6 +6224,17 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 658.92
+  },
+  {
+    "strategy": "TV_Linear_Regression_Channel",
+    "symbol": "LINK",
+    "tf": "1d",
+    "wr": 76.8,
+    "trades": 56,
+    "pf": 1.4,
+    "source": "hunter5_high.log",
+    "plateau": true,
+    "score": 652.06
   },
   {
     "strategy": "TV_CamarillaPivotsV2",
@@ -6389,17 +6400,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 598.36
-  },
-  {
-    "strategy": "TV_Weekend_Gap_Fade",
-    "symbol": "NEAR",
-    "tf": "4h",
-    "wr": 74.2,
-    "trades": 31,
-    "pf": 1.54,
-    "source": "hunter3_high.log",
-    "plateau": true,
-    "score": 594.03
   },
   {
     "strategy": "TV_Detrended_Fluctuation",
@@ -6930,17 +6930,6 @@
     "score": 438.21
   },
   {
-    "strategy": "TV_Linear_Regression_Channel",
-    "symbol": "LINK",
-    "tf": "1d",
-    "wr": 76.8,
-    "trades": 56,
-    "pf": 1.4,
-    "source": "hunter5_high.log",
-    "plateau": false,
-    "score": 434.71
-  },
-  {
     "strategy": "TV_Weekend_Gap_Fade",
     "symbol": "SUI",
     "tf": "1d",
@@ -7027,6 +7016,17 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 397.28
+  },
+  {
+    "strategy": "TV_Weekend_Gap_Fade",
+    "symbol": "NEAR",
+    "tf": "4h",
+    "wr": 74.2,
+    "trades": 31,
+    "pf": 1.54,
+    "source": "hunter3_high.log",
+    "plateau": false,
+    "score": 396.02
   },
   {
     "strategy": "TV_BTC_Beta_Residual",
