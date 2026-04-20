@@ -34,6 +34,17 @@
   },
   {
     "strategy": "TV_ABCD_Pattern_Daveatt",
+    "symbol": "SUI",
+    "tf": "4h",
+    "wr": 78.4,
+    "trades": 37,
+    "pf": 8.172,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": true,
+    "score": 3495.82
+  },
+  {
+    "strategy": "TV_ABCD_Pattern_Daveatt",
     "symbol": "NEAR",
     "tf": "1d",
     "wr": 85.0,
@@ -42,6 +53,17 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": true,
     "score": 3490.48
+  },
+  {
+    "strategy": "TV_ABCD_Pattern_Daveatt",
+    "symbol": "DYDX",
+    "tf": "1d",
+    "wr": 82.6,
+    "trades": 23,
+    "pf": 7.828,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": true,
+    "score": 3082.36
   },
   {
     "strategy": "TV_Linear_Regression_Channel",
@@ -141,17 +163,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": true,
     "score": 2346.55
-  },
-  {
-    "strategy": "TV_ABCD_Pattern_Daveatt",
-    "symbol": "SUI",
-    "tf": "4h",
-    "wr": 78.4,
-    "trades": 37,
-    "pf": 8.172,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": false,
-    "score": 2330.55
   },
   {
     "strategy": "TV_Cointegration_PairsTrading",
@@ -361,17 +372,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 2079.44
-  },
-  {
-    "strategy": "TV_ABCD_Pattern_Daveatt",
-    "symbol": "DYDX",
-    "tf": "1d",
-    "wr": 82.6,
-    "trades": 23,
-    "pf": 7.828,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": false,
-    "score": 2054.91
   },
   {
     "strategy": "TV_Footprint_Volume_Climax",
@@ -5489,17 +5489,6 @@
     "score": 872.18
   },
   {
-    "strategy": "TV_Linear_Regression_Channel",
-    "symbol": "SFP",
-    "tf": "4h",
-    "wr": 74.3,
-    "trades": 564,
-    "pf": 1.23,
-    "source": "hunter5_high.log",
-    "plateau": true,
-    "score": 868.67
-  },
-  {
     "strategy": "TV_Detrended_Fluctuation",
     "symbol": "WLD",
     "tf": "1d",
@@ -5720,17 +5709,6 @@
     "score": 731.5
   },
   {
-    "strategy": "TV_Momentum_Strategy_REV",
-    "symbol": "AGT",
-    "tf": "1d",
-    "wr": 75.0,
-    "trades": 28,
-    "pf": 1.922,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": true,
-    "score": 728.09
-  },
-  {
     "strategy": "TV_Double_Top_Bottom",
     "symbol": "PENDLE",
     "tf": "1h",
@@ -5872,6 +5850,17 @@
     "source": "hunter1_mp.log",
     "plateau": false,
     "score": 658.92
+  },
+  {
+    "strategy": "TV_Linear_Regression_Channel",
+    "symbol": "LINK",
+    "tf": "1d",
+    "wr": 76.8,
+    "trades": 56,
+    "pf": 1.4,
+    "source": "hunter5_high.log",
+    "plateau": true,
+    "score": 652.06
   },
   {
     "strategy": "TV_CamarillaPivotsV2",
@@ -6094,6 +6083,17 @@
     "score": 581.77
   },
   {
+    "strategy": "TV_Linear_Regression_Channel",
+    "symbol": "SFP",
+    "tf": "4h",
+    "wr": 74.3,
+    "trades": 564,
+    "pf": 1.23,
+    "source": "hunter5_high.log",
+    "plateau": false,
+    "score": 579.12
+  },
+  {
     "strategy": "TV_ABCD_Harmonic_BullBear",
     "symbol": "PYTH",
     "tf": "1d",
@@ -6314,6 +6314,17 @@
     "score": 488.43
   },
   {
+    "strategy": "TV_Momentum_Strategy_REV",
+    "symbol": "AGT",
+    "tf": "1d",
+    "wr": 75.0,
+    "trades": 28,
+    "pf": 1.922,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 485.4
+  },
+  {
     "strategy": "TV_Footprint_Volume_Climax",
     "symbol": "INJ",
     "tf": "1d",
@@ -6488,17 +6499,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 438.21
-  },
-  {
-    "strategy": "TV_Linear_Regression_Channel",
-    "symbol": "LINK",
-    "tf": "1d",
-    "wr": 76.8,
-    "trades": 56,
-    "pf": 1.4,
-    "source": "hunter5_high.log",
-    "plateau": false,
-    "score": 434.71
   },
   {
     "strategy": "TV_Weekend_Gap_Fade",
