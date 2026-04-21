@@ -1,10 +1,10 @@
 # HUNTER2_1h_4h_1d shortlist
 
 - Batches: 3594, 3598
-- Tasks completed: 5,410
-- Grails passing R24 gate: **294**
-- Strategies promoted (>=1 combo pass): **51**
-- Elapsed: 6257s
+- Tasks completed: 6,194
+- Grails passing R24 gate: **343**
+- Strategies promoted (>=1 combo pass): **53**
+- Elapsed: 4301s
 
 | Rank | Strategy | Sym | TF | WR | trades | PF | total% | params |
 |------|----------|-----|----|-----|--------|-----|--------|--------|
@@ -161,50 +161,50 @@
 | 151 | `TV_Elder_Ray_Bull_Power` | TIA | 1h | 100.0% | 3 | 999.00 | 2.6% | `{"ema_len":13,"bull_thresh":-0.718794016107809,"trend_len":38}` |
 | 152 | `TV_Liquidity_Sweep_Filter` | PENDLE | 1h | 100.0% | 2 | 999.00 | 2.3% | `{"sweep_len":29,"atr_mult":1.4288037622701582,"atr_len":15,"ema_len":61}` |
 | 153 | `TV_SR_Trendlines` | AGT | 1h | 100.0% | 5 | 999.00 | 8.5% | `{"pivot_len":10,"sr_atr":0.34354810818524323,"atr_len":10,"ema_len":30}` |
-| 154 | `TV_ABCD_Pattern_Daveatt` | OP | 1d | 90.9% | 11 | 365.14 | 53.8% | `{"pivot_len":9,"ab_ratio_min":0.489118757275913,"ab_ratio_max":0.8978024608329327,"atr_len":10,"ema_len":67}` |
-| 155 | `TV_ABCD_Harmonic_BullBear` | JUP | 1d | 90.9% | 11 | 65.52 | 79.1% | `{"pivot_len":8,"fib_ratio":0.5311468428972022,"atr_len":14}` |
-| 156 | `TV_PriceAction_Pattern_Breakout` | AGT | 1d | 90.0% | 10 | 10.35 | 29.9% | `{"pivot_len":7,"channel_len":15,"atr_len":14}` |
-| 157 | `TV_Ichimoku_Long_Only` | SWARMS | 1d | 88.9% | 9 | 30.15 | 50.6% | `{"tenkan":12,"kijun":35,"senkou_b_len":64,"chikou_lookback":27}` |
-| 158 | `TV_DrawOnLiquidity` | SUI | 4h | 88.9% | 9 | 9.99 | 10.1% | `{"swing_len":18,"liq_mult":1.8903000942039114,"rsi_len":9,"trend_len":67,"atr_mult":1.044887407398859}` |
-| 159 | `TV_DrawOnLiquidity` | TIA | 4h | 88.9% | 9 | 6.36 | 6.0% | `{"swing_len":17,"liq_mult":1.6819370357045433,"rsi_len":11,"trend_len":84,"atr_mult":0.2685248995665328}` |
-| 160 | `TV_Double_Top_Bottom` | LINK | 1d | 87.5% | 8 | 165.55 | 33.6% | `{"pivot_len":19,"tolerance":0.034944744094975534,"atr_len":20,"ema_len":53}` |
-| 161 | `TV_TrendGuard_Flag_Finder` | GMX | 4h | 87.5% | 8 | 99.90 | 11.5% | `{"trend_len":52,"flag_bars":19,"flag_atr":0.790540690536037,"atr_len":20}` |
-| 162 | `TV_ABCD_Pattern_Daveatt` | AGT | 1d | 87.5% | 8 | 15.45 | 39.4% | `{"pivot_len":4,"ab_ratio_min":0.4103526597541341,"ab_ratio_max":0.7860870488339784,"atr_len":12,"ema_len":100}` |
-| 163 | `TV_MTFBreakOfStructure` | AVAX | 1d | 87.5% | 16 | 4.90 | 58.9% | `{"swing_len":19,"atr_mult":0.6676526966907248,"rsi_len":12,"trend_len":22,"vol_mult":2.0494315489196104}` |
-| 164 | `TV_ABCD_Harmonic_BullBear` | SEI | 4h | 86.7% | 15 | 46.78 | 50.9% | `{"pivot_len":5,"fib_ratio":0.6904968603164464,"atr_len":14}` |
-| 165 | `TV_Double_Top_Bottom` | JTO | 4h | 85.0% | 20 | 10.84 | 29.9% | `{"pivot_len":20,"tolerance":0.010365058187822141,"atr_len":13,"ema_len":94}` |
-| 166 | `TV_ABCD_Pattern_Daveatt` | NEAR | 1d | 85.0% | 20 | 8.99 | 93.2% | `{"pivot_len":7,"ab_ratio_min":0.3832479533920498,"ab_ratio_max":0.7833210910764749,"atr_len":17,"ema_len":37}` |
-| 167 | `TV_CamarillaPivotsV2` | OP | 4h | 84.6% | 13 | 4.62 | 20.2% | `{"session_len":1440,"h4_factor":1.0851499537852725,"l4_factor":1.0718157969359603,"rsi_len":13,"atr_mult":0.9426292944838139}` |
-| 168 | `TV_ABCD_Pattern_Daveatt` | SUI | 1d | 84.2% | 19 | 19.53 | 99.1% | `{"pivot_len":6,"ab_ratio_min":0.35569624954037266,"ab_ratio_max":0.79616365641079,"atr_len":11,"ema_len":35}` |
-| 169 | `TV_DrawOnLiquidity` | GMX | 1d | 83.3% | 12 | 25.24 | 29.2% | `{"swing_len":8,"liq_mult":1.8789013372837648,"rsi_len":20,"trend_len":39,"atr_mult":0.6823310139167676}` |
-| 170 | `TV_SeasonalityChartingCycles` | AGT | 1d | 83.3% | 12 | 7.15 | 63.8% | `{"cycle_len":38,"trend_len":28,"rsi_len":15,"momentum_len":12,"vol_mult":1.6791506936028249}` |
-| 171 | `TV_ABCD_Pattern_Daveatt` | TIA | 1d | 83.3% | 18 | 3.64 | 66.8% | `{"pivot_len":4,"ab_ratio_min":0.4297108986060514,"ab_ratio_max":0.8337773811635861,"atr_len":13,"ema_len":36}` |
-| 172 | `TV_ABCD_Pattern_Daveatt` | AVAX | 1d | 83.3% | 18 | 3.24 | 48.6% | `{"pivot_len":6,"ab_ratio_min":0.4052880570715307,"ab_ratio_max":0.9310371990284712,"atr_len":19,"ema_len":34}` |
-| 173 | `TV_SR_Trendlines` | JUP | 4h | 83.3% | 12 | 3.16 | 10.1% | `{"pivot_len":11,"sr_atr":0.40574800969525304,"atr_len":14,"ema_len":55}` |
-| 174 | `TV_ABCD_Pattern_Daveatt` | DYDX | 1d | 82.6% | 23 | 7.83 | 63.6% | `{"pivot_len":8,"ab_ratio_min":0.37201368560356296,"ab_ratio_max":0.8866872838274492,"atr_len":13,"ema_len":55}` |
-| 175 | `TV_Double_Top_Bottom` | PYTH | 4h | 82.4% | 34 | 3.90 | 29.8% | `{"pivot_len":15,"tolerance":0.03141120008052977,"atr_len":11,"ema_len":88}` |
-| 176 | `TV_AdaptiveFisherizedCMO` | AGT | 1d | 81.8% | 11 | 32.14 | 67.7% | `{"cmo_len":11,"fisher_len":18,"ift_thresh":0.12414514525452366,"trend_len":74,"adx_len":15}` |
-| 177 | `TV_Gann_Swing_MultiLayer` | PENDLE | 4h | 81.8% | 11 | 10.76 | 30.2% | `{"swing_len":7,"layers":4,"atr_len":18,"ema_len":91}` |
-| 178 | `TV_Double_Top_Bottom` | ONDO | 1d | 81.8% | 11 | 9.81 | 23.9% | `{"pivot_len":7,"tolerance":0.03683322570000755,"atr_len":14,"ema_len":99}` |
-| 179 | `TV_MESAAdaptiveEhlersFlow` | APT | 1d | 81.8% | 11 | 8.47 | 46.5% | `{"fast_limit":0.30001747419255037,"slow_limit":0.02615042252607168,"trend_len":61,"rsi_len":12,"adx_len":19}` |
-| 180 | `TV_Pivot_Reversal_Backtest` | SWARMS | 1d | 80.6% | 36 | 8.48 | 207.2% | `{"pivot_left":10,"pivot_right":7,"atr_len":11}` |
-| 181 | `TV_Gann_Swing_MultiLayer` | WLD | 1d | 80.0% | 10 | 7.76 | 55.1% | `{"swing_len":10,"layers":3,"atr_len":16,"ema_len":88}` |
-| 182 | `TV_SeasonalityCustomInterval` | AGT | 1d | 80.0% | 15 | 6.95 | 93.8% | `{"interval_bars":14,"trend_len":36,"rsi_len":16,"vol_mult":2.1158013845835706,"lookback":86}` |
-| 183 | `TV_SMC_Liquidity_Grab_Pro` | LINK | 1d | 80.0% | 10 | 5.82 | 30.2% | `{"grab_len":29,"confirm_bars":2,"atr_len":10,"ema_len":67}` |
-| 184 | `TV_EhlersAdaptiveCyberCycle` | DYDX | 4h | 80.0% | 10 | 5.66 | 29.5% | `{"alpha":0.136850339854669,"overbought":0.5566994535116649,"oversold":-0.49635834664722017,"trend_len":43,"rsi_len":19}` |
-| 185 | `TV_WaveTrend_Plus` | GMX | 1d | 80.0% | 15 | 3.51 | 60.2% | `{"ch_len":8,"avg_len":25,"ob_level":51.08650469480989,"os_level":-52.77716983788775}` |
-| 186 | `TV_MESAAdaptiveEhlersFlow` | SUI | 1d | 80.0% | 10 | 3.18 | 23.4% | `{"fast_limit":0.3582539193427229,"slow_limit":0.021324645709066364,"trend_len":66,"rsi_len":20,"adx_len":19}` |
-| 187 | `TV_ABCD_Pattern_Daveatt` | SFP | 1d | 80.0% | 10 | 2.07 | 13.7% | `{"pivot_len":10,"ab_ratio_min":0.3681811320531448,"ab_ratio_max":0.8935488304942636,"atr_len":12,"ema_len":34}` |
-| 188 | `TV_MACD_Divergence_MTF_EMA` | SWARMS | 1d | 80.0% | 15 | 1.73 | 62.0% | `{"macd_fast":9,"macd_slow":24,"macd_sig":10,"htf_minutes":95,"ema_len":89,"div_len":17}` |
-| 189 | `TV_Gann_Swing_MultiLayer` | OP | 1d | 78.9% | 19 | 7.66 | 212.4% | `{"swing_len":8,"layers":3,"atr_len":17,"ema_len":44}` |
-| 190 | `TV_SR_Trendlines` | WLD | 1h | 78.9% | 38 | 1.76 | 15.4% | `{"pivot_len":9,"sr_atr":0.30617776775483246,"atr_len":10,"ema_len":32}` |
-| 191 | `TV_ABCD_Pattern_Daveatt` | PYTH | 1d | 78.8% | 33 | 7.97 | 102.4% | `{"pivot_len":3,"ab_ratio_min":0.36427975414637837,"ab_ratio_max":0.837734878694461,"atr_len":14,"ema_len":46}` |
-| 192 | `TV_ABCD_Pattern_Daveatt` | TIA | 4h | 78.6% | 14 | 12.77 | 19.4% | `{"pivot_len":10,"ab_ratio_min":0.4690215828150882,"ab_ratio_max":0.7820062846081216,"atr_len":12,"ema_len":30}` |
-| 193 | `TV_ABCD_Pattern_Daveatt` | AGT | 4h | 78.6% | 28 | 2.11 | 20.0% | `{"pivot_len":5,"ab_ratio_min":0.3611618361277214,"ab_ratio_max":0.7614820787022076,"atr_len":18,"ema_len":94}` |
-| 194 | `TV_ABCD_Pattern_Daveatt` | SUI | 4h | 78.4% | 37 | 8.17 | 49.1% | `{"pivot_len":9,"ab_ratio_min":0.4965035970107122,"ab_ratio_max":0.786027866017362,"atr_len":13,"ema_len":63}` |
-| 195 | `TV_CamarillaPivotsV2` | AVAX | 4h | 77.8% | 9 | 34.05 | 57.1% | `{"session_len":1440,"h4_factor":1.1108906021071514,"l4_factor":1.094825588048236,"rsi_len":7,"atr_mult":1.5160296221199836}` |
-| 196 | `TV_ABCD_Pattern_Daveatt` | JUP | 4h | 77.8% | 9 | 7.68 | 16.9% | `{"pivot_len":10,"ab_ratio_min":0.493134118969651,"ab_ratio_max":0.756733096503295,"atr_len":17,"ema_len":30}` |
-| 197 | `TV_MTFBreakOfStructure` | ONDO | 1d | 77.8% | 9 | 6.47 | 33.6% | `{"swing_len":24,"atr_mult":1.099869394930643,"rsi_len":18,"trend_len":91,"vol_mult":1.320016092851329}` |
-| 198 | `TV_DominantCycleLibrary` | APT | 1d | 77.8% | 18 | 4.87 | 28.9% | `{"min_period":20,"max_period":43,"trend_len":100,"rsi_len":14,"adx_len":16}` |
-| 199 | `TV_DMI_ADX_Astropark` | AGT | 1d | 77.8% | 9 | 2.88 | 56.1% | `{"dmi_len":17,"adx_thresh":27.13606668517171,"rsi_len":20,"ema_len":39}` |
-| 200 | `TV_PeriodHighlighterPro` | DYDX | 4h | 77.8% | 9 | 2.19 | 9.4% | `{"period_len":36,"highlight_thresh":0.6742104969328251,"trend_len":24,"rsi_len":16,"vol_mult":2.370696852564726}` |
+| 154 | `TV_DrawOnLiquidity` | ETH | 1d | 100.0% | 5 | 999.00 | 4.6% | `{"swing_len":9,"liq_mult":1.7161757781981346,"rsi_len":13,"trend_len":32,"atr_mult":1.4424043721046245}` |
+| 155 | `TV_DrawOnLiquidity` | XRP | 1d | 100.0% | 2 | 999.00 | 7.9% | `{"swing_len":8,"liq_mult":1.862247658714664,"rsi_len":8,"trend_len":38,"atr_mult":0.6637919389174265}` |
+| 156 | `TV_EhlersSimpleCycleIndicator` | XRP | 1d | 100.0% | 2 | 999.00 | 4.7% | `{"alpha":0.10751312994428378,"trend_len":74,"rsi_len":15,"vol_mult":2.4349492126323984,"adx_len":19}` |
+| 157 | `TV_FloorPivots` | XRP | 1d | 100.0% | 4 | 999.00 | 93.9% | `{"session_len":1440,"rsi_len":12,"trend_len":59,"vol_mult":0.8177112295979512,"atr_mult":0.47750403666127567}` |
+| 158 | `TV_InverseFisherAdaptiveStoch` | ETH | 1d | 100.0% | 2 | 999.00 | 5.9% | `{"stoch_len":12,"smooth_k":5,"ift_thresh":0.6084215205836011,"trend_len":20,"rsi_len":20}` |
+| 159 | `TV_MTFBreakOfStructure` | XRP | 1d | 100.0% | 2 | 999.00 | 1.1% | `{"swing_len":18,"atr_mult":1.0476222230541936,"rsi_len":17,"trend_len":67,"vol_mult":2.3139209326066164}` |
+| 160 | `TV_PivotPointSuperTrend` | XRP | 1d | 100.0% | 2 | 999.00 | 8.0% | `{"ph_left":4,"ph_right":5,"atr_mult":4.715326174285911,"atr_len":18,"rsi_len":19}` |
+| 161 | `TV_PivotPointSuperTrend` | ETH | 1d | 100.0% | 5 | 999.00 | 28.5% | `{"ph_left":5,"ph_right":1,"atr_mult":2.956538273263269,"atr_len":7,"rsi_len":9}` |
+| 162 | `TV_PivotSuperTrendTrendFilter` | ETH | 1d | 100.0% | 4 | 999.00 | 13.8% | `{"ph_left":2,"ph_right":5,"atr_mult":2.5467527972126254,"trend_len":247,"rsi_len":14}` |
+| 163 | `TV_PivotSuperTrendTrendFilter` | XRP | 1d | 100.0% | 2 | 999.00 | 10.9% | `{"ph_left":5,"ph_right":2,"atr_mult":3.570287598793779,"trend_len":214,"rsi_len":9}` |
+| 164 | `TV_Double_Top_Bottom` | ETH | 1d | 100.0% | 3 | 999.00 | 14.6% | `{"pivot_len":13,"tolerance":0.021893383807563973,"atr_len":11,"ema_len":60}` |
+| 165 | `TV_Elder_Ray_Bull_Power` | XRP | 1d | 100.0% | 3 | 999.00 | 21.9% | `{"ema_len":21,"bull_thresh":-0.29196498467345444,"trend_len":83}` |
+| 166 | `TV_LuxAlgo_SMC_Ultimate` | XRP | 1d | 100.0% | 2 | 999.00 | 7.4% | `{"ob_len":20,"fvg_len":2,"premium":0.7779722011283929,"discount":0.24768666805338704,"ema_len":237}` |
+| 167 | `TV_RSI_Divergence_Alifer` | XRP | 1d | 100.0% | 3 | 999.00 | 22.4% | `{"rsi_len":20,"div_len":20,"ob":71.25596382303031,"os":21.455377506818245,"ema_len":66}` |
+| 168 | `TV_SR_Trendlines` | XRP | 1d | 100.0% | 2 | 999.00 | 10.6% | `{"pivot_len":9,"sr_atr":0.311053743624663,"atr_len":20,"ema_len":50}` |
+| 169 | `TV_WaveTrend_Plus` | XRP | 1d | 100.0% | 2 | 999.00 | 39.1% | `{"ch_len":8,"avg_len":27,"ob_level":68.23492146063913,"os_level":-67.94360568143306}` |
+| 170 | `TV_AGProSupplyDemand` | ETH | 4h | 100.0% | 2 | 999.00 | 1.8% | `{"zone_len":12,"swing_len":9,"atr_mult":1.7012614807283244,"rsi_len":7,"trend_len":48}` |
+| 171 | `TV_CamarillaPivots` | ETH | 4h | 100.0% | 2 | 999.00 | 19.6% | `{"session_len":1440,"h3_factor":1.1037142676064404,"l3_factor":1.071071228119383,"rsi_len":11,"trend_len":77}` |
+| 172 | `TV_CamarillaPivots` | LTC | 4h | 100.0% | 2 | 999.00 | 17.1% | `{"session_len":1440,"h3_factor":1.0860767294833447,"l3_factor":1.0767245870375206,"rsi_len":12,"trend_len":86}` |
+| 173 | `TV_FloorPivots` | LTC | 4h | 100.0% | 3 | 999.00 | 13.3% | `{"session_len":1440,"rsi_len":10,"trend_len":64,"vol_mult":1.0102397372706726,"atr_mult":0.9549042607178415}` |
+| 174 | `TV_PivotSuperTrendTrendFilter` | ETH | 4h | 100.0% | 3 | 999.00 | 7.1% | `{"ph_left":1,"ph_right":2,"atr_mult":5.124508178424307,"trend_len":278,"rsi_len":9}` |
+| 175 | `TV_Elder_Ray_Bear_Power` | XRP | 4h | 100.0% | 2 | 999.00 | 18.7% | `{"ema_len":10,"bear_thresh":0.19197854844074014,"trend_len":94}` |
+| 176 | `TV_Elder_Ray_Bull_Power` | XRP | 4h | 100.0% | 2 | 999.00 | 19.7% | `{"ema_len":17,"bull_thresh":0.5761923511502669,"trend_len":39}` |
+| 177 | `TV_Elder_Ray_Bear_Power` | XRP | 1h | 100.0% | 2 | 999.00 | 1.8% | `{"ema_len":8,"bear_thresh":-0.5595852673670216,"trend_len":58}` |
+| 178 | `TV_ABCD_Pattern_Daveatt` | OP | 1d | 90.9% | 11 | 365.14 | 53.8% | `{"pivot_len":9,"ab_ratio_min":0.489118757275913,"ab_ratio_max":0.8978024608329327,"atr_len":10,"ema_len":67}` |
+| 179 | `TV_ABCD_Harmonic_BullBear` | JUP | 1d | 90.9% | 11 | 65.52 | 79.1% | `{"pivot_len":8,"fib_ratio":0.5311468428972022,"atr_len":14}` |
+| 180 | `TV_InverseFisherAdaptiveStoch` | LTC | 1d | 90.9% | 11 | 3.11 | 25.2% | `{"stoch_len":16,"smooth_k":4,"ift_thresh":0.5580449088323115,"trend_len":30,"rsi_len":9}` |
+| 181 | `TV_PriceAction_Pattern_Breakout` | AGT | 1d | 90.0% | 10 | 10.35 | 29.9% | `{"pivot_len":7,"channel_len":15,"atr_len":14}` |
+| 182 | `TV_Ichimoku_Long_Only` | SWARMS | 1d | 88.9% | 9 | 30.15 | 50.6% | `{"tenkan":12,"kijun":35,"senkou_b_len":64,"chikou_lookback":27}` |
+| 183 | `TV_DrawOnLiquidity` | SUI | 4h | 88.9% | 9 | 9.99 | 10.1% | `{"swing_len":18,"liq_mult":1.8903000942039114,"rsi_len":9,"trend_len":67,"atr_mult":1.044887407398859}` |
+| 184 | `TV_DrawOnLiquidity` | TIA | 4h | 88.9% | 9 | 6.36 | 6.0% | `{"swing_len":17,"liq_mult":1.6819370357045433,"rsi_len":11,"trend_len":84,"atr_mult":0.2685248995665328}` |
+| 185 | `TV_Gann_Swing_MultiLayer` | LTC | 1d | 88.0% | 25 | 92.09 | 868.3% | `{"swing_len":10,"layers":4,"atr_len":12,"ema_len":61}` |
+| 186 | `TV_Double_Top_Bottom` | LINK | 1d | 87.5% | 8 | 165.55 | 33.6% | `{"pivot_len":19,"tolerance":0.034944744094975534,"atr_len":20,"ema_len":53}` |
+| 187 | `TV_TrendGuard_Flag_Finder` | GMX | 4h | 87.5% | 8 | 99.90 | 11.5% | `{"trend_len":52,"flag_bars":19,"flag_atr":0.790540690536037,"atr_len":20}` |
+| 188 | `TV_ABCD_Pattern_Daveatt` | AGT | 1d | 87.5% | 8 | 15.45 | 39.4% | `{"pivot_len":4,"ab_ratio_min":0.4103526597541341,"ab_ratio_max":0.7860870488339784,"atr_len":12,"ema_len":100}` |
+| 189 | `TV_MTFBreakOfStructure` | AVAX | 1d | 87.5% | 16 | 4.90 | 58.9% | `{"swing_len":19,"atr_mult":0.6676526966907248,"rsi_len":12,"trend_len":22,"vol_mult":2.0494315489196104}` |
+| 190 | `TV_ABCD_Harmonic_BullBear` | SEI | 4h | 86.7% | 15 | 46.78 | 50.9% | `{"pivot_len":5,"fib_ratio":0.6904968603164464,"atr_len":14}` |
+| 191 | `TV_Gann_Swing_MultiLayer` | ETH | 1d | 85.7% | 21 | 27.78 | 388.4% | `{"swing_len":4,"layers":4,"atr_len":13,"ema_len":93}` |
+| 192 | `TV_Double_Top_Bottom` | JTO | 4h | 85.0% | 20 | 10.84 | 29.9% | `{"pivot_len":20,"tolerance":0.010365058187822141,"atr_len":13,"ema_len":94}` |
+| 193 | `TV_ABCD_Pattern_Daveatt` | NEAR | 1d | 85.0% | 20 | 8.99 | 93.2% | `{"pivot_len":7,"ab_ratio_min":0.3832479533920498,"ab_ratio_max":0.7833210910764749,"atr_len":17,"ema_len":37}` |
+| 194 | `TV_CamarillaPivotsV2` | OP | 4h | 84.6% | 13 | 4.62 | 20.2% | `{"session_len":1440,"h4_factor":1.0851499537852725,"l4_factor":1.0718157969359603,"rsi_len":13,"atr_mult":0.9426292944838139}` |
+| 195 | `TV_ABCD_Pattern_Daveatt` | SUI | 1d | 84.2% | 19 | 19.53 | 99.1% | `{"pivot_len":6,"ab_ratio_min":0.35569624954037266,"ab_ratio_max":0.79616365641079,"atr_len":11,"ema_len":35}` |
+| 196 | `TV_DrawOnLiquidity` | GMX | 1d | 83.3% | 12 | 25.24 | 29.2% | `{"swing_len":8,"liq_mult":1.8789013372837648,"rsi_len":20,"trend_len":39,"atr_mult":0.6823310139167676}` |
+| 197 | `TV_SeasonalityChartingCycles` | AGT | 1d | 83.3% | 12 | 7.15 | 63.8% | `{"cycle_len":38,"trend_len":28,"rsi_len":15,"momentum_len":12,"vol_mult":1.6791506936028249}` |
+| 198 | `TV_ABCD_Pattern_Daveatt` | TIA | 1d | 83.3% | 18 | 3.64 | 66.8% | `{"pivot_len":4,"ab_ratio_min":0.4297108986060514,"ab_ratio_max":0.8337773811635861,"atr_len":13,"ema_len":36}` |
+| 199 | `TV_ABCD_Pattern_Daveatt` | AVAX | 1d | 83.3% | 18 | 3.24 | 48.6% | `{"pivot_len":6,"ab_ratio_min":0.4052880570715307,"ab_ratio_max":0.9310371990284712,"atr_len":19,"ema_len":34}` |
+| 200 | `TV_SR_Trendlines` | JUP | 4h | 83.3% | 12 | 3.16 | 10.1% | `{"pivot_len":11,"sr_atr":0.40574800969525304,"atr_len":14,"ema_len":55}` |
