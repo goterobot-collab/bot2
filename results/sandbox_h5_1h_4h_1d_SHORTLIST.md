@@ -1,10 +1,10 @@
 # HUNTER5_1h_4h_1d shortlist
 
 - Batches: 3604, 3605, 3606
-- Tasks completed: 853
-- Grails passing R24 gate: **70**
+- Tasks completed: 978
+- Grails passing R24 gate: **75**
 - Strategies promoted (>=1 combo pass): **9**
-- Elapsed: 3040s
+- Elapsed: 513s
 
 | Rank | Strategy | Sym | TF | WR | trades | PF | total% | params |
 |------|----------|-----|----|-----|--------|-----|--------|--------|
@@ -50,31 +50,36 @@
 | 40 | `TV_Information_Coefficient` | ARB | 1h | 100.0% | 2 | 999.00 | 1.5% | `{"ic_len":104,"ic_thresh":0.37689529941416106,"feat_smooth":10}` |
 | 41 | `TV_Information_Coefficient` | GMX | 1h | 100.0% | 2 | 999.00 | 1.4% | `{"ic_len":132,"ic_thresh":0.3372777330258052,"feat_smooth":7}` |
 | 42 | `TV_OLS_Residual_Fade` | SEI | 1h | 100.0% | 3 | 999.00 | 2.9% | `{"ema_fast":53,"ema_slow":134,"z_len":149,"z_thresh":3.6735382893992456}` |
-| 43 | `TV_Linear_Regression_Channel` | AGT | 4h | 95.0% | 20 | 205.25 | 110.2% | `{"lr_len":188,"k_std":3.211378899181738}` |
-| 44 | `TV_Linear_Regression_Channel` | AGT | 1d | 93.8% | 16 | 9.55 | 161.7% | `{"lr_len":78,"k_std":1.8517677619399473}` |
-| 45 | `TV_Linear_Regression_Channel` | JUP | 4h | 90.5% | 21 | 28.23 | 63.3% | `{"lr_len":130,"k_std":3.314622619929352}` |
-| 46 | `TV_Ehlers_Trend_Mode` | AVAX | 1d | 88.9% | 9 | 9.57 | 94.3% | `{"ss_fast":27,"ss_slow":41,"std_len":141,"std_mult":0.6039157379582191}` |
-| 47 | `TV_Linear_Regression_Channel` | APT | 1d | 87.5% | 16 | 85.64 | 61.3% | `{"lr_len":157,"k_std":3.2264153911735445}` |
-| 48 | `TV_Linear_Regression_Channel` | GMX | 1d | 86.7% | 30 | 6.54 | 109.6% | `{"lr_len":116,"k_std":2.134501909845676}` |
-| 49 | `TV_Linear_Regression_Channel` | GMX | 4h | 86.0% | 43 | 2.30 | 74.0% | `{"lr_len":182,"k_std":3.2987168243591998}` |
-| 50 | `TV_Linear_Regression_Channel` | ARB | 1d | 85.7% | 21 | 1.52 | 33.8% | `{"lr_len":164,"k_std":2.722836307675771}` |
-| 51 | `TV_Linear_Regression_Channel` | ARB | 4h | 83.3% | 30 | 5.46 | 66.3% | `{"lr_len":181,"k_std":3.3986867873414166}` |
-| 52 | `TV_Detrended_Fluctuation` | LINK | 1d | 82.4% | 17 | 2.49 | 18.3% | `{"dfa_len":105,"ema_fast":29,"ema_slow":162,"bb_len":52,"bb_mult":1.9466621920630618,"alpha_trend":0.6664443164793554,"alpha_rev":0.3361647198356477}` |
-| 53 | `TV_OLS_Residual_Fade` | GMX | 4h | 81.8% | 11 | 19.83 | 39.6% | `{"ema_fast":42,"ema_slow":168,"z_len":279,"z_thresh":3.576749058398626}` |
-| 54 | `TV_Detrended_Fluctuation` | SUI | 1d | 80.0% | 10 | 5.10 | 13.7% | `{"dfa_len":137,"ema_fast":28,"ema_slow":71,"bb_len":49,"bb_mult":2.7631237953055052,"alpha_trend":0.5694643367245662,"alpha_rev":0.4626314700563665}` |
-| 55 | `TV_Detrended_Fluctuation` | AVAX | 1d | 80.0% | 15 | 4.35 | 47.3% | `{"dfa_len":148,"ema_fast":31,"ema_slow":86,"bb_len":36,"bb_mult":1.6748390582013601,"alpha_trend":0.6305184653804966,"alpha_rev":0.4548511787105526}` |
-| 56 | `TV_Linear_Regression_Channel` | INJ | 4h | 78.9% | 19 | 5.62 | 49.1% | `{"lr_len":191,"k_std":3.347177354976829}` |
-| 57 | `TV_Information_Coefficient` | AGT | 1d | 78.6% | 14 | 3.93 | 79.5% | `{"ic_len":142,"ic_thresh":0.07412679695363747,"feat_smooth":24}` |
-| 58 | `TV_Linear_Regression_Channel` | ONDO | 4h | 78.4% | 51 | 2.86 | 64.4% | `{"lr_len":132,"k_std":2.788405174513677}` |
-| 59 | `TV_Information_Coefficient` | INJ | 4h | 77.8% | 9 | 9.61 | 38.0% | `{"ic_len":153,"ic_thresh":0.24659907403010745,"feat_smooth":10}` |
-| 60 | `TV_Linear_Regression_Channel` | DYDX | 4h | 77.7% | 166 | 1.49 | 96.2% | `{"lr_len":181,"k_std":2.5109225530548445}` |
-| 61 | `TV_Linear_Regression_Channel` | LINK | 1d | 76.8% | 56 | 1.40 | 92.6% | `{"lr_len":200,"k_std":2.21262273125111}` |
-| 62 | `TV_Ehlers_Super_Smoother` | INJ | 1d | 75.9% | 29 | 2.96 | 55.6% | `{"length":49,"ref_len":101}` |
-| 63 | `TV_FractalDimension_Break` | WLD | 4h | 75.0% | 8 | 15.10 | 69.1% | `{"fd_len":99,"fd_thresh":1.3148209010128131,"mom_len":31}` |
-| 64 | `TV_Detrended_Fluctuation` | WLD | 1d | 75.0% | 8 | 5.25 | 18.4% | `{"dfa_len":420,"ema_fast":20,"ema_slow":121,"bb_len":42,"bb_mult":2.583526060671103,"alpha_trend":0.5231477465716838,"alpha_rev":0.3761976775567952}` |
-| 65 | `TV_Linear_Regression_Channel` | SUI | 4h | 75.0% | 84 | 1.42 | 52.1% | `{"lr_len":169,"k_std":2.763985836238765}` |
-| 66 | `TV_Linear_Regression_Channel` | SFP | 4h | 74.3% | 564 | 1.23 | 202.3% | `{"lr_len":166,"k_std":1.2137651431486516}` |
-| 67 | `TV_Linear_Regression_Channel` | NEAR | 4h | 73.9% | 88 | 2.16 | 98.2% | `{"lr_len":184,"k_std":3.232677027673827}` |
-| 68 | `TV_Linear_Regression_Channel` | JTO | 4h | 73.0% | 89 | 1.95 | 90.0% | `{"lr_len":196,"k_std":2.1654006629957037}` |
-| 69 | `TV_Linear_Regression_Channel` | TIA | 4h | 72.4% | 185 | 1.25 | 68.1% | `{"lr_len":169,"k_std":1.7389926592134377}` |
-| 70 | `TV_FractalDimension_Break` | TIA | 1d | 72.2% | 18 | 2.61 | 49.5% | `{"fd_len":43,"fd_thresh":1.3859176218917832,"mom_len":9}` |
+| 43 | `TV_Detrended_Fluctuation` | XRP | 1d | 100.0% | 3 | 999.00 | 6.4% | `{"dfa_len":263,"ema_fast":48,"ema_slow":165,"bb_len":32,"bb_mult":1.9908298063388856,"alpha_trend":0.6406688593659133,"alpha_rev":0.3559710343871069}` |
+| 44 | `TV_FractalDimension_Break` | ETH | 1d | 100.0% | 3 | 999.00 | 65.3% | `{"fd_len":190,"fd_thresh":1.36022966661603,"mom_len":23}` |
+| 45 | `TV_Information_Coefficient` | ETH | 1d | 100.0% | 2 | 999.00 | 177.5% | `{"ic_len":152,"ic_thresh":0.23381051502220307,"feat_smooth":18}` |
+| 46 | `TV_FractalDimension_Break` | XRP | 1h | 100.0% | 3 | 999.00 | 7.9% | `{"fd_len":98,"fd_thresh":1.2935339236706123,"mom_len":15}` |
+| 47 | `TV_Linear_Regression_Channel` | AGT | 4h | 95.0% | 20 | 205.25 | 110.2% | `{"lr_len":188,"k_std":3.211378899181738}` |
+| 48 | `TV_Linear_Regression_Channel` | AGT | 1d | 93.8% | 16 | 9.55 | 161.7% | `{"lr_len":78,"k_std":1.8517677619399473}` |
+| 49 | `TV_Linear_Regression_Channel` | JUP | 4h | 90.5% | 21 | 28.23 | 63.3% | `{"lr_len":130,"k_std":3.314622619929352}` |
+| 50 | `TV_Ehlers_Trend_Mode` | AVAX | 1d | 88.9% | 9 | 9.57 | 94.3% | `{"ss_fast":27,"ss_slow":41,"std_len":141,"std_mult":0.6039157379582191}` |
+| 51 | `TV_Linear_Regression_Channel` | APT | 1d | 87.5% | 16 | 85.64 | 61.3% | `{"lr_len":157,"k_std":3.2264153911735445}` |
+| 52 | `TV_OLS_Residual_Fade` | ETH | 1d | 87.5% | 8 | 1.74 | 18.5% | `{"ema_fast":63,"ema_slow":360,"z_len":177,"z_thresh":1.4543398230480424}` |
+| 53 | `TV_Linear_Regression_Channel` | GMX | 1d | 86.7% | 30 | 6.54 | 109.6% | `{"lr_len":116,"k_std":2.134501909845676}` |
+| 54 | `TV_Linear_Regression_Channel` | GMX | 4h | 86.0% | 43 | 2.30 | 74.0% | `{"lr_len":182,"k_std":3.2987168243591998}` |
+| 55 | `TV_Linear_Regression_Channel` | ARB | 1d | 85.7% | 21 | 1.52 | 33.8% | `{"lr_len":164,"k_std":2.722836307675771}` |
+| 56 | `TV_Linear_Regression_Channel` | ARB | 4h | 83.3% | 30 | 5.46 | 66.3% | `{"lr_len":181,"k_std":3.3986867873414166}` |
+| 57 | `TV_Detrended_Fluctuation` | LINK | 1d | 82.4% | 17 | 2.49 | 18.3% | `{"dfa_len":105,"ema_fast":29,"ema_slow":162,"bb_len":52,"bb_mult":1.9466621920630618,"alpha_trend":0.6664443164793554,"alpha_rev":0.3361647198356477}` |
+| 58 | `TV_OLS_Residual_Fade` | GMX | 4h | 81.8% | 11 | 19.83 | 39.6% | `{"ema_fast":42,"ema_slow":168,"z_len":279,"z_thresh":3.576749058398626}` |
+| 59 | `TV_Detrended_Fluctuation` | SUI | 1d | 80.0% | 10 | 5.10 | 13.7% | `{"dfa_len":137,"ema_fast":28,"ema_slow":71,"bb_len":49,"bb_mult":2.7631237953055052,"alpha_trend":0.5694643367245662,"alpha_rev":0.4626314700563665}` |
+| 60 | `TV_Detrended_Fluctuation` | AVAX | 1d | 80.0% | 15 | 4.35 | 47.3% | `{"dfa_len":148,"ema_fast":31,"ema_slow":86,"bb_len":36,"bb_mult":1.6748390582013601,"alpha_trend":0.6305184653804966,"alpha_rev":0.4548511787105526}` |
+| 61 | `TV_Linear_Regression_Channel` | INJ | 4h | 78.9% | 19 | 5.62 | 49.1% | `{"lr_len":191,"k_std":3.347177354976829}` |
+| 62 | `TV_Information_Coefficient` | AGT | 1d | 78.6% | 14 | 3.93 | 79.5% | `{"ic_len":142,"ic_thresh":0.07412679695363747,"feat_smooth":24}` |
+| 63 | `TV_Linear_Regression_Channel` | ONDO | 4h | 78.4% | 51 | 2.86 | 64.4% | `{"lr_len":132,"k_std":2.788405174513677}` |
+| 64 | `TV_Information_Coefficient` | INJ | 4h | 77.8% | 9 | 9.61 | 38.0% | `{"ic_len":153,"ic_thresh":0.24659907403010745,"feat_smooth":10}` |
+| 65 | `TV_Linear_Regression_Channel` | DYDX | 4h | 77.7% | 166 | 1.49 | 96.2% | `{"lr_len":181,"k_std":2.5109225530548445}` |
+| 66 | `TV_Linear_Regression_Channel` | LINK | 1d | 76.8% | 56 | 1.40 | 92.6% | `{"lr_len":200,"k_std":2.21262273125111}` |
+| 67 | `TV_Ehlers_Super_Smoother` | INJ | 1d | 75.9% | 29 | 2.96 | 55.6% | `{"length":49,"ref_len":101}` |
+| 68 | `TV_FractalDimension_Break` | WLD | 4h | 75.0% | 8 | 15.10 | 69.1% | `{"fd_len":99,"fd_thresh":1.3148209010128131,"mom_len":31}` |
+| 69 | `TV_Detrended_Fluctuation` | WLD | 1d | 75.0% | 8 | 5.25 | 18.4% | `{"dfa_len":420,"ema_fast":20,"ema_slow":121,"bb_len":42,"bb_mult":2.583526060671103,"alpha_trend":0.5231477465716838,"alpha_rev":0.3761976775567952}` |
+| 70 | `TV_Linear_Regression_Channel` | SUI | 4h | 75.0% | 84 | 1.42 | 52.1% | `{"lr_len":169,"k_std":2.763985836238765}` |
+| 71 | `TV_Linear_Regression_Channel` | SFP | 4h | 74.3% | 564 | 1.23 | 202.3% | `{"lr_len":166,"k_std":1.2137651431486516}` |
+| 72 | `TV_Linear_Regression_Channel` | NEAR | 4h | 73.9% | 88 | 2.16 | 98.2% | `{"lr_len":184,"k_std":3.232677027673827}` |
+| 73 | `TV_Linear_Regression_Channel` | JTO | 4h | 73.0% | 89 | 1.95 | 90.0% | `{"lr_len":196,"k_std":2.1654006629957037}` |
+| 74 | `TV_Linear_Regression_Channel` | TIA | 4h | 72.4% | 185 | 1.25 | 68.1% | `{"lr_len":169,"k_std":1.7389926592134377}` |
+| 75 | `TV_FractalDimension_Break` | TIA | 1d | 72.2% | 18 | 2.61 | 49.5% | `{"fd_len":43,"fd_thresh":1.3859176218917832,"mom_len":9}` |

@@ -16,7 +16,7 @@
         "alpha_rev": 0.3979774374028046
       }
     },
-    "passing_combos": 11,
+    "passing_combos": 12,
     "all_passing": [
       {
         "sym": "GMX",
@@ -131,6 +131,22 @@
         }
       },
       {
+        "sym": "XRP",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "dfa_len": 263,
+          "ema_fast": 48,
+          "ema_slow": 165,
+          "bb_len": 32,
+          "bb_mult": 1.9908298063388856,
+          "alpha_trend": 0.6406688593659133,
+          "alpha_rev": 0.3559710343871069
+        }
+      },
+      {
         "sym": "LINK",
         "tf": "1d",
         "wr": 82.4,
@@ -209,7 +225,7 @@
         "mom_len": 34
       }
     },
-    "passing_combos": 5,
+    "passing_combos": 7,
     "all_passing": [
       {
         "sym": "APT",
@@ -245,6 +261,30 @@
           "fd_len": 180,
           "fd_thresh": 1.3055293480964354,
           "mom_len": 17
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "fd_len": 190,
+          "fd_thresh": 1.36022966661603,
+          "mom_len": 23
+        }
+      },
+      {
+        "sym": "XRP",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "fd_len": 98,
+          "fd_thresh": 1.2935339236706123,
+          "mom_len": 15
         }
       },
       {
@@ -449,7 +489,7 @@
         "feat_smooth": 15
       }
     },
-    "passing_combos": 7,
+    "passing_combos": 8,
     "all_passing": [
       {
         "sym": "OP",
@@ -509,6 +549,18 @@
           "ic_len": 132,
           "ic_thresh": 0.3372777330258052,
           "feat_smooth": 7
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "ic_len": 152,
+          "ic_thresh": 0.23381051502220307,
+          "feat_smooth": 18
         }
       },
       {
@@ -853,7 +905,7 @@
         "z_thresh": 3.8313941042258026
       }
     },
-    "passing_combos": 10,
+    "passing_combos": 11,
     "all_passing": [
       {
         "sym": "ARB",
@@ -970,6 +1022,19 @@
           "ema_slow": 134,
           "z_len": 149,
           "z_thresh": 3.6735382893992456
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "1d",
+        "wr": 87.5,
+        "trades": 8,
+        "pf": 1.744,
+        "params": {
+          "ema_fast": 63,
+          "ema_slow": 360,
+          "z_len": 177,
+          "z_thresh": 1.4543398230480424
         }
       },
       {
