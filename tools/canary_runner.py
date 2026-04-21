@@ -243,6 +243,8 @@ def backtest_signal_exit(df: pd.DataFrame, gen_fn, params: dict,
         "pf": round(pf, 3),
         "avg_win_pct": round(avg_win, 3),
         "avg_loss_pct": round(avg_loss, 3),
+        "profit_factor": round(pf, 3),
+        "pnls_pct": [float(p) * 100.0 for p in pnls],
     }
 
 

@@ -1,0 +1,1156 @@
+{
+  "_doc": "C-tier MC block bootstrap (Mac-approved replacement for sign-shuffle)",
+  "_method": "block_size=max(5,min(10,sqrt(n))) n_boot=5000 Regla24",
+  "_generated_at": "20260421",
+  "_n_targets": 48,
+  "_n_upgrades": 22,
+  "results": [
+    {
+      "strategy": "TV_Gann_Swing_MultiLayer",
+      "symbol": "NEAR",
+      "tf": "1d",
+      "stored_wr": 75.4,
+      "stored_trades": 57,
+      "stored_pf": 9.02,
+      "params": {
+        "swing_len": 4,
+        "layers": 2,
+        "atr_len": 16,
+        "ema_len": 67
+      },
+      "forensic_wr": 75.4,
+      "forensic_pnl_pct": 457.95,
+      "forensic_trades": 57,
+      "forensic_pf": 9.02,
+      "mc_block_bootstrap": {
+        "p_value": 0.005,
+        "n_boot": 5000,
+        "block_size": 7,
+        "observed_pnl": 457.9463992796368
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_Gann_Swing_MultiLayer",
+      "symbol": "ETH",
+      "tf": "4h",
+      "stored_wr": 70.4,
+      "stored_trades": 108,
+      "stored_pf": 5.06,
+      "params": {
+        "swing_len": 8,
+        "layers": 4,
+        "atr_len": 16,
+        "ema_len": 42
+      },
+      "forensic_wr": 70.4,
+      "forensic_pnl_pct": 498.21,
+      "forensic_trades": 108,
+      "forensic_pf": 5.057,
+      "mc_block_bootstrap": {
+        "p_value": 0.0112,
+        "n_boot": 5000,
+        "block_size": 10,
+        "observed_pnl": 498.20715394588143
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_ABCD_Pattern_Daveatt",
+      "symbol": "SUI",
+      "tf": "4h",
+      "stored_wr": 78.4,
+      "stored_trades": 37,
+      "stored_pf": 8.172,
+      "params": {
+        "pivot_len": 9,
+        "ab_ratio_min": 0.4965035970107122,
+        "ab_ratio_max": 0.786027866017362,
+        "atr_len": 13,
+        "ema_len": 63
+      },
+      "forensic_wr": 78.4,
+      "forensic_pnl_pct": 49.14,
+      "forensic_trades": 37,
+      "forensic_pf": 8.172,
+      "mc_block_bootstrap": {
+        "p_value": 0.035,
+        "n_boot": 5000,
+        "block_size": 6,
+        "observed_pnl": 49.14461110698512
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_ABCD_Pattern_Daveatt",
+      "symbol": "PYTH",
+      "tf": "1d",
+      "stored_wr": 78.8,
+      "stored_trades": 33,
+      "stored_pf": 7.967,
+      "params": {
+        "pivot_len": 3,
+        "ab_ratio_min": 0.36427975414637837,
+        "ab_ratio_max": 0.837734878694461,
+        "atr_len": 14,
+        "ema_len": 46
+      },
+      "forensic_wr": 78.8,
+      "forensic_pnl_pct": 102.39,
+      "forensic_trades": 33,
+      "forensic_pf": 7.967,
+      "mc_block_bootstrap": {
+        "p_value": 0.0116,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 102.38576360063985
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_SR_Trendlines",
+      "symbol": "ETH",
+      "tf": "4h",
+      "stored_wr": 76.5,
+      "stored_trades": 34,
+      "stored_pf": 7.37,
+      "params": {
+        "pivot_len": 8,
+        "sr_atr": 0.4396780792545685,
+        "atr_len": 10,
+        "ema_len": 31
+      },
+      "forensic_wr": 76.5,
+      "forensic_pnl_pct": 49.94,
+      "forensic_trades": 34,
+      "forensic_pf": 7.367,
+      "mc_block_bootstrap": {
+        "p_value": 0.0218,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 49.93989587481538
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_Linear_Regression_Channel",
+      "symbol": "GMX",
+      "tf": "1d",
+      "stored_wr": 86.7,
+      "stored_trades": 30,
+      "stored_pf": 6.54,
+      "params": {
+        "lr_len": 116,
+        "k_std": 2.134501909845676
+      },
+      "forensic_wr": 86.7,
+      "forensic_pnl_pct": 109.63,
+      "forensic_trades": 30,
+      "forensic_pf": 6.542,
+      "mc_block_bootstrap": {
+        "p_value": 0.0332,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 109.63234655791328
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_SeasonalityChartingCycles",
+      "symbol": "ETH",
+      "tf": "1d",
+      "stored_wr": 75.0,
+      "stored_trades": 36,
+      "stored_pf": 6.6,
+      "params": {
+        "cycle_len": 37,
+        "trend_len": 66,
+        "rsi_len": 16,
+        "momentum_len": 7,
+        "vol_mult": 2.4316719507839295
+      },
+      "forensic_wr": 75.0,
+      "forensic_pnl_pct": 135.88,
+      "forensic_trades": 36,
+      "forensic_pf": 6.602,
+      "mc_block_bootstrap": {
+        "p_value": 0.0264,
+        "n_boot": 5000,
+        "block_size": 6,
+        "observed_pnl": 135.87513745480828
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "JTO",
+      "tf": "4h",
+      "stored_wr": 76.6,
+      "stored_trades": 47,
+      "stored_pf": 5.81,
+      "error": "params not found"
+    },
+    {
+      "strategy": "TV_Session_Vol_Regime",
+      "symbol": "PYTH",
+      "tf": "1d",
+      "stored_wr": 73.5,
+      "stored_trades": 34,
+      "stored_pf": 6.45,
+      "params": {
+        "atr_len": 49,
+        "q_len": 252,
+        "q_lo": 0.16343338408829544,
+        "q_hi": 0.8258362565384796,
+        "ema_fast": 32,
+        "ema_slow": 140
+      },
+      "forensic_wr": 73.5,
+      "forensic_pnl_pct": 252.94,
+      "forensic_trades": 34,
+      "forensic_pf": 6.446,
+      "mc_block_bootstrap": {
+        "p_value": 0.0512,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 252.9355787819188
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": false,
+      "reject_reasons": [
+        "mc_p=0.051"
+      ]
+    },
+    {
+      "strategy": "TV_ABCD_Harmonic_BullBear",
+      "symbol": "JTO",
+      "tf": "4h",
+      "stored_wr": 72.3,
+      "stored_trades": 65,
+      "stored_pf": 5.292,
+      "params": {
+        "pivot_len": 6,
+        "fib_ratio": 0.5330578535669322,
+        "atr_len": 14
+      },
+      "forensic_wr": 72.3,
+      "forensic_pnl_pct": 209.88,
+      "forensic_trades": 65,
+      "forensic_pf": 5.292,
+      "mc_block_bootstrap": {
+        "p_value": 0.0086,
+        "n_boot": 5000,
+        "block_size": 8,
+        "observed_pnl": 209.88141157579722
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_Linear_Regression_Channel",
+      "symbol": "ARB",
+      "tf": "4h",
+      "stored_wr": 83.3,
+      "stored_trades": 30,
+      "stored_pf": 5.46,
+      "params": {
+        "lr_len": 181,
+        "k_std": 3.3986867873414166
+      },
+      "forensic_wr": 83.3,
+      "forensic_pnl_pct": 66.35,
+      "forensic_trades": 30,
+      "forensic_pf": 5.458,
+      "mc_block_bootstrap": {
+        "p_value": 0.0226,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 66.35493951025528
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_Double_Top_Bottom",
+      "symbol": "ONDO",
+      "tf": "4h",
+      "stored_wr": 72.4,
+      "stored_trades": 76,
+      "stored_pf": 4.916,
+      "params": {
+        "pivot_len": 13,
+        "tolerance": 0.044493295092575796,
+        "atr_len": 15,
+        "ema_len": 92
+      },
+      "forensic_wr": 72.4,
+      "forensic_pnl_pct": 70.94,
+      "forensic_trades": 76,
+      "forensic_pf": 4.916,
+      "mc_block_bootstrap": {
+        "p_value": 0.0044,
+        "n_boot": 5000,
+        "block_size": 8,
+        "observed_pnl": 70.94069773077314
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "JUP",
+      "tf": "4h",
+      "stored_wr": 83.3,
+      "stored_trades": 48,
+      "stored_pf": 4.63,
+      "error": "params not found"
+    },
+    {
+      "strategy": "TV_ABCD_Pattern_Daveatt",
+      "symbol": "DYDX",
+      "tf": "4h",
+      "stored_wr": 71.7,
+      "stored_trades": 113,
+      "stored_pf": 4.275,
+      "params": {
+        "pivot_len": 6,
+        "ab_ratio_min": 0.44721158535022565,
+        "ab_ratio_max": 0.7531044543087346,
+        "atr_len": 12,
+        "ema_len": 70
+      },
+      "forensic_wr": 71.7,
+      "forensic_pnl_pct": 104.79,
+      "forensic_trades": 113,
+      "forensic_pf": 4.275,
+      "mc_block_bootstrap": {
+        "p_value": 0.0042,
+        "n_boot": 5000,
+        "block_size": 10,
+        "observed_pnl": 104.78903066918828
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_Footprint_Volume_Climax",
+      "symbol": "SUI",
+      "tf": "4h",
+      "stored_wr": 76.5,
+      "stored_trades": 34,
+      "stored_pf": 4.32,
+      "params": {
+        "swing_len": 39,
+        "vol_mult": 4.428810064193686
+      },
+      "forensic_wr": 76.5,
+      "forensic_pnl_pct": 55.67,
+      "forensic_trades": 34,
+      "forensic_pf": 4.317,
+      "mc_block_bootstrap": {
+        "p_value": 0.018,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 55.672840490110374
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_DOW_Trend_Filter",
+      "symbol": "ONDO",
+      "tf": "1d",
+      "stored_wr": 74.2,
+      "stored_trades": 31,
+      "stored_pf": 4.21,
+      "params": {
+        "dow_long": 2,
+        "dow_short": 2,
+        "ema_len": 375
+      },
+      "forensic_wr": 74.2,
+      "forensic_pnl_pct": 76.49,
+      "forensic_trades": 31,
+      "forensic_pf": 4.205,
+      "mc_block_bootstrap": {
+        "p_value": 0.0152,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 76.48696934268769
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_BTC_Beta_Residual",
+      "symbol": "JUP",
+      "tf": "1d",
+      "stored_wr": 76.5,
+      "stored_trades": 34,
+      "stored_pf": 3.5,
+      "params": {
+        "win": 227,
+        "resid_z_len": 114,
+        "z_thresh": 1.6239709913041938
+      },
+      "forensic_wr": 76.5,
+      "forensic_pnl_pct": 73.28,
+      "forensic_trades": 34,
+      "forensic_pf": 3.498,
+      "mc_block_bootstrap": {
+        "p_value": 0.0288,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 73.27598682799186
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_Linear_Regression_Channel",
+      "symbol": "ONDO",
+      "tf": "4h",
+      "stored_wr": 78.4,
+      "stored_trades": 51,
+      "stored_pf": 2.86,
+      "params": {
+        "lr_len": 132,
+        "k_std": 2.788405174513677
+      },
+      "forensic_wr": 78.4,
+      "forensic_pnl_pct": 64.36,
+      "forensic_trades": 51,
+      "forensic_pf": 2.856,
+      "mc_block_bootstrap": {
+        "p_value": 0.0194,
+        "n_boot": 5000,
+        "block_size": 7,
+        "observed_pnl": 64.3612033539752
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_SR_Trendlines",
+      "symbol": "TIA",
+      "tf": "4h",
+      "stored_wr": 73.3,
+      "stored_trades": 30,
+      "stored_pf": 3.465,
+      "params": {
+        "pivot_len": 10,
+        "sr_atr": 0.5995202604839318,
+        "atr_len": 17,
+        "ema_len": 39
+      },
+      "forensic_wr": 73.3,
+      "forensic_pnl_pct": 48.51,
+      "forensic_trades": 30,
+      "forensic_pf": 3.465,
+      "mc_block_bootstrap": {
+        "p_value": 0.0386,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 48.505571796576284
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_OBV_Momentum",
+      "symbol": "XRP",
+      "tf": "1d",
+      "stored_wr": 73.5,
+      "stored_trades": 34,
+      "stored_pf": 3.23,
+      "params": {
+        "ema_len": 69,
+        "smooth": 7
+      },
+      "forensic_wr": 73.5,
+      "forensic_pnl_pct": 63.06,
+      "forensic_trades": 34,
+      "forensic_pf": 3.225,
+      "mc_block_bootstrap": {
+        "p_value": 0.068,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 63.056555352206075
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": false,
+      "reject_reasons": [
+        "mc_p=0.068"
+      ]
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ARB",
+      "tf": "4h",
+      "stored_wr": 72.2,
+      "stored_trades": 54,
+      "stored_pf": 2.9,
+      "error": "params not found"
+    },
+    {
+      "strategy": "TV_ABCD_Pattern_Daveatt",
+      "symbol": "LTC",
+      "tf": "1d",
+      "stored_wr": 71.0,
+      "stored_trades": 31,
+      "stored_pf": 3.33,
+      "params": {
+        "pivot_len": 9,
+        "ab_ratio_min": 0.3490434153991709,
+        "ab_ratio_max": 0.8338849411609215,
+        "atr_len": 12,
+        "ema_len": 55
+      },
+      "forensic_wr": 71.0,
+      "forensic_pnl_pct": 72.67,
+      "forensic_trades": 31,
+      "forensic_pf": 3.329,
+      "mc_block_bootstrap": {
+        "p_value": 0.0562,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 72.667393649761
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": false,
+      "reject_reasons": [
+        "mc_p=0.056"
+      ]
+    },
+    {
+      "strategy": "TV_SR_Trendlines",
+      "symbol": "DYDX",
+      "tf": "4h",
+      "stored_wr": 70.0,
+      "stored_trades": 30,
+      "stored_pf": 3.385,
+      "params": {
+        "pivot_len": 13,
+        "sr_atr": 0.3214215703496628,
+        "atr_len": 17,
+        "ema_len": 79
+      },
+      "forensic_wr": 70.0,
+      "forensic_pnl_pct": 37.88,
+      "forensic_trades": 30,
+      "forensic_pf": 3.385,
+      "mc_block_bootstrap": {
+        "p_value": 0.0146,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 37.87524182152545
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_BreaksAndRetests",
+      "symbol": "ARB",
+      "tf": "1d",
+      "stored_wr": 71.4,
+      "stored_trades": 35,
+      "stored_pf": 3.149,
+      "params": {
+        "pivot_left": 20,
+        "pivot_right": 9,
+        "retest_atr": 0.5013961442812314,
+        "rsi_len": 11,
+        "trend_len": 72
+      },
+      "forensic_wr": 71.4,
+      "forensic_pnl_pct": 71.66,
+      "forensic_trades": 35,
+      "forensic_pf": 3.149,
+      "mc_block_bootstrap": {
+        "p_value": 0.0232,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 71.65673122173811
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_Linear_Regression_Channel",
+      "symbol": "GMX",
+      "tf": "4h",
+      "stored_wr": 86.0,
+      "stored_trades": 43,
+      "stored_pf": 2.3,
+      "params": {
+        "lr_len": 182,
+        "k_std": 3.2987168243591998
+      },
+      "forensic_wr": 86.0,
+      "forensic_pnl_pct": 74.01,
+      "forensic_trades": 43,
+      "forensic_pf": 2.302,
+      "mc_block_bootstrap": {
+        "p_value": 0.0512,
+        "n_boot": 5000,
+        "block_size": 6,
+        "observed_pnl": 74.00565782866144
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": false,
+      "reject_reasons": [
+        "mc_p=0.051"
+      ]
+    },
+    {
+      "strategy": "TV_Linear_Regression_Channel",
+      "symbol": "NEAR",
+      "tf": "4h",
+      "stored_wr": 73.9,
+      "stored_trades": 88,
+      "stored_pf": 2.16,
+      "params": {
+        "lr_len": 184,
+        "k_std": 3.232677027673827
+      },
+      "forensic_wr": 73.9,
+      "forensic_pnl_pct": 98.24,
+      "forensic_trades": 88,
+      "forensic_pf": 2.159,
+      "mc_block_bootstrap": {
+        "p_value": 0.0166,
+        "n_boot": 5000,
+        "block_size": 9,
+        "observed_pnl": 98.24062883932237
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ONDO",
+      "tf": "4h",
+      "stored_wr": 77.8,
+      "stored_trades": 63,
+      "stored_pf": 2.16,
+      "error": "params not found"
+    },
+    {
+      "strategy": "TV_MACD_Divergence_MTF_EMA",
+      "symbol": "APT",
+      "tf": "1d",
+      "stored_wr": 71.0,
+      "stored_trades": 31,
+      "stored_pf": 2.772,
+      "params": {
+        "macd_fast": 11,
+        "macd_slow": 27,
+        "macd_sig": 11,
+        "htf_minutes": 225,
+        "ema_len": 92,
+        "div_len": 19
+      },
+      "forensic_wr": 71.0,
+      "forensic_pnl_pct": 83.15,
+      "forensic_trades": 31,
+      "forensic_pf": 2.772,
+      "mc_block_bootstrap": {
+        "p_value": 0.0544,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 83.14692641864741
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": false,
+      "reject_reasons": [
+        "mc_p=0.054"
+      ]
+    },
+    {
+      "strategy": "TV_VolumeDelta_Imbalance",
+      "symbol": "JUP",
+      "tf": "4h",
+      "stored_wr": 75.0,
+      "stored_trades": 40,
+      "stored_pf": 2.43,
+      "params": {
+        "lookback": 46,
+        "thresh": 0.6847284750126217
+      },
+      "forensic_wr": 75.0,
+      "forensic_pnl_pct": 64.15,
+      "forensic_trades": 40,
+      "forensic_pf": 2.427,
+      "mc_block_bootstrap": {
+        "p_value": 0.0482,
+        "n_boot": 5000,
+        "block_size": 6,
+        "observed_pnl": 64.15046967264222
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_CVD_Crossover",
+      "symbol": "GMX",
+      "tf": "1d",
+      "stored_wr": 70.6,
+      "stored_trades": 34,
+      "stored_pf": 2.56,
+      "params": {
+        "ma_len": 127
+      },
+      "forensic_wr": 70.6,
+      "forensic_pnl_pct": 61.0,
+      "forensic_trades": 34,
+      "forensic_pf": 2.555,
+      "mc_block_bootstrap": {
+        "p_value": 0.0728,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 61.002766973260336
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": false,
+      "reject_reasons": [
+        "mc_p=0.073"
+      ]
+    },
+    {
+      "strategy": "TV_Linear_Regression_Channel",
+      "symbol": "JTO",
+      "tf": "4h",
+      "stored_wr": 73.0,
+      "stored_trades": 89,
+      "stored_pf": 1.95,
+      "params": {
+        "lr_len": 196,
+        "k_std": 2.1654006629957037
+      },
+      "forensic_wr": 73.0,
+      "forensic_pnl_pct": 90.01,
+      "forensic_trades": 89,
+      "forensic_pf": 1.948,
+      "mc_block_bootstrap": {
+        "p_value": 0.0272,
+        "n_boot": 5000,
+        "block_size": 9,
+        "observed_pnl": 90.0099644827612
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_ATR_Regime_Reversal",
+      "symbol": "ARB",
+      "tf": "1d",
+      "stored_wr": 73.3,
+      "stored_trades": 30,
+      "stored_pf": 2.52,
+      "params": {
+        "atr_len": 24,
+        "q_len": 223,
+        "q_hi": 0.9133752500334996,
+        "rev_len": 9
+      },
+      "forensic_wr": 73.3,
+      "forensic_pnl_pct": 71.59,
+      "forensic_trades": 30,
+      "forensic_pf": 2.524,
+      "mc_block_bootstrap": {
+        "p_value": 0.0376,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 71.59012425238382
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SWARMS",
+      "tf": "4h",
+      "stored_wr": 79.2,
+      "stored_trades": 48,
+      "stored_pf": 2.01,
+      "error": "params not found"
+    },
+    {
+      "strategy": "TV_VolumeDelta_Imbalance",
+      "symbol": "SUI",
+      "tf": "4h",
+      "stored_wr": 78.0,
+      "stored_trades": 41,
+      "stored_pf": 2.09,
+      "params": {
+        "lookback": 23,
+        "thresh": 0.7792145428447147
+      },
+      "forensic_wr": 78.0,
+      "forensic_pnl_pct": 47.24,
+      "forensic_trades": 41,
+      "forensic_pf": 2.093,
+      "mc_block_bootstrap": {
+        "p_value": 0.1184,
+        "n_boot": 5000,
+        "block_size": 6,
+        "observed_pnl": 47.24123175496534
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": false,
+      "reject_reasons": [
+        "mc_p=0.118"
+      ]
+    },
+    {
+      "strategy": "TV_Linear_Regression_Channel",
+      "symbol": "DYDX",
+      "tf": "4h",
+      "stored_wr": 77.7,
+      "stored_trades": 166,
+      "stored_pf": 1.49,
+      "params": {
+        "lr_len": 181,
+        "k_std": 2.5109225530548445
+      },
+      "forensic_wr": 77.7,
+      "forensic_pnl_pct": 96.16,
+      "forensic_trades": 166,
+      "forensic_pf": 1.488,
+      "mc_block_bootstrap": {
+        "p_value": 0.0996,
+        "n_boot": 5000,
+        "block_size": 10,
+        "observed_pnl": 96.15692679664028
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": false,
+      "reject_reasons": [
+        "mc_p=0.100"
+      ]
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SFP",
+      "tf": "4h",
+      "stored_wr": 72.0,
+      "stored_trades": 493,
+      "stored_pf": 1.31,
+      "error": "params not found"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "NEAR",
+      "tf": "4h",
+      "stored_wr": 70.0,
+      "stored_trades": 80,
+      "stored_pf": 1.84,
+      "error": "params not found"
+    },
+    {
+      "strategy": "TV_VolumeDelta_Imbalance",
+      "symbol": "OP",
+      "tf": "1d",
+      "stored_wr": 75.0,
+      "stored_trades": 56,
+      "stored_pf": 1.76,
+      "params": {
+        "lookback": 5,
+        "thresh": 0.8868056153383668
+      },
+      "forensic_wr": 75.0,
+      "forensic_pnl_pct": 86.11,
+      "forensic_trades": 56,
+      "forensic_pf": 1.763,
+      "mc_block_bootstrap": {
+        "p_value": 0.0668,
+        "n_boot": 5000,
+        "block_size": 7,
+        "observed_pnl": 86.11334103817447
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": false,
+      "reject_reasons": [
+        "mc_p=0.067"
+      ]
+    },
+    {
+      "strategy": "TV_AdaptiveFisherizedCMO",
+      "symbol": "OP",
+      "tf": "1d",
+      "stored_wr": 71.2,
+      "stored_trades": 52,
+      "stored_pf": 1.864,
+      "params": {
+        "cmo_len": 13,
+        "fisher_len": 14,
+        "ift_thresh": 0.14244625043334266,
+        "trend_len": 42,
+        "adx_len": 18
+      },
+      "forensic_wr": 71.2,
+      "forensic_pnl_pct": 56.37,
+      "forensic_trades": 52,
+      "forensic_pf": 1.864,
+      "mc_block_bootstrap": {
+        "p_value": 0.1088,
+        "n_boot": 5000,
+        "block_size": 7,
+        "observed_pnl": 56.371994361276975
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": false,
+      "reject_reasons": [
+        "mc_p=0.109"
+      ]
+    },
+    {
+      "strategy": "TV_Linear_Regression_Channel",
+      "symbol": "SUI",
+      "tf": "4h",
+      "stored_wr": 78.3,
+      "stored_trades": 115,
+      "stored_pf": 1.38,
+      "params": {
+        "lr_len": 169,
+        "k_std": 2.763985836238765
+      },
+      "forensic_wr": 75.0,
+      "forensic_pnl_pct": 52.13,
+      "forensic_trades": 84,
+      "forensic_pf": 1.423,
+      "mc_block_bootstrap": {
+        "p_value": 0.1186,
+        "n_boot": 5000,
+        "block_size": 9,
+        "observed_pnl": 52.12919793308153
+      },
+      "gap_wr": 3.299999999999997,
+      "upgrade_to_B": false,
+      "reject_reasons": [
+        "mc_p=0.119"
+      ]
+    },
+    {
+      "strategy": "TV_DynamicBreakoutMaster",
+      "symbol": "ETH",
+      "tf": "1d",
+      "stored_wr": 70.2,
+      "stored_trades": 57,
+      "stored_pf": 1.79,
+      "params": {
+        "atr_len": 19,
+        "atr_mult": 2.500561360342865,
+        "pivot_left": 18,
+        "pivot_right": 3,
+        "rsi_len": 16
+      },
+      "forensic_wr": 70.2,
+      "forensic_pnl_pct": 116.8,
+      "forensic_trades": 57,
+      "forensic_pf": 1.793,
+      "mc_block_bootstrap": {
+        "p_value": 0.1188,
+        "n_boot": 5000,
+        "block_size": 7,
+        "observed_pnl": 116.8024442601029
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": false,
+      "reject_reasons": [
+        "mc_p=0.119"
+      ]
+    },
+    {
+      "strategy": "TV_SR_Trendlines",
+      "symbol": "WLD",
+      "tf": "1h",
+      "stored_wr": 78.9,
+      "stored_trades": 38,
+      "stored_pf": 1.76,
+      "params": {
+        "pivot_len": 9,
+        "sr_atr": 0.30617776775483246,
+        "atr_len": 10,
+        "ema_len": 32
+      },
+      "forensic_wr": 78.9,
+      "forensic_pnl_pct": 15.39,
+      "forensic_trades": 38,
+      "forensic_pf": 1.756,
+      "mc_block_bootstrap": {
+        "p_value": 0.202,
+        "n_boot": 5000,
+        "block_size": 6,
+        "observed_pnl": 15.391003873588286
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": false,
+      "reject_reasons": [
+        "mc_p=0.202"
+      ]
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "INJ",
+      "tf": "4h",
+      "stored_wr": 70.6,
+      "stored_trades": 51,
+      "stored_pf": 1.68,
+      "error": "params not found"
+    },
+    {
+      "strategy": "TV_MACD_Divergence_MTF_EMA",
+      "symbol": "ETH",
+      "tf": "1d",
+      "stored_wr": 77.8,
+      "stored_trades": 36,
+      "stored_pf": 1.59,
+      "params": {
+        "macd_fast": 15,
+        "macd_slow": 27,
+        "macd_sig": 8,
+        "htf_minutes": 276,
+        "ema_len": 92,
+        "div_len": 11
+      },
+      "forensic_wr": 77.8,
+      "forensic_pnl_pct": 51.66,
+      "forensic_trades": 36,
+      "forensic_pf": 1.591,
+      "mc_block_bootstrap": {
+        "p_value": 0.1666,
+        "n_boot": 5000,
+        "block_size": 6,
+        "observed_pnl": 51.660543663611875
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": false,
+      "reject_reasons": [
+        "mc_p=0.167"
+      ]
+    },
+    {
+      "strategy": "TV_DominantCycleLibrary",
+      "symbol": "SUI",
+      "tf": "1d",
+      "stored_wr": 70.0,
+      "stored_trades": 30,
+      "stored_pf": 1.823,
+      "params": {
+        "min_period": 6,
+        "max_period": 32,
+        "trend_len": 72,
+        "rsi_len": 20,
+        "adx_len": 11
+      },
+      "forensic_wr": 70.0,
+      "forensic_pnl_pct": 42.45,
+      "forensic_trades": 30,
+      "forensic_pf": 1.823,
+      "mc_block_bootstrap": {
+        "p_value": 0.1878,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 42.451274099547376
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": false,
+      "reject_reasons": [
+        "mc_p=0.188"
+      ]
+    },
+    {
+      "strategy": "TV_Linear_Regression_Channel",
+      "symbol": "LINK",
+      "tf": "1d",
+      "stored_wr": 76.8,
+      "stored_trades": 56,
+      "stored_pf": 1.4,
+      "params": {
+        "lr_len": 200,
+        "k_std": 2.21262273125111
+      },
+      "forensic_wr": 76.8,
+      "forensic_pnl_pct": 92.61,
+      "forensic_trades": 56,
+      "forensic_pf": 1.404,
+      "mc_block_bootstrap": {
+        "p_value": 0.1252,
+        "n_boot": 5000,
+        "block_size": 7,
+        "observed_pnl": 92.61069512710472
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": false,
+      "reject_reasons": [
+        "mc_p=0.125"
+      ]
+    },
+    {
+      "strategy": "TV_Linear_Regression_Channel",
+      "symbol": "OP",
+      "tf": "4h",
+      "stored_wr": 72.2,
+      "stored_trades": 72,
+      "stored_pf": 1.32,
+      "error": "params not found"
+    },
+    {
+      "strategy": "TV_Weekend_Gap_Fade",
+      "symbol": "NEAR",
+      "tf": "4h",
+      "stored_wr": 74.2,
+      "stored_trades": 31,
+      "stored_pf": 1.54,
+      "params": {
+        "k_atr": 3.3178316176761324,
+        "atr_len": 29
+      },
+      "forensic_wr": 74.2,
+      "forensic_pnl_pct": 26.41,
+      "forensic_trades": 31,
+      "forensic_pf": 1.541,
+      "mc_block_bootstrap": {
+        "p_value": 0.1814,
+        "n_boot": 5000,
+        "block_size": 5,
+        "observed_pnl": 26.409907494331108
+      },
+      "gap_wr": 0.0,
+      "upgrade_to_B": false,
+      "reject_reasons": [
+        "mc_p=0.181"
+      ]
+    }
+  ]
+}

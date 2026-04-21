@@ -2,11 +2,11 @@
   "_doc": "Sandbox final master grail list for V8 injection",
   "_generated_at": "auto",
   "_filters": "tier A: plateau+MC<.05 | tier B: plateau OR MC<.05 | tier C: n>=30 & WR>=65 & PF>=1.3",
-  "_count": 66,
+  "_count": 68,
   "_count_by_tier": {
     "A": 0,
-    "B": 18,
-    "C": 48
+    "B": 43,
+    "C": 25
   },
   "grails": [
     {
@@ -101,6 +101,24 @@
       "ready_for_v8": true
     },
     {
+      "strategy": "TV_Double_Top_Bottom",
+      "symbol": "JTO",
+      "tf": "4h",
+      "wr": 85.0,
+      "trades": 20,
+      "pf": 10.838,
+      "source": "sandbox_h2_1h_4h_1d_progress.json",
+      "plateau": false,
+      "score": 2587.84,
+      "mc_p_value": null,
+      "plateau_confirmed": true,
+      "tier": "B",
+      "validation": [
+        "plateau"
+      ],
+      "ready_for_v8": true
+    },
+    {
       "strategy": "TV_Pivot_Reversal_Backtest",
       "symbol": "GMX",
       "tf": "1d",
@@ -167,6 +185,25 @@
       "source": "sandbox_h2_1h_4h_1d_progress.json",
       "plateau": true,
       "score": 1715.14,
+      "mc_p_value": null,
+      "plateau_confirmed": true,
+      "tier": "B",
+      "validation": [
+        "plateau",
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Gann_Swing_MultiLayer",
+      "symbol": "ETH",
+      "tf": "4h",
+      "wr": 70.4,
+      "trades": 108,
+      "pf": 5.06,
+      "source": "hunter2_high.log",
+      "plateau": false,
+      "score": 1671.17,
       "mc_p_value": null,
       "plateau_confirmed": true,
       "tier": "B",
@@ -328,6 +365,25 @@
       "ready_for_v8": true
     },
     {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ONDO",
+      "tf": "4h",
+      "wr": 77.8,
+      "trades": 63,
+      "pf": 2.16,
+      "source": "hunter1_mp.log",
+      "plateau": false,
+      "score": 698.89,
+      "mc_p_value": null,
+      "plateau_confirmed": true,
+      "tier": "B",
+      "validation": [
+        "plateau",
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
       "strategy": "TV_VolumeProfile_Reversion",
       "symbol": "TIA",
       "tf": "1d",
@@ -347,6 +403,24 @@
       "ready_for_v8": true
     },
     {
+      "strategy": "TV_Linear_Regression_Channel",
+      "symbol": "PYTH",
+      "tf": "4h",
+      "wr": 75.0,
+      "trades": 28,
+      "pf": 2.48,
+      "source": "hunter5_high.log",
+      "plateau": false,
+      "score": 626.32,
+      "mc_p_value": null,
+      "plateau_confirmed": true,
+      "tier": "B",
+      "validation": [
+        "plateau"
+      ],
+      "ready_for_v8": true
+    },
+    {
       "strategy": "TV_Gann_Swing_MultiLayer",
       "symbol": "NEAR",
       "tf": "1d",
@@ -356,31 +430,16 @@
       "source": "sandbox_h2_1h_4h_1d_progress.json",
       "plateau": false,
       "score": 2761.54,
-      "mc_p_value": null,
+      "mc_p_value": 0.005,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
-    },
-    {
-      "strategy": "TV_Gann_Swing_MultiLayer",
-      "symbol": "ETH",
-      "tf": "4h",
-      "wr": 70.4,
-      "trades": 108,
-      "pf": 5.06,
-      "source": "hunter2_high.log",
-      "plateau": true,
-      "score": 2506.76,
-      "mc_p_value": null,
-      "plateau_confirmed": false,
-      "tier": "C",
-      "validation": [
-        "n_threshold"
-      ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 7,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_ABCD_Pattern_Daveatt",
@@ -392,13 +451,16 @@
       "source": "sandbox_h2_1h_4h_1d_progress.json",
       "plateau": false,
       "score": 2330.55,
-      "mc_p_value": null,
+      "mc_p_value": 0.035,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 6,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_ABCD_Pattern_Daveatt",
@@ -410,13 +472,16 @@
       "source": "sandbox_h2_1h_4h_1d_progress.json",
       "plateau": false,
       "score": 2213.85,
-      "mc_p_value": null,
+      "mc_p_value": 0.0116,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 5,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_SR_Trendlines",
@@ -428,13 +493,16 @@
       "source": "hunter2_high.log",
       "plateau": false,
       "score": 2004.52,
-      "mc_p_value": null,
+      "mc_p_value": 0.0218,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 5,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_Linear_Regression_Channel",
@@ -446,13 +514,16 @@
       "source": "hunter5_high.log",
       "plateau": false,
       "score": 1947.13,
-      "mc_p_value": null,
+      "mc_p_value": 0.0332,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 5,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_SeasonalityChartingCycles",
@@ -464,13 +535,16 @@
       "source": "hunter2_high.log",
       "plateau": false,
       "score": 1787.4,
-      "mc_p_value": null,
+      "mc_p_value": 0.0264,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 6,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_Cointegration_PairsTrading",
@@ -518,13 +592,16 @@
       "source": "sandbox_h2_1h_4h_1d_progress.json",
       "plateau": false,
       "score": 1603.01,
-      "mc_p_value": null,
+      "mc_p_value": 0.0086,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 8,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_Linear_Regression_Channel",
@@ -536,13 +613,16 @@
       "source": "hunter5_high.log",
       "plateau": false,
       "score": 1561.84,
-      "mc_p_value": null,
+      "mc_p_value": 0.0226,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 5,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_Double_Top_Bottom",
@@ -554,13 +634,16 @@
       "source": "sandbox_h2_1h_4h_1d_progress.json",
       "plateau": false,
       "score": 1546.04,
-      "mc_p_value": null,
+      "mc_p_value": 0.0044,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 8,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_Cointegration_PairsTrading",
@@ -590,13 +673,16 @@
       "source": "sandbox_h2_1h_4h_1d_progress.json",
       "plateau": false,
       "score": 1451.73,
-      "mc_p_value": null,
+      "mc_p_value": 0.0042,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 10,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_Footprint_Volume_Climax",
@@ -608,13 +694,16 @@
       "source": "hunter3_high.log",
       "plateau": false,
       "score": 1174.97,
-      "mc_p_value": null,
+      "mc_p_value": 0.018,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 5,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_DOW_Trend_Filter",
@@ -626,13 +715,16 @@
       "source": "hunter3_high.log",
       "plateau": false,
       "score": 1082.63,
-      "mc_p_value": null,
+      "mc_p_value": 0.0152,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 5,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_BTC_Beta_Residual",
@@ -644,13 +736,16 @@
       "source": "hunter6_high.log",
       "plateau": false,
       "score": 951.94,
-      "mc_p_value": null,
+      "mc_p_value": 0.0288,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 5,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_Linear_Regression_Channel",
@@ -662,13 +757,16 @@
       "source": "hunter5_high.log",
       "plateau": false,
       "score": 885.96,
-      "mc_p_value": null,
+      "mc_p_value": 0.0194,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 7,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_SR_Trendlines",
@@ -680,13 +778,16 @@
       "source": "sandbox_h2_1h_4h_1d_progress.json",
       "plateau": false,
       "score": 872.18,
-      "mc_p_value": null,
+      "mc_p_value": 0.0386,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 5,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_OBV_Momentum",
@@ -752,13 +853,16 @@
       "source": "sandbox_h2_1h_4h_1d_progress.json",
       "plateau": false,
       "score": 813.68,
-      "mc_p_value": null,
+      "mc_p_value": 0.0146,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 5,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_BreaksAndRetests",
@@ -770,13 +874,16 @@
       "source": "sandbox_h2_1h_4h_1d_progress.json",
       "plateau": false,
       "score": 805.71,
-      "mc_p_value": null,
+      "mc_p_value": 0.0232,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 5,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_Linear_Regression_Channel",
@@ -806,31 +913,16 @@
       "source": "hunter5_high.log",
       "plateau": false,
       "score": 716.49,
-      "mc_p_value": null,
+      "mc_p_value": 0.0166,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
-    },
-    {
-      "strategy": "TV_Cointegration_PairsTrading",
-      "symbol": "ONDO",
-      "tf": "4h",
-      "wr": 77.8,
-      "trades": 63,
-      "pf": 2.16,
-      "source": "hunter1_mp.log",
-      "plateau": false,
-      "score": 698.89,
-      "mc_p_value": null,
-      "plateau_confirmed": false,
-      "tier": "C",
-      "validation": [
-        "n_threshold"
-      ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 9,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_MACD_Divergence_MTF_EMA",
@@ -860,13 +952,16 @@
       "source": "hunter3_high.log",
       "plateau": false,
       "score": 676.8,
-      "mc_p_value": null,
+      "mc_p_value": 0.0482,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 6,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_CVD_Crossover",
@@ -896,13 +991,16 @@
       "source": "hunter5_high.log",
       "plateau": false,
       "score": 640.55,
-      "mc_p_value": null,
+      "mc_p_value": 0.0272,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 9,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_ATR_Regime_Reversal",
@@ -914,13 +1012,16 @@
       "source": "hunter6_high.log",
       "plateau": false,
       "score": 634.31,
-      "mc_p_value": null,
+      "mc_p_value": 0.0376,
       "plateau_confirmed": false,
-      "tier": "C",
+      "tier": "B",
       "validation": [
         "n_threshold"
       ],
-      "ready_for_v8": true
+      "ready_for_v8": true,
+      "mc_method": "block_bootstrap",
+      "mc_block_size": 5,
+      "mc_n_boot": 5000
     },
     {
       "strategy": "TV_Cointegration_PairsTrading",
@@ -1210,5 +1311,6 @@
       ],
       "ready_for_v8": true
     }
-  ]
+  ],
+  "_last_patched": "2026-04-21 block_bootstrap_mc_22_upgrades"
 }
