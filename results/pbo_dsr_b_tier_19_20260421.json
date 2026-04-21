@@ -1,0 +1,375 @@
+{
+  "_doc": "HIGH-2 PBO halves + DSR Bernoulli gate sobre B-tier plateau",
+  "_generated_at": "2026-04-21",
+  "_n_targets": 19,
+  "_n_upgrades_to_A": 9,
+  "_n_pool_trials": 721,
+  "_gate": "PBO per-grail (WR gap between halves < 20pp) AND DSR z > 0",
+  "results": [
+    {
+      "strategy": "TV_Linear_Regression_Channel",
+      "symbol": "AGT",
+      "tf": "4h",
+      "stored_wr": 95.0,
+      "stored_trades": 20,
+      "stored_pf": 205.25,
+      "params": {
+        "lr_len": 188,
+        "k_std": 3.211378899181738
+      },
+      "pbo": {
+        "wr1": 100.0,
+        "wr2": 90.0,
+        "n1": 10,
+        "n2": 10,
+        "pbo_per_grail": 0.0,
+        "gap_wr": 10.0
+      },
+      "sharpe_proxy": 17.75503005509235,
+      "dsr_z": 1.6891941252207867,
+      "e_max_sr": 3.1609111789089637,
+      "bernoulli_skew": -4.129483209670109,
+      "bernoulli_kurt_raw": 18.05263157894735,
+      "upgrade_to_A": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_Pivot_Reversal_Backtest",
+      "symbol": "SWARMS",
+      "tf": "1d",
+      "stored_wr": 80.6,
+      "stored_trades": 36,
+      "stored_pf": 8.481,
+      "params": {
+        "pivot_left": 10,
+        "pivot_right": 7,
+        "atr_len": 11
+      },
+      "pbo": {
+        "wr1": 80.0,
+        "wr2": 80.0,
+        "n1": 15,
+        "n2": 20,
+        "pbo_per_grail": 0.0,
+        "gap_wr": 0.0
+      },
+      "sharpe_proxy": 7.240696523007931,
+      "dsr_z": 3.655267860134356,
+      "e_max_sr": 3.1609111789089637,
+      "bernoulli_skew": -1.547686649273559,
+      "bernoulli_kurt_raw": 3.395333964339617,
+      "upgrade_to_A": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_ABCD_Pattern_Daveatt",
+      "symbol": "NEAR",
+      "tf": "1d",
+      "stored_wr": 85.0,
+      "stored_trades": 20,
+      "stored_pf": 8.992,
+      "params": {
+        "pivot_len": 7,
+        "ab_ratio_min": 0.3832479533920498,
+        "ab_ratio_max": 0.7833210910764749,
+        "atr_len": 17,
+        "ema_len": 37
+      },
+      "pbo": {
+        "wr1": 90.9,
+        "wr2": 75.0,
+        "n1": 11,
+        "n2": 8,
+        "pbo_per_grail": 0.0,
+        "gap_wr": 15.900000000000006
+      },
+      "sharpe_proxy": 5.804166164543804,
+      "dsr_z": 1.7224250342784173,
+      "e_max_sr": 3.1609111789089637,
+      "bernoulli_skew": -1.9603921176392136,
+      "bernoulli_kurt_raw": 4.8431372549019605,
+      "upgrade_to_A": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_Double_Top_Bottom",
+      "symbol": "JTO",
+      "tf": "4h",
+      "stored_wr": 85.0,
+      "stored_trades": 20,
+      "stored_pf": 10.838,
+      "params": {
+        "pivot_len": 20,
+        "tolerance": 0.010365058187822141,
+        "atr_len": 13,
+        "ema_len": 94
+      },
+      "pbo": {
+        "wr1": 80.0,
+        "wr2": 87.5,
+        "n1": 10,
+        "n2": 8,
+        "pbo_per_grail": 0.0,
+        "gap_wr": 7.5
+      },
+      "sharpe_proxy": 6.345690579643753,
+      "dsr_z": 1.9227273388784107,
+      "e_max_sr": 3.1609111789089637,
+      "bernoulli_skew": -1.9603921176392136,
+      "bernoulli_kurt_raw": 4.8431372549019605,
+      "upgrade_to_A": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_Pivot_Reversal_Backtest",
+      "symbol": "GMX",
+      "tf": "1d",
+      "stored_wr": 71.5,
+      "stored_trades": 123,
+      "stored_pf": 4.539,
+      "params": {
+        "pivot_left": 10,
+        "pivot_right": 3,
+        "atr_len": 14
+      },
+      "pbo": {
+        "wr1": 73.7,
+        "wr2": 69.2,
+        "n1": 57,
+        "n2": 65,
+        "pbo_per_grail": 0.0,
+        "gap_wr": 4.5
+      },
+      "sharpe_proxy": 8.820879059933441,
+      "dsr_z": 12.019574689244676,
+      "e_max_sr": 3.1609111789089637,
+      "bernoulli_skew": -0.9525614565086915,
+      "bernoulli_kurt_raw": 1.90737332842596,
+      "upgrade_to_A": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_Pivot_Reversal_Backtest",
+      "symbol": "ONDO",
+      "tf": "1d",
+      "stored_wr": 75.3,
+      "stored_trades": 89,
+      "stored_pf": 4.372,
+      "params": {
+        "pivot_left": 2,
+        "pivot_right": 9,
+        "atr_len": 11
+      },
+      "pbo": {
+        "wr1": 75.0,
+        "wr2": 76.6,
+        "n1": 40,
+        "n2": 47,
+        "pbo_per_grail": 0.0,
+        "gap_wr": 1.5999999999999943
+      },
+      "sharpe_proxy": 7.4850301477271435,
+      "dsr_z": 7.524295306200297,
+      "e_max_sr": 3.1609111789089637,
+      "bernoulli_skew": -1.1732877926115954,
+      "bernoulli_kurt_raw": 2.376604244291391,
+      "upgrade_to_A": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_Pivot_Reversal_Backtest",
+      "symbol": "LINK",
+      "tf": "1d",
+      "stored_wr": 71.1,
+      "stored_trades": 173,
+      "stored_pf": 3.969,
+      "params": {
+        "pivot_left": 9,
+        "pivot_right": 7,
+        "atr_len": 17
+      },
+      "pbo": {
+        "wr1": 74.7,
+        "wr2": 66.7,
+        "n1": 87,
+        "n2": 84,
+        "pbo_per_grail": 0.0,
+        "gap_wr": 8.0
+      },
+      "sharpe_proxy": 9.527120930741303,
+      "dsr_z": 15.362882897376517,
+      "e_max_sr": 3.1609111789089637,
+      "bernoulli_skew": -0.9309550866485922,
+      "bernoulli_kurt_raw": 1.8666773733568878,
+      "upgrade_to_A": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_Double_Top_Bottom",
+      "symbol": "PYTH",
+      "tf": "4h",
+      "stored_wr": 82.4,
+      "stored_trades": 34,
+      "stored_pf": 3.903,
+      "params": {
+        "pivot_len": 15,
+        "tolerance": 0.03141120008052977,
+        "atr_len": 11,
+        "ema_len": 88
+      },
+      "pbo": {
+        "wr1": 85.7,
+        "wr2": 80.0,
+        "n1": 14,
+        "n2": 20,
+        "pbo_per_grail": 0.0,
+        "gap_wr": 5.700000000000003
+      },
+      "sharpe_proxy": 4.266410746841575,
+      "dsr_z": 1.3716691341355094,
+      "e_max_sr": 3.1609111789089637,
+      "bernoulli_skew": -1.7015905544013497,
+      "bernoulli_kurt_raw": 3.895410414827893,
+      "upgrade_to_A": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_AlternatingSignals_MultiTFConfirm",
+      "symbol": "WLD",
+      "tf": "1d",
+      "stored_wr": 75.0,
+      "stored_trades": 20,
+      "stored_pf": 3.78,
+      "error": "params not found"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "AGT",
+      "tf": "4h",
+      "stored_wr": 79.2,
+      "stored_trades": 48,
+      "stored_pf": 2.69,
+      "error": "params not found"
+    },
+    {
+      "strategy": "TV_Pivot_Reversal_Backtest",
+      "symbol": "JUP",
+      "tf": "1d",
+      "stored_wr": 71.7,
+      "stored_trades": 113,
+      "stored_pf": 2.349,
+      "params": {
+        "pivot_left": 6,
+        "pivot_right": 3,
+        "atr_len": 17
+      },
+      "pbo": {
+        "wr1": 66.7,
+        "wr2": 76.8,
+        "n1": 57,
+        "n2": 56,
+        "pbo_per_grail": 0.0,
+        "gap_wr": 10.099999999999994
+      },
+      "sharpe_proxy": 4.67486582515362,
+      "dsr_z": 4.926812169511356,
+      "e_max_sr": 3.1609111789089637,
+      "bernoulli_skew": -0.9634671992671335,
+      "bernoulli_kurt_raw": 1.9282690440636543,
+      "upgrade_to_A": true,
+      "reject_reasons": []
+    },
+    {
+      "strategy": "TV_FairValueGap_Trading",
+      "symbol": "JUP",
+      "tf": "1d",
+      "stored_wr": 76.2,
+      "stored_trades": 21,
+      "stored_pf": 3.0,
+      "error": "params not found"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SFP",
+      "tf": "1d",
+      "stored_wr": 82.1,
+      "stored_trades": 234,
+      "stored_pf": 1.36,
+      "error": "params not found"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "AGT",
+      "tf": "1d",
+      "stored_wr": 82.1,
+      "stored_trades": 39,
+      "stored_pf": 2.0,
+      "error": "params not found"
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SWARMS",
+      "tf": "1d",
+      "stored_wr": 78.0,
+      "stored_trades": 50,
+      "stored_pf": 1.88,
+      "error": "params not found"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "LINK",
+      "tf": "1d",
+      "stored_wr": 80.0,
+      "stored_trades": 35,
+      "stored_pf": 1.78,
+      "error": "params not found"
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ONDO",
+      "tf": "4h",
+      "stored_wr": 77.8,
+      "stored_trades": 63,
+      "stored_pf": 2.16,
+      "error": "params not found"
+    },
+    {
+      "strategy": "TV_Linear_Regression_Channel",
+      "symbol": "SFP",
+      "tf": "4h",
+      "stored_wr": 74.3,
+      "stored_trades": 564,
+      "stored_pf": 1.23,
+      "params": {
+        "lr_len": 166,
+        "k_std": 1.2137651431486516
+      },
+      "pbo": {
+        "wr1": 71.1,
+        "wr2": 77.6,
+        "n1": 253,
+        "n2": 303,
+        "pbo_per_grail": 0.0,
+        "gap_wr": 6.5
+      },
+      "sharpe_proxy": 2.2536542473570162,
+      "dsr_z": -9.553839927907402,
+      "e_max_sr": 3.1609111789089637,
+      "bernoulli_skew": -1.112180562609333,
+      "bernoulli_kurt_raw": 2.2369456038460127,
+      "upgrade_to_A": false,
+      "reject_reasons": [
+        "dsr_z=-9.554<=0"
+      ]
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "TIA",
+      "tf": "1d",
+      "stored_wr": 77.5,
+      "stored_trades": 111,
+      "stored_pf": 1.27,
+      "error": "params not found"
+    }
+  ]
+}
