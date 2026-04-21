@@ -238,7 +238,7 @@
         "thresh": 0.19982620175778504
       }
     },
-    "passing_combos": 1,
+    "passing_combos": 2,
     "all_passing": [
       {
         "sym": "TIA",
@@ -250,6 +250,18 @@
           "delta_len": 13,
           "ema_len": 40,
           "thresh": 0.19982620175778504
+        }
+      },
+      {
+        "sym": "LTC",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "delta_len": 55,
+          "ema_len": 37,
+          "thresh": 0.23100300630643902
         }
       }
     ]
