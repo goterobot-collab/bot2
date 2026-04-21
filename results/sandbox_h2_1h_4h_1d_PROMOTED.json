@@ -2082,7 +2082,7 @@
         "vol_mult": 0.6578385856111428
       }
     },
-    "passing_combos": 11,
+    "passing_combos": 12,
     "all_passing": [
       {
         "sym": "ARB",
@@ -2222,6 +2222,20 @@
           "rsi_len": 14,
           "trend_len": 20,
           "vol_mult": 1.4597961790878395
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "zone_len": 11,
+          "atr_mult": 0.9514235552099255,
+          "rsi_len": 12,
+          "trend_len": 99,
+          "vol_mult": 1.8810765630550481
         }
       },
       {
@@ -4479,7 +4493,7 @@
         "atr_mult": 1.7871962591890427
       }
     },
-    "passing_combos": 1,
+    "passing_combos": 2,
     "all_passing": [
       {
         "sym": "JTO",
@@ -4493,6 +4507,20 @@
           "rsi_len": 19,
           "trend_len": 21,
           "atr_mult": 1.7871962591890427
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "session_len": 1440,
+          "r1_w": 0.30572221788439974,
+          "rsi_len": 8,
+          "trend_len": 27,
+          "atr_mult": 1.2631560823531232
         }
       }
     ]
