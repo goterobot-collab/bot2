@@ -1,0 +1,259 @@
+{
+  "_doc": "MED-3 Holdout OOS 20% top-10 score + Regla 24",
+  "_generated_at": "2026-04-21",
+  "_holdout_frac": 0.2,
+  "_n_targets": 10,
+  "_n_survivors": 6,
+  "results": [
+    {
+      "rank": 1,
+      "strategy": "TV_Linear_Regression_Channel",
+      "symbol": "AGT",
+      "tf": "4h",
+      "stored_wr": 95.0,
+      "stored_trades": 20,
+      "stored_pf": 205.25,
+      "stored_score": 4338.44,
+      "tier": "B",
+      "params": {
+        "lr_len": 188,
+        "k_std": 3.211378899181738
+      },
+      "holdout_wr": 100.0,
+      "holdout_pnl_pct": 26.23,
+      "holdout_trades": 3,
+      "holdout_pf": null,
+      "gap_wr": 5.0,
+      "survives_regla24": true,
+      "reject_reasons": []
+    },
+    {
+      "rank": 2,
+      "strategy": "TV_Gann_Swing_MultiLayer",
+      "symbol": "NEAR",
+      "tf": "1d",
+      "stored_wr": 75.4,
+      "stored_trades": 57,
+      "stored_pf": 9.02,
+      "stored_score": 4142.31,
+      "tier": "C",
+      "params": {
+        "swing_len": 4,
+        "layers": 2,
+        "atr_len": 16,
+        "ema_len": 67
+      },
+      "holdout_wr": 100.0,
+      "holdout_pnl_pct": 38.29,
+      "holdout_trades": 8,
+      "holdout_pf": null,
+      "gap_wr": 24.599999999999994,
+      "survives_regla24": false,
+      "reject_reasons": [
+        "gap=24.6pp"
+      ]
+    },
+    {
+      "rank": 3,
+      "strategy": "TV_Pivot_Reversal_Backtest",
+      "symbol": "SWARMS",
+      "tf": "1d",
+      "stored_wr": 80.6,
+      "stored_trades": 36,
+      "stored_pf": 8.481,
+      "stored_score": 3702.47,
+      "tier": "B",
+      "params": {
+        "pivot_left": 10,
+        "pivot_right": 7,
+        "atr_len": 11
+      },
+      "holdout_wr": 71.4,
+      "holdout_pnl_pct": 25.12,
+      "holdout_trades": 7,
+      "holdout_pf": null,
+      "gap_wr": 9.199999999999989,
+      "survives_regla24": false,
+      "reject_reasons": [
+        "n=7<min8"
+      ]
+    },
+    {
+      "rank": 4,
+      "strategy": "TV_ABCD_Pattern_Daveatt",
+      "symbol": "NEAR",
+      "tf": "1d",
+      "stored_wr": 85.0,
+      "stored_trades": 20,
+      "stored_pf": 8.992,
+      "stored_score": 3490.48,
+      "tier": "B",
+      "params": {
+        "pivot_len": 7,
+        "ab_ratio_min": 0.3832479533920498,
+        "ab_ratio_max": 0.7833210910764749,
+        "atr_len": 17,
+        "ema_len": 37
+      },
+      "holdout_wr": 50.0,
+      "holdout_pnl_pct": 2.98,
+      "holdout_trades": 2,
+      "holdout_pf": null,
+      "gap_wr": 35.0,
+      "survives_regla24": false,
+      "reject_reasons": [
+        "ho_wr=50.0",
+        "gap=35.0pp",
+        "n=2<min999"
+      ]
+    },
+    {
+      "rank": 5,
+      "strategy": "TV_Double_Top_Bottom",
+      "symbol": "JTO",
+      "tf": "4h",
+      "stored_wr": 85.0,
+      "stored_trades": 20,
+      "stored_pf": 10.838,
+      "stored_score": 2587.84,
+      "tier": "B",
+      "params": {
+        "pivot_len": 20,
+        "tolerance": 0.010365058187822141,
+        "atr_len": 13,
+        "ema_len": 94
+      },
+      "holdout_wr": null,
+      "holdout_pnl_pct": 0,
+      "holdout_trades": 0,
+      "holdout_pf": null,
+      "gap_wr": 85.0,
+      "survives_regla24": false,
+      "reject_reasons": [
+        "ho_wr=None",
+        "gap=85.0pp",
+        "pnl=0.00",
+        "n=0<min999"
+      ]
+    },
+    {
+      "rank": 6,
+      "strategy": "TV_Pivot_Reversal_Backtest",
+      "symbol": "GMX",
+      "tf": "1d",
+      "stored_wr": 71.5,
+      "stored_trades": 123,
+      "stored_pf": 4.539,
+      "stored_score": 2346.55,
+      "tier": "B",
+      "params": {
+        "pivot_left": 10,
+        "pivot_right": 3,
+        "atr_len": 14
+      },
+      "holdout_wr": 68.0,
+      "holdout_pnl_pct": 55.13,
+      "holdout_trades": 25,
+      "holdout_pf": null,
+      "gap_wr": 3.5,
+      "survives_regla24": true,
+      "reject_reasons": []
+    },
+    {
+      "rank": 7,
+      "strategy": "TV_ABCD_Pattern_Daveatt",
+      "symbol": "SUI",
+      "tf": "4h",
+      "stored_wr": 78.4,
+      "stored_trades": 37,
+      "stored_pf": 8.172,
+      "stored_score": 2330.55,
+      "tier": "C",
+      "params": {
+        "pivot_len": 9,
+        "ab_ratio_min": 0.4965035970107122,
+        "ab_ratio_max": 0.786027866017362,
+        "atr_len": 13,
+        "ema_len": 63
+      },
+      "holdout_wr": 75.0,
+      "holdout_pnl_pct": 6.29,
+      "holdout_trades": 8,
+      "holdout_pf": null,
+      "gap_wr": 3.4000000000000057,
+      "survives_regla24": true,
+      "reject_reasons": []
+    },
+    {
+      "rank": 8,
+      "strategy": "TV_Pivot_Reversal_Backtest",
+      "symbol": "ONDO",
+      "tf": "1d",
+      "stored_wr": 75.3,
+      "stored_trades": 89,
+      "stored_pf": 4.372,
+      "stored_score": 2222.08,
+      "tier": "B",
+      "params": {
+        "pivot_left": 2,
+        "pivot_right": 9,
+        "atr_len": 11
+      },
+      "holdout_wr": 83.3,
+      "holdout_pnl_pct": 53.27,
+      "holdout_trades": 18,
+      "holdout_pf": null,
+      "gap_wr": 8.0,
+      "survives_regla24": true,
+      "reject_reasons": []
+    },
+    {
+      "rank": 9,
+      "strategy": "TV_ABCD_Pattern_Daveatt",
+      "symbol": "PYTH",
+      "tf": "1d",
+      "stored_wr": 78.8,
+      "stored_trades": 33,
+      "stored_pf": 7.967,
+      "stored_score": 2213.85,
+      "tier": "C",
+      "params": {
+        "pivot_len": 3,
+        "ab_ratio_min": 0.36427975414637837,
+        "ab_ratio_max": 0.837734878694461,
+        "atr_len": 14,
+        "ema_len": 46
+      },
+      "holdout_wr": 87.5,
+      "holdout_pnl_pct": 20.93,
+      "holdout_trades": 8,
+      "holdout_pf": null,
+      "gap_wr": 8.700000000000003,
+      "survives_regla24": true,
+      "reject_reasons": []
+    },
+    {
+      "rank": 10,
+      "strategy": "TV_Pivot_Reversal_Backtest",
+      "symbol": "LINK",
+      "tf": "1d",
+      "stored_wr": 71.1,
+      "stored_trades": 173,
+      "stored_pf": 3.969,
+      "stored_score": 2183.8,
+      "tier": "B",
+      "params": {
+        "pivot_left": 9,
+        "pivot_right": 7,
+        "atr_len": 17
+      },
+      "holdout_wr": 75.0,
+      "holdout_pnl_pct": 84.84,
+      "holdout_trades": 32,
+      "holdout_pf": null,
+      "gap_wr": 3.9000000000000057,
+      "survives_regla24": true,
+      "reject_reasons": []
+    }
+  ]
+}
