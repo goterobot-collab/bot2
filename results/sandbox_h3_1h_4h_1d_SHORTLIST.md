@@ -1,10 +1,10 @@
 # HUNTER3_1h_4h_1d shortlist
 
 - Batches: 3601, 3602, 3603
-- Tasks completed: 869
-- Grails passing R24 gate: **114**
+- Tasks completed: 997
+- Grails passing R24 gate: **128**
 - Strategies promoted (>=1 combo pass): **14**
-- Elapsed: 32s
+- Elapsed: 16s
 
 | Rank | Strategy | Sym | TF | WR | trades | PF | total% | params |
 |------|----------|-----|----|-----|--------|-----|--------|--------|
@@ -86,39 +86,53 @@
 | 76 | `TV_Wyckoff_DistributionBreakdown` | TIA | 1h | 100.0% | 2 | 999.00 | 5.4% | `{"range_len":71,"narrow_atr_len":22,"narrow_frac":0.8011912498507339,"vol_mult":3.5503713860820807}` |
 | 77 | `TV_Wyckoff_Spring` | PYTH | 1h | 100.0% | 2 | 999.00 | 1.0% | `{"range_len":29,"vol_len":21,"vol_contract":0.31975866762298144}` |
 | 78 | `TV_TOD_WR_Pocket` | JTO | 1h | 100.0% | 3 | 999.00 | 3.0% | `{"lookback":151,"wr_thresh":0.6842125456821849}` |
-| 79 | `TV_Footprint_Volume_Climax` | PYTH | 1d | 88.9% | 9 | 20.26 | 73.6% | `{"swing_len":68,"vol_mult":3.189245149246691}` |
-| 80 | `TV_Weekend_Gap_Fade` | OP | 1d | 87.5% | 8 | 62.93 | 27.9% | `{"k_atr":1.4703429536690362,"atr_len":14}` |
-| 81 | `TV_Wyckoff_Spring` | OP | 4h | 87.5% | 8 | 2.01 | 5.8% | `{"range_len":25,"vol_len":14,"vol_contract":0.5072875713995784}` |
-| 82 | `TV_TOD_WR_Pocket` | SWARMS | 4h | 84.6% | 13 | 12.73 | 35.4% | `{"lookback":709,"wr_thresh":0.605368503134651}` |
-| 83 | `TV_VolumeDelta_Imbalance` | JUP | 1h | 83.3% | 12 | 4.60 | 9.1% | `{"lookback":61,"thresh":0.7642896458404089}` |
-| 84 | `TV_Wyckoff_Upthrust` | LINK | 4h | 83.3% | 12 | 4.41 | 14.2% | `{"range_len":89,"vol_len":29,"vol_contract":0.6592138711435795}` |
-| 85 | `TV_VolumeDelta_Imbalance` | APT | 1h | 81.8% | 22 | 4.60 | 10.7% | `{"lookback":40,"thresh":0.8131724843194623}` |
-| 86 | `TV_Footprint_Volume_Climax` | ARB | 1d | 80.0% | 20 | 3.92 | 50.2% | `{"swing_len":22,"vol_mult":2.5655995670907443}` |
-| 87 | `TV_VolumeDelta_Imbalance` | INJ | 1d | 80.0% | 10 | 2.91 | 32.9% | `{"lookback":46,"thresh":0.6515513788563378}` |
-| 88 | `TV_Weekend_Gap_Fade` | SUI | 1d | 80.0% | 10 | 2.25 | 27.4% | `{"k_atr":1.2341691502406993,"atr_len":11}` |
-| 89 | `TV_Weekend_Gap_Fade` | PENDLE | 4h | 80.0% | 15 | 2.17 | 12.7% | `{"k_atr":1.4644481011931925,"atr_len":44}` |
-| 90 | `TV_Footprint_Volume_Climax` | ONDO | 4h | 79.2% | 24 | 7.36 | 42.4% | `{"swing_len":56,"vol_mult":4.016551206546577}` |
-| 91 | `TV_Footprint_Volume_Climax` | AVAX | 4h | 78.6% | 14 | 1.56 | 6.8% | `{"swing_len":9,"vol_mult":4.773626021221977}` |
-| 92 | `TV_VolumeDelta_Imbalance` | SUI | 4h | 78.0% | 41 | 2.09 | 47.2% | `{"lookback":23,"thresh":0.7792145428447147}` |
-| 93 | `TV_Kyle_Lambda_Fade` | PYTH | 4h | 76.9% | 13 | 8.27 | 13.3% | `{"lookback":124,"z_thresh":3.749891907951928}` |
-| 94 | `TV_Wyckoff_Test_After_Spring` | JUP | 1d | 76.9% | 13 | 1.80 | 33.0% | `{"range_len":75,"lookback":7,"vol_len":50,"vol_ratio":0.958436722951038}` |
-| 95 | `TV_Footprint_Volume_Climax` | SUI | 4h | 76.5% | 34 | 4.32 | 55.7% | `{"swing_len":39,"vol_mult":4.428810064193686}` |
-| 96 | `TV_CVD_Crossover` | WLD | 1d | 76.2% | 21 | 2.85 | 51.1% | `{"ma_len":108}` |
-| 97 | `TV_Wyckoff_Spring` | INJ | 1d | 75.0% | 8 | 12.09 | 26.8% | `{"range_len":28,"vol_len":25,"vol_contract":0.977830997110438}` |
-| 98 | `TV_Wyckoff_Test_After_Spring` | SFP | 1d | 75.0% | 20 | 5.63 | 119.8% | `{"range_len":74,"lookback":6,"vol_len":57,"vol_ratio":0.7292458365642764}` |
-| 99 | `TV_Funding_Arb_Proxy` | PENDLE | 4h | 75.0% | 8 | 3.91 | 5.1% | `{"window_min":231,"k_atr":2.1642370132878264,"atr_len":29}` |
-| 100 | `TV_VolumeDelta_Imbalance` | JUP | 4h | 75.0% | 40 | 2.43 | 64.2% | `{"lookback":46,"thresh":0.6847284750126217}` |
-| 101 | `TV_VolumeDelta_Imbalance` | SUI | 1d | 75.0% | 16 | 2.10 | 38.4% | `{"lookback":65,"thresh":0.6396408512036734}` |
-| 102 | `TV_VolumeDelta_Imbalance` | OP | 1d | 75.0% | 56 | 1.76 | 86.1% | `{"lookback":5,"thresh":0.8868056153383668}` |
-| 103 | `TV_Kyle_Lambda_Fade` | LINK | 1d | 75.0% | 8 | 1.21 | 3.5% | `{"lookback":142,"z_thresh":3.8163192096678658}` |
-| 104 | `TV_Wyckoff_Test_After_Spring` | JTO | 1d | 75.0% | 12 | 1.21 | 6.3% | `{"range_len":72,"lookback":8,"vol_len":39,"vol_ratio":0.5824173109588124}` |
-| 105 | `TV_DOW_Trend_Filter` | ONDO | 1d | 74.2% | 31 | 4.21 | 76.5% | `{"dow_long":2,"dow_short":2,"ema_len":375}` |
-| 106 | `TV_Weekend_Gap_Fade` | NEAR | 4h | 74.2% | 31 | 1.54 | 26.4% | `{"k_atr":3.3178316176761324,"atr_len":29}` |
-| 107 | `TV_Weekend_Gap_Fade` | JUP | 4h | 72.7% | 11 | 2.03 | 18.6% | `{"k_atr":3.5559531885075035,"atr_len":39}` |
-| 108 | `TV_DOW_Trend_Filter` | SWARMS | 1d | 72.7% | 11 | 1.29 | 8.9% | `{"dow_long":5,"dow_short":4,"ema_len":382}` |
-| 109 | `TV_Wyckoff_Upthrust` | LINK | 1h | 71.4% | 14 | 1.41 | 1.0% | `{"range_len":79,"vol_len":55,"vol_contract":0.46995821321673975}` |
-| 110 | `TV_CVD_Crossover` | GMX | 1d | 70.6% | 34 | 2.56 | 61.0% | `{"ma_len":127}` |
-| 111 | `TV_Footprint_Volume_Climax` | SEI | 4h | 70.0% | 10 | 3.02 | 9.3% | `{"swing_len":75,"vol_mult":3.123024398971334}` |
-| 112 | `TV_Footprint_Volume_Climax` | INJ | 1d | 70.0% | 10 | 2.87 | 28.4% | `{"swing_len":40,"vol_mult":2.707105297019133}` |
-| 113 | `TV_Kyle_Lambda_Fade` | GMX | 1d | 70.0% | 10 | 2.08 | 12.0% | `{"lookback":102,"z_thresh":2.910423980284371}` |
-| 114 | `TV_TOD_WR_Pocket` | OP | 1h | 70.0% | 10 | 1.95 | 8.5% | `{"lookback":173,"wr_thresh":0.6668705492526183}` |
+| 79 | `TV_Kyle_Lambda_Fade` | XRP | 1d | 100.0% | 2 | 999.00 | 2.7% | `{"lookback":161,"z_thresh":3.8304647939795853}` |
+| 80 | `TV_VPIN_Toxic_Flow` | ETH | 1d | 100.0% | 2 | 999.00 | 5.8% | `{"bucket":81,"sigma_len":36,"hi":0.879747344144352,"lo":0.4415232711799548}` |
+| 81 | `TV_VolumeDelta_Imbalance` | LTC | 1d | 100.0% | 3 | 999.00 | 55.9% | `{"lookback":50,"thresh":0.7583691544758902}` |
+| 82 | `TV_Wyckoff_DistributionBreakdown` | ETH | 1d | 100.0% | 2 | 999.00 | 9.5% | `{"range_len":57,"narrow_atr_len":34,"narrow_frac":0.812274513753053,"vol_mult":2.348528870395293}` |
+| 83 | `TV_Wyckoff_AccumulationBreakout` | XRP | 1d | 100.0% | 3 | 999.00 | 11.6% | `{"range_len":89,"narrow_atr_len":26,"narrow_frac":1.0902890226823292,"vol_mult":2.411332062335869}` |
+| 84 | `TV_Weekend_Gap_Fade` | XRP | 1d | 100.0% | 3 | 999.00 | 15.8% | `{"k_atr":1.2928352080285161,"atr_len":18}` |
+| 85 | `TV_Weekend_Gap_Fade` | LTC | 1d | 100.0% | 4 | 999.00 | 17.9% | `{"k_atr":2.5236339989408427,"atr_len":12}` |
+| 86 | `TV_VolumeDelta_Imbalance` | LTC | 4h | 100.0% | 6 | 999.00 | 60.0% | `{"lookback":78,"thresh":0.7922502241897338}` |
+| 87 | `TV_VolumeDelta_Imbalance` | XRP | 1h | 100.0% | 2 | 999.00 | 2.3% | `{"lookback":77,"thresh":0.8051519532394324}` |
+| 88 | `TV_Wyckoff_AccumulationBreakout` | XRP | 1h | 100.0% | 2 | 999.00 | 1.6% | `{"range_len":70,"narrow_atr_len":20,"narrow_frac":0.7097186339118411,"vol_mult":2.0368956120295834}` |
+| 89 | `TV_Wyckoff_Upthrust` | XRP | 1h | 100.0% | 2 | 999.00 | 1.3% | `{"range_len":69,"vol_len":17,"vol_contract":0.4824139398141031}` |
+| 90 | `TV_Footprint_Volume_Climax` | PYTH | 1d | 88.9% | 9 | 20.26 | 73.6% | `{"swing_len":68,"vol_mult":3.189245149246691}` |
+| 91 | `TV_Weekend_Gap_Fade` | OP | 1d | 87.5% | 8 | 62.93 | 27.9% | `{"k_atr":1.4703429536690362,"atr_len":14}` |
+| 92 | `TV_Wyckoff_Spring` | OP | 4h | 87.5% | 8 | 2.01 | 5.8% | `{"range_len":25,"vol_len":14,"vol_contract":0.5072875713995784}` |
+| 93 | `TV_Weekend_Gap_Fade` | XRP | 4h | 86.2% | 29 | 8.35 | 95.3% | `{"k_atr":2.7177085980585076,"atr_len":34}` |
+| 94 | `TV_TOD_WR_Pocket` | SWARMS | 4h | 84.6% | 13 | 12.73 | 35.4% | `{"lookback":709,"wr_thresh":0.605368503134651}` |
+| 95 | `TV_VolumeDelta_Imbalance` | JUP | 1h | 83.3% | 12 | 4.60 | 9.1% | `{"lookback":61,"thresh":0.7642896458404089}` |
+| 96 | `TV_Wyckoff_Upthrust` | LINK | 4h | 83.3% | 12 | 4.41 | 14.2% | `{"range_len":89,"vol_len":29,"vol_contract":0.6592138711435795}` |
+| 97 | `TV_Wyckoff_Test_After_Spring` | XRP | 1d | 83.3% | 12 | 2.79 | 48.9% | `{"range_len":63,"lookback":29,"vol_len":30,"vol_ratio":0.7630656224065996}` |
+| 98 | `TV_VolumeDelta_Imbalance` | APT | 1h | 81.8% | 22 | 4.60 | 10.7% | `{"lookback":40,"thresh":0.8131724843194623}` |
+| 99 | `TV_Footprint_Volume_Climax` | ARB | 1d | 80.0% | 20 | 3.92 | 50.2% | `{"swing_len":22,"vol_mult":2.5655995670907443}` |
+| 100 | `TV_VolumeDelta_Imbalance` | INJ | 1d | 80.0% | 10 | 2.91 | 32.9% | `{"lookback":46,"thresh":0.6515513788563378}` |
+| 101 | `TV_Weekend_Gap_Fade` | SUI | 1d | 80.0% | 10 | 2.25 | 27.4% | `{"k_atr":1.2341691502406993,"atr_len":11}` |
+| 102 | `TV_Weekend_Gap_Fade` | PENDLE | 4h | 80.0% | 15 | 2.17 | 12.7% | `{"k_atr":1.4644481011931925,"atr_len":44}` |
+| 103 | `TV_Footprint_Volume_Climax` | ONDO | 4h | 79.2% | 24 | 7.36 | 42.4% | `{"swing_len":56,"vol_mult":4.016551206546577}` |
+| 104 | `TV_Footprint_Volume_Climax` | AVAX | 4h | 78.6% | 14 | 1.56 | 6.8% | `{"swing_len":9,"vol_mult":4.773626021221977}` |
+| 105 | `TV_VolumeDelta_Imbalance` | SUI | 4h | 78.0% | 41 | 2.09 | 47.2% | `{"lookback":23,"thresh":0.7792145428447147}` |
+| 106 | `TV_Kyle_Lambda_Fade` | PYTH | 4h | 76.9% | 13 | 8.27 | 13.3% | `{"lookback":124,"z_thresh":3.749891907951928}` |
+| 107 | `TV_Wyckoff_Test_After_Spring` | JUP | 1d | 76.9% | 13 | 1.80 | 33.0% | `{"range_len":75,"lookback":7,"vol_len":50,"vol_ratio":0.958436722951038}` |
+| 108 | `TV_Footprint_Volume_Climax` | SUI | 4h | 76.5% | 34 | 4.32 | 55.7% | `{"swing_len":39,"vol_mult":4.428810064193686}` |
+| 109 | `TV_CVD_Crossover` | WLD | 1d | 76.2% | 21 | 2.85 | 51.1% | `{"ma_len":108}` |
+| 110 | `TV_Wyckoff_Spring` | INJ | 1d | 75.0% | 8 | 12.09 | 26.8% | `{"range_len":28,"vol_len":25,"vol_contract":0.977830997110438}` |
+| 111 | `TV_Wyckoff_Test_After_Spring` | SFP | 1d | 75.0% | 20 | 5.63 | 119.8% | `{"range_len":74,"lookback":6,"vol_len":57,"vol_ratio":0.7292458365642764}` |
+| 112 | `TV_Funding_Arb_Proxy` | PENDLE | 4h | 75.0% | 8 | 3.91 | 5.1% | `{"window_min":231,"k_atr":2.1642370132878264,"atr_len":29}` |
+| 113 | `TV_VolumeDelta_Imbalance` | JUP | 4h | 75.0% | 40 | 2.43 | 64.2% | `{"lookback":46,"thresh":0.6847284750126217}` |
+| 114 | `TV_VolumeDelta_Imbalance` | SUI | 1d | 75.0% | 16 | 2.10 | 38.4% | `{"lookback":65,"thresh":0.6396408512036734}` |
+| 115 | `TV_VolumeDelta_Imbalance` | OP | 1d | 75.0% | 56 | 1.76 | 86.1% | `{"lookback":5,"thresh":0.8868056153383668}` |
+| 116 | `TV_Kyle_Lambda_Fade` | LINK | 1d | 75.0% | 8 | 1.21 | 3.5% | `{"lookback":142,"z_thresh":3.8163192096678658}` |
+| 117 | `TV_Wyckoff_Test_After_Spring` | JTO | 1d | 75.0% | 12 | 1.21 | 6.3% | `{"range_len":72,"lookback":8,"vol_len":39,"vol_ratio":0.5824173109588124}` |
+| 118 | `TV_DOW_Trend_Filter` | ONDO | 1d | 74.2% | 31 | 4.21 | 76.5% | `{"dow_long":2,"dow_short":2,"ema_len":375}` |
+| 119 | `TV_Weekend_Gap_Fade` | NEAR | 4h | 74.2% | 31 | 1.54 | 26.4% | `{"k_atr":3.3178316176761324,"atr_len":29}` |
+| 120 | `TV_Weekend_Gap_Fade` | JUP | 4h | 72.7% | 11 | 2.03 | 18.6% | `{"k_atr":3.5559531885075035,"atr_len":39}` |
+| 121 | `TV_DOW_Trend_Filter` | SWARMS | 1d | 72.7% | 11 | 1.29 | 8.9% | `{"dow_long":5,"dow_short":4,"ema_len":382}` |
+| 122 | `TV_Weekend_Gap_Fade` | XRP | 1h | 72.6% | 124 | 2.12 | 81.3% | `{"k_atr":3.78983292696575,"atr_len":46}` |
+| 123 | `TV_Wyckoff_Upthrust` | LINK | 1h | 71.4% | 14 | 1.41 | 1.0% | `{"range_len":79,"vol_len":55,"vol_contract":0.46995821321673975}` |
+| 124 | `TV_CVD_Crossover` | GMX | 1d | 70.6% | 34 | 2.56 | 61.0% | `{"ma_len":127}` |
+| 125 | `TV_Footprint_Volume_Climax` | SEI | 4h | 70.0% | 10 | 3.02 | 9.3% | `{"swing_len":75,"vol_mult":3.123024398971334}` |
+| 126 | `TV_Footprint_Volume_Climax` | INJ | 1d | 70.0% | 10 | 2.87 | 28.4% | `{"swing_len":40,"vol_mult":2.707105297019133}` |
+| 127 | `TV_Kyle_Lambda_Fade` | GMX | 1d | 70.0% | 10 | 2.08 | 12.0% | `{"lookback":102,"z_thresh":2.910423980284371}` |
+| 128 | `TV_TOD_WR_Pocket` | OP | 1h | 70.0% | 10 | 1.95 | 8.5% | `{"lookback":173,"wr_thresh":0.6668705492526183}` |
