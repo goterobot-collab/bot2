@@ -238,7 +238,7 @@
         "thresh": 0.19982620175778504
       }
     },
-    "passing_combos": 2,
+    "passing_combos": 3,
     "all_passing": [
       {
         "sym": "TIA",
@@ -262,6 +262,18 @@
           "delta_len": 55,
           "ema_len": 37,
           "thresh": 0.23100300630643902
+        }
+      },
+      {
+        "sym": "GMX",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "delta_len": 40,
+          "ema_len": 112,
+          "thresh": 0.12916273432846498
         }
       }
     ]
