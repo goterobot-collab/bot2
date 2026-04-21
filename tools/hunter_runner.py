@@ -416,7 +416,7 @@ def _write_reports(shortlist, label, batches, shortlist_path, promoted_path, t0)
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--wave", choices=["h1", "h2", "h3", "h4", "h5", "h6", "h7"], required=True)
+    ap.add_argument("--wave", choices=["h1", "h2", "h3", "h4", "h5", "h6", "h7", "h8"], required=True)
     ap.add_argument("--tfs", nargs="+", default=None,
                     help="Restrict to specific TFs (e.g. --tfs 5m 15m)")
     ap.add_argument("--batches", nargs="+", default=None,
@@ -466,12 +466,18 @@ def main():
         sp = ROOT / "results" / f"sandbox_h6{tfs_label}_SHORTLIST.md"
         pp = ROOT / "results" / f"sandbox_h6{tfs_label}_PROMOTED.json"
         prog = ROOT / "results" / f"sandbox_h6{tfs_label}_progress.json"
-    else:  # h7 = classic-untested families (batch 3609)
+    elif args.wave == "h7":  # h7 = classic-untested families (batch 3609)
         batches = ["3609"]
         label = "HUNTER7" + tfs_label
         sp = ROOT / "results" / f"sandbox_h7{tfs_label}_SHORTLIST.md"
         pp = ROOT / "results" / f"sandbox_h7{tfs_label}_PROMOTED.json"
         prog = ROOT / "results" / f"sandbox_h7{tfs_label}_progress.json"
+    else:  # h8 = Mac-approved batch 3610 (VolumeProfileDelta, HA, KAMA, Ichimoku, Elder)
+        batches = ["3610"]
+        label = "HUNTER8" + tfs_label
+        sp = ROOT / "results" / f"sandbox_h8{tfs_label}_SHORTLIST.md"
+        pp = ROOT / "results" / f"sandbox_h8{tfs_label}_PROMOTED.json"
+        prog = ROOT / "results" / f"sandbox_h8{tfs_label}_progress.json"
 
     if args.batches:
         batches = list(args.batches)

@@ -76,7 +76,8 @@ def main():
                       "hunter4_high.log", "hunter4_5m15m.log",
                       "hunter5_high.log", "hunter5_5m15m.log",
                       "hunter6_high.log", "hunter6_5m15m.log",
-                      "hunter7_high.log", "hunter7_5m15m.log"):
+                      "hunter7_high.log", "hunter7_5m15m.log",
+                      "hunter8_high.log", "hunter8_5m15m.log"):
         all_grails.extend(parse_grails_from_log(ROOT / "logs" / log_name))
     # Also include grails from progress.json shortlists (resumable hunters
     # write per-200-task heartbeats; logs may be rotated on restart).
@@ -96,6 +97,8 @@ def main():
         "sandbox_h6_5m_15m_progress.json",
         "sandbox_h7_1h_4h_1d_progress.json",
         "sandbox_h7_5m_15m_progress.json",
+        "sandbox_h8_1h_4h_1d_progress.json",
+        "sandbox_h8_5m_15m_progress.json",
     ):
         all_grails.extend(parse_grails_from_progress(ROOT / "results" / prog_name))
 

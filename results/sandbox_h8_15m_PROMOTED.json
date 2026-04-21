@@ -1,0 +1,43 @@
+{
+  "TV_VolumeProfileDelta": {
+    "best": {
+      "sym": "WLD",
+      "tf": "15m",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "delta_len": 11,
+        "ema_len": 81,
+        "thresh": 0.44514272351803275
+      }
+    },
+    "passing_combos": 2,
+    "all_passing": [
+      {
+        "sym": "WLD",
+        "tf": "15m",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "delta_len": 11,
+          "ema_len": 81,
+          "thresh": 0.44514272351803275
+        }
+      },
+      {
+        "sym": "JTO",
+        "tf": "15m",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "delta_len": 19,
+          "ema_len": 43,
+          "thresh": 0.2983002842972817
+        }
+      }
+    ]
+  }
+}

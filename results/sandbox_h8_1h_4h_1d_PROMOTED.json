@@ -1,0 +1,286 @@
+{
+  "TV_ElderTripleScreen": {
+    "best": {
+      "sym": "DYDX",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "tide_len": 95,
+        "wave_len": 9,
+        "rsi_len": 13,
+        "rsi_buy": 20.74937309707015,
+        "rsi_sell": 69.19880015290045
+      }
+    },
+    "passing_combos": 11,
+    "all_passing": [
+      {
+        "sym": "DYDX",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "tide_len": 95,
+          "wave_len": 9,
+          "rsi_len": 13,
+          "rsi_buy": 20.74937309707015,
+          "rsi_sell": 69.19880015290045
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "tide_len": 121,
+          "wave_len": 7,
+          "rsi_len": 13,
+          "rsi_buy": 20.682003077625314,
+          "rsi_sell": 64.76475870411872
+        }
+      },
+      {
+        "sym": "ONDO",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "tide_len": 126,
+          "wave_len": 15,
+          "rsi_len": 11,
+          "rsi_buy": 31.092892011925862,
+          "rsi_sell": 66.17137005279969
+        }
+      },
+      {
+        "sym": "LINK",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "tide_len": 175,
+          "wave_len": 27,
+          "rsi_len": 13,
+          "rsi_buy": 23.862455045260155,
+          "rsi_sell": 75.44484190544765
+        }
+      },
+      {
+        "sym": "SUI",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "tide_len": 100,
+          "wave_len": 20,
+          "rsi_len": 14,
+          "rsi_buy": 33.23486183523357,
+          "rsi_sell": 69.2253108358759
+        }
+      },
+      {
+        "sym": "DYDX",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "tide_len": 53,
+          "wave_len": 28,
+          "rsi_len": 8,
+          "rsi_buy": 21.94717164951991,
+          "rsi_sell": 75.1848366014266
+        }
+      },
+      {
+        "sym": "OP",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "tide_len": 62,
+          "wave_len": 28,
+          "rsi_len": 9,
+          "rsi_buy": 20.564942815852433,
+          "rsi_sell": 71.40408437184524
+        }
+      },
+      {
+        "sym": "DYDX",
+        "tf": "4h",
+        "wr": 81.8,
+        "trades": 11,
+        "pf": 6.357,
+        "params": {
+          "tide_len": 121,
+          "wave_len": 26,
+          "rsi_len": 9,
+          "rsi_buy": 24.131130701181487,
+          "rsi_sell": 77.61187125205593
+        }
+      },
+      {
+        "sym": "WLD",
+        "tf": "1d",
+        "wr": 80.0,
+        "trades": 10,
+        "pf": 1.402,
+        "params": {
+          "tide_len": 165,
+          "wave_len": 21,
+          "rsi_len": 9,
+          "rsi_buy": 27.271739859780666,
+          "rsi_sell": 68.80080989180962
+        }
+      },
+      {
+        "sym": "PYTH",
+        "tf": "1d",
+        "wr": 76.9,
+        "trades": 13,
+        "pf": 2.17,
+        "params": {
+          "tide_len": 193,
+          "wave_len": 13,
+          "rsi_len": 12,
+          "rsi_buy": 27.098700716488892,
+          "rsi_sell": 60.64571224680788
+        }
+      },
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 20,
+        "pf": 3.897,
+        "params": {
+          "tide_len": 161,
+          "wave_len": 12,
+          "rsi_len": 3,
+          "rsi_buy": 28.78402896021484,
+          "rsi_sell": 62.968724778124454
+        }
+      }
+    ]
+  },
+  "TV_HeikinAshiTrend": {
+    "best": {
+      "sym": "AGT",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "trend_len": 6,
+        "atr_len": 15,
+        "atr_mult": 1.4506615523025375
+      }
+    },
+    "passing_combos": 3,
+    "all_passing": [
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "trend_len": 6,
+          "atr_len": 15,
+          "atr_mult": 1.4506615523025375
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "trend_len": 9,
+          "atr_len": 27,
+          "atr_mult": 1.4388817877169005
+        }
+      },
+      {
+        "sym": "WLD",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "trend_len": 10,
+          "atr_len": 29,
+          "atr_mult": 1.4583291346994398
+        }
+      }
+    ]
+  },
+  "TV_VolumeProfileDelta": {
+    "best": {
+      "sym": "TIA",
+      "tf": "1h",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "delta_len": 13,
+        "ema_len": 40,
+        "thresh": 0.19982620175778504
+      }
+    },
+    "passing_combos": 1,
+    "all_passing": [
+      {
+        "sym": "TIA",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "delta_len": 13,
+          "ema_len": 40,
+          "thresh": 0.19982620175778504
+        }
+      }
+    ]
+  },
+  "TV_KAMA_Crossover": {
+    "best": {
+      "sym": "SWARMS",
+      "tf": "1d",
+      "wr": 71.4,
+      "trades": 14,
+      "pf": 1.882,
+      "params": {
+        "er_len": 38,
+        "fast": 4,
+        "slow": 52
+      }
+    },
+    "passing_combos": 1,
+    "all_passing": [
+      {
+        "sym": "SWARMS",
+        "tf": "1d",
+        "wr": 71.4,
+        "trades": 14,
+        "pf": 1.882,
+        "params": {
+          "er_len": 38,
+          "fast": 4,
+          "slow": 52
+        }
+      }
+    ]
+  }
+}
