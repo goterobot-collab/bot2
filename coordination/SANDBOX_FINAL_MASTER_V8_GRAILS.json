@@ -2,11 +2,11 @@
   "_doc": "Sandbox final master grail list for V8 injection",
   "_generated_at": "auto",
   "_filters": "tier A: plateau+MC<.05 | tier B: plateau OR MC<.05 | tier C: n>=30 & WR>=65 & PF>=1.3",
-  "_count": 67,
+  "_count": 66,
   "_count_by_tier": {
     "A": 0,
-    "B": 22,
-    "C": 45
+    "B": 19,
+    "C": 47
   },
   "grails": [
     {
@@ -19,6 +19,42 @@
       "source": "hunter5_high.log",
       "plateau": true,
       "score": 4338.44,
+      "mc_p_value": null,
+      "plateau_confirmed": true,
+      "tier": "B",
+      "validation": [
+        "plateau"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Gann_Swing_MultiLayer",
+      "symbol": "ETH",
+      "tf": "1d",
+      "wr": 85.7,
+      "trades": 21,
+      "pf": 27.78,
+      "source": "hunter2_high.log",
+      "plateau": true,
+      "score": 3973.54,
+      "mc_p_value": null,
+      "plateau_confirmed": true,
+      "tier": "B",
+      "validation": [
+        "plateau"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_VolatilityAdaptive_Reversal",
+      "symbol": "DYDX",
+      "tf": "15m",
+      "wr": 80.0,
+      "trades": 25,
+      "pf": 13.39,
+      "source": "hunter1_5m15m.log",
+      "plateau": true,
+      "score": 3909.72,
       "mc_p_value": null,
       "plateau_confirmed": true,
       "tier": "B",
@@ -83,75 +119,21 @@
       "ready_for_v8": true
     },
     {
-      "strategy": "TV_ABCD_Pattern_Daveatt",
-      "symbol": "DYDX",
-      "tf": "1d",
-      "wr": 82.6,
-      "trades": 23,
-      "pf": 7.828,
-      "source": "sandbox_h2_1h_4h_1d_progress.json",
-      "plateau": true,
-      "score": 3082.36,
-      "mc_p_value": null,
-      "plateau_confirmed": true,
-      "tier": "B",
-      "validation": [
-        "plateau"
-      ],
-      "ready_for_v8": true
-    },
-    {
       "strategy": "TV_Gann_Swing_MultiLayer",
-      "symbol": "NEAR",
-      "tf": "1d",
-      "wr": 75.4,
-      "trades": 57,
-      "pf": 9.02,
-      "source": "sandbox_h2_1h_4h_1d_progress.json",
-      "plateau": false,
-      "score": 2761.54,
+      "symbol": "ETH",
+      "tf": "4h",
+      "wr": 70.4,
+      "trades": 108,
+      "pf": 5.06,
+      "source": "hunter2_high.log",
+      "plateau": true,
+      "score": 2506.76,
       "mc_p_value": null,
       "plateau_confirmed": true,
       "tier": "B",
       "validation": [
         "plateau",
         "n_threshold"
-      ],
-      "ready_for_v8": true
-    },
-    {
-      "strategy": "TV_Gann_Swing_MultiLayer",
-      "symbol": "ETH",
-      "tf": "1d",
-      "wr": 85.7,
-      "trades": 21,
-      "pf": 27.78,
-      "source": "hunter2_high.log",
-      "plateau": false,
-      "score": 2649.02,
-      "mc_p_value": null,
-      "plateau_confirmed": true,
-      "tier": "B",
-      "validation": [
-        "plateau"
-      ],
-      "ready_for_v8": true
-    },
-    {
-      "strategy": "TV_VolatilityAdaptive_Reversal",
-      "symbol": "DYDX",
-      "tf": "15m",
-      "wr": 80.0,
-      "trades": 25,
-      "pf": 13.39,
-      "source": "hunter1_5m15m.log",
-      "plateau": false,
-      "score": 2606.48,
-      "mc_p_value": null,
-      "plateau_confirmed": true,
-      "tier": "B",
-      "validation": [
-        "plateau"
       ],
       "ready_for_v8": true
     },
@@ -222,25 +204,6 @@
       "source": "sandbox_h2_1h_4h_1d_progress.json",
       "plateau": true,
       "score": 1715.14,
-      "mc_p_value": null,
-      "plateau_confirmed": true,
-      "tier": "B",
-      "validation": [
-        "plateau",
-        "n_threshold"
-      ],
-      "ready_for_v8": true
-    },
-    {
-      "strategy": "TV_Gann_Swing_MultiLayer",
-      "symbol": "ETH",
-      "tf": "4h",
-      "wr": 70.4,
-      "trades": 108,
-      "pf": 5.06,
-      "source": "hunter2_high.log",
-      "plateau": false,
-      "score": 1671.17,
       "mc_p_value": null,
       "plateau_confirmed": true,
       "tier": "B",
@@ -401,20 +364,19 @@
       "ready_for_v8": true
     },
     {
-      "strategy": "TV_VolumeProfile_Reversion",
-      "symbol": "TIA",
+      "strategy": "TV_Gann_Swing_MultiLayer",
+      "symbol": "NEAR",
       "tf": "1d",
-      "wr": 77.5,
-      "trades": 111,
-      "pf": 1.27,
-      "source": "hunter1_mp.log",
+      "wr": 75.4,
+      "trades": 57,
+      "pf": 9.02,
+      "source": "sandbox_h2_1h_4h_1d_progress.json",
       "plateau": true,
-      "score": 696.63,
-      "mc_p_value": 0.56,
-      "plateau_confirmed": true,
-      "tier": "B",
+      "score": 4142.31,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
       "validation": [
-        "plateau",
         "n_threshold"
       ],
       "ready_for_v8": true
@@ -447,6 +409,24 @@
       "source": "sandbox_h2_1h_4h_1d_progress.json",
       "plateau": false,
       "score": 2213.85,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_SR_Trendlines",
+      "symbol": "ETH",
+      "tf": "4h",
+      "wr": 76.5,
+      "trades": 34,
+      "pf": 7.37,
+      "source": "hunter2_high.log",
+      "plateau": false,
+      "score": 2004.52,
       "mc_p_value": null,
       "plateau_confirmed": false,
       "tier": "C",
@@ -654,24 +634,6 @@
       "ready_for_v8": true
     },
     {
-      "strategy": "TV_Cointegration_PairsTrading",
-      "symbol": "ONDO",
-      "tf": "4h",
-      "wr": 77.8,
-      "trades": 63,
-      "pf": 2.16,
-      "source": "hunter1_mp.log",
-      "plateau": true,
-      "score": 1048.34,
-      "mc_p_value": null,
-      "plateau_confirmed": false,
-      "tier": "C",
-      "validation": [
-        "n_threshold"
-      ],
-      "ready_for_v8": true
-    },
-    {
       "strategy": "TV_BTC_Beta_Residual",
       "symbol": "JUP",
       "tf": "1d",
@@ -843,6 +805,24 @@
       "source": "hunter5_high.log",
       "plateau": false,
       "score": 716.49,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ONDO",
+      "tf": "4h",
+      "wr": 77.8,
+      "trades": 63,
+      "pf": 2.16,
+      "source": "hunter1_mp.log",
+      "plateau": false,
+      "score": 698.89,
       "mc_p_value": null,
       "plateau_confirmed": false,
       "tier": "C",
