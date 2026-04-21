@@ -33,6 +33,19 @@ def main():
         for r in json.loads(mc_path.read_text()):
             k = (r["strategy"], r["symbol"], r["tf"])
             mc_pvals[k] = r.get("mc", {}).get("p_value")
+    # Mac-approved block bootstrap MC (Mac ACK 2026-04-21)
+    for bb_path in sorted((ROOT / "results").glob("mc_block_bootstrap_c_tier_*.json")):
+        bb = json.loads(bb_path.read_text())
+        for r in bb.get("results", []):
+            if not r.get("upgrade_to_B"):
+                continue
+            k = (r["strategy"], r["symbol"], r["tf"])
+            p = r.get("mc_block_bootstrap", {}).get("p_value")
+            if p is None:
+                continue
+            # Keep the best (lowest) p-value across methods
+            if k not in mc_pvals or mc_pvals[k] is None or p < mc_pvals[k]:
+                mc_pvals[k] = p
 
     if not rank_path.exists():
         print("ranking missing - cannot build final"); return

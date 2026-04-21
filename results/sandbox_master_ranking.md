@@ -1,7 +1,7 @@
 # Sandbox Master Ranking (all HUNTER waves + plateau bonus)
 
-- Total unique grails: 815
-- Plateau-confirmed: 18
+- Total unique grails: 816
+- Plateau-confirmed: 22
 
 Score = WR × log(1+trades) × min(PF,10) × (1.5 if plateau else 1)
 
@@ -9,122 +9,122 @@ Score = WR × log(1+trades) × min(PF,10) × (1.5 if plateau else 1)
 |---|----------|-----|----|-----|---|-----|---------|-------|
 | 1 | `TV_Linear_Regression_Channel` | AGT | 4h | 95.0% | 20 | 205.25 | Y | 4338 |
 | 2 | `TV_Gann_Swing_MultiLayer` | ETH | 1d | 85.7% | 21 | 27.78 | Y | 3974 |
-| 3 | `TV_Pivot_Reversal_Backtest` | SWARMS | 1d | 80.6% | 36 | 8.48 | Y | 3702 |
-| 4 | `TV_Weekend_Gap_Fade` | XRP | 4h | 86.2% | 29 | 8.35 | Y | 3672 |
-| 5 | `TV_ABCD_Pattern_Daveatt` | NEAR | 1d | 85.0% | 20 | 8.99 | Y | 3490 |
-| 6 | `TV_Gann_Swing_MultiLayer` | LTC | 1d | 88.0% | 25 | 92.09 |  | 2867 |
-| 7 | `TV_Linear_Regression_Channel` | JUP | 4h | 90.5% | 21 | 28.23 |  | 2797 |
-| 8 | `TV_Gann_Swing_MultiLayer` | NEAR | 1d | 75.4% | 57 | 9.02 |  | 2762 |
-| 9 | `TV_VolatilityAdaptive_Reversal` | DYDX | 15m | 80.0% | 25 | 13.39 |  | 2606 |
-| 10 | `TV_Double_Top_Bottom` | JTO | 4h | 85.0% | 20 | 10.84 |  | 2588 |
+| 3 | `TV_Double_Top_Bottom` | JTO | 4h | 85.0% | 20 | 10.84 | Y | 3882 |
+| 4 | `TV_Pivot_Reversal_Backtest` | SWARMS | 1d | 80.6% | 36 | 8.48 | Y | 3702 |
+| 5 | `TV_Weekend_Gap_Fade` | XRP | 4h | 86.2% | 29 | 8.35 | Y | 3672 |
+| 6 | `TV_ABCD_Pattern_Daveatt` | NEAR | 1d | 85.0% | 20 | 8.99 | Y | 3490 |
+| 7 | `TV_Gann_Swing_MultiLayer` | LTC | 1d | 88.0% | 25 | 92.09 |  | 2867 |
+| 8 | `TV_Linear_Regression_Channel` | JUP | 4h | 90.5% | 21 | 28.23 |  | 2797 |
+| 9 | `TV_Gann_Swing_MultiLayer` | NEAR | 1d | 75.4% | 57 | 9.02 |  | 2762 |
+| 10 | `TV_VolatilityAdaptive_Reversal` | DYDX | 15m | 80.0% | 25 | 13.39 |  | 2606 |
 | 11 | `TV_VolatilityAdaptive_Reversal` | AVAX | 15m | 93.3% | 15 | 220.29 |  | 2587 |
 | 12 | `TV_Linear_Regression_Channel` | AGT | 1d | 93.8% | 16 | 9.55 |  | 2538 |
 | 13 | `TV_ABCD_Pattern_Daveatt` | SUI | 1d | 84.2% | 19 | 19.53 |  | 2522 |
-| 14 | `TV_Linear_Regression_Channel` | APT | 1d | 87.5% | 16 | 85.64 |  | 2479 |
-| 15 | `TV_ABCD_Harmonic_BullBear` | SEI | 4h | 86.7% | 15 | 46.78 |  | 2404 |
-| 16 | `TV_Pivot_Reversal_Backtest` | GMX | 1d | 71.5% | 123 | 4.54 | Y | 2347 |
-| 17 | `TV_ABCD_Pattern_Daveatt` | SUI | 4h | 78.4% | 37 | 8.17 |  | 2331 |
-| 18 | `TV_Cointegration_PairsTrading` | WLD | 1d | 85.7% | 14 | 12.10 |  | 2321 |
-| 19 | `TV_VolatilityAdaptive_Reversal` | LTC | 15m | 70.8% | 24 | 10.09 |  | 2279 |
-| 20 | `TV_ABCD_Harmonic_BullBear` | JUP | 1d | 90.9% | 11 | 65.52 |  | 2259 |
-| 21 | `TV_ABCD_Pattern_Daveatt` | OP | 1d | 90.9% | 11 | 365.14 |  | 2259 |
-| 22 | `TV_VolatilityAdaptive_Reversal` | SFP | 15m | 84.6% | 13 | 95.49 |  | 2233 |
-| 23 | `TV_TOD_WR_Pocket` | SWARMS | 4h | 84.6% | 13 | 12.73 |  | 2233 |
-| 24 | `TV_Pivot_Reversal_Backtest` | ONDO | 1d | 75.3% | 89 | 4.37 | Y | 2222 |
-| 25 | `TV_ABCD_Harmonic_BullBear` | LTC | 1d | 80.0% | 15 | 12.41 |  | 2218 |
-| 26 | `TV_ABCD_Pattern_Daveatt` | PYTH | 1d | 78.8% | 33 | 7.97 |  | 2214 |
-| 27 | `TV_Cointegration_PairsTrading` | AGT | 1d | 100.0% | 8 | 999.00 |  | 2197 |
-| 28 | `TV_Pivot_Reversal_Backtest` | LINK | 1d | 71.1% | 173 | 3.97 | Y | 2184 |
-| 29 | `TV_FairValueGap_Trading` | AGT | 1d | 90.0% | 10 | 10.35 |  | 2158 |
-| 30 | `TV_OLS_Residual_Fade` | GMX | 4h | 90.0% | 10 | 103.58 |  | 2158 |
-| 31 | `TV_PriceAction_Pattern_Breakout` | AGT | 1d | 90.0% | 10 | 10.35 |  | 2158 |
-| 32 | `TV_DrawOnLiquidity` | GMX | 1d | 83.3% | 12 | 25.24 |  | 2137 |
-| 33 | `TV_ABCD_Pattern_Daveatt` | TIA | 4h | 78.6% | 14 | 12.77 |  | 2129 |
-| 34 | `TV_VolatilityAdaptive_Reversal` | APT | 15m | 75.0% | 16 | 38.39 |  | 2125 |
-| 35 | `TV_VolatilityAdaptive_Reversal` | TIA | 15m | 100.0% | 7 | 999.00 |  | 2079 |
-| 36 | `TV_Weekend_Gap_Fade` | SWARMS | 4h | 100.0% | 7 | 999.00 |  | 2079 |
-| 37 | `TV_Linear_Regression_Channel` | SWARMS | 1d | 100.0% | 7 | 999.00 |  | 2079 |
-| 38 | `TV_RSI_Divergence_Alifer` | SUI | 1d | 100.0% | 7 | 999.00 |  | 2079 |
-| 39 | `TV_ABCD_Pattern_Daveatt` | DYDX | 1d | 82.6% | 23 | 7.83 |  | 2055 |
-| 40 | `TV_Footprint_Volume_Climax` | PYTH | 1d | 88.9% | 9 | 20.26 |  | 2047 |
-| 41 | `TV_Ichimoku_Long_Only` | SWARMS | 1d | 88.9% | 9 | 30.15 |  | 2047 |
-| 42 | `TV_DrawOnLiquidity` | SUI | 4h | 88.9% | 9 | 9.99 |  | 2046 |
-| 43 | `TV_ABCD_Pattern_Daveatt` | ARB | 1d | 70.6% | 17 | 18.91 |  | 2041 |
-| 44 | `TV_AdaptiveFisherizedCMO` | AGT | 1d | 81.8% | 11 | 32.14 |  | 2033 |
-| 45 | `TV_Gann_Swing_MultiLayer` | PENDLE | 4h | 81.8% | 11 | 10.76 |  | 2033 |
-| 46 | `TV_ABCD_Pattern_Daveatt` | APT | 1d | 73.3% | 15 | 11.71 |  | 2032 |
-| 47 | `TV_Funding_Rate_Fade` | JUP | 1d | 76.9% | 13 | 23.33 |  | 2029 |
-| 48 | `TV_SR_Trendlines` | ETH | 4h | 76.5% | 34 | 7.37 |  | 2005 |
-| 49 | `TV_Double_Top_Bottom` | ONDO | 1d | 81.8% | 11 | 9.81 |  | 1994 |
-| 50 | `TV_RealizedVol_Anchor` | SFP | 1d | 76.9% | 13 | 9.69 |  | 1967 |
-| 51 | `TV_OrderBlock_BOSTrading` | PENDLE | 4h | 80.0% | 15 | 8.85 |  | 1963 |
-| 52 | `TV_Ehlers_Trend_Mode` | AVAX | 1d | 88.9% | 9 | 9.57 |  | 1959 |
-| 53 | `TV_Linear_Regression_Channel` | GMX | 1d | 86.7% | 30 | 6.54 |  | 1947 |
-| 54 | `TV_VolatilityCluster_Fade` | TIA | 1d | 100.0% | 6 | 999.00 |  | 1946 |
-| 55 | `TV_VolatilityAdaptive_Reversal` | AVAX | 1h | 100.0% | 6 | 999.00 |  | 1946 |
-| 56 | `TV_Weekend_Gap_Fade` | JTO | 1d | 100.0% | 6 | 999.00 |  | 1946 |
-| 57 | `TV_VolumeDelta_Imbalance` | TIA | 4h | 100.0% | 6 | 999.00 |  | 1946 |
-| 58 | `TV_VolumeDelta_Imbalance` | PYTH | 1h | 100.0% | 6 | 999.00 |  | 1946 |
-| 59 | `TV_VolumeDelta_Imbalance` | LTC | 4h | 100.0% | 6 | 999.00 |  | 1946 |
-| 60 | `TV_Funding_Rate_Fade` | ARB | 4h | 100.0% | 6 | 999.00 |  | 1946 |
-| 61 | `TV_OLS_Residual_Fade` | AGT | 4h | 100.0% | 6 | 999.00 |  | 1946 |
-| 62 | `TV_Kernel_Ridge_Score` | LINK | 15m | 100.0% | 6 | 999.00 |  | 1946 |
-| 63 | `TV_BTC_Beta_Residual` | PYTH | 1d | 100.0% | 6 | 999.00 |  | 1946 |
-| 64 | `TV_Gann_Swing_MultiLayer` | SWARMS | 1d | 100.0% | 6 | 999.00 |  | 1946 |
-| 65 | `TV_Funding_Rate_Fade` | DYDX | 4h | 71.4% | 14 | 24.50 |  | 1934 |
-| 66 | `TV_VolumeDelta_Imbalance` | SWARMS | 15m | 87.5% | 8 | 31.93 |  | 1923 |
-| 67 | `TV_Weekend_Gap_Fade` | OP | 1d | 87.5% | 8 | 62.93 |  | 1923 |
-| 68 | `TV_RealizedVol_Anchor` | LINK | 1d | 87.5% | 8 | 17.61 |  | 1923 |
-| 69 | `TV_ABCD_Pattern_Daveatt` | AGT | 1d | 87.5% | 8 | 15.45 |  | 1923 |
-| 70 | `TV_Double_Top_Bottom` | LINK | 1d | 87.5% | 8 | 165.55 |  | 1923 |
-| 71 | `TV_TrendGuard_Flag_Finder` | GMX | 4h | 87.5% | 8 | 99.90 |  | 1923 |
-| 72 | `TV_Footprint_Volume_Climax` | ONDO | 4h | 79.2% | 24 | 7.36 |  | 1876 |
-| 73 | `TV_Gann_Swing_MultiLayer` | OP | 1d | 78.9% | 19 | 7.66 |  | 1810 |
-| 74 | `TV_Funding_Rate_Fade` | WLD | 4h | 72.7% | 11 | 12.15 |  | 1807 |
-| 75 | `TV_CamarillaPivotsV2` | LINK | 4h | 72.7% | 11 | 10.00 |  | 1806 |
-| 76 | `TV_Cointegration_PairsTrading` | ONDO | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 77 | `TV_Cointegration_PairsTrading` | SWARMS | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 78 | `TV_VolSpread_Arbitrage` | DYDX | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 79 | `TV_WhaleDetection_VolumeSpike` | WLD | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 80 | `TV_SR_Trendlines` | AGT | 1h | 100.0% | 5 | 999.00 |  | 1792 |
-| 81 | `TV_DrawOnLiquidity` | ETH | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 82 | `TV_PivotPointSuperTrend` | ETH | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 83 | `TV_Kyle_Lambda_Fade` | WLD | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 84 | `TV_VolumeDelta_Imbalance` | ARB | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 85 | `TV_VolumeDelta_Imbalance` | JTO | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 86 | `TV_VolumeDelta_Imbalance` | LINK | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 87 | `TV_Wyckoff_Upthrust` | NEAR | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 88 | `TV_Weekend_Gap_Fade` | PYTH | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 89 | `TV_VolumeDelta_Imbalance` | INJ | 4h | 100.0% | 5 | 999.00 |  | 1792 |
-| 90 | `TV_VolumeDelta_Imbalance` | SEI | 4h | 100.0% | 5 | 999.00 |  | 1792 |
-| 91 | `TV_Weekend_Gap_Fade` | ONDO | 4h | 100.0% | 5 | 999.00 |  | 1792 |
-| 92 | `TV_Funding_Rate_Fade` | AGT | 4h | 100.0% | 5 | 999.00 |  | 1792 |
-| 93 | `TV_Information_Coefficient` | OP | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 94 | `TV_Linear_Regression_Channel` | SFP | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 95 | `TV_OLS_Residual_Fade` | DYDX | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 96 | `TV_OLS_Residual_Fade` | SUI | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 97 | `TV_Linear_Regression_Channel` | SEI | 4h | 100.0% | 5 | 999.00 |  | 1792 |
-| 98 | `TV_OLS_Residual_Fade` | SWARMS | 4h | 100.0% | 5 | 999.00 |  | 1792 |
-| 99 | `TV_Ehlers_Trend_Mode` | PENDLE | 1h | 100.0% | 5 | 999.00 |  | 1792 |
-| 100 | `TV_Kernel_Ridge_Score` | ETH | 15m | 100.0% | 5 | 999.00 |  | 1792 |
-| 101 | `TV_CumVol_Imbalance` | DYDX | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 102 | `TV_PivotSuperTrendTrendFilter` | SUI | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 103 | `TV_SupplyDemandStrategy` | ARB | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 104 | `TV_SMC_Liquidity_Grab_Pro` | INJ | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 105 | `TV_SR_Trendlines` | NEAR | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 106 | `TV_SR_Trendlines` | WLD | 1d | 100.0% | 5 | 999.00 |  | 1792 |
-| 107 | `TV_PeriodHighlighterPro` | OP | 4h | 100.0% | 5 | 999.00 |  | 1792 |
-| 108 | `TV_VolatilityAdaptive_Reversal` | LINK | 15m | 77.8% | 9 | 16.11 |  | 1791 |
-| 109 | `TV_CamarillaPivotsV2` | AVAX | 4h | 77.8% | 9 | 34.05 |  | 1791 |
-| 110 | `TV_SeasonalityChartingCycles` | ETH | 1d | 75.0% | 36 | 6.60 |  | 1787 |
-| 111 | `TV_Cointegration_PairsTrading` | JTO | 4h | 76.6% | 47 | 5.81 |  | 1723 |
-| 112 | `TV_Information_Coefficient` | INJ | 4h | 77.8% | 9 | 9.61 |  | 1722 |
-| 113 | `TV_MESAAdaptiveEhlersFlow` | APT | 1d | 81.8% | 11 | 8.47 |  | 1721 |
-| 114 | `TV_Double_Top_Bottom` | PYTH | 4h | 82.4% | 34 | 3.90 | Y | 1715 |
-| 115 | `TV_Session_Vol_Regime` | PYTH | 1d | 73.5% | 34 | 6.45 |  | 1686 |
-| 116 | `TV_Liquidity_Sweep_Filter` | NEAR | 4h | 70.0% | 10 | 10.52 |  | 1679 |
-| 117 | `TV_Kyle_Lambda_Fade` | PYTH | 4h | 76.9% | 13 | 8.27 |  | 1678 |
-| 118 | `TV_Gann_Swing_MultiLayer` | ETH | 4h | 70.4% | 108 | 5.06 |  | 1671 |
+| 14 | `TV_Gann_Swing_MultiLayer` | ETH | 4h | 70.4% | 108 | 5.06 | Y | 2507 |
+| 15 | `TV_Linear_Regression_Channel` | APT | 1d | 87.5% | 16 | 85.64 |  | 2479 |
+| 16 | `TV_ABCD_Harmonic_BullBear` | SEI | 4h | 86.7% | 15 | 46.78 |  | 2404 |
+| 17 | `TV_Pivot_Reversal_Backtest` | GMX | 1d | 71.5% | 123 | 4.54 | Y | 2347 |
+| 18 | `TV_ABCD_Pattern_Daveatt` | SUI | 4h | 78.4% | 37 | 8.17 |  | 2331 |
+| 19 | `TV_Cointegration_PairsTrading` | WLD | 1d | 85.7% | 14 | 12.10 |  | 2321 |
+| 20 | `TV_VolatilityAdaptive_Reversal` | LTC | 15m | 70.8% | 24 | 10.09 |  | 2279 |
+| 21 | `TV_ABCD_Harmonic_BullBear` | JUP | 1d | 90.9% | 11 | 65.52 |  | 2259 |
+| 22 | `TV_ABCD_Pattern_Daveatt` | OP | 1d | 90.9% | 11 | 365.14 |  | 2259 |
+| 23 | `TV_VolatilityAdaptive_Reversal` | SFP | 15m | 84.6% | 13 | 95.49 |  | 2233 |
+| 24 | `TV_TOD_WR_Pocket` | SWARMS | 4h | 84.6% | 13 | 12.73 |  | 2233 |
+| 25 | `TV_Pivot_Reversal_Backtest` | ONDO | 1d | 75.3% | 89 | 4.37 | Y | 2222 |
+| 26 | `TV_ABCD_Harmonic_BullBear` | LTC | 1d | 80.0% | 15 | 12.41 |  | 2218 |
+| 27 | `TV_ABCD_Pattern_Daveatt` | PYTH | 1d | 78.8% | 33 | 7.97 |  | 2214 |
+| 28 | `TV_Cointegration_PairsTrading` | AGT | 1d | 100.0% | 8 | 999.00 |  | 2197 |
+| 29 | `TV_Pivot_Reversal_Backtest` | LINK | 1d | 71.1% | 173 | 3.97 | Y | 2184 |
+| 30 | `TV_FairValueGap_Trading` | AGT | 1d | 90.0% | 10 | 10.35 |  | 2158 |
+| 31 | `TV_OLS_Residual_Fade` | GMX | 4h | 90.0% | 10 | 103.58 |  | 2158 |
+| 32 | `TV_PriceAction_Pattern_Breakout` | AGT | 1d | 90.0% | 10 | 10.35 |  | 2158 |
+| 33 | `TV_DrawOnLiquidity` | GMX | 1d | 83.3% | 12 | 25.24 |  | 2137 |
+| 34 | `TV_ABCD_Pattern_Daveatt` | TIA | 4h | 78.6% | 14 | 12.77 |  | 2129 |
+| 35 | `TV_VolatilityAdaptive_Reversal` | APT | 15m | 75.0% | 16 | 38.39 |  | 2125 |
+| 36 | `TV_VolatilityAdaptive_Reversal` | TIA | 15m | 100.0% | 7 | 999.00 |  | 2079 |
+| 37 | `TV_Weekend_Gap_Fade` | SWARMS | 4h | 100.0% | 7 | 999.00 |  | 2079 |
+| 38 | `TV_Linear_Regression_Channel` | SWARMS | 1d | 100.0% | 7 | 999.00 |  | 2079 |
+| 39 | `TV_RSI_Divergence_Alifer` | SUI | 1d | 100.0% | 7 | 999.00 |  | 2079 |
+| 40 | `TV_ABCD_Pattern_Daveatt` | DYDX | 1d | 82.6% | 23 | 7.83 |  | 2055 |
+| 41 | `TV_Footprint_Volume_Climax` | PYTH | 1d | 88.9% | 9 | 20.26 |  | 2047 |
+| 42 | `TV_Ichimoku_Long_Only` | SWARMS | 1d | 88.9% | 9 | 30.15 |  | 2047 |
+| 43 | `TV_DrawOnLiquidity` | SUI | 4h | 88.9% | 9 | 9.99 |  | 2046 |
+| 44 | `TV_ABCD_Pattern_Daveatt` | ARB | 1d | 70.6% | 17 | 18.91 |  | 2041 |
+| 45 | `TV_AdaptiveFisherizedCMO` | AGT | 1d | 81.8% | 11 | 32.14 |  | 2033 |
+| 46 | `TV_Gann_Swing_MultiLayer` | PENDLE | 4h | 81.8% | 11 | 10.76 |  | 2033 |
+| 47 | `TV_ABCD_Pattern_Daveatt` | APT | 1d | 73.3% | 15 | 11.71 |  | 2032 |
+| 48 | `TV_Funding_Rate_Fade` | JUP | 1d | 76.9% | 13 | 23.33 |  | 2029 |
+| 49 | `TV_SR_Trendlines` | ETH | 4h | 76.5% | 34 | 7.37 |  | 2005 |
+| 50 | `TV_Double_Top_Bottom` | ONDO | 1d | 81.8% | 11 | 9.81 |  | 1994 |
+| 51 | `TV_RealizedVol_Anchor` | SFP | 1d | 76.9% | 13 | 9.69 |  | 1967 |
+| 52 | `TV_OrderBlock_BOSTrading` | PENDLE | 4h | 80.0% | 15 | 8.85 |  | 1963 |
+| 53 | `TV_Ehlers_Trend_Mode` | AVAX | 1d | 88.9% | 9 | 9.57 |  | 1959 |
+| 54 | `TV_Linear_Regression_Channel` | GMX | 1d | 86.7% | 30 | 6.54 |  | 1947 |
+| 55 | `TV_VolatilityCluster_Fade` | TIA | 1d | 100.0% | 6 | 999.00 |  | 1946 |
+| 56 | `TV_VolatilityAdaptive_Reversal` | AVAX | 1h | 100.0% | 6 | 999.00 |  | 1946 |
+| 57 | `TV_Weekend_Gap_Fade` | JTO | 1d | 100.0% | 6 | 999.00 |  | 1946 |
+| 58 | `TV_VolumeDelta_Imbalance` | TIA | 4h | 100.0% | 6 | 999.00 |  | 1946 |
+| 59 | `TV_VolumeDelta_Imbalance` | PYTH | 1h | 100.0% | 6 | 999.00 |  | 1946 |
+| 60 | `TV_VolumeDelta_Imbalance` | LTC | 4h | 100.0% | 6 | 999.00 |  | 1946 |
+| 61 | `TV_Funding_Rate_Fade` | ARB | 4h | 100.0% | 6 | 999.00 |  | 1946 |
+| 62 | `TV_OLS_Residual_Fade` | AGT | 4h | 100.0% | 6 | 999.00 |  | 1946 |
+| 63 | `TV_Kernel_Ridge_Score` | LINK | 15m | 100.0% | 6 | 999.00 |  | 1946 |
+| 64 | `TV_BTC_Beta_Residual` | PYTH | 1d | 100.0% | 6 | 999.00 |  | 1946 |
+| 65 | `TV_Gann_Swing_MultiLayer` | SWARMS | 1d | 100.0% | 6 | 999.00 |  | 1946 |
+| 66 | `TV_Funding_Rate_Fade` | DYDX | 4h | 71.4% | 14 | 24.50 |  | 1934 |
+| 67 | `TV_VolumeDelta_Imbalance` | SWARMS | 15m | 87.5% | 8 | 31.93 |  | 1923 |
+| 68 | `TV_Weekend_Gap_Fade` | OP | 1d | 87.5% | 8 | 62.93 |  | 1923 |
+| 69 | `TV_RealizedVol_Anchor` | LINK | 1d | 87.5% | 8 | 17.61 |  | 1923 |
+| 70 | `TV_ABCD_Pattern_Daveatt` | AGT | 1d | 87.5% | 8 | 15.45 |  | 1923 |
+| 71 | `TV_Double_Top_Bottom` | LINK | 1d | 87.5% | 8 | 165.55 |  | 1923 |
+| 72 | `TV_TrendGuard_Flag_Finder` | GMX | 4h | 87.5% | 8 | 99.90 |  | 1923 |
+| 73 | `TV_Footprint_Volume_Climax` | ONDO | 4h | 79.2% | 24 | 7.36 |  | 1876 |
+| 74 | `TV_Gann_Swing_MultiLayer` | OP | 1d | 78.9% | 19 | 7.66 |  | 1810 |
+| 75 | `TV_Funding_Rate_Fade` | WLD | 4h | 72.7% | 11 | 12.15 |  | 1807 |
+| 76 | `TV_CamarillaPivotsV2` | LINK | 4h | 72.7% | 11 | 10.00 |  | 1806 |
+| 77 | `TV_Cointegration_PairsTrading` | ONDO | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 78 | `TV_Cointegration_PairsTrading` | SWARMS | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 79 | `TV_VolSpread_Arbitrage` | DYDX | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 80 | `TV_WhaleDetection_VolumeSpike` | WLD | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 81 | `TV_SR_Trendlines` | AGT | 1h | 100.0% | 5 | 999.00 |  | 1792 |
+| 82 | `TV_DrawOnLiquidity` | ETH | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 83 | `TV_PivotPointSuperTrend` | ETH | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 84 | `TV_Kyle_Lambda_Fade` | WLD | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 85 | `TV_VolumeDelta_Imbalance` | ARB | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 86 | `TV_VolumeDelta_Imbalance` | JTO | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 87 | `TV_VolumeDelta_Imbalance` | LINK | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 88 | `TV_Wyckoff_Upthrust` | NEAR | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 89 | `TV_Weekend_Gap_Fade` | PYTH | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 90 | `TV_VolumeDelta_Imbalance` | INJ | 4h | 100.0% | 5 | 999.00 |  | 1792 |
+| 91 | `TV_VolumeDelta_Imbalance` | SEI | 4h | 100.0% | 5 | 999.00 |  | 1792 |
+| 92 | `TV_Weekend_Gap_Fade` | ONDO | 4h | 100.0% | 5 | 999.00 |  | 1792 |
+| 93 | `TV_Funding_Rate_Fade` | AGT | 4h | 100.0% | 5 | 999.00 |  | 1792 |
+| 94 | `TV_Information_Coefficient` | OP | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 95 | `TV_Linear_Regression_Channel` | SFP | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 96 | `TV_OLS_Residual_Fade` | DYDX | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 97 | `TV_OLS_Residual_Fade` | SUI | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 98 | `TV_Linear_Regression_Channel` | SEI | 4h | 100.0% | 5 | 999.00 |  | 1792 |
+| 99 | `TV_OLS_Residual_Fade` | SWARMS | 4h | 100.0% | 5 | 999.00 |  | 1792 |
+| 100 | `TV_Ehlers_Trend_Mode` | PENDLE | 1h | 100.0% | 5 | 999.00 |  | 1792 |
+| 101 | `TV_Kernel_Ridge_Score` | ETH | 15m | 100.0% | 5 | 999.00 |  | 1792 |
+| 102 | `TV_CumVol_Imbalance` | DYDX | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 103 | `TV_PivotSuperTrendTrendFilter` | SUI | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 104 | `TV_SupplyDemandStrategy` | ARB | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 105 | `TV_SMC_Liquidity_Grab_Pro` | INJ | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 106 | `TV_SR_Trendlines` | NEAR | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 107 | `TV_SR_Trendlines` | WLD | 1d | 100.0% | 5 | 999.00 |  | 1792 |
+| 108 | `TV_PeriodHighlighterPro` | OP | 4h | 100.0% | 5 | 999.00 |  | 1792 |
+| 109 | `TV_VolatilityAdaptive_Reversal` | LINK | 15m | 77.8% | 9 | 16.11 |  | 1791 |
+| 110 | `TV_CamarillaPivotsV2` | AVAX | 4h | 77.8% | 9 | 34.05 |  | 1791 |
+| 111 | `TV_SeasonalityChartingCycles` | ETH | 1d | 75.0% | 36 | 6.60 |  | 1787 |
+| 112 | `TV_Cointegration_PairsTrading` | JTO | 4h | 76.6% | 47 | 5.81 |  | 1723 |
+| 113 | `TV_Information_Coefficient` | INJ | 4h | 77.8% | 9 | 9.61 |  | 1722 |
+| 114 | `TV_MESAAdaptiveEhlersFlow` | APT | 1d | 81.8% | 11 | 8.47 |  | 1721 |
+| 115 | `TV_Double_Top_Bottom` | PYTH | 4h | 82.4% | 34 | 3.90 | Y | 1715 |
+| 116 | `TV_Session_Vol_Regime` | PYTH | 1d | 73.5% | 34 | 6.45 |  | 1686 |
+| 117 | `TV_Liquidity_Sweep_Filter` | NEAR | 4h | 70.0% | 10 | 10.52 |  | 1679 |
+| 118 | `TV_Kyle_Lambda_Fade` | PYTH | 4h | 76.9% | 13 | 8.27 |  | 1678 |
 | 119 | `TV_OrderFlow_Momentum_Proxy` | XRP | 1d | 85.7% | 14 | 7.14 |  | 1657 |
 | 120 | `TV_SR_Trendlines` | SFP | 4h | 76.9% | 13 | 8.14 |  | 1651 |
 | 121 | `TV_Wyckoff_Spring` | INJ | 1d | 75.0% | 8 | 12.09 |  | 1648 |
