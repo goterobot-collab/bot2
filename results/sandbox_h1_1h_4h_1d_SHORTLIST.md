@@ -1,0 +1,103 @@
+# HUNTER1_1h_4h_1d shortlist
+
+- Batches: 704
+- Tasks completed: 271
+- Grails passing R24 gate: **93**
+- Strategies promoted (>=1 combo pass): **4**
+- Elapsed: 273s
+
+| Rank | Strategy | Sym | TF | WR | trades | PF | total% | params |
+|------|----------|-----|----|-----|--------|-----|--------|--------|
+| 1 | `TV_Daily_Close_Signal` | JTO | 1d | 100.0% | 2 | 999.00 | 12.8% | `{"daily_ema":18,"ema_trend":106,"rsi_len":8,"rsi_os":49}` |
+| 2 | `TV_HTF_EMA_Gate` | AGT | 1d | 100.0% | 2 | 999.00 | 38.4% | `{"htf_hours":3,"ema_len":94,"rsi_len":10,"rsi_os":43}` |
+| 3 | `TV_HTF_EMA_Gate` | APT | 1d | 100.0% | 2 | 999.00 | 21.3% | `{"htf_hours":1,"ema_len":60,"rsi_len":16,"rsi_os":42}` |
+| 4 | `TV_HTF_EMA_Gate` | DYDX | 1d | 100.0% | 4 | 999.00 | 55.5% | `{"htf_hours":5,"ema_len":95,"rsi_len":17,"rsi_os":41}` |
+| 5 | `TV_HTF_EMA_Gate` | ONDO | 1d | 100.0% | 2 | 999.00 | 18.2% | `{"htf_hours":6,"ema_len":78,"rsi_len":9,"rsi_os":31}` |
+| 6 | `TV_HTF_EMA_Gate` | PYTH | 1d | 100.0% | 2 | 999.00 | 21.6% | `{"htf_hours":2,"ema_len":26,"rsi_len":8,"rsi_os":41}` |
+| 7 | `TV_HTF_EMA_Gate` | SWARMS | 1d | 100.0% | 3 | 999.00 | 69.7% | `{"htf_hours":1,"ema_len":72,"rsi_len":9,"rsi_os":27}` |
+| 8 | `TV_HTF_EMA_Gate` | SUI | 1d | 100.0% | 3 | 999.00 | 21.3% | `{"htf_hours":2,"ema_len":42,"rsi_len":14,"rsi_os":45}` |
+| 9 | `TV_HTF_EMA_Gate` | TIA | 1d | 100.0% | 2 | 999.00 | 22.9% | `{"htf_hours":3,"ema_len":91,"rsi_len":11,"rsi_os":32}` |
+| 10 | `TV_HTF_RSI_Confirm` | DYDX | 1d | 100.0% | 3 | 999.00 | 65.5% | `{"htf_hours":3,"rsi_len":16,"rsi_os":32,"ema_trend":193}` |
+| 11 | `TV_HTF_RSI_Confirm` | JTO | 1d | 100.0% | 2 | 999.00 | 32.7% | `{"htf_hours":6,"rsi_len":19,"rsi_os":42,"ema_trend":124}` |
+| 12 | `TV_HTF_RSI_Confirm` | JUP | 1d | 100.0% | 5 | 999.00 | 41.4% | `{"htf_hours":8,"rsi_len":10,"rsi_os":34,"ema_trend":100}` |
+| 13 | `TV_HTF_RSI_Confirm` | ONDO | 1d | 100.0% | 2 | 999.00 | 24.9% | `{"htf_hours":5,"rsi_len":14,"rsi_os":42,"ema_trend":55}` |
+| 14 | `TV_HTF_RSI_Confirm` | TIA | 1d | 100.0% | 3 | 999.00 | 62.5% | `{"htf_hours":2,"rsi_len":18,"rsi_os":38,"ema_trend":186}` |
+| 15 | `TV_HTF_RSI_Confirm` | SUI | 1d | 100.0% | 2 | 999.00 | 35.2% | `{"htf_hours":2,"rsi_len":15,"rsi_os":33,"ema_trend":198}` |
+| 16 | `TV_Weekly_MACD` | SWARMS | 1d | 100.0% | 2 | 999.00 | 52.5% | `{"macd_fast":8,"macd_slow":40,"macd_sig":6,"ema_trend":168}` |
+| 17 | `TV_Weekly_MACD` | PYTH | 1d | 100.0% | 16 | 999.00 | 260.7% | `{"macd_fast":11,"macd_slow":39,"macd_sig":7,"ema_trend":83}` |
+| 18 | `TV_Daily_Close_Signal` | AGT | 4h | 100.0% | 2 | 999.00 | 25.0% | `{"daily_ema":7,"ema_trend":175,"rsi_len":15,"rsi_os":31}` |
+| 19 | `TV_Daily_Close_Signal` | ARB | 4h | 100.0% | 3 | 999.00 | 17.6% | `{"daily_ema":6,"ema_trend":153,"rsi_len":17,"rsi_os":36}` |
+| 20 | `TV_Daily_Close_Signal` | APT | 4h | 100.0% | 2 | 999.00 | 13.8% | `{"daily_ema":11,"ema_trend":65,"rsi_len":11,"rsi_os":34}` |
+| 21 | `TV_Daily_Close_Signal` | AVAX | 4h | 100.0% | 7 | 999.00 | 67.2% | `{"daily_ema":12,"ema_trend":145,"rsi_len":14,"rsi_os":34}` |
+| 22 | `TV_Daily_Close_Signal` | GMX | 4h | 100.0% | 2 | 999.00 | 14.0% | `{"daily_ema":18,"ema_trend":153,"rsi_len":12,"rsi_os":34}` |
+| 23 | `TV_Daily_Close_Signal` | JTO | 4h | 100.0% | 2 | 999.00 | 4.9% | `{"daily_ema":7,"ema_trend":117,"rsi_len":18,"rsi_os":39}` |
+| 24 | `TV_Daily_Close_Signal` | JUP | 4h | 100.0% | 7 | 999.00 | 35.4% | `{"daily_ema":13,"ema_trend":138,"rsi_len":11,"rsi_os":36}` |
+| 25 | `TV_Daily_Close_Signal` | ONDO | 4h | 100.0% | 5 | 999.00 | 32.0% | `{"daily_ema":15,"ema_trend":155,"rsi_len":11,"rsi_os":33}` |
+| 26 | `TV_Daily_Close_Signal` | LINK | 4h | 100.0% | 6 | 999.00 | 30.5% | `{"daily_ema":5,"ema_trend":66,"rsi_len":9,"rsi_os":31}` |
+| 27 | `TV_Daily_Close_Signal` | PYTH | 4h | 100.0% | 3 | 999.00 | 19.3% | `{"daily_ema":10,"ema_trend":112,"rsi_len":18,"rsi_os":40}` |
+| 28 | `TV_Daily_Close_Signal` | OP | 4h | 100.0% | 18 | 999.00 | 125.8% | `{"daily_ema":11,"ema_trend":120,"rsi_len":18,"rsi_os":42}` |
+| 29 | `TV_Daily_Close_Signal` | SEI | 4h | 100.0% | 4 | 999.00 | 17.4% | `{"daily_ema":9,"ema_trend":124,"rsi_len":13,"rsi_os":39}` |
+| 30 | `TV_Daily_Close_Signal` | NEAR | 4h | 100.0% | 3 | 999.00 | 12.7% | `{"daily_ema":18,"ema_trend":137,"rsi_len":13,"rsi_os":32}` |
+| 31 | `TV_Daily_Close_Signal` | LTC | 4h | 100.0% | 9 | 999.00 | 72.5% | `{"daily_ema":13,"ema_trend":195,"rsi_len":9,"rsi_os":30}` |
+| 32 | `TV_Daily_Close_Signal` | XRP | 4h | 100.0% | 4 | 999.00 | 38.1% | `{"daily_ema":7,"ema_trend":148,"rsi_len":10,"rsi_os":30}` |
+| 33 | `TV_Daily_Close_Signal` | SFP | 4h | 100.0% | 6 | 999.00 | 19.4% | `{"daily_ema":9,"ema_trend":143,"rsi_len":15,"rsi_os":36}` |
+| 34 | `TV_HTF_EMA_Gate` | APT | 4h | 100.0% | 2 | 999.00 | 10.3% | `{"htf_hours":4,"ema_len":50,"rsi_len":9,"rsi_os":29}` |
+| 35 | `TV_HTF_EMA_Gate` | SEI | 4h | 100.0% | 2 | 999.00 | 4.7% | `{"htf_hours":4,"ema_len":100,"rsi_len":9,"rsi_os":29}` |
+| 36 | `TV_HTF_EMA_Gate` | SWARMS | 4h | 100.0% | 2 | 999.00 | 44.3% | `{"htf_hours":2,"ema_len":97,"rsi_len":15,"rsi_os":33}` |
+| 37 | `TV_HTF_RSI_Confirm` | LTC | 4h | 100.0% | 3 | 999.00 | 23.1% | `{"htf_hours":5,"rsi_len":16,"rsi_os":30,"ema_trend":126}` |
+| 38 | `TV_HTF_RSI_Confirm` | SEI | 4h | 100.0% | 3 | 999.00 | 8.7% | `{"htf_hours":7,"rsi_len":20,"rsi_os":45,"ema_trend":72}` |
+| 39 | `TV_Daily_Close_Signal` | APT | 1h | 100.0% | 9 | 999.00 | 36.3% | `{"daily_ema":18,"ema_trend":116,"rsi_len":13,"rsi_os":35}` |
+| 40 | `TV_Daily_Close_Signal` | ETH | 1h | 100.0% | 2 | 999.00 | 14.3% | `{"daily_ema":20,"ema_trend":129,"rsi_len":20,"rsi_os":38}` |
+| 41 | `TV_Daily_Close_Signal` | DYDX | 1h | 100.0% | 9 | 999.00 | 57.0% | `{"daily_ema":18,"ema_trend":133,"rsi_len":19,"rsi_os":39}` |
+| 42 | `TV_Daily_Close_Signal` | AVAX | 1h | 100.0% | 14 | 999.00 | 84.8% | `{"daily_ema":16,"ema_trend":123,"rsi_len":15,"rsi_os":35}` |
+| 43 | `TV_Daily_Close_Signal` | JUP | 1h | 100.0% | 7 | 999.00 | 22.0% | `{"daily_ema":8,"ema_trend":93,"rsi_len":11,"rsi_os":34}` |
+| 44 | `TV_Daily_Close_Signal` | ONDO | 1h | 100.0% | 3 | 999.00 | 35.2% | `{"daily_ema":19,"ema_trend":169,"rsi_len":17,"rsi_os":36}` |
+| 45 | `TV_Daily_Close_Signal` | PENDLE | 1h | 100.0% | 3 | 999.00 | 14.0% | `{"daily_ema":6,"ema_trend":118,"rsi_len":19,"rsi_os":41}` |
+| 46 | `TV_Daily_Close_Signal` | NEAR | 1h | 100.0% | 6 | 999.00 | 32.2% | `{"daily_ema":14,"ema_trend":182,"rsi_len":15,"rsi_os":30}` |
+| 47 | `TV_Daily_Close_Signal` | LTC | 1h | 100.0% | 30 | 999.00 | 126.7% | `{"daily_ema":19,"ema_trend":125,"rsi_len":10,"rsi_os":32}` |
+| 48 | `TV_Daily_Close_Signal` | OP | 1h | 100.0% | 9 | 999.00 | 51.4% | `{"daily_ema":7,"ema_trend":182,"rsi_len":14,"rsi_os":31}` |
+| 49 | `TV_Daily_Close_Signal` | SEI | 1h | 100.0% | 2 | 999.00 | 11.4% | `{"daily_ema":11,"ema_trend":139,"rsi_len":15,"rsi_os":39}` |
+| 50 | `TV_Daily_Close_Signal` | PYTH | 1h | 100.0% | 23 | 999.00 | 119.2% | `{"daily_ema":20,"ema_trend":182,"rsi_len":17,"rsi_os":38}` |
+| 51 | `TV_Daily_Close_Signal` | LINK | 1h | 100.0% | 4 | 999.00 | 16.8% | `{"daily_ema":10,"ema_trend":171,"rsi_len":15,"rsi_os":32}` |
+| 52 | `TV_Daily_Close_Signal` | SWARMS | 1h | 100.0% | 4 | 999.00 | 35.6% | `{"daily_ema":16,"ema_trend":82,"rsi_len":21,"rsi_os":45}` |
+| 53 | `TV_Daily_Close_Signal` | SUI | 1h | 100.0% | 14 | 999.00 | 44.5% | `{"daily_ema":5,"ema_trend":129,"rsi_len":11,"rsi_os":31}` |
+| 54 | `TV_Daily_Close_Signal` | WLD | 1h | 100.0% | 3 | 999.00 | 18.2% | `{"daily_ema":13,"ema_trend":158,"rsi_len":14,"rsi_os":31}` |
+| 55 | `TV_Daily_Close_Signal` | SFP | 1h | 100.0% | 2 | 999.00 | 2.1% | `{"daily_ema":18,"ema_trend":66,"rsi_len":11,"rsi_os":33}` |
+| 56 | `TV_HTF_EMA_Gate` | APT | 1h | 100.0% | 13 | 999.00 | 55.7% | `{"htf_hours":5,"ema_len":61,"rsi_len":18,"rsi_os":35}` |
+| 57 | `TV_HTF_EMA_Gate` | DYDX | 1h | 100.0% | 5 | 999.00 | 35.3% | `{"htf_hours":6,"ema_len":26,"rsi_len":14,"rsi_os":25}` |
+| 58 | `TV_HTF_EMA_Gate` | ONDO | 1h | 100.0% | 4 | 999.00 | 20.4% | `{"htf_hours":4,"ema_len":54,"rsi_len":17,"rsi_os":36}` |
+| 59 | `TV_HTF_EMA_Gate` | OP | 1h | 100.0% | 3 | 999.00 | 13.3% | `{"htf_hours":4,"ema_len":30,"rsi_len":16,"rsi_os":30}` |
+| 60 | `TV_HTF_EMA_Gate` | LTC | 1h | 100.0% | 9 | 999.00 | 31.5% | `{"htf_hours":3,"ema_len":37,"rsi_len":18,"rsi_os":34}` |
+| 61 | `TV_HTF_EMA_Gate` | LINK | 1h | 100.0% | 7 | 999.00 | 32.4% | `{"htf_hours":6,"ema_len":43,"rsi_len":16,"rsi_os":30}` |
+| 62 | `TV_HTF_EMA_Gate` | SWARMS | 1h | 100.0% | 3 | 999.00 | 21.7% | `{"htf_hours":6,"ema_len":48,"rsi_len":18,"rsi_os":33}` |
+| 63 | `TV_HTF_EMA_Gate` | SUI | 1h | 100.0% | 2 | 999.00 | 8.1% | `{"htf_hours":5,"ema_len":100,"rsi_len":17,"rsi_os":29}` |
+| 64 | `TV_HTF_RSI_Confirm` | PENDLE | 1h | 100.0% | 3 | 999.00 | 8.8% | `{"htf_hours":5,"rsi_len":11,"rsi_os":35,"ema_trend":59}` |
+| 65 | `TV_HTF_RSI_Confirm` | XRP | 1h | 100.0% | 2 | 999.00 | 3.2% | `{"htf_hours":7,"rsi_len":17,"rsi_os":41,"ema_trend":62}` |
+| 66 | `TV_Weekly_MACD` | APT | 1d | 97.6% | 42 | 142.73 | 552.5% | `{"macd_fast":9,"macd_slow":20,"macd_sig":9,"ema_trend":99}` |
+| 67 | `TV_Daily_Close_Signal` | INJ | 1h | 97.6% | 41 | 74.94 | 184.3% | `{"daily_ema":17,"ema_trend":135,"rsi_len":16,"rsi_os":42}` |
+| 68 | `TV_Weekly_MACD` | ARB | 1d | 95.0% | 20 | 50.47 | 313.5% | `{"macd_fast":20,"macd_slow":25,"macd_sig":13,"ema_trend":170}` |
+| 69 | `TV_HTF_EMA_Gate` | NEAR | 1h | 94.7% | 19 | 557.11 | 111.4% | `{"htf_hours":6,"ema_len":27,"rsi_len":15,"rsi_os":30}` |
+| 70 | `TV_Weekly_MACD` | TIA | 1d | 94.1% | 17 | 41.87 | 307.7% | `{"macd_fast":8,"macd_slow":33,"macd_sig":13,"ema_trend":198}` |
+| 71 | `TV_Weekly_MACD` | ONDO | 1d | 93.3% | 15 | 50.51 | 153.0% | `{"macd_fast":16,"macd_slow":23,"macd_sig":7,"ema_trend":174}` |
+| 72 | `TV_Weekly_MACD` | WLD | 1d | 90.0% | 20 | 8.53 | 323.2% | `{"macd_fast":18,"macd_slow":32,"macd_sig":6,"ema_trend":199}` |
+| 73 | `TV_Weekly_MACD` | NEAR | 1d | 89.1% | 55 | 27.39 | 998.2% | `{"macd_fast":9,"macd_slow":22,"macd_sig":9,"ema_trend":193}` |
+| 74 | `TV_HTF_EMA_Gate` | INJ | 1h | 88.6% | 149 | 25.99 | 510.6% | `{"htf_hours":6,"ema_len":36,"rsi_len":18,"rsi_os":42}` |
+| 75 | `TV_Weekly_MACD` | JTO | 1d | 88.5% | 26 | 4.92 | 242.4% | `{"macd_fast":8,"macd_slow":21,"macd_sig":7,"ema_trend":134}` |
+| 76 | `TV_Weekly_MACD` | INJ | 1d | 88.0% | 25 | 32.41 | 274.0% | `{"macd_fast":11,"macd_slow":23,"macd_sig":7,"ema_trend":130}` |
+| 77 | `TV_HTF_EMA_Gate` | JUP | 1h | 87.8% | 98 | 29.15 | 312.6% | `{"htf_hours":6,"ema_len":58,"rsi_len":17,"rsi_os":42}` |
+| 78 | `TV_HTF_EMA_Gate` | PYTH | 1h | 87.5% | 16 | 17.15 | 49.9% | `{"htf_hours":6,"ema_len":91,"rsi_len":14,"rsi_os":33}` |
+| 79 | `TV_Weekly_MACD` | JUP | 1d | 87.5% | 16 | 5.65 | 200.5% | `{"macd_fast":8,"macd_slow":35,"macd_sig":8,"ema_trend":200}` |
+| 80 | `TV_Weekly_MACD` | XRP | 1d | 87.0% | 23 | 12.68 | 207.8% | `{"macd_fast":12,"macd_slow":18,"macd_sig":13,"ema_trend":132}` |
+| 81 | `TV_Weekly_MACD` | AVAX | 1d | 86.9% | 61 | 32.62 | 1126.5% | `{"macd_fast":11,"macd_slow":21,"macd_sig":12,"ema_trend":108}` |
+| 82 | `TV_Weekly_MACD` | SUI | 1d | 86.5% | 37 | 20.02 | 600.1% | `{"macd_fast":9,"macd_slow":22,"macd_sig":7,"ema_trend":174}` |
+| 83 | `TV_Weekly_MACD` | OP | 1d | 86.0% | 57 | 13.37 | 757.4% | `{"macd_fast":10,"macd_slow":19,"macd_sig":9,"ema_trend":109}` |
+| 84 | `TV_Weekly_MACD` | ETH | 1d | 85.7% | 35 | 37.42 | 983.1% | `{"macd_fast":9,"macd_slow":29,"macd_sig":11,"ema_trend":181}` |
+| 85 | `TV_Weekly_MACD` | GMX | 1d | 85.4% | 41 | 32.61 | 399.6% | `{"macd_fast":8,"macd_slow":37,"macd_sig":5,"ema_trend":59}` |
+| 86 | `TV_Weekly_MACD` | LINK | 1d | 85.3% | 68 | 10.31 | 695.5% | `{"macd_fast":13,"macd_slow":39,"macd_sig":5,"ema_trend":199}` |
+| 87 | `TV_HTF_EMA_Gate` | ETH | 1h | 82.2% | 45 | 18.33 | 176.8% | `{"htf_hours":5,"ema_len":26,"rsi_len":18,"rsi_os":36}` |
+| 88 | `TV_Weekly_MACD` | DYDX | 1d | 81.7% | 60 | 8.62 | 687.0% | `{"macd_fast":8,"macd_slow":27,"macd_sig":9,"ema_trend":160}` |
+| 89 | `TV_Weekly_MACD` | LTC | 1d | 80.0% | 90 | 28.20 | 1744.4% | `{"macd_fast":10,"macd_slow":27,"macd_sig":7,"ema_trend":65}` |
+| 90 | `TV_Weekly_MACD` | ARB | 1h | 76.3% | 135 | 10.61 | 777.7% | `{"macd_fast":20,"macd_slow":18,"macd_sig":9,"ema_trend":114}` |
+| 91 | `TV_HTF_RSI_Confirm` | SFP | 1d | 75.0% | 8 | 10.16 | 82.9% | `{"htf_hours":7,"rsi_len":21,"rsi_os":40,"ema_trend":175}` |
+| 92 | `TV_HTF_RSI_Confirm` | LTC | 1d | 75.0% | 12 | 6.95 | 72.4% | `{"htf_hours":5,"rsi_len":8,"rsi_os":31,"ema_trend":59}` |
+| 93 | `TV_HTF_RSI_Confirm` | JUP | 1h | 73.3% | 15 | 3.42 | 18.5% | `{"htf_hours":2,"rsi_len":20,"rsi_os":34,"ema_trend":188}` |
