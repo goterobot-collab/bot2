@@ -198,17 +198,6 @@
     "score": 4147.36
   },
   {
-    "strategy": "TV_Gann_Swing_MultiLayer",
-    "symbol": "NEAR",
-    "tf": "1d",
-    "wr": 75.4,
-    "trades": 57,
-    "pf": 9.02,
-    "source": "sandbox_h2_1h_4h_1d_progress.json",
-    "plateau": true,
-    "score": 4142.31
-  },
-  {
     "strategy": "TV_HTF_EMA_Gate",
     "symbol": "JUP",
     "tf": "1h",
@@ -374,6 +363,17 @@
     "score": 2797.39
   },
   {
+    "strategy": "TV_Gann_Swing_MultiLayer",
+    "symbol": "NEAR",
+    "tf": "1d",
+    "wr": 75.4,
+    "trades": 57,
+    "pf": 9.02,
+    "source": "sandbox_h2_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 2761.54
+  },
+  {
     "strategy": "TV_Weekly_MACD",
     "symbol": "TIA",
     "tf": "1d",
@@ -471,17 +471,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 2522.41
-  },
-  {
-    "strategy": "TV_Gann_Swing_MultiLayer",
-    "symbol": "ETH",
-    "tf": "4h",
-    "wr": 70.4,
-    "trades": 108,
-    "pf": 5.06,
-    "source": "hunter2_high.log",
-    "plateau": true,
-    "score": 2506.76
   },
   {
     "strategy": "TV_Linear_Regression_Channel",
@@ -746,17 +735,6 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 2158.11
-  },
-  {
-    "strategy": "TV_Weekly_MACD",
-    "symbol": "JTO",
-    "tf": "1d",
-    "wr": 88.5,
-    "trades": 26,
-    "pf": 4.917,
-    "source": "sandbox_h1_1h_4h_1d_progress.json",
-    "plateau": true,
-    "score": 2151.3
   },
   {
     "strategy": "TV_DrawOnLiquidity",
@@ -1804,6 +1782,17 @@
     "score": 1678.34
   },
   {
+    "strategy": "TV_Gann_Swing_MultiLayer",
+    "symbol": "ETH",
+    "tf": "4h",
+    "wr": 70.4,
+    "trades": 108,
+    "pf": 5.06,
+    "source": "hunter2_high.log",
+    "plateau": false,
+    "score": 1671.17
+  },
+  {
     "strategy": "TV_OrderFlow_Momentum_Proxy",
     "symbol": "XRP",
     "tf": "1d",
@@ -2682,6 +2671,17 @@
     "source": "sandbox_h2_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 1441.44
+  },
+  {
+    "strategy": "TV_Weekly_MACD",
+    "symbol": "JTO",
+    "tf": "1d",
+    "wr": 88.5,
+    "trades": 26,
+    "pf": 4.917,
+    "source": "sandbox_h1_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 1434.2
   },
   {
     "strategy": "TV_Weekly_MACD",
@@ -4024,6 +4024,17 @@
     "source": "sandbox_h1_1h_4h_1d_progress.json",
     "plateau": false,
     "score": 1336.02
+  },
+  {
+    "strategy": "TV_Linear_Regression_Channel",
+    "symbol": "ONDO",
+    "tf": "4h",
+    "wr": 78.4,
+    "trades": 51,
+    "pf": 2.86,
+    "source": "hunter5_high.log",
+    "plateau": true,
+    "score": 1328.95
   },
   {
     "strategy": "TV_Linear_Regression_Channel",
@@ -7874,17 +7885,6 @@
     "source": "hunter8_high.log",
     "plateau": false,
     "score": 890.52
-  },
-  {
-    "strategy": "TV_Linear_Regression_Channel",
-    "symbol": "ONDO",
-    "tf": "4h",
-    "wr": 78.4,
-    "trades": 51,
-    "pf": 2.86,
-    "source": "hunter5_high.log",
-    "plateau": false,
-    "score": 885.96
   },
   {
     "strategy": "TV_SR_Trendlines",
