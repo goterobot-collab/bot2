@@ -2,11 +2,11 @@
   "_doc": "Sandbox final master grail list for V8 injection",
   "_generated_at": "auto",
   "_filters": "tier A: plateau+MC<.05 | tier B: plateau OR MC<.05 | tier C: n>=30 & WR>=65 & PF>=1.3",
-  "_count": 88,
+  "_count": 147,
   "_count_by_tier": {
     "A": 1,
     "B": 57,
-    "C": 30
+    "C": 89
   },
   "grails": [
     {
@@ -403,6 +403,24 @@
       "ready_for_v8": true
     },
     {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "AGT",
+      "tf": "4h",
+      "wr": 87.0,
+      "trades": 23,
+      "pf": 8.764,
+      "source": "sandbox_h1_1h_4h_1d_progress.json",
+      "plateau": true,
+      "score": 3634.75,
+      "mc_p_value": 0.478,
+      "plateau_confirmed": true,
+      "tier": "B",
+      "validation": [
+        "plateau"
+      ],
+      "ready_for_v8": true
+    },
+    {
       "strategy": "TV_Weekly_MACD",
       "symbol": "WLD",
       "tf": "1d",
@@ -705,25 +723,6 @@
       "ready_for_v8": true
     },
     {
-      "strategy": "TV_Cointegration_PairsTrading",
-      "symbol": "AGT",
-      "tf": "4h",
-      "wr": 79.2,
-      "trades": 48,
-      "pf": 2.69,
-      "source": "hunter1_mp.log",
-      "plateau": true,
-      "score": 1243.72,
-      "mc_p_value": 0.478,
-      "plateau_confirmed": true,
-      "tier": "B",
-      "validation": [
-        "plateau",
-        "n_threshold"
-      ],
-      "ready_for_v8": true
-    },
-    {
       "strategy": "TV_Pivot_Reversal_Backtest",
       "symbol": "JUP",
       "tf": "1d",
@@ -837,6 +836,25 @@
       "ready_for_v8": true
     },
     {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "SFP",
+      "tf": "1d",
+      "wr": 82.6,
+      "trades": 241,
+      "pf": 1.445,
+      "source": "sandbox_h1_1h_4h_1d_progress.json",
+      "plateau": true,
+      "score": 982.71,
+      "mc_p_value": 0.574,
+      "plateau_confirmed": true,
+      "tier": "B",
+      "validation": [
+        "plateau",
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
       "strategy": "TV_BTC_Beta_Residual",
       "symbol": "JUP",
       "tf": "1d",
@@ -851,25 +869,6 @@
       "tier": "B",
       "validation": [
         "monte_carlo",
-        "n_threshold"
-      ],
-      "ready_for_v8": true
-    },
-    {
-      "strategy": "TV_VolumeProfile_Reversion",
-      "symbol": "SFP",
-      "tf": "1d",
-      "wr": 82.1,
-      "trades": 234,
-      "pf": 1.36,
-      "source": "hunter1_mp.log",
-      "plateau": true,
-      "score": 914.39,
-      "mc_p_value": 0.574,
-      "plateau_confirmed": true,
-      "tier": "B",
-      "validation": [
-        "plateau",
         "n_threshold"
       ],
       "ready_for_v8": true
@@ -989,6 +988,24 @@
       "ready_for_v8": true
     },
     {
+      "strategy": "TV_Momentum_Strategy_REV",
+      "symbol": "AGT",
+      "tf": "1d",
+      "wr": 75.0,
+      "trades": 28,
+      "pf": 1.922,
+      "source": "sandbox_h2_1h_4h_1d_progress.json",
+      "plateau": true,
+      "score": 728.09,
+      "mc_p_value": null,
+      "plateau_confirmed": true,
+      "tier": "B",
+      "validation": [
+        "plateau"
+      ],
+      "ready_for_v8": true
+    },
+    {
       "strategy": "TV_Linear_Regression_Channel",
       "symbol": "NEAR",
       "tf": "4h",
@@ -1003,6 +1020,25 @@
       "tier": "B",
       "validation": [
         "monte_carlo",
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_VolumeProfile_Reversion",
+      "symbol": "TIA",
+      "tf": "1d",
+      "wr": 77.5,
+      "trades": 111,
+      "pf": 1.27,
+      "source": "hunter1_mp.log",
+      "plateau": true,
+      "score": 696.63,
+      "mc_p_value": 0.56,
+      "plateau_confirmed": true,
+      "tier": "B",
+      "validation": [
+        "plateau",
         "n_threshold"
       ],
       "ready_for_v8": true
@@ -1065,38 +1101,325 @@
       "ready_for_v8": true
     },
     {
-      "strategy": "TV_Momentum_Strategy_REV",
-      "symbol": "AGT",
-      "tf": "1d",
-      "wr": 75.0,
-      "trades": 28,
-      "pf": 1.922,
-      "source": "sandbox_h2_1h_4h_1d_progress.json",
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "ETH",
+      "tf": "5m",
+      "wr": 93.1,
+      "trades": 1058,
+      "pf": 85.225,
+      "source": "sandbox_h1_5m_15m_progress.json",
       "plateau": false,
-      "score": 485.4,
+      "score": 6484.49,
       "mc_p_value": null,
-      "plateau_confirmed": true,
-      "tier": "B",
+      "plateau_confirmed": false,
+      "tier": "C",
       "validation": [
-        "plateau"
+        "n_threshold"
       ],
       "ready_for_v8": true
     },
     {
-      "strategy": "TV_VolumeProfile_Reversion",
-      "symbol": "TIA",
-      "tf": "1d",
-      "wr": 77.5,
-      "trades": 111,
-      "pf": 1.27,
-      "source": "hunter1_mp.log",
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "SUI",
+      "tf": "5m",
+      "wr": 97.5,
+      "trades": 692,
+      "pf": 217.007,
+      "source": "sandbox_h1_5m_15m_progress.json",
       "plateau": false,
-      "score": 464.42,
-      "mc_p_value": 0.56,
-      "plateau_confirmed": true,
-      "tier": "B",
+      "score": 6377.5,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
       "validation": [
-        "plateau",
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "NEAR",
+      "tf": "5m",
+      "wr": 99.1,
+      "trades": 574,
+      "pf": 568.308,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 6297.18,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "AVAX",
+      "tf": "5m",
+      "wr": 98.9,
+      "trades": 563,
+      "pf": 335.618,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 6265.37,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "APT",
+      "tf": "5m",
+      "wr": 98.6,
+      "trades": 416,
+      "pf": 600.2,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 5948.62,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "GMX",
+      "tf": "5m",
+      "wr": 98.5,
+      "trades": 390,
+      "pf": 706.923,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 5879.18,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "AGT",
+      "tf": "5m",
+      "wr": 96.3,
+      "trades": 243,
+      "pf": 60.058,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 5293.77,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "JTO",
+      "tf": "5m",
+      "wr": 99.5,
+      "trades": 196,
+      "pf": 1513.225,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 5256.79,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "XRP",
+      "tf": "5m",
+      "wr": 96.5,
+      "trades": 202,
+      "pf": 545.452,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 5127.24,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "OP",
+      "tf": "15m",
+      "wr": 99.4,
+      "trades": 158,
+      "pf": 3816.855,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 5038.49,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "SWARMS",
+      "tf": "5m",
+      "wr": 99.4,
+      "trades": 158,
+      "pf": 2381.527,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 5038.49,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "ONDO",
+      "tf": "5m",
+      "wr": 97.2,
+      "trades": 177,
+      "pf": 157.363,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 5036.69,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "ARB",
+      "tf": "5m",
+      "wr": 98.1,
+      "trades": 157,
+      "pf": 628.605,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 4966.41,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "PYTH",
+      "tf": "5m",
+      "wr": 99.2,
+      "trades": 132,
+      "pf": 1082.483,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 4851.23,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "WLD",
+      "tf": "5m",
+      "wr": 97.6,
+      "trades": 127,
+      "pf": 180.27,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 4735.58,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "JTO",
+      "tf": "15m",
+      "wr": 100.0,
+      "trades": 110,
+      "pf": 999.0,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 4709.53,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "LINK",
+      "tf": "5m",
+      "wr": 100.0,
+      "trades": 102,
+      "pf": 999.0,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 4634.73,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "JUP",
+      "tf": "5m",
+      "wr": 100.0,
+      "trades": 97,
+      "pf": 999.0,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 4584.97,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
         "n_threshold"
       ],
       "ready_for_v8": true
@@ -1111,6 +1434,204 @@
       "source": "sandbox_h1_1h_4h_1d_progress.json",
       "plateau": false,
       "score": 4439.42,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Daily_Close_Signal",
+      "symbol": "SFP",
+      "tf": "15m",
+      "wr": 79.2,
+      "trades": 400,
+      "pf": 9.187,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 4361.27,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "DYDX",
+      "tf": "5m",
+      "wr": 100.0,
+      "trades": 77,
+      "pf": 999.0,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 4356.71,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "LTC",
+      "tf": "5m",
+      "wr": 95.6,
+      "trades": 91,
+      "pf": 191.155,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 4322.83,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "SFP",
+      "tf": "5m",
+      "wr": 100.0,
+      "trades": 74,
+      "pf": 999.0,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 4317.49,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Weekly_MACD",
+      "symbol": "SFP",
+      "tf": "15m",
+      "wr": 74.3,
+      "trades": 303,
+      "pf": 12.912,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 4247.75,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Weekly_MACD",
+      "symbol": "LINK",
+      "tf": "5m",
+      "wr": 72.4,
+      "trades": 337,
+      "pf": 23.551,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 4215.89,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "TIA",
+      "tf": "5m",
+      "wr": 100.0,
+      "trades": 64,
+      "pf": 999.0,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 4174.39,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "AVAX",
+      "tf": "15m",
+      "wr": 100.0,
+      "trades": 60,
+      "pf": 999.0,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 4110.87,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "APT",
+      "tf": "15m",
+      "wr": 100.0,
+      "trades": 59,
+      "pf": 999.0,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 4094.34,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "OP",
+      "tf": "5m",
+      "wr": 100.0,
+      "trades": 58,
+      "pf": 999.0,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 4077.54,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Weekly_MACD",
+      "symbol": "JTO",
+      "tf": "5m",
+      "wr": 84.7,
+      "trades": 118,
+      "pf": 14.731,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 4047.92,
       "mc_p_value": null,
       "plateau_confirmed": false,
       "tier": "C",
@@ -1139,6 +1660,114 @@
     },
     {
       "strategy": "TV_Weekly_MACD",
+      "symbol": "DYDX",
+      "tf": "5m",
+      "wr": 71.1,
+      "trades": 266,
+      "pf": 22.171,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3972.53,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Weekly_MACD",
+      "symbol": "SFP",
+      "tf": "5m",
+      "wr": 70.1,
+      "trades": 284,
+      "pf": 15.929,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3962.39,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "INJ",
+      "tf": "5m",
+      "wr": 100.0,
+      "trades": 48,
+      "pf": 999.0,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3891.82,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Weekly_MACD",
+      "symbol": "WLD",
+      "tf": "5m",
+      "wr": 77.9,
+      "trades": 145,
+      "pf": 46.428,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3882.23,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Weekly_MACD",
+      "symbol": "ARB",
+      "tf": "5m",
+      "wr": 75.5,
+      "trades": 163,
+      "pf": 28.031,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3850.4,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Weekly_MACD",
+      "symbol": "ETH",
+      "tf": "5m",
+      "wr": 73.4,
+      "trades": 188,
+      "pf": 23.159,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3847.44,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Weekly_MACD",
       "symbol": "ARB",
       "tf": "1h",
       "wr": 76.3,
@@ -1157,6 +1786,204 @@
     },
     {
       "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "TIA",
+      "tf": "15m",
+      "wr": 100.0,
+      "trades": 39,
+      "pf": 999.0,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3688.88,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Weekly_MACD",
+      "symbol": "JTO",
+      "tf": "15m",
+      "wr": 76.4,
+      "trades": 123,
+      "pf": 10.281,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3682.7,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "LTC",
+      "tf": "15m",
+      "wr": 97.4,
+      "trades": 39,
+      "pf": 355.841,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3592.97,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "SEI",
+      "tf": "5m",
+      "wr": 100.0,
+      "trades": 35,
+      "pf": 999.0,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3583.52,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "ARB",
+      "tf": "15m",
+      "wr": 100.0,
+      "trades": 33,
+      "pf": 999.0,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3526.36,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "JUP",
+      "tf": "15m",
+      "wr": 100.0,
+      "trades": 31,
+      "pf": 999.0,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3465.74,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Daily_Close_Signal",
+      "symbol": "XRP",
+      "tf": "15m",
+      "wr": 79.7,
+      "trades": 187,
+      "pf": 8.288,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3458.95,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Weekly_MACD",
+      "symbol": "INJ",
+      "tf": "15m",
+      "wr": 72.4,
+      "trades": 116,
+      "pf": 20.345,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3447.81,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
+      "symbol": "SEI",
+      "tf": "15m",
+      "wr": 100.0,
+      "trades": 30,
+      "pf": 999.0,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3433.99,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Weekly_MACD",
+      "symbol": "INJ",
+      "tf": "5m",
+      "wr": 70.5,
+      "trades": 122,
+      "pf": 27.1,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3392.59,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Daily_Close_Signal",
+      "symbol": "GMX",
+      "tf": "15m",
+      "wr": 80.7,
+      "trades": 450,
+      "pf": 6.619,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3264.46,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HTF_EMA_Gate",
       "symbol": "ETH",
       "tf": "1h",
       "wr": 82.2,
@@ -1165,6 +1992,78 @@
       "source": "sandbox_h1_1h_4h_1d_progress.json",
       "plateau": false,
       "score": 3147.14,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Daily_Close_Signal",
+      "symbol": "ETH",
+      "tf": "15m",
+      "wr": 81.7,
+      "trades": 240,
+      "pf": 7.004,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3138.55,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Daily_Close_Signal",
+      "symbol": "OP",
+      "tf": "15m",
+      "wr": 82.9,
+      "trades": 41,
+      "pf": 13.973,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 3098.53,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Weekly_MACD",
+      "symbol": "SWARMS",
+      "tf": "5m",
+      "wr": 71.0,
+      "trades": 69,
+      "pf": 9.624,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 2903.01,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_HurstExponent_TrendFade",
+      "symbol": "LTC",
+      "tf": "1d",
+      "wr": 71.0,
+      "trades": 31,
+      "pf": 9.294,
+      "source": "sandbox_h1_1h_4h_1d_progress.json",
+      "plateau": false,
+      "score": 2286.95,
       "mc_p_value": null,
       "plateau_confirmed": false,
       "tier": "C",
@@ -1210,6 +2109,24 @@
       "ready_for_v8": true
     },
     {
+      "strategy": "TV_Daily_Close_Signal",
+      "symbol": "LTC",
+      "tf": "5m",
+      "wr": 71.3,
+      "trades": 1386,
+      "pf": 2.913,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 1502.67,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
       "strategy": "TV_Cointegration_PairsTrading",
       "symbol": "JUP",
       "tf": "4h",
@@ -1219,6 +2136,96 @@
       "source": "hunter1_mp.log",
       "plateau": false,
       "score": 1500.99,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Daily_Close_Signal",
+      "symbol": "SWARMS",
+      "tf": "5m",
+      "wr": 71.3,
+      "trades": 834,
+      "pf": 2.659,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 1275.43,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "SFP",
+      "tf": "1d",
+      "wr": 81.4,
+      "trades": 59,
+      "pf": 3.637,
+      "source": "sandbox_h1_1h_4h_1d_progress.json",
+      "plateau": false,
+      "score": 1212.14,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Daily_Close_Signal",
+      "symbol": "OP",
+      "tf": "5m",
+      "wr": 70.2,
+      "trades": 3208,
+      "pf": 2.055,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 1164.72,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Daily_Close_Signal",
+      "symbol": "AVAX",
+      "tf": "5m",
+      "wr": 73.8,
+      "trades": 122,
+      "pf": 2.811,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 998.3,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Daily_Close_Signal",
+      "symbol": "TIA",
+      "tf": "5m",
+      "wr": 76.8,
+      "trades": 82,
+      "pf": 2.555,
+      "source": "sandbox_h1_5m_15m_progress.json",
+      "plateau": false,
+      "score": 867.08,
       "mc_p_value": null,
       "plateau_confirmed": false,
       "tier": "C",
@@ -1246,24 +2253,6 @@
       "ready_for_v8": true
     },
     {
-      "strategy": "TV_Cointegration_PairsTrading",
-      "symbol": "ARB",
-      "tf": "4h",
-      "wr": 72.2,
-      "trades": 54,
-      "pf": 2.9,
-      "source": "hunter1_mp.log",
-      "plateau": false,
-      "score": 839.06,
-      "mc_p_value": null,
-      "plateau_confirmed": false,
-      "tier": "C",
-      "validation": [
-        "n_threshold"
-      ],
-      "ready_for_v8": true
-    },
-    {
       "strategy": "TV_ABCD_Pattern_Daveatt",
       "symbol": "LTC",
       "tf": "1d",
@@ -1282,24 +2271,6 @@
       "ready_for_v8": true
     },
     {
-      "strategy": "TV_Cointegration_PairsTrading",
-      "symbol": "LINK",
-      "tf": "1d",
-      "wr": 80.0,
-      "trades": 35,
-      "pf": 1.78,
-      "source": "hunter1_mp.log",
-      "plateau": true,
-      "score": 765.44,
-      "mc_p_value": 0.566,
-      "plateau_confirmed": false,
-      "tier": "C",
-      "validation": [
-        "n_threshold"
-      ],
-      "ready_for_v8": true
-    },
-    {
       "strategy": "TV_Linear_Regression_Channel",
       "symbol": "GMX",
       "tf": "4h",
@@ -1309,6 +2280,24 @@
       "source": "hunter5_high.log",
       "plateau": false,
       "score": 748.51,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "ARB",
+      "tf": "4h",
+      "wr": 73.6,
+      "trades": 53,
+      "pf": 2.483,
+      "source": "sandbox_h1_1h_4h_1d_progress.json",
+      "plateau": false,
+      "score": 728.98,
       "mc_p_value": null,
       "plateau_confirmed": false,
       "tier": "C",
@@ -1354,6 +2343,24 @@
       "ready_for_v8": true
     },
     {
+      "strategy": "TV_MFI_VolumeConfirmation",
+      "symbol": "DYDX",
+      "tf": "1d",
+      "wr": 71.0,
+      "trades": 31,
+      "pf": 2.529,
+      "source": "sandbox_h1_1h_4h_1d_progress.json",
+      "plateau": false,
+      "score": 622.3,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
       "strategy": "TV_Cointegration_PairsTrading",
       "symbol": "SWARMS",
       "tf": "4h",
@@ -1372,6 +2379,24 @@
       "ready_for_v8": true
     },
     {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "GMX",
+      "tf": "4h",
+      "wr": 71.6,
+      "trades": 116,
+      "pf": 1.816,
+      "source": "sandbox_h1_1h_4h_1d_progress.json",
+      "plateau": false,
+      "score": 619.2,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
       "strategy": "TV_VolumeDelta_Imbalance",
       "symbol": "SUI",
       "tf": "4h",
@@ -1381,6 +2406,24 @@
       "source": "hunter3_high.log",
       "plateau": false,
       "score": 609.31,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "PYTH",
+      "tf": "4h",
+      "wr": 72.7,
+      "trades": 227,
+      "pf": 1.541,
+      "source": "sandbox_h1_1h_4h_1d_progress.json",
+      "plateau": false,
+      "score": 608.25,
       "mc_p_value": null,
       "plateau_confirmed": false,
       "tier": "C",
@@ -1525,6 +2568,24 @@
       "source": "hunter2_high.log",
       "plateau": false,
       "score": 508.74,
+      "mc_p_value": null,
+      "plateau_confirmed": false,
+      "tier": "C",
+      "validation": [
+        "n_threshold"
+      ],
+      "ready_for_v8": true
+    },
+    {
+      "strategy": "TV_Cointegration_PairsTrading",
+      "symbol": "TIA",
+      "tf": "4h",
+      "wr": 70.6,
+      "trades": 51,
+      "pf": 1.73,
+      "source": "sandbox_h1_1h_4h_1d_progress.json",
+      "plateau": false,
+      "score": 482.6,
       "mc_p_value": null,
       "plateau_confirmed": false,
       "tier": "C",
