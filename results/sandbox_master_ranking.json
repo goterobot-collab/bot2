@@ -2431,6 +2431,17 @@
     "score": 1791.76
   },
   {
+    "strategy": "TV_VolatilityAdaptive_Reversal",
+    "symbol": "JUP",
+    "tf": "1h",
+    "wr": 100.0,
+    "trades": 5,
+    "pf": 999.0,
+    "source": "sandbox_h1_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 1791.76
+  },
+  {
     "strategy": "TV_PivotSuperTrendTrendFilter",
     "symbol": "SUI",
     "tf": "1d",
@@ -7744,6 +7755,50 @@
     "score": 1098.61
   },
   {
+    "strategy": "TV_VolatilityAdaptive_Reversal",
+    "symbol": "ETH",
+    "tf": "1h",
+    "wr": 100.0,
+    "trades": 2,
+    "pf": 999.0,
+    "source": "sandbox_h1_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 1098.61
+  },
+  {
+    "strategy": "TV_Ensemble_Ridge_ML",
+    "symbol": "XRP",
+    "tf": "1h",
+    "wr": 100.0,
+    "trades": 2,
+    "pf": 999.0,
+    "source": "sandbox_h1_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 1098.61
+  },
+  {
+    "strategy": "TV_VolatilityAdaptive_Reversal",
+    "symbol": "OP",
+    "tf": "1h",
+    "wr": 100.0,
+    "trades": 2,
+    "pf": 999.0,
+    "source": "sandbox_h1_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 1098.61
+  },
+  {
+    "strategy": "TV_VolSpread_Arbitrage",
+    "symbol": "OP",
+    "tf": "1h",
+    "wr": 100.0,
+    "trades": 2,
+    "pf": 999.0,
+    "source": "sandbox_h1_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 1098.61
+  },
+  {
     "strategy": "TV_AGProSupplyDemand",
     "symbol": "ONDO",
     "tf": "15m",
@@ -9106,6 +9161,17 @@
     "source": "hunter5_high.log",
     "plateau": false,
     "score": 885.96
+  },
+  {
+    "strategy": "TV_VolSpread_Arbitrage",
+    "symbol": "LTC",
+    "tf": "1h",
+    "wr": 80.0,
+    "trades": 10,
+    "pf": 4.573,
+    "source": "sandbox_h1_1h_4h_1d_progress.json",
+    "plateau": false,
+    "score": 877.25
   },
   {
     "strategy": "TV_SR_Trendlines",

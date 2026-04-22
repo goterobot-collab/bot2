@@ -1293,7 +1293,7 @@
         "vol_threshold": 1.53062962220895
       }
     },
-    "passing_combos": 23,
+    "passing_combos": 24,
     "all_passing": [
       {
         "sym": "ARB",
@@ -1545,6 +1545,18 @@
           "atr_period": 18,
           "atr_mult": 2.0616583771746537,
           "vol_threshold": 2.2156805481486366
+        }
+      },
+      {
+        "sym": "AGT",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 12,
+          "atr_mult": 2.816951617142369,
+          "vol_threshold": 1.727101194892889
         }
       },
       {

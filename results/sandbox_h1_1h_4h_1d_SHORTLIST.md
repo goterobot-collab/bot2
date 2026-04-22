@@ -1,10 +1,10 @@
 # HUNTER1_1h_4h_1d shortlist
 
 - Batches: 3566, 3567, 3568, 3569
-- Tasks completed: 1,469
-- Grails passing R24 gate: **214**
+- Tasks completed: 1,484
+- Grails passing R24 gate: **215**
 - Strategies promoted (>=1 combo pass): **18**
-- Elapsed: 4069s
+- Elapsed: 1308s
 
 | Rank | Strategy | Sym | TF | WR | trades | PF | total% | params |
 |------|----------|-----|----|-----|--------|-----|--------|--------|
@@ -143,68 +143,68 @@
 | 133 | `TV_VolSpread_Arbitrage` | OP | 1h | 100.0% | 2 | 999.00 | 8.7% | `{"realized_vol_period":10,"implied_vol_ma_period":22,"threshold":0.2955590664420748}` |
 | 134 | `TV_VolSpread_Arbitrage` | TIA | 1h | 100.0% | 2 | 999.00 | 7.8% | `{"realized_vol_period":16,"implied_vol_ma_period":30,"threshold":0.05563733696216279}` |
 | 135 | `TV_SupplyDemand_Zones` | SWARMS | 1h | 100.0% | 3 | 999.00 | 3.3% | `{"zone_lookback":20,"strength_threshold":1.8645392338874216,"close_proximity":0.007370856290199592}` |
-| 136 | `TV_Weekly_MACD` | APT | 1d | 97.6% | 42 | 142.73 | 552.5% | `{"macd_fast":9,"macd_slow":20,"macd_sig":9,"ema_trend":99}` |
-| 137 | `TV_Daily_Close_Signal` | INJ | 1h | 97.6% | 41 | 74.94 | 184.3% | `{"daily_ema":17,"ema_trend":135,"rsi_len":16,"rsi_os":42}` |
-| 138 | `TV_Weekly_MACD` | ARB | 1d | 95.0% | 20 | 50.47 | 313.5% | `{"macd_fast":20,"macd_slow":25,"macd_sig":13,"ema_trend":170}` |
-| 139 | `TV_HTF_EMA_Gate` | NEAR | 1h | 94.7% | 19 | 557.11 | 111.4% | `{"htf_hours":6,"ema_len":27,"rsi_len":15,"rsi_os":30}` |
-| 140 | `TV_Weekly_MACD` | TIA | 1d | 94.1% | 17 | 41.87 | 307.7% | `{"macd_fast":8,"macd_slow":33,"macd_sig":13,"ema_trend":198}` |
-| 141 | `TV_Cointegration_PairsTrading` | JTO | 1d | 94.1% | 17 | 9.56 | 60.7% | `{"lookback":90,"zscore_entry":2.0173662568037134,"zscore_exit":0.3255716785579136}` |
-| 142 | `TV_Weekly_MACD` | ONDO | 1d | 93.3% | 15 | 50.51 | 153.0% | `{"macd_fast":16,"macd_slow":23,"macd_sig":7,"ema_trend":174}` |
-| 143 | `TV_FairValueGap_Trading` | AGT | 1d | 90.0% | 10 | 10.93 | 39.2% | `{"min_gap_pips":0.010371285044272848,"ma_filter":58}` |
-| 144 | `TV_Weekly_MACD` | WLD | 1d | 90.0% | 20 | 8.53 | 323.2% | `{"macd_fast":18,"macd_slow":32,"macd_sig":6,"ema_trend":199}` |
-| 145 | `TV_VolatilityCluster_Fade` | GMX | 4h | 90.0% | 10 | 6.66 | 25.4% | `{"hv_period":14,"cluster_threshold":1.928405867890932,"lookback":9}` |
-| 146 | `TV_Cointegration_PairsTrading` | APT | 1d | 90.0% | 10 | 4.49 | 30.4% | `{"lookback":79,"zscore_entry":2.730206499887703,"zscore_exit":0.22102582835568516}` |
-| 147 | `TV_Weekly_MACD` | NEAR | 1d | 89.1% | 55 | 27.39 | 998.2% | `{"macd_fast":9,"macd_slow":22,"macd_sig":9,"ema_trend":193}` |
-| 148 | `TV_HTF_EMA_Gate` | INJ | 1h | 88.6% | 149 | 25.99 | 510.6% | `{"htf_hours":6,"ema_len":36,"rsi_len":18,"rsi_os":42}` |
-| 149 | `TV_Weekly_MACD` | JTO | 1d | 88.5% | 26 | 4.92 | 242.4% | `{"macd_fast":8,"macd_slow":21,"macd_sig":7,"ema_trend":134}` |
-| 150 | `TV_Weekly_MACD` | INJ | 1d | 88.0% | 25 | 32.41 | 274.0% | `{"macd_fast":11,"macd_slow":23,"macd_sig":7,"ema_trend":130}` |
-| 151 | `TV_HTF_EMA_Gate` | JUP | 1h | 87.8% | 98 | 29.15 | 312.6% | `{"htf_hours":6,"ema_len":58,"rsi_len":17,"rsi_os":42}` |
-| 152 | `TV_Cointegration_PairsTrading` | ARB | 1d | 87.5% | 8 | 34.06 | 41.5% | `{"lookback":98,"zscore_entry":2.9783150301011916,"zscore_exit":0.8122777731241551}` |
-| 153 | `TV_HTF_EMA_Gate` | PYTH | 1h | 87.5% | 16 | 17.15 | 49.9% | `{"htf_hours":6,"ema_len":91,"rsi_len":14,"rsi_os":33}` |
-| 154 | `TV_VolatilityCluster_Fade` | APT | 4h | 87.5% | 16 | 15.94 | 46.8% | `{"hv_period":20,"cluster_threshold":1.7793119822410834,"lookback":9}` |
-| 155 | `TV_Weekly_MACD` | JUP | 1d | 87.5% | 16 | 5.65 | 200.5% | `{"macd_fast":8,"macd_slow":35,"macd_sig":8,"ema_trend":200}` |
-| 156 | `TV_Weekly_MACD` | XRP | 1d | 87.0% | 23 | 12.68 | 207.8% | `{"macd_fast":12,"macd_slow":18,"macd_sig":13,"ema_trend":132}` |
-| 157 | `TV_Cointegration_PairsTrading` | AGT | 4h | 87.0% | 23 | 8.76 | 64.3% | `{"lookback":96,"zscore_entry":2.7899393299292026,"zscore_exit":0.8242169902098064}` |
-| 158 | `TV_Weekly_MACD` | AVAX | 1d | 86.9% | 61 | 32.62 | 1126.5% | `{"macd_fast":11,"macd_slow":21,"macd_sig":12,"ema_trend":108}` |
-| 159 | `TV_Weekly_MACD` | SUI | 1d | 86.5% | 37 | 20.02 | 600.1% | `{"macd_fast":9,"macd_slow":22,"macd_sig":7,"ema_trend":174}` |
-| 160 | `TV_Weekly_MACD` | OP | 1d | 86.0% | 57 | 13.37 | 757.4% | `{"macd_fast":10,"macd_slow":19,"macd_sig":9,"ema_trend":109}` |
-| 161 | `TV_Weekly_MACD` | ETH | 1d | 85.7% | 35 | 37.42 | 983.1% | `{"macd_fast":9,"macd_slow":29,"macd_sig":11,"ema_trend":181}` |
-| 162 | `TV_Cointegration_PairsTrading` | WLD | 1d | 85.7% | 14 | 5.64 | 97.0% | `{"lookback":95,"zscore_entry":2.0875756801319767,"zscore_exit":0.8467336877054008}` |
-| 163 | `TV_Weekly_MACD` | GMX | 1d | 85.4% | 41 | 32.61 | 399.6% | `{"macd_fast":8,"macd_slow":37,"macd_sig":5,"ema_trend":59}` |
-| 164 | `TV_Weekly_MACD` | LINK | 1d | 85.3% | 68 | 10.31 | 695.5% | `{"macd_fast":13,"macd_slow":39,"macd_sig":5,"ema_trend":199}` |
-| 165 | `TV_Cointegration_PairsTrading` | DYDX | 1d | 84.6% | 26 | 2.43 | 74.0% | `{"lookback":78,"zscore_entry":2.3940284275368153,"zscore_exit":0.9354863432033582}` |
-| 166 | `TV_VolatilityCluster_Fade` | TIA | 4h | 83.3% | 12 | 65.54 | 42.4% | `{"hv_period":25,"cluster_threshold":1.5730402744060328,"lookback":9}` |
-| 167 | `TV_VolatilityCluster_Fade` | NEAR | 1d | 83.3% | 12 | 7.47 | 76.8% | `{"hv_period":25,"cluster_threshold":1.6019108287883803,"lookback":5}` |
-| 168 | `TV_VolumeProfile_Reversion` | JTO | 1d | 83.0% | 88 | 1.21 | 85.6% | `{"vwap_lookback":30,"reversion_atr_mult":0.7512542426355107}` |
-| 169 | `TV_VolumeProfile_Reversion` | SFP | 1d | 82.6% | 241 | 1.45 | 366.7% | `{"vwap_lookback":27,"reversion_atr_mult":0.3621242956356914}` |
-| 170 | `TV_HTF_EMA_Gate` | ETH | 1h | 82.2% | 45 | 18.33 | 176.8% | `{"htf_hours":5,"ema_len":26,"rsi_len":18,"rsi_os":36}` |
-| 171 | `TV_VolumeProfile_Reversion` | AGT | 1d | 82.1% | 39 | 2.00 | 243.4% | `{"vwap_lookback":27,"reversion_atr_mult":0.5932336174756976}` |
-| 172 | `TV_Weekly_MACD` | DYDX | 1d | 81.7% | 60 | 8.62 | 687.0% | `{"macd_fast":8,"macd_slow":27,"macd_sig":9,"ema_trend":160}` |
-| 173 | `TV_Cointegration_PairsTrading` | LINK | 1d | 81.5% | 27 | 2.70 | 95.8% | `{"lookback":91,"zscore_entry":2.913185156258646,"zscore_exit":0.5668150750396039}` |
-| 174 | `TV_Cointegration_PairsTrading` | SFP | 1d | 81.4% | 59 | 3.64 | 220.8% | `{"lookback":99,"zscore_entry":1.8014456175114035,"zscore_exit":0.20706202889414566}` |
-| 175 | `TV_Weekly_MACD` | LTC | 1d | 80.0% | 90 | 28.20 | 1744.4% | `{"macd_fast":10,"macd_slow":27,"macd_sig":7,"ema_trend":65}` |
-| 176 | `TV_VolSpread_Arbitrage` | LTC | 1h | 80.0% | 10 | 4.57 | 172.9% | `{"realized_vol_period":15,"implied_vol_ma_period":14,"threshold":0.11796802114547615}` |
-| 177 | `TV_VolatilityAdaptive_Reversal` | OP | 4h | 80.0% | 10 | 4.10 | 27.2% | `{"atr_period":17,"atr_mult":2.347043209516514,"vol_threshold":1.5078033643015392}` |
-| 178 | `TV_HurstExponent_TrendFade` | PYTH | 1d | 80.0% | 10 | 3.60 | 190.3% | `{"lookback":62,"recent_bars":13}` |
-| 179 | `TV_VolumeProfile_Reversion` | SWARMS | 1d | 78.0% | 50 | 1.70 | 238.2% | `{"vwap_lookback":29,"reversion_atr_mult":0.3433801337407672}` |
-| 180 | `TV_MFI_VolumeConfirmation` | INJ | 1d | 77.8% | 9 | 5.56 | 30.2% | `{"mfi_period":19,"mfi_oversold":20,"mfi_overbought":76}` |
-| 181 | `TV_Cointegration_PairsTrading` | SWARMS | 4h | 77.3% | 22 | 1.59 | 43.3% | `{"lookback":79,"zscore_entry":2.7540543806661,"zscore_exit":0.9139279795353574}` |
-| 182 | `TV_FairValueGap_Trading` | ONDO | 1d | 76.9% | 13 | 3.83 | 26.7% | `{"min_gap_pips":0.01701342521064204,"ma_filter":62}` |
-| 183 | `TV_Cointegration_PairsTrading` | OP | 1d | 76.9% | 13 | 1.89 | 24.9% | `{"lookback":60,"zscore_entry":2.8423150500781027,"zscore_exit":0.9538023102387485}` |
-| 184 | `TV_OrderBlock_BOSTrading` | PENDLE | 4h | 76.5% | 17 | 8.28 | 32.9% | `{"lookback":30,"bos_threshold":0.015195091899232942,"ob_margin":0.005913286178392619}` |
-| 185 | `TV_Weekly_MACD` | ARB | 1h | 76.3% | 135 | 10.61 | 777.7% | `{"macd_fast":20,"macd_slow":18,"macd_sig":9,"ema_trend":114}` |
-| 186 | `TV_Cointegration_PairsTrading` | JUP | 4h | 75.5% | 53 | 3.99 | 75.3% | `{"lookback":85,"zscore_entry":2.496779148770651,"zscore_exit":0.25625505304966856}` |
-| 187 | `TV_HTF_RSI_Confirm` | SFP | 1d | 75.0% | 8 | 10.16 | 82.9% | `{"htf_hours":7,"rsi_len":21,"rsi_os":40,"ema_trend":175}` |
-| 188 | `TV_HTF_RSI_Confirm` | LTC | 1d | 75.0% | 12 | 6.95 | 72.4% | `{"htf_hours":5,"rsi_len":8,"rsi_os":31,"ema_trend":59}` |
-| 189 | `TV_HurstExponent_TrendFade` | SUI | 1d | 75.0% | 12 | 5.15 | 217.5% | `{"lookback":55,"recent_bars":11}` |
-| 190 | `TV_FairValueGap_Trading` | JUP | 1d | 75.0% | 20 | 4.39 | 39.6% | `{"min_gap_pips":0.01994331475138847,"ma_filter":76}` |
-| 191 | `TV_VolatilityCluster_Fade` | ONDO | 4h | 75.0% | 12 | 1.55 | 9.0% | `{"hv_period":17,"cluster_threshold":1.7176323128740068,"lookback":10}` |
-| 192 | `TV_MFI_VolumeConfirmation` | SWARMS | 1d | 75.0% | 20 | 1.49 | 25.4% | `{"mfi_period":16,"mfi_oversold":21,"mfi_overbought":70}` |
-| 193 | `TV_HurstExponent_TrendFade` | ONDO | 1d | 75.0% | 8 | 1.38 | 16.0% | `{"lookback":54,"recent_bars":11}` |
-| 194 | `TV_Cointegration_PairsTrading` | ONDO | 4h | 74.6% | 142 | 1.63 | 94.7% | `{"lookback":93,"zscore_entry":1.570646867136574,"zscore_exit":0.6856384748581017}` |
-| 195 | `TV_MFI_VolumeConfirmation` | AGT | 1d | 73.7% | 19 | 5.97 | 84.1% | `{"mfi_period":15,"mfi_oversold":31,"mfi_overbought":63}` |
-| 196 | `TV_Cointegration_PairsTrading` | ARB | 4h | 73.6% | 53 | 2.48 | 52.2% | `{"lookback":92,"zscore_entry":2.8795110512272557,"zscore_exit":0.4371244201801223}` |
-| 197 | `TV_HTF_RSI_Confirm` | JUP | 1h | 73.3% | 15 | 3.42 | 18.5% | `{"htf_hours":2,"rsi_len":20,"rsi_os":34,"ema_trend":188}` |
-| 198 | `TV_AlternatingSignals_MultiTFConfirm` | WLD | 1d | 73.1% | 26 | 2.89 | 76.1% | `{"fast_ema":7,"slow_ema":24,"rsi_period":14}` |
-| 199 | `TV_Cointegration_PairsTrading` | SUI | 4h | 72.9% | 177 | 1.39 | 86.5% | `{"lookback":91,"zscore_entry":2.1256839943407835,"zscore_exit":0.4807109699818528}` |
-| 200 | `TV_TimeSeriesMomentum_LSM` | AGT | 1d | 72.7% | 11 | 2.20 | 98.0% | `{"momentum_period":38,"lsm_threshold":0.887633089034072}` |
+| 136 | `TV_VolatilityAdaptive_Reversal` | AGT | 4h | 100.0% | 4 | 999.00 | 24.4% | `{"atr_period":12,"atr_mult":2.816951617142369,"vol_threshold":1.727101194892889}` |
+| 137 | `TV_Weekly_MACD` | APT | 1d | 97.6% | 42 | 142.73 | 552.5% | `{"macd_fast":9,"macd_slow":20,"macd_sig":9,"ema_trend":99}` |
+| 138 | `TV_Daily_Close_Signal` | INJ | 1h | 97.6% | 41 | 74.94 | 184.3% | `{"daily_ema":17,"ema_trend":135,"rsi_len":16,"rsi_os":42}` |
+| 139 | `TV_Weekly_MACD` | ARB | 1d | 95.0% | 20 | 50.47 | 313.5% | `{"macd_fast":20,"macd_slow":25,"macd_sig":13,"ema_trend":170}` |
+| 140 | `TV_HTF_EMA_Gate` | NEAR | 1h | 94.7% | 19 | 557.11 | 111.4% | `{"htf_hours":6,"ema_len":27,"rsi_len":15,"rsi_os":30}` |
+| 141 | `TV_Weekly_MACD` | TIA | 1d | 94.1% | 17 | 41.87 | 307.7% | `{"macd_fast":8,"macd_slow":33,"macd_sig":13,"ema_trend":198}` |
+| 142 | `TV_Cointegration_PairsTrading` | JTO | 1d | 94.1% | 17 | 9.56 | 60.7% | `{"lookback":90,"zscore_entry":2.0173662568037134,"zscore_exit":0.3255716785579136}` |
+| 143 | `TV_Weekly_MACD` | ONDO | 1d | 93.3% | 15 | 50.51 | 153.0% | `{"macd_fast":16,"macd_slow":23,"macd_sig":7,"ema_trend":174}` |
+| 144 | `TV_FairValueGap_Trading` | AGT | 1d | 90.0% | 10 | 10.93 | 39.2% | `{"min_gap_pips":0.010371285044272848,"ma_filter":58}` |
+| 145 | `TV_Weekly_MACD` | WLD | 1d | 90.0% | 20 | 8.53 | 323.2% | `{"macd_fast":18,"macd_slow":32,"macd_sig":6,"ema_trend":199}` |
+| 146 | `TV_VolatilityCluster_Fade` | GMX | 4h | 90.0% | 10 | 6.66 | 25.4% | `{"hv_period":14,"cluster_threshold":1.928405867890932,"lookback":9}` |
+| 147 | `TV_Cointegration_PairsTrading` | APT | 1d | 90.0% | 10 | 4.49 | 30.4% | `{"lookback":79,"zscore_entry":2.730206499887703,"zscore_exit":0.22102582835568516}` |
+| 148 | `TV_Weekly_MACD` | NEAR | 1d | 89.1% | 55 | 27.39 | 998.2% | `{"macd_fast":9,"macd_slow":22,"macd_sig":9,"ema_trend":193}` |
+| 149 | `TV_HTF_EMA_Gate` | INJ | 1h | 88.6% | 149 | 25.99 | 510.6% | `{"htf_hours":6,"ema_len":36,"rsi_len":18,"rsi_os":42}` |
+| 150 | `TV_Weekly_MACD` | JTO | 1d | 88.5% | 26 | 4.92 | 242.4% | `{"macd_fast":8,"macd_slow":21,"macd_sig":7,"ema_trend":134}` |
+| 151 | `TV_Weekly_MACD` | INJ | 1d | 88.0% | 25 | 32.41 | 274.0% | `{"macd_fast":11,"macd_slow":23,"macd_sig":7,"ema_trend":130}` |
+| 152 | `TV_HTF_EMA_Gate` | JUP | 1h | 87.8% | 98 | 29.15 | 312.6% | `{"htf_hours":6,"ema_len":58,"rsi_len":17,"rsi_os":42}` |
+| 153 | `TV_Cointegration_PairsTrading` | ARB | 1d | 87.5% | 8 | 34.06 | 41.5% | `{"lookback":98,"zscore_entry":2.9783150301011916,"zscore_exit":0.8122777731241551}` |
+| 154 | `TV_HTF_EMA_Gate` | PYTH | 1h | 87.5% | 16 | 17.15 | 49.9% | `{"htf_hours":6,"ema_len":91,"rsi_len":14,"rsi_os":33}` |
+| 155 | `TV_VolatilityCluster_Fade` | APT | 4h | 87.5% | 16 | 15.94 | 46.8% | `{"hv_period":20,"cluster_threshold":1.7793119822410834,"lookback":9}` |
+| 156 | `TV_Weekly_MACD` | JUP | 1d | 87.5% | 16 | 5.65 | 200.5% | `{"macd_fast":8,"macd_slow":35,"macd_sig":8,"ema_trend":200}` |
+| 157 | `TV_Weekly_MACD` | XRP | 1d | 87.0% | 23 | 12.68 | 207.8% | `{"macd_fast":12,"macd_slow":18,"macd_sig":13,"ema_trend":132}` |
+| 158 | `TV_Cointegration_PairsTrading` | AGT | 4h | 87.0% | 23 | 8.76 | 64.3% | `{"lookback":96,"zscore_entry":2.7899393299292026,"zscore_exit":0.8242169902098064}` |
+| 159 | `TV_Weekly_MACD` | AVAX | 1d | 86.9% | 61 | 32.62 | 1126.5% | `{"macd_fast":11,"macd_slow":21,"macd_sig":12,"ema_trend":108}` |
+| 160 | `TV_Weekly_MACD` | SUI | 1d | 86.5% | 37 | 20.02 | 600.1% | `{"macd_fast":9,"macd_slow":22,"macd_sig":7,"ema_trend":174}` |
+| 161 | `TV_Weekly_MACD` | OP | 1d | 86.0% | 57 | 13.37 | 757.4% | `{"macd_fast":10,"macd_slow":19,"macd_sig":9,"ema_trend":109}` |
+| 162 | `TV_Weekly_MACD` | ETH | 1d | 85.7% | 35 | 37.42 | 983.1% | `{"macd_fast":9,"macd_slow":29,"macd_sig":11,"ema_trend":181}` |
+| 163 | `TV_Cointegration_PairsTrading` | WLD | 1d | 85.7% | 14 | 5.64 | 97.0% | `{"lookback":95,"zscore_entry":2.0875756801319767,"zscore_exit":0.8467336877054008}` |
+| 164 | `TV_Weekly_MACD` | GMX | 1d | 85.4% | 41 | 32.61 | 399.6% | `{"macd_fast":8,"macd_slow":37,"macd_sig":5,"ema_trend":59}` |
+| 165 | `TV_Weekly_MACD` | LINK | 1d | 85.3% | 68 | 10.31 | 695.5% | `{"macd_fast":13,"macd_slow":39,"macd_sig":5,"ema_trend":199}` |
+| 166 | `TV_Cointegration_PairsTrading` | DYDX | 1d | 84.6% | 26 | 2.43 | 74.0% | `{"lookback":78,"zscore_entry":2.3940284275368153,"zscore_exit":0.9354863432033582}` |
+| 167 | `TV_VolatilityCluster_Fade` | TIA | 4h | 83.3% | 12 | 65.54 | 42.4% | `{"hv_period":25,"cluster_threshold":1.5730402744060328,"lookback":9}` |
+| 168 | `TV_VolatilityCluster_Fade` | NEAR | 1d | 83.3% | 12 | 7.47 | 76.8% | `{"hv_period":25,"cluster_threshold":1.6019108287883803,"lookback":5}` |
+| 169 | `TV_VolumeProfile_Reversion` | JTO | 1d | 83.0% | 88 | 1.21 | 85.6% | `{"vwap_lookback":30,"reversion_atr_mult":0.7512542426355107}` |
+| 170 | `TV_VolumeProfile_Reversion` | SFP | 1d | 82.6% | 241 | 1.45 | 366.7% | `{"vwap_lookback":27,"reversion_atr_mult":0.3621242956356914}` |
+| 171 | `TV_HTF_EMA_Gate` | ETH | 1h | 82.2% | 45 | 18.33 | 176.8% | `{"htf_hours":5,"ema_len":26,"rsi_len":18,"rsi_os":36}` |
+| 172 | `TV_VolumeProfile_Reversion` | AGT | 1d | 82.1% | 39 | 2.00 | 243.4% | `{"vwap_lookback":27,"reversion_atr_mult":0.5932336174756976}` |
+| 173 | `TV_Weekly_MACD` | DYDX | 1d | 81.7% | 60 | 8.62 | 687.0% | `{"macd_fast":8,"macd_slow":27,"macd_sig":9,"ema_trend":160}` |
+| 174 | `TV_Cointegration_PairsTrading` | LINK | 1d | 81.5% | 27 | 2.70 | 95.8% | `{"lookback":91,"zscore_entry":2.913185156258646,"zscore_exit":0.5668150750396039}` |
+| 175 | `TV_Cointegration_PairsTrading` | SFP | 1d | 81.4% | 59 | 3.64 | 220.8% | `{"lookback":99,"zscore_entry":1.8014456175114035,"zscore_exit":0.20706202889414566}` |
+| 176 | `TV_Weekly_MACD` | LTC | 1d | 80.0% | 90 | 28.20 | 1744.4% | `{"macd_fast":10,"macd_slow":27,"macd_sig":7,"ema_trend":65}` |
+| 177 | `TV_VolSpread_Arbitrage` | LTC | 1h | 80.0% | 10 | 4.57 | 172.9% | `{"realized_vol_period":15,"implied_vol_ma_period":14,"threshold":0.11796802114547615}` |
+| 178 | `TV_VolatilityAdaptive_Reversal` | OP | 4h | 80.0% | 10 | 4.10 | 27.2% | `{"atr_period":17,"atr_mult":2.347043209516514,"vol_threshold":1.5078033643015392}` |
+| 179 | `TV_HurstExponent_TrendFade` | PYTH | 1d | 80.0% | 10 | 3.60 | 190.3% | `{"lookback":62,"recent_bars":13}` |
+| 180 | `TV_VolumeProfile_Reversion` | SWARMS | 1d | 78.0% | 50 | 1.70 | 238.2% | `{"vwap_lookback":29,"reversion_atr_mult":0.3433801337407672}` |
+| 181 | `TV_MFI_VolumeConfirmation` | INJ | 1d | 77.8% | 9 | 5.56 | 30.2% | `{"mfi_period":19,"mfi_oversold":20,"mfi_overbought":76}` |
+| 182 | `TV_Cointegration_PairsTrading` | SWARMS | 4h | 77.3% | 22 | 1.59 | 43.3% | `{"lookback":79,"zscore_entry":2.7540543806661,"zscore_exit":0.9139279795353574}` |
+| 183 | `TV_FairValueGap_Trading` | ONDO | 1d | 76.9% | 13 | 3.83 | 26.7% | `{"min_gap_pips":0.01701342521064204,"ma_filter":62}` |
+| 184 | `TV_Cointegration_PairsTrading` | OP | 1d | 76.9% | 13 | 1.89 | 24.9% | `{"lookback":60,"zscore_entry":2.8423150500781027,"zscore_exit":0.9538023102387485}` |
+| 185 | `TV_OrderBlock_BOSTrading` | PENDLE | 4h | 76.5% | 17 | 8.28 | 32.9% | `{"lookback":30,"bos_threshold":0.015195091899232942,"ob_margin":0.005913286178392619}` |
+| 186 | `TV_Weekly_MACD` | ARB | 1h | 76.3% | 135 | 10.61 | 777.7% | `{"macd_fast":20,"macd_slow":18,"macd_sig":9,"ema_trend":114}` |
+| 187 | `TV_Cointegration_PairsTrading` | JUP | 4h | 75.5% | 53 | 3.99 | 75.3% | `{"lookback":85,"zscore_entry":2.496779148770651,"zscore_exit":0.25625505304966856}` |
+| 188 | `TV_HTF_RSI_Confirm` | SFP | 1d | 75.0% | 8 | 10.16 | 82.9% | `{"htf_hours":7,"rsi_len":21,"rsi_os":40,"ema_trend":175}` |
+| 189 | `TV_HTF_RSI_Confirm` | LTC | 1d | 75.0% | 12 | 6.95 | 72.4% | `{"htf_hours":5,"rsi_len":8,"rsi_os":31,"ema_trend":59}` |
+| 190 | `TV_HurstExponent_TrendFade` | SUI | 1d | 75.0% | 12 | 5.15 | 217.5% | `{"lookback":55,"recent_bars":11}` |
+| 191 | `TV_FairValueGap_Trading` | JUP | 1d | 75.0% | 20 | 4.39 | 39.6% | `{"min_gap_pips":0.01994331475138847,"ma_filter":76}` |
+| 192 | `TV_VolatilityCluster_Fade` | ONDO | 4h | 75.0% | 12 | 1.55 | 9.0% | `{"hv_period":17,"cluster_threshold":1.7176323128740068,"lookback":10}` |
+| 193 | `TV_MFI_VolumeConfirmation` | SWARMS | 1d | 75.0% | 20 | 1.49 | 25.4% | `{"mfi_period":16,"mfi_oversold":21,"mfi_overbought":70}` |
+| 194 | `TV_HurstExponent_TrendFade` | ONDO | 1d | 75.0% | 8 | 1.38 | 16.0% | `{"lookback":54,"recent_bars":11}` |
+| 195 | `TV_Cointegration_PairsTrading` | ONDO | 4h | 74.6% | 142 | 1.63 | 94.7% | `{"lookback":93,"zscore_entry":1.570646867136574,"zscore_exit":0.6856384748581017}` |
+| 196 | `TV_MFI_VolumeConfirmation` | AGT | 1d | 73.7% | 19 | 5.97 | 84.1% | `{"mfi_period":15,"mfi_oversold":31,"mfi_overbought":63}` |
+| 197 | `TV_Cointegration_PairsTrading` | ARB | 4h | 73.6% | 53 | 2.48 | 52.2% | `{"lookback":92,"zscore_entry":2.8795110512272557,"zscore_exit":0.4371244201801223}` |
+| 198 | `TV_HTF_RSI_Confirm` | JUP | 1h | 73.3% | 15 | 3.42 | 18.5% | `{"htf_hours":2,"rsi_len":20,"rsi_os":34,"ema_trend":188}` |
+| 199 | `TV_AlternatingSignals_MultiTFConfirm` | WLD | 1d | 73.1% | 26 | 2.89 | 76.1% | `{"fast_ema":7,"slow_ema":24,"rsi_period":14}` |
+| 200 | `TV_Cointegration_PairsTrading` | SUI | 4h | 72.9% | 177 | 1.39 | 86.5% | `{"lookback":91,"zscore_entry":2.1256839943407835,"zscore_exit":0.4807109699818528}` |
