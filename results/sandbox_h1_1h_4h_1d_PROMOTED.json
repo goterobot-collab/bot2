@@ -1279,5 +1279,1677 @@
         }
       }
     ]
+  },
+  "TV_VolatilityAdaptive_Reversal": {
+    "best": {
+      "sym": "ARB",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "atr_period": 11,
+        "atr_mult": 2.1215380531029124,
+        "vol_threshold": 1.53062962220895
+      }
+    },
+    "passing_combos": 23,
+    "all_passing": [
+      {
+        "sym": "ARB",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 11,
+          "atr_mult": 2.1215380531029124,
+          "vol_threshold": 1.53062962220895
+        }
+      },
+      {
+        "sym": "DYDX",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 17,
+          "atr_mult": 2.9169327808865058,
+          "vol_threshold": 1.5960903143979404
+        }
+      },
+      {
+        "sym": "LTC",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 12,
+          "atr_mult": 2.9329051655272025,
+          "vol_threshold": 2.436734745558006
+        }
+      },
+      {
+        "sym": "XRP",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 19,
+          "atr_mult": 2.000452497182769,
+          "vol_threshold": 2.067735927940543
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 20,
+          "atr_mult": 2.359304805999017,
+          "vol_threshold": 1.5953683526456703
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 17,
+          "atr_mult": 3.1355217123808545,
+          "vol_threshold": 1.7116884441078746
+        }
+      },
+      {
+        "sym": "LINK",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 16,
+          "atr_mult": 2.135514499143344,
+          "vol_threshold": 1.7177046493948103
+        }
+      },
+      {
+        "sym": "WLD",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 10,
+          "atr_mult": 2.330257766406831,
+          "vol_threshold": 2.4764544698359545
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 11,
+          "atr_mult": 2.973942764890511,
+          "vol_threshold": 1.9307172221537967
+        }
+      },
+      {
+        "sym": "ONDO",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 20,
+          "atr_mult": 2.8951154681470883,
+          "vol_threshold": 1.695889433273201
+        }
+      },
+      {
+        "sym": "ARB",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 20,
+          "atr_mult": 2.5131598382814175,
+          "vol_threshold": 2.084891515272013
+        }
+      },
+      {
+        "sym": "AVAX",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 17,
+          "atr_mult": 2.904491685145864,
+          "vol_threshold": 2.055310634029492
+        }
+      },
+      {
+        "sym": "DYDX",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 18,
+          "atr_mult": 3.136819652591446,
+          "vol_threshold": 2.4924647223297165
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 18,
+          "atr_mult": 2.80060552923531,
+          "vol_threshold": 2.4217598519985715
+        }
+      },
+      {
+        "sym": "JTO",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 15,
+          "atr_mult": 3.3769902207457183,
+          "vol_threshold": 2.1060444093980055
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 5,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 19,
+          "atr_mult": 2.194575325750252,
+          "vol_threshold": 1.7209703943308252
+        }
+      },
+      {
+        "sym": "OP",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 20,
+          "atr_mult": 3.038578572733276,
+          "vol_threshold": 2.028954846359991
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 16,
+          "atr_mult": 3.1378319348899124,
+          "vol_threshold": 2.1471633638068717
+        }
+      },
+      {
+        "sym": "WLD",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 13,
+          "atr_mult": 2.162243489428323,
+          "vol_threshold": 2.374981805366608
+        }
+      },
+      {
+        "sym": "TIA",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 14,
+          "atr_mult": 2.547947130554485,
+          "vol_threshold": 2.076462636253016
+        }
+      },
+      {
+        "sym": "PYTH",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_period": 18,
+          "atr_mult": 2.0616583771746537,
+          "vol_threshold": 2.2156805481486366
+        }
+      },
+      {
+        "sym": "OP",
+        "tf": "4h",
+        "wr": 80.0,
+        "trades": 10,
+        "pf": 4.099,
+        "params": {
+          "atr_period": 17,
+          "atr_mult": 2.347043209516514,
+          "vol_threshold": 1.5078033643015392
+        }
+      },
+      {
+        "sym": "LINK",
+        "tf": "1h",
+        "wr": 70.6,
+        "trades": 17,
+        "pf": 4.043,
+        "params": {
+          "atr_period": 13,
+          "atr_mult": 2.989017307658263,
+          "vol_threshold": 1.7945554638283912
+        }
+      }
+    ]
+  },
+  "TV_VolatilityCluster_Fade": {
+    "best": {
+      "sym": "GMX",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "hv_period": 27,
+        "cluster_threshold": 1.485403448408443,
+        "lookback": 10
+      }
+    },
+    "passing_combos": 19,
+    "all_passing": [
+      {
+        "sym": "GMX",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "hv_period": 27,
+          "cluster_threshold": 1.485403448408443,
+          "lookback": 10
+        }
+      },
+      {
+        "sym": "AVAX",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "hv_period": 26,
+          "cluster_threshold": 1.9741811931133524,
+          "lookback": 3
+        }
+      },
+      {
+        "sym": "DYDX",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "hv_period": 11,
+          "cluster_threshold": 1.8571887006539645,
+          "lookback": 6
+        }
+      },
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "hv_period": 23,
+          "cluster_threshold": 1.4319863196257803,
+          "lookback": 6
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 5,
+        "pf": 999.0,
+        "params": {
+          "hv_period": 19,
+          "cluster_threshold": 1.3691041972629638,
+          "lookback": 10
+        }
+      },
+      {
+        "sym": "TIA",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "hv_period": 19,
+          "cluster_threshold": 1.4872077746542283,
+          "lookback": 10
+        }
+      },
+      {
+        "sym": "XRP",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "hv_period": 28,
+          "cluster_threshold": 1.6112520639119638,
+          "lookback": 10
+        }
+      },
+      {
+        "sym": "INJ",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "hv_period": 28,
+          "cluster_threshold": 1.8844013369823474,
+          "lookback": 8
+        }
+      },
+      {
+        "sym": "JTO",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "hv_period": 23,
+          "cluster_threshold": 1.8280192046256019,
+          "lookback": 9
+        }
+      },
+      {
+        "sym": "SEI",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "hv_period": 16,
+          "cluster_threshold": 1.8763975765780507,
+          "lookback": 5
+        }
+      },
+      {
+        "sym": "PYTH",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "hv_period": 25,
+          "cluster_threshold": 1.8727814086988779,
+          "lookback": 10
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "hv_period": 26,
+          "cluster_threshold": 1.9984956851753477,
+          "lookback": 6
+        }
+      },
+      {
+        "sym": "GMX",
+        "tf": "4h",
+        "wr": 90.0,
+        "trades": 10,
+        "pf": 6.658,
+        "params": {
+          "hv_period": 14,
+          "cluster_threshold": 1.928405867890932,
+          "lookback": 9
+        }
+      },
+      {
+        "sym": "APT",
+        "tf": "4h",
+        "wr": 87.5,
+        "trades": 16,
+        "pf": 15.936,
+        "params": {
+          "hv_period": 20,
+          "cluster_threshold": 1.7793119822410834,
+          "lookback": 9
+        }
+      },
+      {
+        "sym": "TIA",
+        "tf": "4h",
+        "wr": 83.3,
+        "trades": 12,
+        "pf": 65.541,
+        "params": {
+          "hv_period": 25,
+          "cluster_threshold": 1.5730402744060328,
+          "lookback": 9
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "1d",
+        "wr": 83.3,
+        "trades": 12,
+        "pf": 7.466,
+        "params": {
+          "hv_period": 25,
+          "cluster_threshold": 1.6019108287883803,
+          "lookback": 5
+        }
+      },
+      {
+        "sym": "ONDO",
+        "tf": "4h",
+        "wr": 75.0,
+        "trades": 12,
+        "pf": 1.546,
+        "params": {
+          "hv_period": 17,
+          "cluster_threshold": 1.7176323128740068,
+          "lookback": 10
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "4h",
+        "wr": 72.0,
+        "trades": 25,
+        "pf": 3.19,
+        "params": {
+          "hv_period": 12,
+          "cluster_threshold": 1.8301004139492305,
+          "lookback": 8
+        }
+      },
+      {
+        "sym": "SFP",
+        "tf": "1d",
+        "wr": 70.6,
+        "trades": 17,
+        "pf": 2.666,
+        "params": {
+          "hv_period": 19,
+          "cluster_threshold": 1.5051583801769879,
+          "lookback": 8
+        }
+      }
+    ]
+  },
+  "TV_Cointegration_PairsTrading": {
+    "best": {
+      "sym": "AGT",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "lookback": 57,
+        "zscore_entry": 2.9279236321200024,
+        "zscore_exit": 0.6665648287791688
+      }
+    },
+    "passing_combos": 29,
+    "all_passing": [
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "lookback": 57,
+          "zscore_entry": 2.9279236321200024,
+          "zscore_exit": 0.6665648287791688
+        }
+      },
+      {
+        "sym": "INJ",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "lookback": 53,
+          "zscore_entry": 2.7020934313531866,
+          "zscore_exit": 0.9106453755065642
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "lookback": 40,
+          "zscore_entry": 2.8634346643983877,
+          "zscore_exit": 0.8232693612903716
+        }
+      },
+      {
+        "sym": "ONDO",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 5,
+        "pf": 999.0,
+        "params": {
+          "lookback": 69,
+          "zscore_entry": 2.536130224413315,
+          "zscore_exit": 0.3088312247878527
+        }
+      },
+      {
+        "sym": "PYTH",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "lookback": 92,
+          "zscore_entry": 2.7970054462280984,
+          "zscore_exit": 0.8367702270267958
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "lookback": 88,
+          "zscore_entry": 2.7960336569954554,
+          "zscore_exit": 0.25801174399689875
+        }
+      },
+      {
+        "sym": "TIA",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 5,
+        "pf": 999.0,
+        "params": {
+          "lookback": 86,
+          "zscore_entry": 2.8286126870887878,
+          "zscore_exit": 0.4199307782684037
+        }
+      },
+      {
+        "sym": "PENDLE",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "lookback": 57,
+          "zscore_entry": 2.9791679097371047,
+          "zscore_exit": 0.5925068133720279
+        }
+      },
+      {
+        "sym": "SEI",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "lookback": 83,
+          "zscore_entry": 2.857222295244208,
+          "zscore_exit": 0.8408009246931292
+        }
+      },
+      {
+        "sym": "JTO",
+        "tf": "1d",
+        "wr": 94.1,
+        "trades": 17,
+        "pf": 9.563,
+        "params": {
+          "lookback": 90,
+          "zscore_entry": 2.0173662568037134,
+          "zscore_exit": 0.3255716785579136
+        }
+      },
+      {
+        "sym": "APT",
+        "tf": "1d",
+        "wr": 90.0,
+        "trades": 10,
+        "pf": 4.491,
+        "params": {
+          "lookback": 79,
+          "zscore_entry": 2.730206499887703,
+          "zscore_exit": 0.22102582835568516
+        }
+      },
+      {
+        "sym": "ARB",
+        "tf": "1d",
+        "wr": 87.5,
+        "trades": 8,
+        "pf": 34.056,
+        "params": {
+          "lookback": 98,
+          "zscore_entry": 2.9783150301011916,
+          "zscore_exit": 0.8122777731241551
+        }
+      },
+      {
+        "sym": "AGT",
+        "tf": "4h",
+        "wr": 87.0,
+        "trades": 23,
+        "pf": 8.764,
+        "params": {
+          "lookback": 96,
+          "zscore_entry": 2.7899393299292026,
+          "zscore_exit": 0.8242169902098064
+        }
+      },
+      {
+        "sym": "WLD",
+        "tf": "1d",
+        "wr": 85.7,
+        "trades": 14,
+        "pf": 5.639,
+        "params": {
+          "lookback": 95,
+          "zscore_entry": 2.0875756801319767,
+          "zscore_exit": 0.8467336877054008
+        }
+      },
+      {
+        "sym": "DYDX",
+        "tf": "1d",
+        "wr": 84.6,
+        "trades": 26,
+        "pf": 2.434,
+        "params": {
+          "lookback": 78,
+          "zscore_entry": 2.3940284275368153,
+          "zscore_exit": 0.9354863432033582
+        }
+      },
+      {
+        "sym": "LINK",
+        "tf": "1d",
+        "wr": 81.5,
+        "trades": 27,
+        "pf": 2.701,
+        "params": {
+          "lookback": 91,
+          "zscore_entry": 2.913185156258646,
+          "zscore_exit": 0.5668150750396039
+        }
+      },
+      {
+        "sym": "SFP",
+        "tf": "1d",
+        "wr": 81.4,
+        "trades": 59,
+        "pf": 3.637,
+        "params": {
+          "lookback": 99,
+          "zscore_entry": 1.8014456175114035,
+          "zscore_exit": 0.20706202889414566
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "4h",
+        "wr": 77.3,
+        "trades": 22,
+        "pf": 1.588,
+        "params": {
+          "lookback": 79,
+          "zscore_entry": 2.7540543806661,
+          "zscore_exit": 0.9139279795353574
+        }
+      },
+      {
+        "sym": "OP",
+        "tf": "1d",
+        "wr": 76.9,
+        "trades": 13,
+        "pf": 1.892,
+        "params": {
+          "lookback": 60,
+          "zscore_entry": 2.8423150500781027,
+          "zscore_exit": 0.9538023102387485
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "4h",
+        "wr": 75.5,
+        "trades": 53,
+        "pf": 3.987,
+        "params": {
+          "lookback": 85,
+          "zscore_entry": 2.496779148770651,
+          "zscore_exit": 0.25625505304966856
+        }
+      },
+      {
+        "sym": "ONDO",
+        "tf": "4h",
+        "wr": 74.6,
+        "trades": 142,
+        "pf": 1.626,
+        "params": {
+          "lookback": 93,
+          "zscore_entry": 1.570646867136574,
+          "zscore_exit": 0.6856384748581017
+        }
+      },
+      {
+        "sym": "ARB",
+        "tf": "4h",
+        "wr": 73.6,
+        "trades": 53,
+        "pf": 2.483,
+        "params": {
+          "lookback": 92,
+          "zscore_entry": 2.8795110512272557,
+          "zscore_exit": 0.4371244201801223
+        }
+      },
+      {
+        "sym": "SUI",
+        "tf": "4h",
+        "wr": 72.9,
+        "trades": 177,
+        "pf": 1.392,
+        "params": {
+          "lookback": 91,
+          "zscore_entry": 2.1256839943407835,
+          "zscore_exit": 0.4807109699818528
+        }
+      },
+      {
+        "sym": "PYTH",
+        "tf": "4h",
+        "wr": 72.7,
+        "trades": 227,
+        "pf": 1.541,
+        "params": {
+          "lookback": 99,
+          "zscore_entry": 1.6408962205968296,
+          "zscore_exit": 0.3292751263720235
+        }
+      },
+      {
+        "sym": "LINK",
+        "tf": "4h",
+        "wr": 72.0,
+        "trades": 75,
+        "pf": 1.234,
+        "params": {
+          "lookback": 91,
+          "zscore_entry": 2.974408508660999,
+          "zscore_exit": 0.9207234065089316
+        }
+      },
+      {
+        "sym": "GMX",
+        "tf": "4h",
+        "wr": 71.6,
+        "trades": 116,
+        "pf": 1.816,
+        "params": {
+          "lookback": 82,
+          "zscore_entry": 2.4093441097598935,
+          "zscore_exit": 0.6600035284661365
+        }
+      },
+      {
+        "sym": "JTO",
+        "tf": "4h",
+        "wr": 71.1,
+        "trades": 97,
+        "pf": 1.729,
+        "params": {
+          "lookback": 100,
+          "zscore_entry": 2.176452394837339,
+          "zscore_exit": 0.7516834072007106
+        }
+      },
+      {
+        "sym": "SFP",
+        "tf": "4h",
+        "wr": 70.8,
+        "trades": 448,
+        "pf": 1.311,
+        "params": {
+          "lookback": 87,
+          "zscore_entry": 1.7266667149772998,
+          "zscore_exit": 0.6011358080648666
+        }
+      },
+      {
+        "sym": "TIA",
+        "tf": "4h",
+        "wr": 70.6,
+        "trades": 51,
+        "pf": 1.73,
+        "params": {
+          "lookback": 89,
+          "zscore_entry": 2.626706860061624,
+          "zscore_exit": 0.5530280429813312
+        }
+      }
+    ]
+  },
+  "TV_VolSpread_Arbitrage": {
+    "best": {
+      "sym": "AVAX",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "realized_vol_period": 21,
+        "implied_vol_ma_period": 10,
+        "threshold": 0.2742275815367878
+      }
+    },
+    "passing_combos": 23,
+    "all_passing": [
+      {
+        "sym": "AVAX",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 21,
+          "implied_vol_ma_period": 10,
+          "threshold": 0.2742275815367878
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 22,
+          "implied_vol_ma_period": 22,
+          "threshold": 0.13481364544523944
+        }
+      },
+      {
+        "sym": "GMX",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 17,
+          "implied_vol_ma_period": 26,
+          "threshold": 0.2648945119089074
+        }
+      },
+      {
+        "sym": "WLD",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 14,
+          "implied_vol_ma_period": 28,
+          "threshold": 0.1491909146502174
+        }
+      },
+      {
+        "sym": "SFP",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 11,
+          "implied_vol_ma_period": 10,
+          "threshold": 0.2516089214297837
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 10,
+          "implied_vol_ma_period": 23,
+          "threshold": 0.141340715249071
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 30,
+          "implied_vol_ma_period": 15,
+          "threshold": 0.28287154831849387
+        }
+      },
+      {
+        "sym": "SUI",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 16,
+          "implied_vol_ma_period": 10,
+          "threshold": 0.09914061104497031
+        }
+      },
+      {
+        "sym": "ONDO",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 27,
+          "implied_vol_ma_period": 11,
+          "threshold": 0.07987196567221296
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 16,
+          "implied_vol_ma_period": 13,
+          "threshold": 0.1903305471912503
+        }
+      },
+      {
+        "sym": "OP",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 14,
+          "implied_vol_ma_period": 12,
+          "threshold": 0.1880568472882742
+        }
+      },
+      {
+        "sym": "DYDX",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 18,
+          "implied_vol_ma_period": 30,
+          "threshold": 0.2455285683414813
+        }
+      },
+      {
+        "sym": "INJ",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 26,
+          "implied_vol_ma_period": 25,
+          "threshold": 0.0660794902764517
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 25,
+          "implied_vol_ma_period": 19,
+          "threshold": 0.13100459329469571
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 14,
+          "implied_vol_ma_period": 18,
+          "threshold": 0.0669467022352704
+        }
+      },
+      {
+        "sym": "TIA",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 22,
+          "implied_vol_ma_period": 19,
+          "threshold": 0.10275372292376338
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 10,
+          "implied_vol_ma_period": 24,
+          "threshold": 0.2874514632981312
+        }
+      },
+      {
+        "sym": "ARB",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 12,
+          "implied_vol_ma_period": 13,
+          "threshold": 0.2902859527953141
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 19,
+          "implied_vol_ma_period": 18,
+          "threshold": 0.1521453475009733
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 26,
+          "implied_vol_ma_period": 25,
+          "threshold": 0.050187175018812355
+        }
+      },
+      {
+        "sym": "OP",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 10,
+          "implied_vol_ma_period": 22,
+          "threshold": 0.2955590664420748
+        }
+      },
+      {
+        "sym": "TIA",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "realized_vol_period": 16,
+          "implied_vol_ma_period": 30,
+          "threshold": 0.05563733696216279
+        }
+      },
+      {
+        "sym": "LTC",
+        "tf": "1h",
+        "wr": 80.0,
+        "trades": 10,
+        "pf": 4.573,
+        "params": {
+          "realized_vol_period": 15,
+          "implied_vol_ma_period": 14,
+          "threshold": 0.11796802114547615
+        }
+      }
+    ]
+  },
+  "TV_WhaleDetection_VolumeSpike": {
+    "best": {
+      "sym": "TIA",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 4,
+      "pf": 999.0,
+      "params": {
+        "vol_ma_period": 10,
+        "spike_threshold": 3.740081839508348,
+        "momentum_period": 4
+      }
+    },
+    "passing_combos": 3,
+    "all_passing": [
+      {
+        "sym": "TIA",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "vol_ma_period": 10,
+          "spike_threshold": 3.740081839508348,
+          "momentum_period": 4
+        }
+      },
+      {
+        "sym": "WLD",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 5,
+        "pf": 999.0,
+        "params": {
+          "vol_ma_period": 20,
+          "spike_threshold": 3.752145452560157,
+          "momentum_period": 5
+        }
+      },
+      {
+        "sym": "APT",
+        "tf": "1d",
+        "wr": 70.0,
+        "trades": 10,
+        "pf": 1.257,
+        "params": {
+          "vol_ma_period": 23,
+          "spike_threshold": 3.8832014139342075,
+          "momentum_period": 8
+        }
+      }
+    ]
+  },
+  "TV_Ensemble_Ridge_ML": {
+    "best": {
+      "sym": "AGT",
+      "tf": "4h",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "feature_window": 28,
+        "alpha": 1.7289224466162492,
+        "threshold": 0.094654407828345
+      }
+    },
+    "passing_combos": 2,
+    "all_passing": [
+      {
+        "sym": "AGT",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "feature_window": 28,
+          "alpha": 1.7289224466162492,
+          "threshold": 0.094654407828345
+        }
+      },
+      {
+        "sym": "XRP",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "feature_window": 10,
+          "alpha": 0.5598579789879057,
+          "threshold": 0.10489786453485694
+        }
+      }
+    ]
+  },
+  "TV_TimeSeriesMomentum_LSM": {
+    "best": {
+      "sym": "PENDLE",
+      "tf": "4h",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "momentum_period": 20,
+        "lsm_threshold": 1.016385505414295
+      }
+    },
+    "passing_combos": 3,
+    "all_passing": [
+      {
+        "sym": "PENDLE",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "momentum_period": 20,
+          "lsm_threshold": 1.016385505414295
+        }
+      },
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 72.7,
+        "trades": 11,
+        "pf": 2.197,
+        "params": {
+          "momentum_period": 38,
+          "lsm_threshold": 0.887633089034072
+        }
+      },
+      {
+        "sym": "SUI",
+        "tf": "1d",
+        "wr": 72.2,
+        "trades": 18,
+        "pf": 5.046,
+        "params": {
+          "momentum_period": 40,
+          "lsm_threshold": 0.8660910154237325
+        }
+      }
+    ]
+  },
+  "TV_SupplyDemand_Zones": {
+    "best": {
+      "sym": "SWARMS",
+      "tf": "1h",
+      "wr": 100.0,
+      "trades": 3,
+      "pf": 999.0,
+      "params": {
+        "zone_lookback": 20,
+        "strength_threshold": 1.8645392338874216,
+        "close_proximity": 0.007370856290199592
+      }
+    },
+    "passing_combos": 1,
+    "all_passing": [
+      {
+        "sym": "SWARMS",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "zone_lookback": 20,
+          "strength_threshold": 1.8645392338874216,
+          "close_proximity": 0.007370856290199592
+        }
+      }
+    ]
+  },
+  "TV_FairValueGap_Trading": {
+    "best": {
+      "sym": "AGT",
+      "tf": "1d",
+      "wr": 90.0,
+      "trades": 10,
+      "pf": 10.925,
+      "params": {
+        "min_gap_pips": 0.010371285044272848,
+        "ma_filter": 58
+      }
+    },
+    "passing_combos": 3,
+    "all_passing": [
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 90.0,
+        "trades": 10,
+        "pf": 10.925,
+        "params": {
+          "min_gap_pips": 0.010371285044272848,
+          "ma_filter": 58
+        }
+      },
+      {
+        "sym": "ONDO",
+        "tf": "1d",
+        "wr": 76.9,
+        "trades": 13,
+        "pf": 3.833,
+        "params": {
+          "min_gap_pips": 0.01701342521064204,
+          "ma_filter": 62
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 20,
+        "pf": 4.395,
+        "params": {
+          "min_gap_pips": 0.01994331475138847,
+          "ma_filter": 76
+        }
+      }
+    ]
+  },
+  "TV_VolumeProfile_Reversion": {
+    "best": {
+      "sym": "JTO",
+      "tf": "1d",
+      "wr": 83.0,
+      "trades": 88,
+      "pf": 1.214,
+      "params": {
+        "vwap_lookback": 30,
+        "reversion_atr_mult": 0.7512542426355107
+      }
+    },
+    "passing_combos": 4,
+    "all_passing": [
+      {
+        "sym": "JTO",
+        "tf": "1d",
+        "wr": 83.0,
+        "trades": 88,
+        "pf": 1.214,
+        "params": {
+          "vwap_lookback": 30,
+          "reversion_atr_mult": 0.7512542426355107
+        }
+      },
+      {
+        "sym": "SFP",
+        "tf": "1d",
+        "wr": 82.6,
+        "trades": 241,
+        "pf": 1.445,
+        "params": {
+          "vwap_lookback": 27,
+          "reversion_atr_mult": 0.3621242956356914
+        }
+      },
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 82.1,
+        "trades": 39,
+        "pf": 1.997,
+        "params": {
+          "vwap_lookback": 27,
+          "reversion_atr_mult": 0.5932336174756976
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "1d",
+        "wr": 78.0,
+        "trades": 50,
+        "pf": 1.699,
+        "params": {
+          "vwap_lookback": 29,
+          "reversion_atr_mult": 0.3433801337407672
+        }
+      }
+    ]
+  },
+  "TV_HurstExponent_TrendFade": {
+    "best": {
+      "sym": "PYTH",
+      "tf": "1d",
+      "wr": 80.0,
+      "trades": 10,
+      "pf": 3.603,
+      "params": {
+        "lookback": 62,
+        "recent_bars": 13
+      }
+    },
+    "passing_combos": 4,
+    "all_passing": [
+      {
+        "sym": "PYTH",
+        "tf": "1d",
+        "wr": 80.0,
+        "trades": 10,
+        "pf": 3.603,
+        "params": {
+          "lookback": 62,
+          "recent_bars": 13
+        }
+      },
+      {
+        "sym": "SUI",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 12,
+        "pf": 5.149,
+        "params": {
+          "lookback": 55,
+          "recent_bars": 11
+        }
+      },
+      {
+        "sym": "ONDO",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 8,
+        "pf": 1.375,
+        "params": {
+          "lookback": 54,
+          "recent_bars": 11
+        }
+      },
+      {
+        "sym": "LTC",
+        "tf": "1d",
+        "wr": 71.0,
+        "trades": 31,
+        "pf": 9.294,
+        "params": {
+          "lookback": 79,
+          "recent_bars": 15
+        }
+      }
+    ]
+  },
+  "TV_MFI_VolumeConfirmation": {
+    "best": {
+      "sym": "INJ",
+      "tf": "1d",
+      "wr": 77.8,
+      "trades": 9,
+      "pf": 5.556,
+      "params": {
+        "mfi_period": 19,
+        "mfi_oversold": 20,
+        "mfi_overbought": 76
+      }
+    },
+    "passing_combos": 5,
+    "all_passing": [
+      {
+        "sym": "INJ",
+        "tf": "1d",
+        "wr": 77.8,
+        "trades": 9,
+        "pf": 5.556,
+        "params": {
+          "mfi_period": 19,
+          "mfi_oversold": 20,
+          "mfi_overbought": 76
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 20,
+        "pf": 1.493,
+        "params": {
+          "mfi_period": 16,
+          "mfi_oversold": 21,
+          "mfi_overbought": 70
+        }
+      },
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 73.7,
+        "trades": 19,
+        "pf": 5.974,
+        "params": {
+          "mfi_period": 15,
+          "mfi_oversold": 31,
+          "mfi_overbought": 63
+        }
+      },
+      {
+        "sym": "DYDX",
+        "tf": "1d",
+        "wr": 71.0,
+        "trades": 31,
+        "pf": 2.529,
+        "params": {
+          "mfi_period": 18,
+          "mfi_oversold": 25,
+          "mfi_overbought": 80
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "1d",
+        "wr": 70.0,
+        "trades": 10,
+        "pf": 5.175,
+        "params": {
+          "mfi_period": 18,
+          "mfi_oversold": 22,
+          "mfi_overbought": 73
+        }
+      }
+    ]
+  },
+  "TV_OrderBlock_BOSTrading": {
+    "best": {
+      "sym": "PENDLE",
+      "tf": "4h",
+      "wr": 76.5,
+      "trades": 17,
+      "pf": 8.283,
+      "params": {
+        "lookback": 30,
+        "bos_threshold": 0.015195091899232942,
+        "ob_margin": 0.005913286178392619
+      }
+    },
+    "passing_combos": 1,
+    "all_passing": [
+      {
+        "sym": "PENDLE",
+        "tf": "4h",
+        "wr": 76.5,
+        "trades": 17,
+        "pf": 8.283,
+        "params": {
+          "lookback": 30,
+          "bos_threshold": 0.015195091899232942,
+          "ob_margin": 0.005913286178392619
+        }
+      }
+    ]
+  },
+  "TV_AlternatingSignals_MultiTFConfirm": {
+    "best": {
+      "sym": "WLD",
+      "tf": "1d",
+      "wr": 73.1,
+      "trades": 26,
+      "pf": 2.893,
+      "params": {
+        "fast_ema": 7,
+        "slow_ema": 24,
+        "rsi_period": 14
+      }
+    },
+    "passing_combos": 1,
+    "all_passing": [
+      {
+        "sym": "WLD",
+        "tf": "1d",
+        "wr": 73.1,
+        "trades": 26,
+        "pf": 2.893,
+        "params": {
+          "fast_ema": 7,
+          "slow_ema": 24,
+          "rsi_period": 14
+        }
+      }
+    ]
   }
 }
