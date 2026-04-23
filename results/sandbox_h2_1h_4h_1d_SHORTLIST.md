@@ -1,10 +1,10 @@
 # HUNTER2_1h_4h_1d shortlist
 
 - Batches: 3594, 3598
-- Tasks completed: 6,516
+- Tasks completed: 6,517
 - Grails passing R24 gate: **483**
 - Strategies promoted (>=1 combo pass): **57**
-- Elapsed: 440s
+- Elapsed: 255s
 
 | Rank | Strategy | Sym | TF | WR | trades | PF | total% | params |
 |------|----------|-----|----|-----|--------|-----|--------|--------|
