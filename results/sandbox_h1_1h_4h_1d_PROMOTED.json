@@ -2554,7 +2554,7 @@
         "threshold": 0.094654407828345
       }
     },
-    "passing_combos": 2,
+    "passing_combos": 3,
     "all_passing": [
       {
         "sym": "AGT",
@@ -2578,6 +2578,18 @@
           "feature_window": 10,
           "alpha": 0.5598579789879057,
           "threshold": 0.10489786453485694
+        }
+      },
+      {
+        "sym": "INJ",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "feature_window": 17,
+          "alpha": 1.8931743260075167,
+          "threshold": 0.07652742276980817
         }
       }
     ]
