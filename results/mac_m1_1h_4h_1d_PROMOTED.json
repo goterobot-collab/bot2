@@ -1,0 +1,274 @@
+{
+  "TV_TRIX_Cross": {
+    "best": {
+      "sym": "ONDO",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "trix_len": 26,
+        "sig_len": 14,
+        "require_zero": 1
+      }
+    },
+    "passing_combos": 7,
+    "all_passing": [
+      {
+        "sym": "ONDO",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "trix_len": 26,
+          "sig_len": 14,
+          "require_zero": 1
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "trix_len": 15,
+          "sig_len": 19,
+          "require_zero": 1
+        }
+      },
+      {
+        "sym": "XRP",
+        "tf": "1d",
+        "wr": 80.0,
+        "trades": 15,
+        "pf": 23.529,
+        "params": {
+          "trix_len": 9,
+          "sig_len": 9,
+          "require_zero": 1
+        }
+      },
+      {
+        "sym": "INJ",
+        "tf": "1d",
+        "wr": 78.6,
+        "trades": 14,
+        "pf": 2.62,
+        "params": {
+          "trix_len": 27,
+          "sig_len": 20,
+          "require_zero": 0
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "1d",
+        "wr": 77.8,
+        "trades": 18,
+        "pf": 7.659,
+        "params": {
+          "trix_len": 13,
+          "sig_len": 17,
+          "require_zero": 1
+        }
+      },
+      {
+        "sym": "GMX",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 8,
+        "pf": 5.905,
+        "params": {
+          "trix_len": 29,
+          "sig_len": 16,
+          "require_zero": 1
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "1d",
+        "wr": 71.4,
+        "trades": 14,
+        "pf": 5.138,
+        "params": {
+          "trix_len": 24,
+          "sig_len": 10,
+          "require_zero": 1
+        }
+      }
+    ]
+  },
+  "TV_Vortex_Cross": {
+    "best": {
+      "sym": "AGT",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "vi_len": 27,
+        "min_strength": 0.11177914015707645
+      }
+    },
+    "passing_combos": 9,
+    "all_passing": [
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "vi_len": 27,
+          "min_strength": 0.11177914015707645
+        }
+      },
+      {
+        "sym": "AVAX",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "vi_len": 15,
+          "min_strength": 0.21750153388222
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "vi_len": 17,
+          "min_strength": 0.1761557919753659
+        }
+      },
+      {
+        "sym": "SUI",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "vi_len": 20,
+          "min_strength": 0.14961964462282537
+        }
+      },
+      {
+        "sym": "XRP",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "vi_len": 16,
+          "min_strength": 0.26988906128796275
+        }
+      },
+      {
+        "sym": "AVAX",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "vi_len": 34,
+          "min_strength": 0.22685341030700149
+        }
+      },
+      {
+        "sym": "LINK",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "vi_len": 31,
+          "min_strength": 0.21532584893100792
+        }
+      },
+      {
+        "sym": "INJ",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "vi_len": 36,
+          "min_strength": 0.22946436296691486
+        }
+      },
+      {
+        "sym": "SUI",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "vi_len": 31,
+          "min_strength": 0.29532288321898065
+        }
+      }
+    ]
+  },
+  "TV_Chandelier_Exit_Entry": {
+    "best": {
+      "sym": "INJ",
+      "tf": "1d",
+      "wr": 75.0,
+      "trades": 8,
+      "pf": 2.057,
+      "params": {
+        "atr_len": 10,
+        "mult": 4.472759944499886
+      }
+    },
+    "passing_combos": 1,
+    "all_passing": [
+      {
+        "sym": "INJ",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 8,
+        "pf": 2.057,
+        "params": {
+          "atr_len": 10,
+          "mult": 4.472759944499886
+        }
+      }
+    ]
+  },
+  "TV_Aroon_Strong": {
+    "best": {
+      "sym": "AGT",
+      "tf": "1d",
+      "wr": 70.0,
+      "trades": 10,
+      "pf": 1.283,
+      "params": {
+        "aroon_len": 35,
+        "threshold": 82,
+        "mode": 0
+      }
+    },
+    "passing_combos": 1,
+    "all_passing": [
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 70.0,
+        "trades": 10,
+        "pf": 1.283,
+        "params": {
+          "aroon_len": 35,
+          "threshold": 82,
+          "mode": 0
+        }
+      }
+    ]
+  }
+}

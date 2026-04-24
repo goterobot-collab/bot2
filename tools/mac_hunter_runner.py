@@ -1,0 +1,408 @@
+#!/usr/bin/env python3
+"""
+MAC HUNTER runner - Mac paralela session (playbook MAC_PARALLEL_SESSION_INSTRUCTIONS.md).
+
+Dominio exclusivo:
+ - Outputs: results/mac_m*_*.{md,json}
+ - Logs: logs/mac_m*.log
+ - Batches: strategies_v7/strategies_mac_batch37*.py (3700-3799)
+ - Waves labels: m1, m2, ..., m7 (distinto de sandbox h1-h7)
+
+Gate (R24 reducido para Mac paralela):
+ - WR >= 70%, PF >= 1.2, trades >= dynamic_min(wr)
+ - PnL neto > 0 (implicito via PF>1)
+ - R30: 15m siempre permitido como TF
+
+Dedup: lee coordination/MAC_V8_COVERED_DEDUP_20260421.json y filtra (strategy,symbol,tf)
+ya cubiertos.
+"""
+from __future__ import annotations
+
+import argparse
+import importlib
+import json
+import os
+import random
+import sys
+import time
+from concurrent.futures import ProcessPoolExecutor, TimeoutError as FTimeout, as_completed
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / "strategies_v7"))
+sys.path.insert(0, str(ROOT / "tools"))
+
+from canary_runner import backtest_signal_exit, load_candles
+
+SYMBOLS = [
+    "AGT", "APT", "ARB", "AVAX", "DYDX", "ETH", "GMX", "INJ", "JTO", "JUP",
+    "LINK", "LTC", "NEAR", "ONDO", "OP", "PENDLE", "PYTH", "SEI", "SFP", "SUI",
+    "SWARMS", "TIA", "WLD", "XRP",
+]
+TFS = ["1d", "4h", "1h", "15m", "5m"]
+SOURCE_TF = {"5m": "5m", "15m": "5m", "1h": "1h", "4h": "1h", "1d": "1h"}
+
+MIN_WR = 70.0
+MIN_PF = 1.2
+MIN_TRADES_FLOOR = 8
+TRIALS_PER_COMBO = 20
+WORKERS = 5
+COMBO_TIMEOUT_S = 30
+PROGRESS_EVERY = 200
+
+
+def _min_trades_dynamic(wr):
+    if wr >= 100: return 2
+    if wr >= 90:  return 4
+    if wr >= 80:  return 8
+    if wr >= 70:  return 8
+    return 999
+
+
+def _load_dedup():
+    p = ROOT / "coordination" / "MAC_V8_COVERED_DEDUP_20260421.json"
+    covered = set()
+    if not p.exists():
+        return covered
+    try:
+        d = json.loads(p.read_text())
+        for t in d.get("v8_mac_covered", []) + d.get("sandbox_v8_covered", []):
+            covered.add((t.get("strategy"), t.get("symbol"), t.get("tf")))
+    except Exception as e:
+        print(f"[WARN] dedup load: {e}")
+    return covered
+
+
+def _sample_dict(space, rng):
+    out = {}
+    for name, spec in space.items():
+        if len(spec) == 2:
+            ptype, vals = spec
+            if ptype == "categorical":
+                out[name] = rng.choice(list(vals))
+                continue
+        ptype, lo, hi = spec[0], spec[1], spec[2]
+        if ptype == "int":
+            out[name] = rng.randrange(lo, hi + 1)
+        elif ptype == "float":
+            out[name] = rng.uniform(lo, hi)
+        elif ptype == "categorical":
+            out[name] = rng.choice(list(hi) if hasattr(hi, "__iter__") else [lo, hi])
+        else:
+            out[name] = lo
+    return out
+
+
+def sample_params(space, rng):
+    import inspect
+    if callable(space):
+        try:
+            nparams = len([p for p in inspect.signature(space).parameters.values()
+                           if p.kind in (p.POSITIONAL_OR_KEYWORD, p.POSITIONAL_ONLY)])
+        except Exception:
+            nparams = 1
+        if nparams == 0:
+            raw = space()
+            if isinstance(raw, dict) and raw and isinstance(next(iter(raw.values())), tuple):
+                return _sample_dict(raw, rng)
+            return raw
+
+        class _FT:
+            def suggest_int(self, n, l, h, step=1): return rng.randrange(l, h + 1, step)
+            def suggest_float(self, n, l, h, step=None, log=False):
+                if log:
+                    return float(np.exp(rng.uniform(np.log(l), np.log(h))))
+                return rng.uniform(l, h)
+            def suggest_categorical(self, n, c): return rng.choice(list(c))
+
+        return space(_FT())
+    return _sample_dict(space, rng)
+
+
+_W_CACHE = {}
+EARLY_ABORT_STREAK = 5
+
+
+def _w_init(candles_paths):
+    global _W_CACHE
+    for (sym, tf), path in candles_paths.items():
+        try:
+            df = load_candles(sym, SOURCE_TF[tf], tf)
+            if len(df) >= 300:
+                _W_CACHE[(sym, tf)] = df
+        except Exception:
+            pass
+
+
+def _w_job(batch_id, strat_name, spec_pkl, sym, tf, n_trials, seed):
+    import pickle
+    spec = pickle.loads(spec_pkl)
+    gen_fn, space = spec["gen"], spec["space"]
+    df = _W_CACHE.get((sym, tf))
+    if df is None or len(df) < 300:
+        return None
+    rng = random.Random(seed)
+    best = None
+    zero_streak = 0
+    for trial_idx in range(n_trials):
+        try:
+            params = sample_params(space, rng)
+        except Exception:
+            continue
+        try:
+            r = backtest_signal_exit(df, gen_fn, params, sl_pct=0.40)
+        except Exception:
+            continue
+        if r.get("trades", 0) == 0 or r.get("wr") is None:
+            zero_streak += 1
+            if zero_streak >= EARLY_ABORT_STREAK and best is None:
+                break
+            continue
+        zero_streak = 0
+        if best is None or r["wr"] > best["metrics"]["wr"]:
+            best = {"params": params, "metrics": {
+                "wr": r["wr"], "trades": r["trades"], "pf": r["pf"],
+                "total_pnl_pct": r["total_pnl_pct"],
+                "wins": r["wins"], "losses": r["losses"],
+                "avg_win_pct": r["avg_win_pct"], "avg_loss_pct": r["avg_loss_pct"],
+            }}
+    if best is None:
+        return None
+    m = best["metrics"]
+    dyn = _min_trades_dynamic(m["wr"])
+    passes = (m["wr"] >= MIN_WR and m["trades"] >= dyn and m["pf"] >= MIN_PF
+              and m["total_pnl_pct"] > 0)
+    return {
+        "batch": batch_id, "strategy": strat_name, "symbol": sym, "tf": tf,
+        "params": best["params"], "metrics": m, "passes": passes,
+    }
+
+
+def run(batches, label, shortlist_path, promoted_path, progress_path):
+    import pickle
+    dedup = _load_dedup()
+    print(f"[{label}] dedup set: {len(dedup)} combos already covered (will skip)")
+
+    jobs = []
+    for b in batches:
+        try:
+            mod = importlib.import_module(f"strategies_mac_batch{b}")
+        except Exception as e:
+            print(f"[skip] batch {b}: {type(e).__name__}: {e}")
+            continue
+        for name, spec in mod.STRATEGY_EXPORT.items():
+            if not spec.get("gen") or not spec.get("space"):
+                continue
+            jobs.append((b, name, pickle.dumps(spec)))
+    print(f"[{label}] {len(jobs)} strategies loaded")
+
+    cand_paths = {}
+    for s in SYMBOLS:
+        for tf in TFS:
+            p = ROOT / "data" / "candles" / f"{s}_{SOURCE_TF[tf]}.csv.gz"
+            if p.exists():
+                cand_paths[(s, tf)] = str(p)
+    print(f"[{label}] {len(cand_paths)} (sym,tf) candidate pairs")
+
+    tf_order = {tf: i for i, tf in enumerate(TFS)}
+    tasks = []
+    skipped_dedup = 0
+    for (batch_id, strat_name, spec_pkl) in jobs:
+        for (sym, tf) in cand_paths:
+            if (strat_name, sym, tf) in dedup:
+                skipped_dedup += 1
+                continue
+            tasks.append((tf_order[tf], batch_id, strat_name, spec_pkl, sym, tf))
+    tasks.sort()
+    total = len(tasks)
+    print(f"[{label}] {total:,} tasks after dedup ({skipped_dedup} skipped)")
+
+    done_keys = set()
+    shortlist = []
+    if progress_path.exists():
+        try:
+            prev = json.loads(progress_path.read_text())
+            for r in prev.get("shortlist", []):
+                k = (r["batch"], r["strategy"], r["symbol"], r["tf"])
+                done_keys.add(k)
+                shortlist.append(r)
+            print(f"[{label}] resuming: {len(done_keys)} tasks already done")
+        except Exception as e:
+            print(f"[{label}] progress unreadable: {e}")
+
+    grails = sum(1 for r in shortlist if r["passes"])
+    t0 = time.time()
+
+    with ProcessPoolExecutor(max_workers=WORKERS, initializer=_w_init,
+                             initargs=(cand_paths,)) as pool:
+        futures = {}
+        task_iter = iter(tasks)
+        primed = 0
+        target_primed = WORKERS * 4
+        while primed < target_primed:
+            try:
+                _, b, name, pkl, sym, tf = next(task_iter)
+            except StopIteration:
+                break
+            if (b, name, sym, tf) in done_keys:
+                continue
+            seed = hash((name, sym, tf, b)) & 0xFFFFFFFF
+            fut = pool.submit(_w_job, b, name, pkl, sym, tf, TRIALS_PER_COMBO, seed)
+            futures[fut] = (b, name, sym, tf)
+            primed += 1
+
+        n_done = len(done_keys)
+        while futures:
+            for fut in as_completed(list(futures.keys()), timeout=None):
+                key = futures.pop(fut)
+                try:
+                    r = fut.result(timeout=COMBO_TIMEOUT_S)
+                except FTimeout:
+                    print(f"[TIMEOUT] {key}")
+                    r = None
+                except Exception as e:
+                    print(f"[ERR] {key}: {type(e).__name__}: {str(e)[:80]}")
+                    r = None
+                n_done += 1
+                if r is not None:
+                    shortlist.append(r)
+                    if r["passes"]:
+                        grails += 1
+                        m = r["metrics"]
+                        print(f"[GRAIL] {r['strategy']:<30} {r['symbol']:<8} {r['tf']:<3} "
+                              f"WR={m['wr']:.1f}% n={m['trades']} PF={m['pf']:.2f} "
+                              f"PnL={m['total_pnl_pct']:.1f}%")
+                try:
+                    while True:
+                        _, b, name, pkl, sym, tf = next(task_iter)
+                        if (b, name, sym, tf) in done_keys:
+                            continue
+                        seed = hash((name, sym, tf, b)) & 0xFFFFFFFF
+                        nf = pool.submit(_w_job, b, name, pkl, sym, tf, TRIALS_PER_COMBO, seed)
+                        futures[nf] = (b, name, sym, tf)
+                        break
+                except StopIteration:
+                    pass
+                if n_done % PROGRESS_EVERY == 0 or not futures:
+                    elapsed = time.time() - t0
+                    rate = (n_done - len(done_keys)) / max(1, elapsed)
+                    eta = (total - n_done) / max(1e-6, rate)
+                    print(f"[{label}] {n_done}/{total} ({100*n_done/total:.1f}%)  "
+                          f"grails={grails}  rate={rate:.1f}/s  eta={eta/60:.1f}m")
+                    _flush(progress_path, shortlist, n_done, total, grails)
+
+    _flush(progress_path, shortlist, n_done, total, grails)
+    _write_reports(shortlist, label, batches, shortlist_path, promoted_path, t0)
+    return shortlist, grails
+
+
+def _flush(progress_path, shortlist, n_done, total, grails):
+    try:
+        progress_path.write_text(json.dumps({
+            "n_done": n_done, "total": total, "grails": grails,
+            "shortlist": shortlist,
+        }, default=_json_safe))
+    except Exception as e:
+        print(f"[WARN] progress flush: {e}")
+
+
+def _json_safe(o):
+    if hasattr(o, "item"):
+        return o.item()
+    if isinstance(o, (np.bool_, np.integer, np.floating)):
+        return o.item()
+    return str(o)
+
+
+def _write_reports(shortlist, label, batches, shortlist_path, promoted_path, t0):
+    passing = [r for r in shortlist if r["passes"]]
+    passing.sort(key=lambda r: (-r["metrics"]["wr"], -r["metrics"]["pf"]))
+    promoted = {}
+    for r in passing:
+        promoted.setdefault(r["strategy"], []).append(r)
+
+    elapsed = time.time() - t0
+    lines = [
+        f"# {label} shortlist (Mac paralela)",
+        "",
+        f"- Batches: {', '.join(str(b) for b in batches)}",
+        f"- Tasks completed: {len(shortlist):,}",
+        f"- Grails passing R24-reduced gate (WR>=70 + PF>=1.2 + PnL>0): **{len(passing)}**",
+        f"- Strategies promoted (>=1 combo pass): **{len(promoted)}**",
+        f"- Elapsed: {elapsed:.0f}s",
+        "",
+        "| Rank | Strategy | Sym | TF | WR | trades | PF | total% | params |",
+        "|------|----------|-----|----|-----|--------|-----|--------|--------|",
+    ]
+    for i, r in enumerate(passing[:200], 1):
+        m = r["metrics"]
+        p = json.dumps(r["params"], separators=(",", ":"), default=str)
+        lines.append(f"| {i} | `{r['strategy']}` | {r['symbol']} | {r['tf']} | "
+                     f"{m['wr']:.1f}% | {m['trades']} | {m['pf']:.2f} | "
+                     f"{m['total_pnl_pct']:.1f}% | `{p}` |")
+    shortlist_path.write_text("\n".join(lines) + "\n")
+
+    prom_json = {}
+    for name, combos in promoted.items():
+        combos.sort(key=lambda r: -r["metrics"]["wr"])
+        prom_json[name] = {
+            "best": {"sym": combos[0]["symbol"], "tf": combos[0]["tf"],
+                     "wr": combos[0]["metrics"]["wr"],
+                     "trades": combos[0]["metrics"]["trades"],
+                     "pf": combos[0]["metrics"]["pf"],
+                     "params": combos[0]["params"]},
+            "passing_combos": len(combos),
+            "all_passing": [
+                {"sym": c["symbol"], "tf": c["tf"], "wr": c["metrics"]["wr"],
+                 "trades": c["metrics"]["trades"], "pf": c["metrics"]["pf"],
+                 "params": c["params"]} for c in combos
+            ],
+        }
+    promoted_path.write_text(json.dumps(prom_json, indent=2, default=str) + "\n")
+    print(f"Wrote {shortlist_path} ({len(passing)} grails) + {promoted_path}")
+
+
+WAVE_BATCHES = {
+    "m1": ["3700"],
+    "m2": ["3701"],
+    "m3": ["3702"],
+    "m4": ["3703"],
+    "m5": ["3704"],
+    "m6": ["3705"],
+    "m7": ["3706"],
+}
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--wave", choices=list(WAVE_BATCHES.keys()), required=True)
+    ap.add_argument("--tfs", nargs="+", default=None)
+    ap.add_argument("--batches", nargs="+", default=None)
+    args = ap.parse_args()
+
+    (ROOT / "results").mkdir(exist_ok=True)
+    (ROOT / "logs").mkdir(exist_ok=True)
+
+    tfs_label = ""
+    if args.tfs:
+        global TFS
+        TFS = [tf for tf in TFS if tf in args.tfs]
+        tfs_label = "_" + "_".join(args.tfs)
+
+    batches = args.batches if args.batches else WAVE_BATCHES[args.wave]
+    label = f"MAC_{args.wave.upper()}{tfs_label}"
+    base = f"mac_{args.wave}{tfs_label}"
+    sp = ROOT / "results" / f"{base}_SHORTLIST.md"
+    pp = ROOT / "results" / f"{base}_PROMOTED.json"
+    prog = ROOT / "results" / f"{base}_progress.json"
+
+    shortlist, grails = run(batches, label, sp, pp, prog)
+    print(f"\n{label} DONE: {grails} grails, {len(shortlist)} tasks")
+
+
+if __name__ == "__main__":
+    main()
