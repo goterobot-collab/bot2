@@ -1,0 +1,898 @@
+[
+  {
+    "wave": "m4",
+    "batch": "3703",
+    "strategy": "TV_DPO_Extreme",
+    "symbol": "GMX",
+    "tf": "1d",
+    "params": {
+      "dpo_len": 17,
+      "z_threshold": 2.3852233823056594
+    },
+    "optuna_wr": 65.2,
+    "optuna_trades": 23,
+    "optuna_pf": 2.262,
+    "optuna_pnl_pct": 24.18,
+    "forensic_wr": 47.8,
+    "forensic_n_trades": 23,
+    "forensic_pnl_pct": 0.62,
+    "gap_pp": 17.4,
+    "max_trade_pct_of_pnl": 22.4,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      0.3285,
+      -1.0411,
+      0.6419,
+      -0.5243,
+      1.5072,
+      9.0734,
+      -0.1805,
+      8.9541,
+      11.5048,
+      -0.4506,
+      7.8685,
+      -1.5199,
+      -20.0584,
+      5.6974,
+      -5.9776,
+      0.9028,
+      -9.8538,
+      -3.5222,
+      -4.1159,
+      2.4515,
+      2.5356,
+      -3.5629,
+      -0.0416
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (47.8%)",
+      "gap>5pp (17.4pp)",
+      "n<dynmin (23<999)"
+    ]
+  },
+  {
+    "wave": "m4",
+    "batch": "3703",
+    "strategy": "TV_DPO_Extreme",
+    "symbol": "ONDO",
+    "tf": "1d",
+    "params": {
+      "dpo_len": 20,
+      "z_threshold": 1.85998223606642
+    },
+    "optuna_wr": 68.8,
+    "optuna_trades": 32,
+    "optuna_pf": 3.169,
+    "optuna_pnl_pct": 70.09,
+    "forensic_wr": 59.4,
+    "forensic_n_trades": 32,
+    "forensic_pnl_pct": 73.91,
+    "gap_pp": 9.4,
+    "max_trade_pct_of_pnl": 15.9,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      -6.6325,
+      5.9244,
+      -5.428,
+      7.5568,
+      6.1464,
+      9.5002,
+      3.9799,
+      17.4043,
+      9.6586,
+      8.3079,
+      4.7587,
+      -0.4867,
+      1.1993,
+      -1.0103,
+      -0.7278,
+      7.1997,
+      -2.1533,
+      -3.7986,
+      -0.5603,
+      5.5754,
+      0.5967,
+      1.4685,
+      -1.3567,
+      1.3048,
+      -0.6878,
+      -6.6879,
+      17.7352,
+      2.1104,
+      -1.7851,
+      0.6904,
+      0.3441,
+      -6.2329
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (59.4%)",
+      "gap>5pp (9.4pp)",
+      "n<dynmin (32<999)"
+    ]
+  },
+  {
+    "wave": "m4",
+    "batch": "3703",
+    "strategy": "TV_DPO_Extreme",
+    "symbol": "OP",
+    "tf": "1d",
+    "params": {
+      "dpo_len": 35,
+      "z_threshold": 2.2793924440816986
+    },
+    "optuna_wr": 65.7,
+    "optuna_trades": 35,
+    "optuna_pf": 3.353,
+    "optuna_pnl_pct": 94.42,
+    "forensic_wr": 51.4,
+    "forensic_n_trades": 35,
+    "forensic_pnl_pct": 47.97,
+    "gap_pp": 14.3,
+    "max_trade_pct_of_pnl": 21.7,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      3.2927,
+      11.2324,
+      29.67,
+      4.9051,
+      -5.1117,
+      3.7282,
+      2.9735,
+      1.4615,
+      -0.39,
+      -2.8095,
+      -7.6817,
+      -5.4766,
+      -2.7774,
+      -20.7845,
+      2.9296,
+      -13.5449,
+      5.5996,
+      14.765,
+      8.9322,
+      10.4228,
+      1.1268,
+      -2.2892,
+      2.7051,
+      -4.783,
+      -0.3651,
+      -1.3692,
+      -0.2346,
+      4.2861,
+      18.1907,
+      -12.5927,
+      -4.6281,
+      -0.0131,
+      6.0209,
+      4.4547,
+      -3.8784
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (51.4%)",
+      "gap>5pp (14.3pp)",
+      "n<dynmin (35<999)"
+    ]
+  },
+  {
+    "wave": "m4",
+    "batch": "3703",
+    "strategy": "TV_DPO_Extreme",
+    "symbol": "PYTH",
+    "tf": "1d",
+    "params": {
+      "dpo_len": 39,
+      "z_threshold": 2.0856628713370995
+    },
+    "optuna_wr": 65.0,
+    "optuna_trades": 20,
+    "optuna_pf": 2.577,
+    "optuna_pnl_pct": 40.25,
+    "forensic_wr": 50.0,
+    "forensic_n_trades": 20,
+    "forensic_pnl_pct": -1.21,
+    "gap_pp": 15.0,
+    "max_trade_pct_of_pnl": 19.9,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      -2.0409,
+      0.1622,
+      -1.1284,
+      6.375,
+      -10.5253,
+      -3.0224,
+      1.3367,
+      -3.0889,
+      -4.2454,
+      11.9445,
+      3.4504,
+      -7.0151,
+      -10.6681,
+      2.8624,
+      9.8159,
+      5.3737,
+      11.3239,
+      -15.9883,
+      7.3551,
+      -3.4841
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (50.0%)",
+      "gap>5pp (15.0pp)",
+      "pnl<=0 (-1.21%)",
+      "n<dynmin (20<999)"
+    ]
+  },
+  {
+    "wave": "m4",
+    "batch": "3703",
+    "strategy": "TV_DPO_Extreme",
+    "symbol": "WLD",
+    "tf": "1d",
+    "params": {
+      "dpo_len": 38,
+      "z_threshold": 2.189897443440503
+    },
+    "optuna_wr": 72.7,
+    "optuna_trades": 22,
+    "optuna_pf": 2.318,
+    "optuna_pnl_pct": 57.84,
+    "forensic_wr": 72.7,
+    "forensic_n_trades": 22,
+    "forensic_pnl_pct": 55.9,
+    "gap_pp": 0.0,
+    "max_trade_pct_of_pnl": 20.3,
+    "dynamic_min_trades": 8,
+    "trade_pnls_pct": [
+      2.3783,
+      11.1088,
+      -11.2856,
+      -1.0894,
+      -6.4963,
+      1.6398,
+      16.4887,
+      2.4376,
+      5.1627,
+      2.7469,
+      -15.7833,
+      2.7982,
+      0.6166,
+      0.4297,
+      -0.9831,
+      4.8861,
+      2.0018,
+      11.5682,
+      5.6671,
+      -3.6082,
+      5.9098,
+      19.307
+    ],
+    "gate1_status": "PASS",
+    "gate1_reasons": [],
+    "gate_concentration_status": "PASS",
+    "plateau_n_neighbors": 48,
+    "plateau_n_passing": 8,
+    "plateau_pct_passing": 16.7,
+    "gate2_status": "FAIL",
+    "gate2_neighbors": [
+      {
+        "params": {
+          "dpo_len": 30,
+          "z_threshold": 1.751918
+        },
+        "wr": 47.7,
+        "trades": 44,
+        "pnl_pct": -49.02,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 30,
+          "z_threshold": 1.861413
+        },
+        "wr": 52.8,
+        "trades": 36,
+        "pnl_pct": -29.11,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 30,
+          "z_threshold": 1.970908
+        },
+        "wr": 54.5,
+        "trades": 33,
+        "pnl_pct": -8.15,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 30,
+          "z_threshold": 2.080403
+        },
+        "wr": 50.0,
+        "trades": 32,
+        "pnl_pct": -21.66,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 30,
+          "z_threshold": 2.189897
+        },
+        "wr": 61.5,
+        "trades": 26,
+        "pnl_pct": 24.69,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 30,
+          "z_threshold": 2.299392
+        },
+        "wr": 66.7,
+        "trades": 21,
+        "pnl_pct": 16.23,
+        "passes": true
+      },
+      {
+        "params": {
+          "dpo_len": 30,
+          "z_threshold": 2.408887
+        },
+        "wr": 70.6,
+        "trades": 17,
+        "pnl_pct": 25.48,
+        "passes": true
+      },
+      {
+        "params": {
+          "dpo_len": 30,
+          "z_threshold": 2.5
+        },
+        "wr": 75.0,
+        "trades": 16,
+        "pnl_pct": 25.17,
+        "passes": true
+      },
+      {
+        "params": {
+          "dpo_len": 32,
+          "z_threshold": 1.751918
+        },
+        "wr": 44.7,
+        "trades": 47,
+        "pnl_pct": -56.8,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 32,
+          "z_threshold": 1.861413
+        },
+        "wr": 54.1,
+        "trades": 37,
+        "pnl_pct": -14.83,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 32,
+          "z_threshold": 1.970908
+        },
+        "wr": 56.7,
+        "trades": 30,
+        "pnl_pct": -0.78,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 32,
+          "z_threshold": 2.080403
+        },
+        "wr": 53.6,
+        "trades": 28,
+        "pnl_pct": -19.37,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 32,
+          "z_threshold": 2.189897
+        },
+        "wr": 54.2,
+        "trades": 24,
+        "pnl_pct": -6.49,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 32,
+          "z_threshold": 2.299392
+        },
+        "wr": 52.4,
+        "trades": 21,
+        "pnl_pct": -10.29,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 32,
+          "z_threshold": 2.408887
+        },
+        "wr": 61.1,
+        "trades": 18,
+        "pnl_pct": 45.67,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 32,
+          "z_threshold": 2.5
+        },
+        "wr": 69.2,
+        "trades": 13,
+        "pnl_pct": 41.53,
+        "passes": true
+      },
+      {
+        "params": {
+          "dpo_len": 34,
+          "z_threshold": 1.751918
+        },
+        "wr": 39.5,
+        "trades": 43,
+        "pnl_pct": -138.79,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 34,
+          "z_threshold": 1.861413
+        },
+        "wr": 37.8,
+        "trades": 37,
+        "pnl_pct": -159.73,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 34,
+          "z_threshold": 1.970908
+        },
+        "wr": 38.2,
+        "trades": 34,
+        "pnl_pct": -167.34,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 34,
+          "z_threshold": 2.080403
+        },
+        "wr": 39.3,
+        "trades": 28,
+        "pnl_pct": -155.08,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 34,
+          "z_threshold": 2.189897
+        },
+        "wr": 32.0,
+        "trades": 25,
+        "pnl_pct": -153.16,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 34,
+          "z_threshold": 2.299392
+        },
+        "wr": 27.3,
+        "trades": 22,
+        "pnl_pct": -114.51,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 34,
+          "z_threshold": 2.408887
+        },
+        "wr": 22.2,
+        "trades": 18,
+        "pnl_pct": -99.17,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 34,
+          "z_threshold": 2.5
+        },
+        "wr": 38.5,
+        "trades": 13,
+        "pnl_pct": -13.58,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 36,
+          "z_threshold": 1.751918
+        },
+        "wr": 44.7,
+        "trades": 38,
+        "pnl_pct": 0.38,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 36,
+          "z_threshold": 1.861413
+        },
+        "wr": 42.9,
+        "trades": 35,
+        "pnl_pct": -19.06,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 36,
+          "z_threshold": 1.970908
+        },
+        "wr": 43.8,
+        "trades": 32,
+        "pnl_pct": -22.05,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 36,
+          "z_threshold": 2.080403
+        },
+        "wr": 46.2,
+        "trades": 26,
+        "pnl_pct": -0.12,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 36,
+          "z_threshold": 2.189897
+        },
+        "wr": 40.9,
+        "trades": 22,
+        "pnl_pct": -24.42,
+        "passes": false
+      },
+      {
+        "params": {
+          "dpo_len": 36,
+          "z_threshold": 2.299392
+        },
+        "wr": 47.4,
+        "trades": 19,
+        "pnl_pct": -49.73,
+        "passes": false
+      }
+    ]
+  },
+  {
+    "wave": "m4",
+    "batch": "3703",
+    "strategy": "TV_Keltner_Breakout",
+    "symbol": "AVAX",
+    "tf": "1d",
+    "params": {
+      "ema_len": 19,
+      "atr_len": 16,
+      "mult": 2.9109191275700432,
+      "trend_len": 103
+    },
+    "optuna_wr": 68.4,
+    "optuna_trades": 19,
+    "optuna_pf": 3.759,
+    "optuna_pnl_pct": 61.39,
+    "forensic_wr": 47.4,
+    "forensic_n_trades": 19,
+    "forensic_pnl_pct": 73.97,
+    "gap_pp": 21.0,
+    "max_trade_pct_of_pnl": 25.9,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      29.67,
+      -4.0273,
+      29.67,
+      -12.1836,
+      14.7252,
+      9.314,
+      -4.2267,
+      -2.2315,
+      -4.3788,
+      1.025,
+      -0.6512,
+      18.8768,
+      6.2077,
+      -8.4439,
+      -0.6389,
+      -1.5479,
+      3.4075,
+      -2.3819,
+      1.7848
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (47.4%)",
+      "gap>5pp (21.0pp)",
+      "n<dynmin (19<999)"
+    ]
+  },
+  {
+    "wave": "m4",
+    "batch": "3703",
+    "strategy": "TV_Keltner_Breakout",
+    "symbol": "ETH",
+    "tf": "1d",
+    "params": {
+      "ema_len": 45,
+      "atr_len": 20,
+      "mult": 2.527287400791555,
+      "trend_len": 48
+    },
+    "optuna_wr": 68.8,
+    "optuna_trades": 48,
+    "optuna_pf": 2.18,
+    "optuna_pnl_pct": 65.36,
+    "forensic_wr": 68.8,
+    "forensic_n_trades": 48,
+    "forensic_pnl_pct": 120.97,
+    "gap_pp": 0.0,
+    "max_trade_pct_of_pnl": 12.5,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      -3.5567,
+      3.3602,
+      -1.3976,
+      2.0184,
+      1.0334,
+      4.8903,
+      8.5463,
+      -1.2506,
+      -4.4318,
+      1.7128,
+      -0.3566,
+      -1.6747,
+      20.8695,
+      1.8989,
+      5.4363,
+      3.8911,
+      0.7369,
+      9.7855,
+      12.276,
+      14.1842,
+      1.7556,
+      7.9463,
+      1.8706,
+      9.7257,
+      3.8216,
+      0.7228,
+      4.1151,
+      2.7261,
+      1.0195,
+      6.3595,
+      5.479,
+      -0.193,
+      4.15,
+      0.8248,
+      8.5956,
+      -12.9399,
+      3.4985,
+      8.2207,
+      -0.4476,
+      -5.9901,
+      -1.6284,
+      -0.1854,
+      -5.0781,
+      1.0239,
+      -1.9119,
+      3.6224,
+      -5.2237,
+      1.1177
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (68.8%)",
+      "n<dynmin (48<999)"
+    ]
+  },
+  {
+    "wave": "m4",
+    "batch": "3703",
+    "strategy": "TV_Keltner_Breakout",
+    "symbol": "ONDO",
+    "tf": "1d",
+    "params": {
+      "ema_len": 36,
+      "atr_len": 14,
+      "mult": 2.739483299068358,
+      "trend_len": 32
+    },
+    "optuna_wr": 66.7,
+    "optuna_trades": 18,
+    "optuna_pf": 2.961,
+    "optuna_pnl_pct": 35.29,
+    "forensic_wr": 50.0,
+    "forensic_n_trades": 18,
+    "forensic_pnl_pct": 26.65,
+    "gap_pp": 16.7,
+    "max_trade_pct_of_pnl": 39.2,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      -6.344,
+      29.67,
+      10.1654,
+      6.6788,
+      3.7208,
+      -4.5695,
+      -8.5943,
+      8.0049,
+      -2.2176,
+      1.765,
+      10.8401,
+      4.0698,
+      -0.1438,
+      -18.3952,
+      -2.3606,
+      -4.6411,
+      0.7838,
+      -1.7851
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (50.0%)",
+      "gap>5pp (16.7pp)",
+      "n<dynmin (18<999)"
+    ]
+  },
+  {
+    "wave": "m4",
+    "batch": "3703",
+    "strategy": "TV_Renko_Flip",
+    "symbol": "ETH",
+    "tf": "1d",
+    "params": {
+      "brick_atr_len": 20,
+      "brick_mult": 2.5566030306494603
+    },
+    "optuna_wr": 65.2,
+    "optuna_trades": 23,
+    "optuna_pf": 1.735,
+    "optuna_pnl_pct": 31.06,
+    "forensic_wr": 56.5,
+    "forensic_n_trades": 23,
+    "forensic_pnl_pct": 34.52,
+    "gap_pp": 8.7,
+    "max_trade_pct_of_pnl": 35.9,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      -8.1906,
+      -3.6142,
+      -6.7845,
+      3.5192,
+      3.5773,
+      -9.0264,
+      1.3309,
+      -4.9272,
+      0.8866,
+      2.7106,
+      -1.1831,
+      4.7144,
+      -6.1586,
+      1.1134,
+      29.67,
+      2.461,
+      -2.0452,
+      19.8281,
+      5.0247,
+      0.8248,
+      6.9043,
+      -3.5167,
+      -2.5957
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (56.5%)",
+      "gap>5pp (8.7pp)",
+      "n<dynmin (23<999)"
+    ]
+  },
+  {
+    "wave": "m4",
+    "batch": "3703",
+    "strategy": "TV_Renko_Flip",
+    "symbol": "JTO",
+    "tf": "1d",
+    "params": {
+      "brick_atr_len": 10,
+      "brick_mult": 2.8658497863462054
+    },
+    "optuna_wr": 66.7,
+    "optuna_trades": 15,
+    "optuna_pf": 3.545,
+    "optuna_pnl_pct": 35.41,
+    "forensic_wr": 60.0,
+    "forensic_n_trades": 15,
+    "forensic_pnl_pct": 44.18,
+    "gap_pp": 6.7,
+    "max_trade_pct_of_pnl": 21.6,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      12.4141,
+      5.9733,
+      11.0056,
+      -0.2487,
+      -0.8803,
+      8.1992,
+      -4.4748,
+      14.6815,
+      -13.721,
+      3.8853,
+      -1.7024,
+      7.11,
+      2.6788,
+      -2.9116,
+      2.17
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (60.0%)",
+      "gap>5pp (6.7pp)",
+      "n<dynmin (15<999)"
+    ]
+  },
+  {
+    "wave": "m4",
+    "batch": "3703",
+    "strategy": "TV_DMI_ADX_Surge",
+    "symbol": "ARB",
+    "tf": "4h",
+    "params": {
+      "dmi_len": 20,
+      "adx_threshold": 31
+    },
+    "optuna_wr": 66.7,
+    "optuna_trades": 15,
+    "optuna_pf": 1.677,
+    "optuna_pnl_pct": 4.59,
+    "forensic_wr": 64.3,
+    "forensic_n_trades": 14,
+    "forensic_pnl_pct": 9.03,
+    "gap_pp": 2.4,
+    "max_trade_pct_of_pnl": 26.2,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      -2.444,
+      0.9171,
+      -0.7251,
+      1.6148,
+      2.1219,
+      1.2145,
+      1.8766,
+      1.1847,
+      -0.6106,
+      2.0356,
+      3.9696,
+      -1.6772,
+      0.2265,
+      -0.6725
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (64.3%)",
+      "n<dynmin (14<999)"
+    ]
+  }
+]

@@ -34,7 +34,9 @@ from canary_runner import load_candles, run_forensic
 
 SOURCE_TF = {"1h": "1h", "4h": "1h", "1d": "1h", "5m": "5m", "15m": "5m"}
 JITTERS = [-0.20, -0.10, 0.0, 0.10, 0.20]
+JITTERS_FINE = [-0.20, -0.15, -0.10, -0.05, 0.0, 0.05, 0.10, 0.15, 0.20]
 CATEGORICAL_PARAMS = {"require_zero", "mode"}
+MAX_PLATEAU_NEIGHBORS = 300
 
 GATE1_WR = 70.0
 GATE1_GAP = 5.0
@@ -148,10 +150,10 @@ def gate_concentration(g1):
     return {**g1, "gate_concentration_status": status}
 
 
-def jitter_int(val, space_spec):
+def jitter_int(val, space_spec, jitters):
     kind, lo, hi = space_spec[0], space_spec[1], space_spec[2]
     out = set()
-    for j in JITTERS:
+    for j in jitters:
         v = val * (1.0 + j)
         if kind == "int":
             vi = int(round(v))
@@ -168,16 +170,24 @@ def gate2_plateau(g):
         return g
     gen_fn, space = load_gen(g["batch"], g["strategy"])
     df = load_candles(g["symbol"], SOURCE_TF[g["tf"]], g["tf"])
-    axes = {}
     params = dict(g["params"])
+    numeric_params = [p for p in params if p not in CATEGORICAL_PARAMS and p in space]
+    # Use fine-grained jitters for <=2 numeric params (else combos explode)
+    jitters = JITTERS_FINE if len(numeric_params) <= 2 else JITTERS
+    axes = {}
     for pname, pval in params.items():
         if pname in CATEGORICAL_PARAMS or pname not in space:
             axes[pname] = [pval]
             continue
-        axes[pname] = jitter_int(pval, space[pname])
+        axes[pname] = jitter_int(pval, space[pname], jitters)
     keys = list(axes.keys())
     combos = [dict(zip(keys, vals)) for vals in product(*[axes[k] for k in keys])]
     combos = [c for c in combos if c != params]
+    # Cap neighbors: random sample if too many
+    if len(combos) > MAX_PLATEAU_NEIGHBORS:
+        rng = np.random.default_rng(hash((g["strategy"], g["symbol"], g["tf"])) & 0xFFFFFFFF)
+        idx = rng.choice(len(combos), size=MAX_PLATEAU_NEIGHBORS, replace=False)
+        combos = [combos[int(i)] for i in idx]
     pass_n = 0
     neighbors = []
     for c in combos:
