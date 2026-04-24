@@ -46,7 +46,7 @@ SYMBOLS = [
 TFS = ["1d", "4h", "1h", "15m", "5m"]
 SOURCE_TF = {"5m": "5m", "15m": "5m", "1h": "1h", "4h": "1h", "1d": "1h"}
 
-MIN_WR = 70.0
+MIN_WR = 70.0        # overridable via --min-wr (project CLAUDE.md allows 60; COORDINADORA wants 70)
 MIN_PF = 1.2
 MIN_TRADES_FLOOR = 8
 TRIALS_PER_COMBO = 20
@@ -57,9 +57,11 @@ PROGRESS_EVERY = 200
 
 def _min_trades_dynamic(wr):
     if wr >= 100: return 2
+    if wr >= 96:  return 3
     if wr >= 90:  return 4
     if wr >= 80:  return 8
     if wr >= 70:  return 8
+    if wr >= 60:  return 15  # project tier: WR 60-70 needs more samples to be a candidate
     return 999
 
 
@@ -382,7 +384,12 @@ def main():
     ap.add_argument("--wave", choices=list(WAVE_BATCHES.keys()), required=True)
     ap.add_argument("--tfs", nargs="+", default=None)
     ap.add_argument("--batches", nargs="+", default=None)
+    ap.add_argument("--min-wr", type=float, default=70.0,
+                    help="Hunter gate WR threshold (default 70; 60 = project grail threshold, not V10)")
     args = ap.parse_args()
+
+    global MIN_WR
+    MIN_WR = float(args.min_wr)
 
     (ROOT / "results").mkdir(exist_ok=True)
     (ROOT / "logs").mkdir(exist_ok=True)
