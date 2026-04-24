@@ -1,0 +1,321 @@
+[
+  {
+    "strategy": "TV_TRIX_Cross",
+    "symbol": "NEAR",
+    "tf": "1d",
+    "grail_params": {
+      "trix_len": 24,
+      "sig_len": 10,
+      "require_zero": 1
+    },
+    "n_neighbors": 24,
+    "n_neighbors_passing": 1,
+    "plateau_pct_passing": 4.2,
+    "plateau_threshold_pct": 60.0,
+    "gate2_status": "FAIL",
+    "neighbors": [
+      {
+        "params": {
+          "trix_len": 19,
+          "sig_len": 8,
+          "require_zero": 1
+        },
+        "wr": 30.0,
+        "trades": 20,
+        "pnl_pct": -7.05,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 19,
+          "sig_len": 9,
+          "require_zero": 1
+        },
+        "wr": 31.6,
+        "trades": 19,
+        "pnl_pct": -46.86,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 19,
+          "sig_len": 10,
+          "require_zero": 1
+        },
+        "wr": 35.0,
+        "trades": 20,
+        "pnl_pct": -88.47,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 19,
+          "sig_len": 11,
+          "require_zero": 1
+        },
+        "wr": 33.3,
+        "trades": 18,
+        "pnl_pct": -62.61,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 19,
+          "sig_len": 12,
+          "require_zero": 1
+        },
+        "wr": 44.4,
+        "trades": 18,
+        "pnl_pct": -36.95,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 22,
+          "sig_len": 8,
+          "require_zero": 1
+        },
+        "wr": 44.4,
+        "trades": 18,
+        "pnl_pct": 10.46,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 22,
+          "sig_len": 9,
+          "require_zero": 1
+        },
+        "wr": 50.0,
+        "trades": 18,
+        "pnl_pct": -2.8,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 22,
+          "sig_len": 10,
+          "require_zero": 1
+        },
+        "wr": 64.7,
+        "trades": 17,
+        "pnl_pct": 42.42,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 22,
+          "sig_len": 11,
+          "require_zero": 1
+        },
+        "wr": 60.0,
+        "trades": 15,
+        "pnl_pct": 20.52,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 22,
+          "sig_len": 12,
+          "require_zero": 1
+        },
+        "wr": 71.4,
+        "trades": 14,
+        "pnl_pct": 29.78,
+        "passes_loose": true
+      },
+      {
+        "params": {
+          "trix_len": 24,
+          "sig_len": 8,
+          "require_zero": 1
+        },
+        "wr": 64.7,
+        "trades": 17,
+        "pnl_pct": 4.55,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 24,
+          "sig_len": 9,
+          "require_zero": 1
+        },
+        "wr": 64.3,
+        "trades": 14,
+        "pnl_pct": 32.53,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 24,
+          "sig_len": 11,
+          "require_zero": 1
+        },
+        "wr": 61.5,
+        "trades": 13,
+        "pnl_pct": 20.4,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 24,
+          "sig_len": 12,
+          "require_zero": 1
+        },
+        "wr": 41.7,
+        "trades": 12,
+        "pnl_pct": -1.33,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 26,
+          "sig_len": 8,
+          "require_zero": 1
+        },
+        "wr": 42.9,
+        "trades": 14,
+        "pnl_pct": -18.12,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 26,
+          "sig_len": 9,
+          "require_zero": 1
+        },
+        "wr": 38.5,
+        "trades": 13,
+        "pnl_pct": -32.7,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 26,
+          "sig_len": 10,
+          "require_zero": 1
+        },
+        "wr": 25.0,
+        "trades": 12,
+        "pnl_pct": -37.6,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 26,
+          "sig_len": 11,
+          "require_zero": 1
+        },
+        "wr": 36.4,
+        "trades": 11,
+        "pnl_pct": -31.59,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 26,
+          "sig_len": 12,
+          "require_zero": 1
+        },
+        "wr": 36.4,
+        "trades": 11,
+        "pnl_pct": -12.41,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 29,
+          "sig_len": 8,
+          "require_zero": 1
+        },
+        "wr": 56.2,
+        "trades": 16,
+        "pnl_pct": -5.54,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 29,
+          "sig_len": 9,
+          "require_zero": 1
+        },
+        "wr": 50.0,
+        "trades": 14,
+        "pnl_pct": -28.31,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 29,
+          "sig_len": 10,
+          "require_zero": 1
+        },
+        "wr": 42.9,
+        "trades": 14,
+        "pnl_pct": -10.53,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 29,
+          "sig_len": 11,
+          "require_zero": 1
+        },
+        "wr": 42.9,
+        "trades": 14,
+        "pnl_pct": -7.2,
+        "passes_loose": false
+      },
+      {
+        "params": {
+          "trix_len": 29,
+          "sig_len": 12,
+          "require_zero": 1
+        },
+        "wr": 38.5,
+        "trades": 13,
+        "pnl_pct": -9.2,
+        "passes_loose": false
+      }
+    ],
+    "params": {
+      "trix_len": 24,
+      "sig_len": 10,
+      "require_zero": 1
+    },
+    "optuna_wr": 71.4,
+    "optuna_trades": 14,
+    "optuna_pf": 5.138,
+    "optuna_pnl_pct": 48.79,
+    "forensic_wr": 71.4,
+    "forensic_n_trades": 14,
+    "forensic_pnl_pct": 31.24,
+    "gap_pp": 0.0,
+    "max_trade_pct_of_pnl": 23.0,
+    "dynamic_min_trades": 8,
+    "fees_bps_per_side": 15,
+    "engine": "canary_runner.run_forensic v2",
+    "gate1_status": "PASS",
+    "gate1_reasons": [],
+    "trade_list_summary": {
+      "count": 14,
+      "pnls_pct": [
+        6.411,
+        -1.712,
+        4.494,
+        12.522,
+        0.914,
+        1.733,
+        12.706,
+        1.63,
+        -10.909,
+        -8.397,
+        -3.052,
+        4.055,
+        0.036,
+        10.806
+      ]
+    }
+  }
+]
