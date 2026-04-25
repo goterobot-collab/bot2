@@ -1,0 +1,198 @@
+{
+  "TV_GapFill_Reversal": {
+    "best": {
+      "sym": "ETH",
+      "tf": "4h",
+      "wr": 100.0,
+      "trades": 3,
+      "pf": 999.0,
+      "params": {
+        "gap_pct": 3.3452619027572634,
+        "atr_len": 15
+      }
+    },
+    "passing_combos": 1,
+    "all_passing": [
+      {
+        "sym": "ETH",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "gap_pct": 3.3452619027572634,
+          "atr_len": 15
+        }
+      }
+    ]
+  },
+  "TV_VolumeOscillator_Cross": {
+    "best": {
+      "sym": "AGT",
+      "tf": "1d",
+      "wr": 75.0,
+      "trades": 8,
+      "pf": 2.45,
+      "params": {
+        "fast": 14,
+        "slow": 30
+      }
+    },
+    "passing_combos": 4,
+    "all_passing": [
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 8,
+        "pf": 2.45,
+        "params": {
+          "fast": 14,
+          "slow": 30
+        }
+      },
+      {
+        "sym": "ONDO",
+        "tf": "1d",
+        "wr": 68.8,
+        "trades": 16,
+        "pf": 1.429,
+        "params": {
+          "fast": 19,
+          "slow": 57
+        }
+      },
+      {
+        "sym": "PENDLE",
+        "tf": "4h",
+        "wr": 63.3,
+        "trades": 30,
+        "pf": 1.463,
+        "params": {
+          "fast": 19,
+          "slow": 44
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "1d",
+        "wr": 62.2,
+        "trades": 45,
+        "pf": 1.251,
+        "params": {
+          "fast": 12,
+          "slow": 40
+        }
+      }
+    ]
+  },
+  "TV_AwesomeOscillator_Saucer": {
+    "best": {
+      "sym": "AGT",
+      "tf": "1d",
+      "wr": 75.0,
+      "trades": 16,
+      "pf": 1.454,
+      "params": {
+        "fast": 10,
+        "slow": 47
+      }
+    },
+    "passing_combos": 4,
+    "all_passing": [
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 16,
+        "pf": 1.454,
+        "params": {
+          "fast": 10,
+          "slow": 47
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "1d",
+        "wr": 63.2,
+        "trades": 68,
+        "pf": 3.299,
+        "params": {
+          "fast": 6,
+          "slow": 37
+        }
+      },
+      {
+        "sym": "ONDO",
+        "tf": "1d",
+        "wr": 62.5,
+        "trades": 32,
+        "pf": 1.307,
+        "params": {
+          "fast": 6,
+          "slow": 20
+        }
+      },
+      {
+        "sym": "WLD",
+        "tf": "1d",
+        "wr": 62.0,
+        "trades": 50,
+        "pf": 1.968,
+        "params": {
+          "fast": 7,
+          "slow": 40
+        }
+      }
+    ]
+  },
+  "TV_NormalizedROC": {
+    "best": {
+      "sym": "AGT",
+      "tf": "1d",
+      "wr": 72.7,
+      "trades": 11,
+      "pf": 1.238,
+      "params": {
+        "roc_len": 17,
+        "threshold": 2.1312306100349927
+      }
+    },
+    "passing_combos": 3,
+    "all_passing": [
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 72.7,
+        "trades": 11,
+        "pf": 1.238,
+        "params": {
+          "roc_len": 17,
+          "threshold": 2.1312306100349927
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "1d",
+        "wr": 63.3,
+        "trades": 49,
+        "pf": 1.997,
+        "params": {
+          "roc_len": 18,
+          "threshold": 2.391370216137499
+        }
+      },
+      {
+        "sym": "WLD",
+        "tf": "1d",
+        "wr": 61.9,
+        "trades": 42,
+        "pf": 1.933,
+        "params": {
+          "roc_len": 12,
+          "threshold": 2.210830163802866
+        }
+      }
+    ]
+  }
+}

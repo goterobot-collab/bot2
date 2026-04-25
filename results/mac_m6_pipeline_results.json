@@ -1,0 +1,93 @@
+[
+  {
+    "wave": "m6",
+    "batch": "3705",
+    "strategy": "TV_AwesomeOscillator_Saucer",
+    "symbol": "AGT",
+    "tf": "1d",
+    "params": {
+      "fast": 10,
+      "slow": 47
+    },
+    "optuna_wr": 75.0,
+    "optuna_trades": 16,
+    "optuna_pf": 1.454,
+    "optuna_pnl_pct": 19.83,
+    "forensic_wr": 56.2,
+    "forensic_n_trades": 16,
+    "forensic_pnl_pct": -2.18,
+    "gap_pp": 18.8,
+    "max_trade_pct_of_pnl": 24.8,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      -0.3762,
+      -0.6733,
+      -40.33,
+      0.6089,
+      10.1894,
+      2.2397,
+      4.751,
+      13.0073,
+      9.8727,
+      -3.8791,
+      15.6584,
+      -9.6801,
+      5.3477,
+      -10.0522,
+      1.4066,
+      -0.2701
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (56.2%)",
+      "gap>5pp (18.8pp)",
+      "pnl<=0 (-2.18%)",
+      "n<dynmin (16<999)"
+    ]
+  },
+  {
+    "wave": "m6",
+    "batch": "3705",
+    "strategy": "TV_VolumeOscillator_Cross",
+    "symbol": "ONDO",
+    "tf": "1d",
+    "params": {
+      "fast": 19,
+      "slow": 57
+    },
+    "optuna_wr": 68.8,
+    "optuna_trades": 16,
+    "optuna_pf": 1.429,
+    "optuna_pnl_pct": 11.75,
+    "forensic_wr": 50.0,
+    "forensic_n_trades": 16,
+    "forensic_pnl_pct": 14.39,
+    "gap_pp": 18.8,
+    "max_trade_pct_of_pnl": 23.4,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      -2.7616,
+      -4.6396,
+      12.6485,
+      10.9643,
+      -2.4919,
+      6.9593,
+      -6.7252,
+      4.707,
+      -0.8401,
+      3.6882,
+      0.7439,
+      4.5337,
+      -1.3567,
+      -16.5292,
+      -4.313,
+      9.8033
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (50.0%)",
+      "gap>5pp (18.8pp)",
+      "n<dynmin (16<999)"
+    ]
+  }
+]
