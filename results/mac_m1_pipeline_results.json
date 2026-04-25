@@ -1,0 +1,90 @@
+[
+  {
+    "wave": "m1",
+    "batch": "3700",
+    "strategy": "TV_TRIX_Cross",
+    "symbol": "ETH",
+    "tf": "1d",
+    "params": {
+      "trix_len": 13,
+      "sig_len": 17,
+      "require_zero": 1
+    },
+    "optuna_wr": 77.8,
+    "optuna_trades": 18,
+    "optuna_pf": 7.659,
+    "optuna_pnl_pct": 72.18,
+    "forensic_wr": 72.2,
+    "forensic_n_trades": 18,
+    "forensic_pnl_pct": 112.1,
+    "gap_pp": 5.6,
+    "max_trade_pct_of_pnl": 22.0,
+    "dynamic_min_trades": 8,
+    "trade_pnls_pct": [
+      2.8032,
+      -0.8033,
+      10.6738,
+      -0.0447,
+      -0.7976,
+      10.0332,
+      -2.8182,
+      7.2166,
+      6.8646,
+      3.373,
+      24.8893,
+      3.4985,
+      26.1083,
+      6.1827,
+      7.0624,
+      -1.9119,
+      6.5668,
+      3.2016
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "gap>5pp (5.6pp)"
+    ]
+  },
+  {
+    "wave": "m1",
+    "batch": "3700",
+    "strategy": "TV_TRIX_Cross",
+    "symbol": "XRP",
+    "tf": "1d",
+    "params": {
+      "trix_len": 9,
+      "sig_len": 9,
+      "require_zero": 1
+    },
+    "optuna_wr": 80.0,
+    "optuna_trades": 15,
+    "optuna_pf": 23.529,
+    "optuna_pnl_pct": 113.45,
+    "forensic_wr": 100.0,
+    "forensic_n_trades": 15,
+    "forensic_pnl_pct": 69.12,
+    "gap_pp": -20.0,
+    "max_trade_pct_of_pnl": 42.9,
+    "dynamic_min_trades": 2,
+    "trade_pnls_pct": [
+      1.7029,
+      29.67,
+      11.2159,
+      4.405,
+      0.2272,
+      4.0461,
+      1.005,
+      3.3835,
+      0.6807,
+      1.2773,
+      6.7785,
+      2.0511,
+      1.9255,
+      0.6217,
+      0.1319
+    ],
+    "gate1_status": "PASS",
+    "gate1_reasons": [],
+    "gate_concentration_status": "FAIL"
+  }
+]
