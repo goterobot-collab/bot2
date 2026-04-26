@@ -1,0 +1,274 @@
+{
+  "TV_Druckenmiller_RegimeBet": {
+    "best": {
+      "sym": "ONDO",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 6,
+      "pf": 999.0,
+      "params": {
+        "ma_long": 212,
+        "ma_mid": 76,
+        "mom_len": 95,
+        "mom_pct": 85
+      }
+    },
+    "passing_combos": 5,
+    "all_passing": [
+      {
+        "sym": "ONDO",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 6,
+        "pf": 999.0,
+        "params": {
+          "ma_long": 212,
+          "ma_mid": 76,
+          "mom_len": 95,
+          "mom_pct": 85
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "1d",
+        "wr": 68.8,
+        "trades": 32,
+        "pf": 37.134,
+        "params": {
+          "ma_long": 147,
+          "ma_mid": 61,
+          "mom_len": 87,
+          "mom_pct": 90
+        }
+      },
+      {
+        "sym": "APT",
+        "tf": "1d",
+        "wr": 65.9,
+        "trades": 44,
+        "pf": 1.919,
+        "params": {
+          "ma_long": 127,
+          "ma_mid": 58,
+          "mom_len": 87,
+          "mom_pct": 60
+        }
+      },
+      {
+        "sym": "PENDLE",
+        "tf": "4h",
+        "wr": 63.2,
+        "trades": 19,
+        "pf": 2.222,
+        "params": {
+          "ma_long": 246,
+          "ma_mid": 51,
+          "mom_len": 45,
+          "mom_pct": 86
+        }
+      },
+      {
+        "sym": "ARB",
+        "tf": "1d",
+        "wr": 60.0,
+        "trades": 35,
+        "pf": 2.714,
+        "params": {
+          "ma_long": 187,
+          "ma_mid": 51,
+          "mom_len": 45,
+          "mom_pct": 70
+        }
+      }
+    ]
+  },
+  "TV_O_Neil_NewHigh_Volume": {
+    "best": {
+      "sym": "XRP",
+      "tf": "1d",
+      "wr": 90.0,
+      "trades": 10,
+      "pf": 8.682,
+      "params": {
+        "hi_len": 99,
+        "vol_mult": 1.492947426688438,
+        "vol_ma": 30
+      }
+    },
+    "passing_combos": 3,
+    "all_passing": [
+      {
+        "sym": "XRP",
+        "tf": "1d",
+        "wr": 90.0,
+        "trades": 10,
+        "pf": 8.682,
+        "params": {
+          "hi_len": 99,
+          "vol_mult": 1.492947426688438,
+          "vol_ma": 30
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "1d",
+        "wr": 66.7,
+        "trades": 21,
+        "pf": 2.677,
+        "params": {
+          "hi_len": 70,
+          "vol_mult": 2.283210384034913,
+          "vol_ma": 16
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "1d",
+        "wr": 61.8,
+        "trades": 55,
+        "pf": 1.977,
+        "params": {
+          "hi_len": 49,
+          "vol_mult": 1.5169984773501421,
+          "vol_ma": 32
+        }
+      }
+    ]
+  },
+  "TV_TurtleSystem_55Day": {
+    "best": {
+      "sym": "XRP",
+      "tf": "1d",
+      "wr": 75.0,
+      "trades": 12,
+      "pf": 4.703,
+      "params": {
+        "breakout_len": 100,
+        "exit_len": 26
+      }
+    },
+    "passing_combos": 4,
+    "all_passing": [
+      {
+        "sym": "XRP",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 12,
+        "pf": 4.703,
+        "params": {
+          "breakout_len": 100,
+          "exit_len": 26
+        }
+      },
+      {
+        "sym": "SFP",
+        "tf": "1d",
+        "wr": 66.7,
+        "trades": 21,
+        "pf": 1.697,
+        "params": {
+          "breakout_len": 94,
+          "exit_len": 18
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "1d",
+        "wr": 65.2,
+        "trades": 46,
+        "pf": 3.36,
+        "params": {
+          "breakout_len": 65,
+          "exit_len": 28
+        }
+      },
+      {
+        "sym": "PENDLE",
+        "tf": "4h",
+        "wr": 61.3,
+        "trades": 31,
+        "pf": 2.129,
+        "params": {
+          "breakout_len": 64,
+          "exit_len": 12
+        }
+      }
+    ]
+  },
+  "TV_Livermore_PivotalPoint": {
+    "best": {
+      "sym": "ETH",
+      "tf": "1d",
+      "wr": 65.1,
+      "trades": 43,
+      "pf": 7.12,
+      "params": {
+        "pivot_lookback": 25,
+        "extension_pct": 4.290631840069981
+      }
+    },
+    "passing_combos": 3,
+    "all_passing": [
+      {
+        "sym": "ETH",
+        "tf": "1d",
+        "wr": 65.1,
+        "trades": 43,
+        "pf": 7.12,
+        "params": {
+          "pivot_lookback": 25,
+          "extension_pct": 4.290631840069981
+        }
+      },
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 64.7,
+        "trades": 17,
+        "pf": 1.236,
+        "params": {
+          "pivot_lookback": 7,
+          "extension_pct": 4.748389849212969
+        }
+      },
+      {
+        "sym": "XRP",
+        "tf": "1d",
+        "wr": 60.9,
+        "trades": 46,
+        "pf": 2.637,
+        "params": {
+          "pivot_lookback": 14,
+          "extension_pct": 4.021148236439812
+        }
+      }
+    ]
+  },
+  "TV_PaulTudorJones_200MA_Bias": {
+    "best": {
+      "sym": "TIA",
+      "tf": "1d",
+      "wr": 63.6,
+      "trades": 33,
+      "pf": 1.327,
+      "params": {
+        "ma_len": 170,
+        "mom_len": 31
+      }
+    },
+    "passing_combos": 1,
+    "all_passing": [
+      {
+        "sym": "TIA",
+        "tf": "1d",
+        "wr": 63.6,
+        "trades": 33,
+        "pf": 1.327,
+        "params": {
+          "ma_len": 170,
+          "mom_len": 31
+        }
+      }
+    ]
+  }
+}
