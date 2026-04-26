@@ -1,0 +1,927 @@
+[
+  {
+    "wave": "m9",
+    "batch": "3708",
+    "strategy": "TV_GarchVol_RegimeSwitch",
+    "symbol": "JUP",
+    "tf": "1d",
+    "params": {
+      "alpha": 0.10825344106751247,
+      "beta": 0.836447278812025,
+      "vol_window": 50,
+      "high_pct": 88
+    },
+    "optuna_wr": 68.3,
+    "optuna_trades": 41,
+    "optuna_pf": 1.433,
+    "optuna_pnl_pct": 29.98,
+    "forensic_wr": 64.1,
+    "forensic_n_trades": 39,
+    "forensic_pnl_pct": 75.28,
+    "gap_pp": 4.2,
+    "max_trade_pct_of_pnl": 11.4,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      -0.3094,
+      0.269,
+      -11.5854,
+      10.5684,
+      -2.4629,
+      4.9236,
+      11.2619,
+      6.3101,
+      -6.5861,
+      8.2047,
+      -6.7069,
+      -15.8427,
+      -4.3915,
+      -12.723,
+      2.0414,
+      -6.1944,
+      2.225,
+      10.1793,
+      5.5608,
+      8.2777,
+      -1.6054,
+      11.8997,
+      11.2507,
+      3.389,
+      4.1118,
+      3.8258,
+      -1.5665,
+      19.2831,
+      9.9462,
+      1.6117,
+      2.1237,
+      -8.5383,
+      0.1876,
+      5.133,
+      -15.1194,
+      11.8539,
+      19.8544,
+      -5.869,
+      0.4849
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (64.1%)",
+      "n<dynmin (39<999)"
+    ]
+  },
+  {
+    "wave": "m9",
+    "batch": "3708",
+    "strategy": "TV_HurstExp_Adaptive_Switch",
+    "symbol": "AGT",
+    "tf": "1d",
+    "params": {
+      "hurst_win": 74,
+      "ma_short": 9,
+      "ma_long": 31,
+      "h_trend": 0.5422639232650956,
+      "h_revert": 0.42150521634932264
+    },
+    "optuna_wr": 72.7,
+    "optuna_trades": 22,
+    "optuna_pf": 4.226,
+    "optuna_pnl_pct": 66.95,
+    "forensic_wr": 55.0,
+    "forensic_n_trades": 20,
+    "forensic_pnl_pct": 91.19,
+    "gap_pp": 17.7,
+    "max_trade_pct_of_pnl": 19.4,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      0.8332,
+      19.2698,
+      -0.6241,
+      25.0414,
+      6.4183,
+      -3.8791,
+      -4.6314,
+      12.7247,
+      -4.1411,
+      -0.8228,
+      5.0691,
+      -0.3585,
+      15.6641,
+      -10.658,
+      14.9742,
+      -12.4744,
+      21.0789,
+      2.7804,
+      5.2013,
+      -0.2806
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (55.0%)",
+      "gap>5pp (17.7pp)",
+      "n<dynmin (20<999)"
+    ]
+  },
+  {
+    "wave": "m9",
+    "batch": "3708",
+    "strategy": "TV_HurstExp_Adaptive_Switch",
+    "symbol": "JTO",
+    "tf": "1d",
+    "params": {
+      "hurst_win": 84,
+      "ma_short": 9,
+      "ma_long": 48,
+      "h_trend": 0.5935169225471466,
+      "h_revert": 0.42226245024142
+    },
+    "optuna_wr": 73.1,
+    "optuna_trades": 26,
+    "optuna_pf": 6.488,
+    "optuna_pnl_pct": 85.48,
+    "forensic_wr": 60.9,
+    "forensic_n_trades": 23,
+    "forensic_pnl_pct": 17.63,
+    "gap_pp": 12.2,
+    "max_trade_pct_of_pnl": 15.0,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      5.7404,
+      1.8086,
+      -0.923,
+      4.5817,
+      -16.1484,
+      -4.46,
+      2.143,
+      -1.4367,
+      7.787,
+      6.2446,
+      0.9908,
+      -13.5947,
+      2.1299,
+      -4.5453,
+      9.3517,
+      5.7077,
+      2.1472,
+      2.8411,
+      -1.6501,
+      2.6637,
+      8.3609,
+      -0.8067,
+      -1.3068
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (60.9%)",
+      "gap>5pp (12.2pp)",
+      "n<dynmin (23<999)"
+    ]
+  },
+  {
+    "wave": "m9",
+    "batch": "3708",
+    "strategy": "TV_HurstExp_Adaptive_Switch",
+    "symbol": "JUP",
+    "tf": "1d",
+    "params": {
+      "hurst_win": 37,
+      "ma_short": 8,
+      "ma_long": 25,
+      "h_trend": 0.5921050766444261,
+      "h_revert": 0.47431378638921895
+    },
+    "optuna_wr": 69.0,
+    "optuna_trades": 42,
+    "optuna_pf": 2.192,
+    "optuna_pnl_pct": 63.56,
+    "forensic_wr": 63.2,
+    "forensic_n_trades": 38,
+    "forensic_pnl_pct": 23.95,
+    "gap_pp": 5.8,
+    "max_trade_pct_of_pnl": 10.6,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      -5.8009,
+      -10.5195,
+      0.8287,
+      -4.2199,
+      -2.1285,
+      4.9236,
+      5.0878,
+      1.7756,
+      4.7064,
+      3.9005,
+      -3.5772,
+      -8.7648,
+      -6.7069,
+      8.6448,
+      -9.888,
+      8.7609,
+      -5.7597,
+      -10.4293,
+      4.0859,
+      2.4087,
+      8.0524,
+      0.1836,
+      -5.0302,
+      3.514,
+      3.4179,
+      -4.6691,
+      7.6615,
+      5.2066,
+      -2.8838,
+      -7.8548,
+      5.1162,
+      11.8539,
+      1.2391,
+      4.1823,
+      7.3525,
+      3.1642,
+      2.1776,
+      3.936
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (63.2%)",
+      "gap>5pp (5.8pp)",
+      "n<dynmin (38<999)"
+    ]
+  },
+  {
+    "wave": "m9",
+    "batch": "3708",
+    "strategy": "TV_HurstExp_Adaptive_Switch",
+    "symbol": "WLD",
+    "tf": "1d",
+    "params": {
+      "hurst_win": 85,
+      "ma_short": 13,
+      "ma_long": 30,
+      "h_trend": 0.5234754436591605,
+      "h_revert": 0.461156794090619
+    },
+    "optuna_wr": 68.4,
+    "optuna_trades": 38,
+    "optuna_pf": 2.241,
+    "optuna_pnl_pct": 79.75,
+    "forensic_wr": 56.8,
+    "forensic_n_trades": 37,
+    "forensic_pnl_pct": 66.0,
+    "gap_pp": 11.6,
+    "max_trade_pct_of_pnl": 19.6,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      3.0803,
+      3.2333,
+      -3.4489,
+      29.67,
+      1.5084,
+      -2.8356,
+      -2.3669,
+      6.6025,
+      -0.8178,
+      22.9585,
+      -4.3841,
+      2.2697,
+      9.1512,
+      11.6151,
+      -1.639,
+      6.9288,
+      -11.0687,
+      -6.9677,
+      3.5062,
+      -7.3922,
+      -11.1799,
+      5.9098,
+      9.2854,
+      -1.7077,
+      5.4358,
+      -3.4668,
+      2.4241,
+      5.7621,
+      -8.4264,
+      7.4786,
+      7.1133,
+      -7.6326,
+      3.0897,
+      3.39,
+      1.1741,
+      -4.328,
+      -7.9206
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (56.8%)",
+      "gap>5pp (11.6pp)",
+      "n<dynmin (37<999)"
+    ]
+  },
+  {
+    "wave": "m9",
+    "batch": "3708",
+    "strategy": "TV_HurstExp_Adaptive_Switch",
+    "symbol": "XRP",
+    "tf": "1d",
+    "params": {
+      "hurst_win": 72,
+      "ma_short": 15,
+      "ma_long": 42,
+      "h_trend": 0.5879158765329192,
+      "h_revert": 0.4266700981095473
+    },
+    "optuna_wr": 75.0,
+    "optuna_trades": 16,
+    "optuna_pf": 10.656,
+    "optuna_pnl_pct": 43.04,
+    "forensic_wr": 66.7,
+    "forensic_n_trades": 15,
+    "forensic_pnl_pct": 7.8,
+    "gap_pp": 8.3,
+    "max_trade_pct_of_pnl": 18.0,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      3.6486,
+      -13.7391,
+      6.4659,
+      8.4958,
+      1.1233,
+      -9.1795,
+      6.7636,
+      3.5758,
+      6.2182,
+      1.2324,
+      -13.5574,
+      5.9907,
+      -1.603,
+      3.7898,
+      -1.4269
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (66.7%)",
+      "gap>5pp (8.3pp)",
+      "n<dynmin (15<999)"
+    ]
+  },
+  {
+    "wave": "m9",
+    "batch": "3708",
+    "strategy": "TV_Range_Expansion_Index",
+    "symbol": "JTO",
+    "tf": "1d",
+    "params": {
+      "rei_len": 19,
+      "ob": 65,
+      "os": -68
+    },
+    "optuna_wr": 68.0,
+    "optuna_trades": 25,
+    "optuna_pf": 1.796,
+    "optuna_pnl_pct": 33.89,
+    "forensic_wr": 64.0,
+    "forensic_n_trades": 25,
+    "forensic_pnl_pct": 54.59,
+    "gap_pp": 4.0,
+    "max_trade_pct_of_pnl": 16.2,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      -8.0944,
+      3.1509,
+      -11.6656,
+      4.3886,
+      -0.8551,
+      8.1078,
+      9.2074,
+      9.8422,
+      -1.4738,
+      19.9848,
+      9.2342,
+      2.6485,
+      -5.48,
+      12.6077,
+      -3.8433,
+      -3.6014,
+      -16.0578,
+      0.5026,
+      0.1467,
+      9.3715,
+      9.3614,
+      -17.5158,
+      8.7264,
+      8.2152,
+      7.6835
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (64.0%)",
+      "n<dynmin (25<999)"
+    ]
+  },
+  {
+    "wave": "m9",
+    "batch": "3708",
+    "strategy": "TV_Range_Expansion_Index",
+    "symbol": "SUI",
+    "tf": "1d",
+    "params": {
+      "rei_len": 18,
+      "ob": 64,
+      "os": -74
+    },
+    "optuna_wr": 69.0,
+    "optuna_trades": 29,
+    "optuna_pf": 2.332,
+    "optuna_pnl_pct": 45.35,
+    "forensic_wr": 65.5,
+    "forensic_n_trades": 29,
+    "forensic_pnl_pct": 33.2,
+    "gap_pp": 3.5,
+    "max_trade_pct_of_pnl": 12.6,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      5.6611,
+      -2.5207,
+      0.0666,
+      -1.7646,
+      -0.5534,
+      3.4705,
+      -3.4087,
+      10.2125,
+      2.2376,
+      3.3898,
+      4.2427,
+      -10.4464,
+      5.2662,
+      -4.3967,
+      9.2511,
+      1.7499,
+      -3.0471,
+      -22.5849,
+      1.1379,
+      5.999,
+      3.9056,
+      -4.411,
+      3.1014,
+      5.7611,
+      7.6477,
+      7.6632,
+      -8.2551,
+      11.8878,
+      1.9334
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (65.5%)",
+      "n<dynmin (29<999)"
+    ]
+  },
+  {
+    "wave": "m9",
+    "batch": "3708",
+    "strategy": "TV_Skewness_Surge_Reversal",
+    "symbol": "DYDX",
+    "tf": "4h",
+    "params": {
+      "skew_win": 42,
+      "threshold": 2.498117531291596
+    },
+    "optuna_wr": 65.0,
+    "optuna_trades": 20,
+    "optuna_pf": 2.7,
+    "optuna_pnl_pct": 19.02,
+    "forensic_wr": 70.0,
+    "forensic_n_trades": 20,
+    "forensic_pnl_pct": 25.69,
+    "gap_pp": -5.0,
+    "max_trade_pct_of_pnl": 34.9,
+    "dynamic_min_trades": 8,
+    "trade_pnls_pct": [
+      -3.908,
+      -1.3736,
+      -2.4858,
+      5.2084,
+      1.1171,
+      0.2484,
+      1.2673,
+      0.3943,
+      2.9466,
+      -0.735,
+      -3.1882,
+      0.8638,
+      0.1143,
+      13.2718,
+      1.198,
+      0.4072,
+      -0.6377,
+      1.1936,
+      5.7933,
+      3.9913
+    ],
+    "gate1_status": "PASS",
+    "gate1_reasons": [],
+    "gate_concentration_status": "PASS",
+    "plateau_n_neighbors": 54,
+    "plateau_n_passing": 12,
+    "plateau_pct_passing": 22.2,
+    "gate2_status": "FAIL",
+    "gate2_neighbors": [
+      {
+        "params": {
+          "skew_win": 34,
+          "threshold": 1.998494
+        },
+        "wr": 55.8,
+        "trades": 43,
+        "pnl_pct": 24.11,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 34,
+          "threshold": 2.1234
+        },
+        "wr": 60.5,
+        "trades": 38,
+        "pnl_pct": 52.3,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 34,
+          "threshold": 2.248306
+        },
+        "wr": 69.0,
+        "trades": 29,
+        "pnl_pct": 31.79,
+        "passes": true
+      },
+      {
+        "params": {
+          "skew_win": 34,
+          "threshold": 2.373212
+        },
+        "wr": 56.7,
+        "trades": 30,
+        "pnl_pct": 23.83,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 34,
+          "threshold": 2.498118
+        },
+        "wr": 56.5,
+        "trades": 23,
+        "pnl_pct": 18.3,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 34,
+          "threshold": 2.5
+        },
+        "wr": 56.5,
+        "trades": 23,
+        "pnl_pct": 19.47,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 36,
+          "threshold": 1.998494
+        },
+        "wr": 58.1,
+        "trades": 43,
+        "pnl_pct": 45.2,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 36,
+          "threshold": 2.1234
+        },
+        "wr": 62.5,
+        "trades": 32,
+        "pnl_pct": 38.28,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 36,
+          "threshold": 2.248306
+        },
+        "wr": 54.8,
+        "trades": 31,
+        "pnl_pct": 4.18,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 36,
+          "threshold": 2.373212
+        },
+        "wr": 58.3,
+        "trades": 24,
+        "pnl_pct": 24.25,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 36,
+          "threshold": 2.498118
+        },
+        "wr": 56.0,
+        "trades": 25,
+        "pnl_pct": 1.47,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 36,
+          "threshold": 2.5
+        },
+        "wr": 56.0,
+        "trades": 25,
+        "pnl_pct": 1.47,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 38,
+          "threshold": 1.998494
+        },
+        "wr": 55.6,
+        "trades": 36,
+        "pnl_pct": 29.81,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 38,
+          "threshold": 2.1234
+        },
+        "wr": 65.6,
+        "trades": 32,
+        "pnl_pct": 39.04,
+        "passes": true
+      },
+      {
+        "params": {
+          "skew_win": 38,
+          "threshold": 2.248306
+        },
+        "wr": 56.7,
+        "trades": 30,
+        "pnl_pct": 10.54,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 38,
+          "threshold": 2.373212
+        },
+        "wr": 60.9,
+        "trades": 23,
+        "pnl_pct": 19.42,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 38,
+          "threshold": 2.498118
+        },
+        "wr": 56.5,
+        "trades": 23,
+        "pnl_pct": 17.02,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 38,
+          "threshold": 2.5
+        },
+        "wr": 57.1,
+        "trades": 21,
+        "pnl_pct": 24.5,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 40,
+          "threshold": 1.998494
+        },
+        "wr": 57.9,
+        "trades": 38,
+        "pnl_pct": 7.41,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 40,
+          "threshold": 2.1234
+        },
+        "wr": 55.6,
+        "trades": 36,
+        "pnl_pct": 23.44,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 40,
+          "threshold": 2.248306
+        },
+        "wr": 58.6,
+        "trades": 29,
+        "pnl_pct": 16.0,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 40,
+          "threshold": 2.373212
+        },
+        "wr": 60.7,
+        "trades": 28,
+        "pnl_pct": 29.6,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 40,
+          "threshold": 2.498118
+        },
+        "wr": 60.9,
+        "trades": 23,
+        "pnl_pct": 23.92,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 40,
+          "threshold": 2.5
+        },
+        "wr": 69.6,
+        "trades": 23,
+        "pnl_pct": 32.86,
+        "passes": true
+      },
+      {
+        "params": {
+          "skew_win": 42,
+          "threshold": 1.998494
+        },
+        "wr": 52.8,
+        "trades": 36,
+        "pnl_pct": 29.36,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 42,
+          "threshold": 2.1234
+        },
+        "wr": 60.0,
+        "trades": 35,
+        "pnl_pct": 52.36,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 42,
+          "threshold": 2.248306
+        },
+        "wr": 63.0,
+        "trades": 27,
+        "pnl_pct": 31.86,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 42,
+          "threshold": 2.373212
+        },
+        "wr": 56.0,
+        "trades": 25,
+        "pnl_pct": 4.11,
+        "passes": false
+      },
+      {
+        "params": {
+          "skew_win": 42,
+          "threshold": 2.498118
+        },
+        "wr": 70.0,
+        "trades": 20,
+        "pnl_pct": 25.69,
+        "passes": true
+      },
+      {
+        "params": {
+          "skew_win": 42,
+          "threshold": 2.5
+        },
+        "wr": 73.7,
+        "trades": 19,
+        "pnl_pct": 27.06,
+        "passes": true
+      }
+    ]
+  },
+  {
+    "wave": "m9",
+    "batch": "3708",
+    "strategy": "TV_Skewness_Surge_Reversal",
+    "symbol": "WLD",
+    "tf": "4h",
+    "params": {
+      "skew_win": 26,
+      "threshold": 2.4955637937943087
+    },
+    "optuna_wr": 69.6,
+    "optuna_trades": 23,
+    "optuna_pf": 2.275,
+    "optuna_pnl_pct": 12.39,
+    "forensic_wr": 65.2,
+    "forensic_n_trades": 23,
+    "forensic_pnl_pct": -4.66,
+    "gap_pp": 4.4,
+    "max_trade_pct_of_pnl": 17.4,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      -1.2277,
+      -3.862,
+      2.1398,
+      -1.558,
+      8.4833,
+      -1.7479,
+      0.1927,
+      7.832,
+      -22.4029,
+      3.0045,
+      5.2071,
+      3.6117,
+      -0.2596,
+      -22.0214,
+      3.38,
+      0.2264,
+      0.3872,
+      -0.4,
+      4.4646,
+      0.0643,
+      7.9638,
+      1.5409,
+      0.3231
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (65.2%)",
+      "pnl<=0 (-4.66%)",
+      "n<dynmin (23<999)"
+    ]
+  },
+  {
+    "wave": "m9",
+    "batch": "3708",
+    "strategy": "TV_Skewness_Surge_Reversal",
+    "symbol": "TIA",
+    "tf": "4h",
+    "params": {
+      "skew_win": 18,
+      "threshold": 2.329478250255082
+    },
+    "optuna_wr": 72.2,
+    "optuna_trades": 18,
+    "optuna_pf": 3.467,
+    "optuna_pnl_pct": 20.16,
+    "forensic_wr": 61.1,
+    "forensic_n_trades": 18,
+    "forensic_pnl_pct": 23.77,
+    "gap_pp": 11.1,
+    "max_trade_pct_of_pnl": 23.5,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      8.6796,
+      5.1163,
+      1.7025,
+      -9.198,
+      0.5739,
+      10.457,
+      0.4294,
+      7.0005,
+      -1.8172,
+      0.9051,
+      4.4971,
+      -5.1826,
+      -0.9052,
+      0.1084,
+      -0.9732,
+      4.9804,
+      -0.4138,
+      -2.1857
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (61.1%)",
+      "gap>5pp (11.1pp)",
+      "n<dynmin (18<999)"
+    ]
+  }
+]
