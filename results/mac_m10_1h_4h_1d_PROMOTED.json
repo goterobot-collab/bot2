@@ -1,0 +1,87 @@
+{
+  "TV_SchaffTrend_Cycle": {
+    "best": {
+      "sym": "JTO",
+      "tf": "1d",
+      "wr": 65.7,
+      "trades": 70,
+      "pf": 1.669,
+      "params": {
+        "fast": 14,
+        "slow": 51,
+        "cycle": 7
+      }
+    },
+    "passing_combos": 1,
+    "all_passing": [
+      {
+        "sym": "JTO",
+        "tf": "1d",
+        "wr": 65.7,
+        "trades": 70,
+        "pf": 1.669,
+        "params": {
+          "fast": 14,
+          "slow": 51,
+          "cycle": 7
+        }
+      }
+    ]
+  },
+  "TV_QStick_Trend": {
+    "best": {
+      "sym": "WLD",
+      "tf": "1d",
+      "wr": 61.1,
+      "trades": 72,
+      "pf": 2.085,
+      "params": {
+        "qstick_len": 21,
+        "sig_len": 14
+      }
+    },
+    "passing_combos": 1,
+    "all_passing": [
+      {
+        "sym": "WLD",
+        "tf": "1d",
+        "wr": 61.1,
+        "trades": 72,
+        "pf": 2.085,
+        "params": {
+          "qstick_len": 21,
+          "sig_len": 14
+        }
+      }
+    ]
+  },
+  "TV_KVO_Klinger": {
+    "best": {
+      "sym": "ONDO",
+      "tf": "1d",
+      "wr": 60.4,
+      "trades": 96,
+      "pf": 1.73,
+      "params": {
+        "fast": 27,
+        "slow": 59,
+        "sig_len": 17
+      }
+    },
+    "passing_combos": 1,
+    "all_passing": [
+      {
+        "sym": "ONDO",
+        "tf": "1d",
+        "wr": 60.4,
+        "trades": 96,
+        "pf": 1.73,
+        "params": {
+          "fast": 27,
+          "slow": 59,
+          "sig_len": 17
+        }
+      }
+    ]
+  }
+}
