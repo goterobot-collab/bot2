@@ -368,20 +368,19 @@ def _write_reports(shortlist, label, batches, shortlist_path, promoted_path, t0)
     print(f"Wrote {shortlist_path} ({len(passing)} grails) + {promoted_path}")
 
 
-WAVE_BATCHES = {
-    "m1": ["3700"],
-    "m2": ["3701"],
-    "m3": ["3702"],
-    "m4": ["3703"],
-    "m5": ["3704"],
-    "m6": ["3705"],
-    "m7": ["3706"],
-}
+# Generic wave -> batch mapping: m{i} -> batch (3700 + i - 1)
+# Allows arbitrary wave numbers without code changes.
+def _wave_to_batches(wave_str):
+    if wave_str.startswith("m") and wave_str[1:].isdigit():
+        idx = int(wave_str[1:])
+        return [str(3700 + idx - 1)]
+    return None
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--wave", choices=list(WAVE_BATCHES.keys()), required=True)
+    ap.add_argument("--wave", required=True,
+                    help="Wave label like m1, m2, ..., m20+ (auto-maps to batch 3700+i-1)")
     ap.add_argument("--tfs", nargs="+", default=None)
     ap.add_argument("--batches", nargs="+", default=None)
     ap.add_argument("--min-wr", type=float, default=70.0,
@@ -400,7 +399,12 @@ def main():
         TFS = [tf for tf in TFS if tf in args.tfs]
         tfs_label = "_" + "_".join(args.tfs)
 
-    batches = args.batches if args.batches else WAVE_BATCHES[args.wave]
+    if args.batches:
+        batches = list(args.batches)
+    else:
+        batches = _wave_to_batches(args.wave)
+        if not batches:
+            ap.error(f"unknown wave label: {args.wave}")
     label = f"MAC_{args.wave.upper()}{tfs_label}"
     base = f"mac_{args.wave}{tfs_label}"
     sp = ROOT / "results" / f"{base}_SHORTLIST.md"
