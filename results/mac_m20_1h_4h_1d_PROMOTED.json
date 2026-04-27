@@ -1,0 +1,265 @@
+{
+  "TV_Three_White_Soldiers": {
+    "best": {
+      "sym": "AVAX",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "atr_len": 18,
+        "body_atr_min": 0.3501665261813047
+      }
+    },
+    "passing_combos": 6,
+    "all_passing": [
+      {
+        "sym": "AVAX",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_len": 18,
+          "body_atr_min": 0.3501665261813047
+        }
+      },
+      {
+        "sym": "LTC",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_len": 24,
+          "body_atr_min": 0.46824817384930467
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_len": 16,
+          "body_atr_min": 0.7722816293093389
+        }
+      },
+      {
+        "sym": "AVAX",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "atr_len": 11,
+          "body_atr_min": 0.6446266904398957
+        }
+      },
+      {
+        "sym": "WLD",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_len": 9,
+          "body_atr_min": 0.6488386855644622
+        }
+      },
+      {
+        "sym": "SFP",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_len": 18,
+          "body_atr_min": 0.9133112530701997
+        }
+      }
+    ]
+  },
+  "TV_Wide_Range_Climax": {
+    "best": {
+      "sym": "ARB",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 5,
+      "pf": 999.0,
+      "params": {
+        "atr_len": 30,
+        "range_mult": 3.803102508726859
+      }
+    },
+    "passing_combos": 15,
+    "all_passing": [
+      {
+        "sym": "ARB",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 5,
+        "pf": 999.0,
+        "params": {
+          "atr_len": 30,
+          "range_mult": 3.803102508726859
+        }
+      },
+      {
+        "sym": "APT",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_len": 13,
+          "range_mult": 3.975887756747386
+        }
+      },
+      {
+        "sym": "DYDX",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "atr_len": 12,
+          "range_mult": 3.505749237101554
+        }
+      },
+      {
+        "sym": "GMX",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "atr_len": 7,
+          "range_mult": 3.2962918062061384
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "atr_len": 23,
+          "range_mult": 3.939660462470675
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "atr_len": 7,
+          "range_mult": 3.1504633811182243
+        }
+      },
+      {
+        "sym": "PYTH",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 6,
+        "pf": 999.0,
+        "params": {
+          "atr_len": 13,
+          "range_mult": 2.8044181771441146
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 6,
+        "pf": 999.0,
+        "params": {
+          "atr_len": 17,
+          "range_mult": 3.000608926098992
+        }
+      },
+      {
+        "sym": "TIA",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 6,
+        "pf": 999.0,
+        "params": {
+          "atr_len": 8,
+          "range_mult": 2.641282900985958
+        }
+      },
+      {
+        "sym": "WLD",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "atr_len": 11,
+          "range_mult": 3.91691618799764
+        }
+      },
+      {
+        "sym": "INJ",
+        "tf": "4h",
+        "wr": 75.0,
+        "trades": 8,
+        "pf": 4.539,
+        "params": {
+          "atr_len": 30,
+          "range_mult": 3.9891290267654256
+        }
+      },
+      {
+        "sym": "WLD",
+        "tf": "1h",
+        "wr": 73.3,
+        "trades": 15,
+        "pf": 1.395,
+        "params": {
+          "atr_len": 7,
+          "range_mult": 3.761033051994791
+        }
+      },
+      {
+        "sym": "JTO",
+        "tf": "1h",
+        "wr": 63.6,
+        "trades": 22,
+        "pf": 2.093,
+        "params": {
+          "atr_len": 10,
+          "range_mult": 3.8788726974031853
+        }
+      },
+      {
+        "sym": "INJ",
+        "tf": "1h",
+        "wr": 63.2,
+        "trades": 19,
+        "pf": 4.078,
+        "params": {
+          "atr_len": 9,
+          "range_mult": 3.5463886743348176
+        }
+      },
+      {
+        "sym": "PYTH",
+        "tf": "1h",
+        "wr": 61.5,
+        "trades": 26,
+        "pf": 1.54,
+        "params": {
+          "atr_len": 11,
+          "range_mult": 3.87201249475602
+        }
+      }
+    ]
+  }
+}
