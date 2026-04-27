@@ -1,0 +1,392 @@
+{
+  "TV_LogReturn_Skew_Slope": {
+    "best": {
+      "sym": "INJ",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "skew_win": 59,
+        "slope_win": 16,
+        "slope_thr": 0.1286595854472116
+      }
+    },
+    "passing_combos": 8,
+    "all_passing": [
+      {
+        "sym": "INJ",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "skew_win": 59,
+          "slope_win": 16,
+          "slope_thr": 0.1286595854472116
+        }
+      },
+      {
+        "sym": "SUI",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "skew_win": 18,
+          "slope_win": 20,
+          "slope_thr": 0.1753699118814135
+        }
+      },
+      {
+        "sym": "SEI",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "skew_win": 49,
+          "slope_win": 10,
+          "slope_thr": 0.19127571530895668
+        }
+      },
+      {
+        "sym": "OP",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 8,
+        "pf": 1.261,
+        "params": {
+          "skew_win": 50,
+          "slope_win": 16,
+          "slope_thr": 0.10867093928702466
+        }
+      },
+      {
+        "sym": "WLD",
+        "tf": "1d",
+        "wr": 65.0,
+        "trades": 20,
+        "pf": 2.075,
+        "params": {
+          "skew_win": 18,
+          "slope_win": 17,
+          "slope_thr": 0.12795674152745798
+        }
+      },
+      {
+        "sym": "AVAX",
+        "tf": "1d",
+        "wr": 63.6,
+        "trades": 33,
+        "pf": 2.866,
+        "params": {
+          "skew_win": 41,
+          "slope_win": 12,
+          "slope_thr": 0.09538866213349108
+        }
+      },
+      {
+        "sym": "LTC",
+        "tf": "1d",
+        "wr": 62.1,
+        "trades": 29,
+        "pf": 1.201,
+        "params": {
+          "skew_win": 48,
+          "slope_win": 12,
+          "slope_thr": 0.17019130903819255
+        }
+      },
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 61.9,
+        "trades": 21,
+        "pf": 3.349,
+        "params": {
+          "skew_win": 26,
+          "slope_win": 17,
+          "slope_thr": 0.035618227388394465
+        }
+      }
+    ]
+  },
+  "TV_Welford_Variance_Surge": {
+    "best": {
+      "sym": "AVAX",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "alpha": 0.032976030229578776,
+        "surge_mult": 1.7406539158916257
+      }
+    },
+    "passing_combos": 8,
+    "all_passing": [
+      {
+        "sym": "AVAX",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "alpha": 0.032976030229578776,
+          "surge_mult": 1.7406539158916257
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "alpha": 0.13184771353785005,
+          "surge_mult": 3.215319586612271
+        }
+      },
+      {
+        "sym": "XRP",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "alpha": 0.10921341111417195,
+          "surge_mult": 3.8623326768384243
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "alpha": 0.03782460109398727,
+          "surge_mult": 2.9501499765318875
+        }
+      },
+      {
+        "sym": "SEI",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "alpha": 0.08363007412800415,
+          "surge_mult": 1.5468836137128532
+        }
+      },
+      {
+        "sym": "AVAX",
+        "tf": "4h",
+        "wr": 81.2,
+        "trades": 16,
+        "pf": 7.644,
+        "params": {
+          "alpha": 0.10826216451614552,
+          "surge_mult": 2.909252917155846
+        }
+      },
+      {
+        "sym": "LTC",
+        "tf": "4h",
+        "wr": 72.2,
+        "trades": 18,
+        "pf": 4.918,
+        "params": {
+          "alpha": 0.18312489836171494,
+          "surge_mult": 3.979223450580427
+        }
+      },
+      {
+        "sym": "LINK",
+        "tf": "4h",
+        "wr": 66.7,
+        "trades": 15,
+        "pf": 3.048,
+        "params": {
+          "alpha": 0.08547879912551377,
+          "surge_mult": 2.856650652358965
+        }
+      }
+    ]
+  },
+  "TV_RecursiveOLS_Slope": {
+    "best": {
+      "sym": "DYDX",
+      "tf": "4h",
+      "wr": 100.0,
+      "trades": 3,
+      "pf": 999.0,
+      "params": {
+        "win": 18,
+        "slope_thr": 0.24873100879079513
+      }
+    },
+    "passing_combos": 2,
+    "all_passing": [
+      {
+        "sym": "DYDX",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "win": 18,
+          "slope_thr": 0.24873100879079513
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "1h",
+        "wr": 69.6,
+        "trades": 23,
+        "pf": 4.833,
+        "params": {
+          "win": 30,
+          "slope_thr": 4.348302772642733
+        }
+      }
+    ]
+  },
+  "TV_QuantileRegression_Slope": {
+    "best": {
+      "sym": "INJ",
+      "tf": "1d",
+      "wr": 87.5,
+      "trades": 8,
+      "pf": 9.486,
+      "params": {
+        "win": 72
+      }
+    },
+    "passing_combos": 12,
+    "all_passing": [
+      {
+        "sym": "INJ",
+        "tf": "1d",
+        "wr": 87.5,
+        "trades": 8,
+        "pf": 9.486,
+        "params": {
+          "win": 72
+        }
+      },
+      {
+        "sym": "SUI",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 16,
+        "pf": 8.504,
+        "params": {
+          "win": 54
+        }
+      },
+      {
+        "sym": "PYTH",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 8,
+        "pf": 2.605,
+        "params": {
+          "win": 79
+        }
+      },
+      {
+        "sym": "TIA",
+        "tf": "1d",
+        "wr": 70.6,
+        "trades": 17,
+        "pf": 2.475,
+        "params": {
+          "win": 68
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "1d",
+        "wr": 67.7,
+        "trades": 31,
+        "pf": 3.16,
+        "params": {
+          "win": 40
+        }
+      },
+      {
+        "sym": "ONDO",
+        "tf": "1d",
+        "wr": 66.7,
+        "trades": 24,
+        "pf": 1.5,
+        "params": {
+          "win": 34
+        }
+      },
+      {
+        "sym": "DYDX",
+        "tf": "1d",
+        "wr": 65.4,
+        "trades": 26,
+        "pf": 3.543,
+        "params": {
+          "win": 59
+        }
+      },
+      {
+        "sym": "ARB",
+        "tf": "1d",
+        "wr": 63.2,
+        "trades": 19,
+        "pf": 2.354,
+        "params": {
+          "win": 54
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "1d",
+        "wr": 61.1,
+        "trades": 18,
+        "pf": 1.458,
+        "params": {
+          "win": 68
+        }
+      },
+      {
+        "sym": "AVAX",
+        "tf": "1d",
+        "wr": 60.5,
+        "trades": 38,
+        "pf": 1.509,
+        "params": {
+          "win": 62
+        }
+      },
+      {
+        "sym": "LTC",
+        "tf": "1d",
+        "wr": 60.0,
+        "trades": 40,
+        "pf": 3.71,
+        "params": {
+          "win": 66
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "1d",
+        "wr": 60.0,
+        "trades": 40,
+        "pf": 1.892,
+        "params": {
+          "win": 48
+        }
+      }
+    ]
+  }
+}
