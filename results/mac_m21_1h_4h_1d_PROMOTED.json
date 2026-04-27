@@ -1,0 +1,74 @@
+{
+  "TV_GoldenRatio_Channel": {
+    "best": {
+      "sym": "AVAX",
+      "tf": "4h",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "swing_len": 101
+      }
+    },
+    "passing_combos": 3,
+    "all_passing": [
+      {
+        "sym": "AVAX",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "swing_len": 101
+        }
+      },
+      {
+        "sym": "LTC",
+        "tf": "4h",
+        "wr": 71.4,
+        "trades": 14,
+        "pf": 4.957,
+        "params": {
+          "swing_len": 57
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "1h",
+        "wr": 62.5,
+        "trades": 16,
+        "pf": 3.147,
+        "params": {
+          "swing_len": 30
+        }
+      }
+    ]
+  },
+  "TV_RangePctile_Cross": {
+    "best": {
+      "sym": "ETH",
+      "tf": "1d",
+      "wr": 60.4,
+      "trades": 48,
+      "pf": 1.284,
+      "params": {
+        "win": 236,
+        "high_pct": 93
+      }
+    },
+    "passing_combos": 1,
+    "all_passing": [
+      {
+        "sym": "ETH",
+        "tf": "1d",
+        "wr": 60.4,
+        "trades": 48,
+        "pf": 1.284,
+        "params": {
+          "win": 236,
+          "high_pct": 93
+        }
+      }
+    ]
+  }
+}
