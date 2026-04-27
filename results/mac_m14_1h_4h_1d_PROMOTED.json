@@ -1,0 +1,408 @@
+{
+  "TV_AbsRet_Ratio_Regime": {
+    "best": {
+      "sym": "APT",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "short_len": 13,
+        "long_len": 67,
+        "ratio_thr": 2.220944722982408
+      }
+    },
+    "passing_combos": 7,
+    "all_passing": [
+      {
+        "sym": "APT",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "short_len": 13,
+          "long_len": 67,
+          "ratio_thr": 2.220944722982408
+        }
+      },
+      {
+        "sym": "SUI",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "short_len": 19,
+          "long_len": 74,
+          "ratio_thr": 2.0265260373556
+        }
+      },
+      {
+        "sym": "WLD",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "short_len": 15,
+          "long_len": 46,
+          "ratio_thr": 2.4396118858996996
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "short_len": 16,
+          "long_len": 40,
+          "ratio_thr": 2.1428089006519584
+        }
+      },
+      {
+        "sym": "NEAR",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "short_len": 19,
+          "long_len": 37,
+          "ratio_thr": 2.2716041780272405
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "short_len": 18,
+          "long_len": 74,
+          "ratio_thr": 2.3726784851122913
+        }
+      },
+      {
+        "sym": "GMX",
+        "tf": "4h",
+        "wr": 70.0,
+        "trades": 30,
+        "pf": 2.786,
+        "params": {
+          "short_len": 19,
+          "long_len": 35,
+          "ratio_thr": 1.7319975387756
+        }
+      }
+    ]
+  },
+  "TV_TickVol_Momentum": {
+    "best": {
+      "sym": "ONDO",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 3,
+      "pf": 999.0,
+      "params": {
+        "win": 19,
+        "up_thr_pct": 78
+      }
+    },
+    "passing_combos": 4,
+    "all_passing": [
+      {
+        "sym": "ONDO",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "win": 19,
+          "up_thr_pct": 78
+        }
+      },
+      {
+        "sym": "TIA",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "win": 25,
+          "up_thr_pct": 72
+        }
+      },
+      {
+        "sym": "XRP",
+        "tf": "1h",
+        "wr": 72.7,
+        "trades": 11,
+        "pf": 4.492,
+        "params": {
+          "win": 42,
+          "up_thr_pct": 72
+        }
+      },
+      {
+        "sym": "ETH",
+        "tf": "1d",
+        "wr": 60.0,
+        "trades": 45,
+        "pf": 1.295,
+        "params": {
+          "win": 10,
+          "up_thr_pct": 72
+        }
+      }
+    ]
+  },
+  "TV_UpDownVol_Ratio_Cross": {
+    "best": {
+      "sym": "AGT",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "win": 49,
+        "ratio_thr": 2.2932621804348274
+      }
+    },
+    "passing_combos": 7,
+    "all_passing": [
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "win": 49,
+          "ratio_thr": 2.2932621804348274
+        }
+      },
+      {
+        "sym": "TIA",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 4,
+        "pf": 999.0,
+        "params": {
+          "win": 58,
+          "ratio_thr": 2.2915584102764885
+        }
+      },
+      {
+        "sym": "SUI",
+        "tf": "1d",
+        "wr": 71.0,
+        "trades": 31,
+        "pf": 3.551,
+        "params": {
+          "win": 51,
+          "ratio_thr": 1.42334517155939
+        }
+      },
+      {
+        "sym": "ARB",
+        "tf": "1d",
+        "wr": 63.2,
+        "trades": 19,
+        "pf": 1.558,
+        "params": {
+          "win": 38,
+          "ratio_thr": 1.9469276220189178
+        }
+      },
+      {
+        "sym": "XRP",
+        "tf": "4h",
+        "wr": 62.3,
+        "trades": 53,
+        "pf": 2.258,
+        "params": {
+          "win": 44,
+          "ratio_thr": 2.4595529280443382
+        }
+      },
+      {
+        "sym": "WLD",
+        "tf": "4h",
+        "wr": 60.9,
+        "trades": 23,
+        "pf": 1.367,
+        "params": {
+          "win": 59,
+          "ratio_thr": 2.1589292039734014
+        }
+      },
+      {
+        "sym": "LTC",
+        "tf": "1d",
+        "wr": 60.7,
+        "trades": 28,
+        "pf": 4.167,
+        "params": {
+          "win": 43,
+          "ratio_thr": 2.266808737302064
+        }
+      }
+    ]
+  },
+  "TV_VarianceRatio_LoMacKinlay": {
+    "best": {
+      "sym": "PYTH",
+      "tf": "1d",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "q": 2,
+        "win": 129,
+        "vr_thr": 1.528449015019536
+      }
+    },
+    "passing_combos": 9,
+    "all_passing": [
+      {
+        "sym": "PYTH",
+        "tf": "1d",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "q": 2,
+          "win": 129,
+          "vr_thr": 1.528449015019536
+        }
+      },
+      {
+        "sym": "LINK",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "q": 2,
+          "win": 201,
+          "vr_thr": 1.420305023416839
+        }
+      },
+      {
+        "sym": "TIA",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "q": 4,
+          "win": 241,
+          "vr_thr": 1.580743914536798
+        }
+      },
+      {
+        "sym": "OP",
+        "tf": "1h",
+        "wr": 75.0,
+        "trades": 8,
+        "pf": 10.701,
+        "params": {
+          "q": 2,
+          "win": 140,
+          "vr_thr": 1.4889366224059228
+        }
+      },
+      {
+        "sym": "LINK",
+        "tf": "1d",
+        "wr": 72.0,
+        "trades": 25,
+        "pf": 2.036,
+        "params": {
+          "q": 7,
+          "win": 202,
+          "vr_thr": 1.488801084506531
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "4h",
+        "wr": 70.0,
+        "trades": 20,
+        "pf": 1.325,
+        "params": {
+          "q": 2,
+          "win": 93,
+          "vr_thr": 1.3757154742304176
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "1d",
+        "wr": 66.7,
+        "trades": 42,
+        "pf": 1.649,
+        "params": {
+          "q": 4,
+          "win": 193,
+          "vr_thr": 1.3556814231132375
+        }
+      },
+      {
+        "sym": "GMX",
+        "tf": "4h",
+        "wr": 66.7,
+        "trades": 21,
+        "pf": 1.425,
+        "params": {
+          "q": 5,
+          "win": 190,
+          "vr_thr": 1.5321231904551813
+        }
+      },
+      {
+        "sym": "SUI",
+        "tf": "4h",
+        "wr": 60.3,
+        "trades": 73,
+        "pf": 1.407,
+        "params": {
+          "q": 2,
+          "win": 67,
+          "vr_thr": 1.4028891284975664
+        }
+      }
+    ]
+  },
+  "TV_HodrickPrescott_Cycle": {
+    "best": {
+      "sym": "INJ",
+      "tf": "1d",
+      "wr": 60.9,
+      "trades": 46,
+      "pf": 1.49,
+      "params": {
+        "lambda_smooth": 4143,
+        "win": 127
+      }
+    },
+    "passing_combos": 1,
+    "all_passing": [
+      {
+        "sym": "INJ",
+        "tf": "1d",
+        "wr": 60.9,
+        "trades": 46,
+        "pf": 1.49,
+        "params": {
+          "lambda_smooth": 4143,
+          "win": 127
+        }
+      }
+    ]
+  }
+}
