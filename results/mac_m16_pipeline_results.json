@@ -1,0 +1,1156 @@
+[
+  {
+    "wave": "m16",
+    "batch": "3715",
+    "strategy": "TV_Amihud_Illiquidity",
+    "symbol": "JUP",
+    "tf": "1d",
+    "params": {
+      "win": 19,
+      "smooth": 20,
+      "change_pct": 57
+    },
+    "optuna_wr": 69.2,
+    "optuna_trades": 26,
+    "optuna_pf": 1.922,
+    "optuna_pnl_pct": 34.84,
+    "forensic_wr": 73.1,
+    "forensic_n_trades": 26,
+    "forensic_pnl_pct": 59.94,
+    "gap_pp": -3.9,
+    "max_trade_pct_of_pnl": 13.8,
+    "dynamic_min_trades": 8,
+    "trade_pnls_pct": [
+      -0.929,
+      14.1273,
+      9.1687,
+      5.6536,
+      10.2261,
+      3.8157,
+      -0.0179,
+      0.3389,
+      -13.0724,
+      2.5782,
+      0.9238,
+      -9.3048,
+      6.5809,
+      -9.484,
+      5.5608,
+      2.2283,
+      5.0268,
+      7.9657,
+      7.738,
+      0.1109,
+      4.5778,
+      10.109,
+      -1.3504,
+      4.9366,
+      -8.0125,
+      0.4457
+    ],
+    "gate1_status": "PASS",
+    "gate1_reasons": [],
+    "gate_concentration_status": "PASS",
+    "plateau_n_neighbors": 74,
+    "plateau_n_passing": 5,
+    "plateau_pct_passing": 6.8,
+    "gate2_status": "FAIL",
+    "gate2_neighbors": [
+      {
+        "params": {
+          "win": 15,
+          "smooth": 16,
+          "change_pct": 46
+        },
+        "wr": 37.0,
+        "trades": 27,
+        "pnl_pct": -43.16,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 15,
+          "smooth": 16,
+          "change_pct": 51
+        },
+        "wr": 39.3,
+        "trades": 28,
+        "pnl_pct": -58.81,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 15,
+          "smooth": 16,
+          "change_pct": 57
+        },
+        "wr": 35.5,
+        "trades": 31,
+        "pnl_pct": -74.36,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 15,
+          "smooth": 16,
+          "change_pct": 63
+        },
+        "wr": 34.2,
+        "trades": 38,
+        "pnl_pct": -61.42,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 15,
+          "smooth": 16,
+          "change_pct": 68
+        },
+        "wr": 33.3,
+        "trades": 39,
+        "pnl_pct": -50.75,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 15,
+          "smooth": 18,
+          "change_pct": 46
+        },
+        "wr": 36.7,
+        "trades": 30,
+        "pnl_pct": -33.48,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 15,
+          "smooth": 18,
+          "change_pct": 51
+        },
+        "wr": 44.8,
+        "trades": 29,
+        "pnl_pct": -14.83,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 15,
+          "smooth": 18,
+          "change_pct": 57
+        },
+        "wr": 36.4,
+        "trades": 33,
+        "pnl_pct": -62.07,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 15,
+          "smooth": 18,
+          "change_pct": 63
+        },
+        "wr": 35.9,
+        "trades": 39,
+        "pnl_pct": -71.19,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 15,
+          "smooth": 18,
+          "change_pct": 68
+        },
+        "wr": 44.4,
+        "trades": 36,
+        "pnl_pct": -17.33,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 15,
+          "smooth": 20,
+          "change_pct": 46
+        },
+        "wr": 41.2,
+        "trades": 34,
+        "pnl_pct": -38.37,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 15,
+          "smooth": 20,
+          "change_pct": 51
+        },
+        "wr": 33.3,
+        "trades": 27,
+        "pnl_pct": -111.13,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 15,
+          "smooth": 20,
+          "change_pct": 57
+        },
+        "wr": 50.0,
+        "trades": 30,
+        "pnl_pct": -48.15,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 15,
+          "smooth": 20,
+          "change_pct": 63
+        },
+        "wr": 67.6,
+        "trades": 34,
+        "pnl_pct": 79.76,
+        "passes": true
+      },
+      {
+        "params": {
+          "win": 15,
+          "smooth": 20,
+          "change_pct": 68
+        },
+        "wr": 61.8,
+        "trades": 34,
+        "pnl_pct": 89.57,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 17,
+          "smooth": 16,
+          "change_pct": 46
+        },
+        "wr": 41.4,
+        "trades": 29,
+        "pnl_pct": -21.66,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 17,
+          "smooth": 16,
+          "change_pct": 51
+        },
+        "wr": 50.0,
+        "trades": 26,
+        "pnl_pct": 4.42,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 17,
+          "smooth": 16,
+          "change_pct": 57
+        },
+        "wr": 31.2,
+        "trades": 32,
+        "pnl_pct": -97.96,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 17,
+          "smooth": 16,
+          "change_pct": 63
+        },
+        "wr": 28.1,
+        "trades": 32,
+        "pnl_pct": -88.65,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 17,
+          "smooth": 16,
+          "change_pct": 68
+        },
+        "wr": 43.9,
+        "trades": 41,
+        "pnl_pct": -4.65,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 17,
+          "smooth": 18,
+          "change_pct": 46
+        },
+        "wr": 44.0,
+        "trades": 25,
+        "pnl_pct": -6.54,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 17,
+          "smooth": 18,
+          "change_pct": 51
+        },
+        "wr": 37.5,
+        "trades": 24,
+        "pnl_pct": -39.89,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 17,
+          "smooth": 18,
+          "change_pct": 57
+        },
+        "wr": 46.9,
+        "trades": 32,
+        "pnl_pct": 0.12,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 17,
+          "smooth": 18,
+          "change_pct": 63
+        },
+        "wr": 41.7,
+        "trades": 36,
+        "pnl_pct": -53.29,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 17,
+          "smooth": 18,
+          "change_pct": 68
+        },
+        "wr": 54.8,
+        "trades": 42,
+        "pnl_pct": 4.79,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 17,
+          "smooth": 20,
+          "change_pct": 46
+        },
+        "wr": 40.0,
+        "trades": 30,
+        "pnl_pct": -81.32,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 17,
+          "smooth": 20,
+          "change_pct": 51
+        },
+        "wr": 52.6,
+        "trades": 19,
+        "pnl_pct": -12.57,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 17,
+          "smooth": 20,
+          "change_pct": 57
+        },
+        "wr": 56.7,
+        "trades": 30,
+        "pnl_pct": -27.71,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 17,
+          "smooth": 20,
+          "change_pct": 63
+        },
+        "wr": 55.9,
+        "trades": 34,
+        "pnl_pct": 18.86,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 17,
+          "smooth": 20,
+          "change_pct": 68
+        },
+        "wr": 54.1,
+        "trades": 37,
+        "pnl_pct": 57.41,
+        "passes": false
+      }
+    ]
+  },
+  {
+    "wave": "m16",
+    "batch": "3715",
+    "strategy": "TV_Amihud_Illiquidity",
+    "symbol": "PYTH",
+    "tf": "1d",
+    "params": {
+      "win": 38,
+      "smooth": 17,
+      "change_pct": 41
+    },
+    "optuna_wr": 66.7,
+    "optuna_trades": 21,
+    "optuna_pf": 5.689,
+    "optuna_pnl_pct": 113.44,
+    "forensic_wr": 71.4,
+    "forensic_n_trades": 21,
+    "forensic_pnl_pct": 61.29,
+    "gap_pp": -4.7,
+    "max_trade_pct_of_pnl": 32.2,
+    "dynamic_min_trades": 8,
+    "trade_pnls_pct": [
+      6.0214,
+      -1.7579,
+      -11.5101,
+      -0.202,
+      7.8653,
+      3.2502,
+      -6.9152,
+      3.5652,
+      0.8042,
+      2.1427,
+      1.4422,
+      5.6274,
+      3.4861,
+      7.9294,
+      6.1869,
+      29.67,
+      2.8429,
+      10.4584,
+      -4.2559,
+      -6.2682,
+      0.9098
+    ],
+    "gate1_status": "PASS",
+    "gate1_reasons": [],
+    "gate_concentration_status": "PASS",
+    "plateau_n_neighbors": 99,
+    "plateau_n_passing": 8,
+    "plateau_pct_passing": 8.1,
+    "gate2_status": "FAIL",
+    "gate2_neighbors": [
+      {
+        "params": {
+          "win": 30,
+          "smooth": 14,
+          "change_pct": 40
+        },
+        "wr": 50.0,
+        "trades": 28,
+        "pnl_pct": 42.29,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 14,
+          "change_pct": 41
+        },
+        "wr": 57.7,
+        "trades": 26,
+        "pnl_pct": 38.57,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 14,
+          "change_pct": 45
+        },
+        "wr": 48.0,
+        "trades": 25,
+        "pnl_pct": 15.43,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 14,
+          "change_pct": 49
+        },
+        "wr": 45.0,
+        "trades": 20,
+        "pnl_pct": -28.46,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 15,
+          "change_pct": 40
+        },
+        "wr": 73.9,
+        "trades": 23,
+        "pnl_pct": 98.42,
+        "passes": true
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 15,
+          "change_pct": 41
+        },
+        "wr": 62.5,
+        "trades": 24,
+        "pnl_pct": 16.32,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 15,
+          "change_pct": 45
+        },
+        "wr": 54.5,
+        "trades": 22,
+        "pnl_pct": 34.53,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 15,
+          "change_pct": 49
+        },
+        "wr": 54.5,
+        "trades": 22,
+        "pnl_pct": 3.73,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 17,
+          "change_pct": 40
+        },
+        "wr": 66.7,
+        "trades": 24,
+        "pnl_pct": 60.23,
+        "passes": true
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 17,
+          "change_pct": 41
+        },
+        "wr": 63.6,
+        "trades": 22,
+        "pnl_pct": 11.17,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 17,
+          "change_pct": 45
+        },
+        "wr": 31.2,
+        "trades": 16,
+        "pnl_pct": 8.05,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 17,
+          "change_pct": 49
+        },
+        "wr": 46.7,
+        "trades": 15,
+        "pnl_pct": -20.3,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 19,
+          "change_pct": 40
+        },
+        "wr": 63.6,
+        "trades": 22,
+        "pnl_pct": 53.57,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 19,
+          "change_pct": 41
+        },
+        "wr": 59.1,
+        "trades": 22,
+        "pnl_pct": 43.87,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 19,
+          "change_pct": 45
+        },
+        "wr": 47.4,
+        "trades": 19,
+        "pnl_pct": -6.15,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 19,
+          "change_pct": 49
+        },
+        "wr": 37.5,
+        "trades": 16,
+        "pnl_pct": -8.87,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 20,
+          "change_pct": 40
+        },
+        "wr": 55.6,
+        "trades": 18,
+        "pnl_pct": -9.64,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 20,
+          "change_pct": 41
+        },
+        "wr": 61.1,
+        "trades": 18,
+        "pnl_pct": -2.09,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 20,
+          "change_pct": 45
+        },
+        "wr": 54.5,
+        "trades": 22,
+        "pnl_pct": -1.45,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 30,
+          "smooth": 20,
+          "change_pct": 49
+        },
+        "wr": 46.7,
+        "trades": 15,
+        "pnl_pct": -32.82,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 34,
+          "smooth": 14,
+          "change_pct": 40
+        },
+        "wr": 57.7,
+        "trades": 26,
+        "pnl_pct": 13.55,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 34,
+          "smooth": 14,
+          "change_pct": 41
+        },
+        "wr": 61.5,
+        "trades": 26,
+        "pnl_pct": 21.82,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 34,
+          "smooth": 14,
+          "change_pct": 45
+        },
+        "wr": 45.8,
+        "trades": 24,
+        "pnl_pct": -25.18,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 34,
+          "smooth": 14,
+          "change_pct": 49
+        },
+        "wr": 38.9,
+        "trades": 18,
+        "pnl_pct": -6.12,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 34,
+          "smooth": 15,
+          "change_pct": 40
+        },
+        "wr": 68.2,
+        "trades": 22,
+        "pnl_pct": 34.0,
+        "passes": true
+      },
+      {
+        "params": {
+          "win": 34,
+          "smooth": 15,
+          "change_pct": 41
+        },
+        "wr": 66.7,
+        "trades": 21,
+        "pnl_pct": 11.22,
+        "passes": true
+      },
+      {
+        "params": {
+          "win": 34,
+          "smooth": 15,
+          "change_pct": 45
+        },
+        "wr": 50.0,
+        "trades": 20,
+        "pnl_pct": 12.21,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 34,
+          "smooth": 15,
+          "change_pct": 49
+        },
+        "wr": 56.2,
+        "trades": 16,
+        "pnl_pct": 23.33,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 34,
+          "smooth": 17,
+          "change_pct": 40
+        },
+        "wr": 58.8,
+        "trades": 17,
+        "pnl_pct": 13.19,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 34,
+          "smooth": 17,
+          "change_pct": 41
+        },
+        "wr": 55.6,
+        "trades": 18,
+        "pnl_pct": 1.56,
+        "passes": false
+      }
+    ]
+  },
+  {
+    "wave": "m16",
+    "batch": "3715",
+    "strategy": "TV_Amihud_Illiquidity",
+    "symbol": "SWARMS",
+    "tf": "1d",
+    "params": {
+      "win": 26,
+      "smooth": 16,
+      "change_pct": 74
+    },
+    "optuna_wr": 73.7,
+    "optuna_trades": 19,
+    "optuna_pf": 1.658,
+    "optuna_pnl_pct": 34.53,
+    "forensic_wr": 63.2,
+    "forensic_n_trades": 19,
+    "forensic_pnl_pct": 22.6,
+    "gap_pp": 10.5,
+    "max_trade_pct_of_pnl": 26.7,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      11.1707,
+      4.8272,
+      18.0113,
+      6.5734,
+      3.9803,
+      15.0955,
+      29.67,
+      13.2583,
+      -14.0147,
+      -3.3968,
+      2.2542,
+      -11.2965,
+      -3.8546,
+      2.7863,
+      3.4224,
+      0.2381,
+      -2.9065,
+      -12.8888,
+      -40.33
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (63.2%)",
+      "gap>5pp (10.5pp)",
+      "n<dynmin (19<999)"
+    ]
+  },
+  {
+    "wave": "m16",
+    "batch": "3715",
+    "strategy": "TV_DeMark_TD9_Sequential",
+    "symbol": "GMX",
+    "tf": "1d",
+    "params": {
+      "lookback": 5,
+      "count_target": 9
+    },
+    "optuna_wr": 70.3,
+    "optuna_trades": 37,
+    "optuna_pf": 2.325,
+    "optuna_pnl_pct": 44.8,
+    "forensic_wr": 62.2,
+    "forensic_n_trades": 37,
+    "forensic_pnl_pct": 67.09,
+    "gap_pp": 8.1,
+    "max_trade_pct_of_pnl": 10.9,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      8.795,
+      -1.4348,
+      -3.9378,
+      -0.5939,
+      8.1638,
+      -0.1889,
+      1.2695,
+      5.4406,
+      9.3274,
+      -10.2339,
+      4.0769,
+      5.2009,
+      1.1816,
+      -7.4227,
+      2.9919,
+      3.8703,
+      3.4424,
+      2.2269,
+      -0.1859,
+      -0.4317,
+      -15.6107,
+      1.6906,
+      5.2919,
+      7.7247,
+      7.7515,
+      -9.7003,
+      2.5594,
+      10.7443,
+      5.3176,
+      -1.4742,
+      12.0043,
+      -0.5811,
+      -4.517,
+      6.9021,
+      0.7804,
+      -7.6859,
+      14.332
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (62.2%)",
+      "gap>5pp (8.1pp)",
+      "n<dynmin (37<999)"
+    ]
+  },
+  {
+    "wave": "m16",
+    "batch": "3715",
+    "strategy": "TV_DeMark_TD9_Sequential",
+    "symbol": "LTC",
+    "tf": "1d",
+    "params": {
+      "lookback": 3,
+      "count_target": 12
+    },
+    "optuna_wr": 68.8,
+    "optuna_trades": 16,
+    "optuna_pf": 3.233,
+    "optuna_pnl_pct": 59.75,
+    "forensic_wr": 56.2,
+    "forensic_n_trades": 16,
+    "forensic_pnl_pct": 48.26,
+    "gap_pp": 12.6,
+    "max_trade_pct_of_pnl": 30.1,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      -3.7484,
+      13.4892,
+      1.3142,
+      -4.2813,
+      -24.4281,
+      -6.2134,
+      0.3256,
+      29.67,
+      13.4153,
+      3.2221,
+      5.0514,
+      -3.0787,
+      29.67,
+      -2.566,
+      -5.8639,
+      2.282
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (56.2%)",
+      "gap>5pp (12.6pp)",
+      "n<dynmin (16<999)"
+    ]
+  },
+  {
+    "wave": "m16",
+    "batch": "3715",
+    "strategy": "TV_DeMark_TD9_Sequential",
+    "symbol": "SFP",
+    "tf": "1d",
+    "params": {
+      "lookback": 4,
+      "count_target": 9
+    },
+    "optuna_wr": 65.9,
+    "optuna_trades": 41,
+    "optuna_pf": 2.65,
+    "optuna_pnl_pct": 65.13,
+    "forensic_wr": 61.0,
+    "forensic_n_trades": 41,
+    "forensic_pnl_pct": 65.75,
+    "gap_pp": 4.9,
+    "max_trade_pct_of_pnl": 22.2,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      4.128,
+      -6.5098,
+      -19.8865,
+      9.2931,
+      1.6385,
+      -2.9461,
+      2.0491,
+      -13.2143,
+      -0.2342,
+      -0.3661,
+      -0.2517,
+      1.0036,
+      -0.3806,
+      8.189,
+      3.5739,
+      7.6744,
+      5.4239,
+      3.5132,
+      -4.3187,
+      3.3099,
+      5.2501,
+      7.0315,
+      11.7672,
+      -3.5261,
+      2.4611,
+      -6.7023,
+      -1.3826,
+      -0.5385,
+      -4.463,
+      2.2325,
+      0.3697,
+      -1.1587,
+      1.5122,
+      1.9001,
+      0.1099,
+      9.5249,
+      29.67,
+      8.4311,
+      0.0251,
+      3.7034,
+      -2.1577
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (61.0%)",
+      "n<dynmin (41<999)"
+    ]
+  },
+  {
+    "wave": "m16",
+    "batch": "3715",
+    "strategy": "TV_Fibonacci_Retracement",
+    "symbol": "ONDO",
+    "tf": "1d",
+    "params": {
+      "swing_len": 73,
+      "fib_level": 0.5602142064768539,
+      "atr_tol": 0.2304434189725778
+    },
+    "optuna_wr": 65.0,
+    "optuna_trades": 20,
+    "optuna_pf": 2.898,
+    "optuna_pnl_pct": 36.53,
+    "forensic_wr": 57.9,
+    "forensic_n_trades": 19,
+    "forensic_pnl_pct": 38.17,
+    "gap_pp": 7.1,
+    "max_trade_pct_of_pnl": 44.9,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      3.1956,
+      -3.5785,
+      8.8118,
+      -10.1173,
+      29.67,
+      -1.9844,
+      2.9304,
+      1.297,
+      -4.6992,
+      3.1386,
+      3.6271,
+      -0.1888,
+      2.4541,
+      -2.6922,
+      -0.2532,
+      1.435,
+      -4.3377,
+      1.2785,
+      8.18
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (57.9%)",
+      "gap>5pp (7.1pp)",
+      "n<dynmin (19<999)"
+    ]
+  },
+  {
+    "wave": "m16",
+    "batch": "3715",
+    "strategy": "TV_Fibonacci_Retracement",
+    "symbol": "XRP",
+    "tf": "1d",
+    "params": {
+      "swing_len": 23,
+      "fib_level": 0.3932568531060219,
+      "atr_tol": 0.8752992058773565
+    },
+    "optuna_wr": 76.5,
+    "optuna_trades": 17,
+    "optuna_pf": 6.685,
+    "optuna_pnl_pct": 43.41,
+    "forensic_wr": 70.6,
+    "forensic_n_trades": 17,
+    "forensic_pnl_pct": 86.11,
+    "gap_pp": 5.9,
+    "max_trade_pct_of_pnl": 27.2,
+    "dynamic_min_trades": 8,
+    "trade_pnls_pct": [
+      1.3845,
+      6.4888,
+      17.4108,
+      5.6227,
+      4.0545,
+      3.9487,
+      -9.0443,
+      29.67,
+      -6.3057,
+      -1.4004,
+      -2.0336,
+      3.4925,
+      -4.0987,
+      1.196,
+      29.67,
+      4.3493,
+      1.7032
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "gap>5pp (5.9pp)"
+    ]
+  },
+  {
+    "wave": "m16",
+    "batch": "3715",
+    "strategy": "TV_DeMark_TD9_Sequential",
+    "symbol": "XRP",
+    "tf": "4h",
+    "params": {
+      "lookback": 3,
+      "count_target": 12
+    },
+    "optuna_wr": 66.7,
+    "optuna_trades": 30,
+    "optuna_pf": 3.586,
+    "optuna_pnl_pct": 54.46,
+    "forensic_wr": 66.7,
+    "forensic_n_trades": 30,
+    "forensic_pnl_pct": 105.75,
+    "gap_pp": 0.0,
+    "max_trade_pct_of_pnl": 14.4,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      17.695,
+      -2.2137,
+      1.8221,
+      -0.061,
+      3.3766,
+      13.3074,
+      11.3935,
+      7.2038,
+      17.695,
+      17.695,
+      0.8606,
+      2.4798,
+      6.3273,
+      -1.4784,
+      0.301,
+      -0.9248,
+      3.6022,
+      -3.4169,
+      -1.1475,
+      -4.8486,
+      4.3552,
+      1.4961,
+      2.0686,
+      -1.1712,
+      -0.625,
+      -0.9144,
+      2.3955,
+      0.8621,
+      5.7687,
+      1.8417
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (66.7%)",
+      "n<dynmin (30<999)"
+    ]
+  }
+]
