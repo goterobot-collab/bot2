@@ -1,0 +1,197 @@
+{
+  "TV_SupplyDemand_Zones": {
+    "best": {
+      "sym": "APT",
+      "tf": "4h",
+      "wr": 100.0,
+      "trades": 2,
+      "pf": 999.0,
+      "params": {
+        "zone_lookback": 15,
+        "strength_threshold": 1.8509176279245094,
+        "close_proximity": 0.009196030444645783
+      }
+    },
+    "passing_combos": 2,
+    "all_passing": [
+      {
+        "sym": "APT",
+        "tf": "4h",
+        "wr": 100.0,
+        "trades": 2,
+        "pf": 999.0,
+        "params": {
+          "zone_lookback": 15,
+          "strength_threshold": 1.8509176279245094,
+          "close_proximity": 0.009196030444645783
+        }
+      },
+      {
+        "sym": "SWARMS",
+        "tf": "1h",
+        "wr": 100.0,
+        "trades": 3,
+        "pf": 999.0,
+        "params": {
+          "zone_lookback": 15,
+          "strength_threshold": 1.9561297267913176,
+          "close_proximity": 0.010068893977510571
+        }
+      }
+    ]
+  },
+  "TV_FairValueGap_Trading": {
+    "best": {
+      "sym": "AGT",
+      "tf": "1d",
+      "wr": 90.0,
+      "trades": 10,
+      "pf": 10.347,
+      "params": {
+        "min_gap_pips": 0.007624987430652208,
+        "ma_filter": 62
+      }
+    },
+    "passing_combos": 4,
+    "all_passing": [
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 90.0,
+        "trades": 10,
+        "pf": 10.347,
+        "params": {
+          "min_gap_pips": 0.007624987430652208,
+          "ma_filter": 62
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 28,
+        "pf": 3.14,
+        "params": {
+          "min_gap_pips": 0.005059043467575494,
+          "ma_filter": 40
+        }
+      },
+      {
+        "sym": "ONDO",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 16,
+        "pf": 2.041,
+        "params": {
+          "min_gap_pips": 0.011940924955882802,
+          "ma_filter": 62
+        }
+      },
+      {
+        "sym": "LTC",
+        "tf": "1d",
+        "wr": 70.0,
+        "trades": 50,
+        "pf": 1.726,
+        "params": {
+          "min_gap_pips": 0.016205140780143453,
+          "ma_filter": 42
+        }
+      }
+    ]
+  },
+  "TV_MFI_VolumeConfirmation": {
+    "best": {
+      "sym": "SWARMS",
+      "tf": "1d",
+      "wr": 84.2,
+      "trades": 19,
+      "pf": 3.361,
+      "params": {
+        "mfi_period": 16,
+        "mfi_oversold": 34,
+        "mfi_overbought": 79
+      }
+    },
+    "passing_combos": 4,
+    "all_passing": [
+      {
+        "sym": "SWARMS",
+        "tf": "1d",
+        "wr": 84.2,
+        "trades": 19,
+        "pf": 3.361,
+        "params": {
+          "mfi_period": 16,
+          "mfi_oversold": 34,
+          "mfi_overbought": 79
+        }
+      },
+      {
+        "sym": "JUP",
+        "tf": "1d",
+        "wr": 80.8,
+        "trades": 26,
+        "pf": 6.155,
+        "params": {
+          "mfi_period": 20,
+          "mfi_oversold": 22,
+          "mfi_overbought": 62
+        }
+      },
+      {
+        "sym": "ONDO",
+        "tf": "1d",
+        "wr": 77.8,
+        "trades": 9,
+        "pf": 1.373,
+        "params": {
+          "mfi_period": 19,
+          "mfi_oversold": 22,
+          "mfi_overbought": 74
+        }
+      },
+      {
+        "sym": "AGT",
+        "tf": "1d",
+        "wr": 72.2,
+        "trades": 18,
+        "pf": 3.202,
+        "params": {
+          "mfi_period": 11,
+          "mfi_oversold": 24,
+          "mfi_overbought": 60
+        }
+      }
+    ]
+  },
+  "TV_AlternatingSignals_MultiTFConfirm": {
+    "best": {
+      "sym": "WLD",
+      "tf": "1d",
+      "wr": 75.0,
+      "trades": 20,
+      "pf": 3.78,
+      "params": {
+        "fast_ema": 11,
+        "slow_ema": 23,
+        "rsi_period": 14
+      }
+    },
+    "passing_combos": 1,
+    "all_passing": [
+      {
+        "sym": "WLD",
+        "tf": "1d",
+        "wr": 75.0,
+        "trades": 20,
+        "pf": 3.78,
+        "params": {
+          "fast_ema": 11,
+          "slow_ema": 23,
+          "rsi_period": 14
+        }
+      }
+    ]
+  }
+}

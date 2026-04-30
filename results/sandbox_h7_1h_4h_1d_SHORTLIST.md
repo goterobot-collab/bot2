@@ -4,7 +4,7 @@
 - Tasks completed: 350
 - Grails passing R24 gate: **22**
 - Strategies promoted (>=1 combo pass): **4**
-- Elapsed: 14s
+- Elapsed: 12s
 
 | Rank | Strategy | Sym | TF | WR | trades | PF | total% | params |
 |------|----------|-----|----|-----|--------|-----|--------|--------|
