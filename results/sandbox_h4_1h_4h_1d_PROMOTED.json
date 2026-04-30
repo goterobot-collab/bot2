@@ -13,7 +13,7 @@
         "smooth": 1
       }
     },
-    "passing_combos": 16,
+    "passing_combos": 17,
     "all_passing": [
       {
         "sym": "LINK",
@@ -133,6 +133,19 @@
         }
       },
       {
+        "sym": "ETH",
+        "tf": "4h",
+        "wr": 87.5,
+        "trades": 8,
+        "pf": 33.036,
+        "params": {
+          "jerk_len": 47,
+          "z_len": 207,
+          "z_thresh": 3.098379557714424,
+          "smooth": 12
+        }
+      },
+      {
         "sym": "PYTH",
         "tf": "4h",
         "wr": 83.3,
@@ -238,7 +251,7 @@
         "vol_sma": 81
       }
     },
-    "passing_combos": 8,
+    "passing_combos": 9,
     "all_passing": [
       {
         "sym": "APT",
@@ -322,6 +335,18 @@
           "ofm_thresh": 0.43641551277113616,
           "run_len": 6,
           "vol_sma": 96
+        }
+      },
+      {
+        "sym": "XRP",
+        "tf": "1d",
+        "wr": 87.5,
+        "trades": 8,
+        "pf": 2.63,
+        "params": {
+          "ofm_thresh": 0.5659294739981413,
+          "run_len": 3,
+          "vol_sma": 18
         }
       },
       {
