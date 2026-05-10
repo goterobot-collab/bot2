@@ -1,0 +1,537 @@
+[
+  {
+    "wave": "m27",
+    "batch": "3726",
+    "strategy": "TV_Wright_VR_SignBased",
+    "symbol": "AGT",
+    "tf": "1d",
+    "params": {
+      "q": 10,
+      "win": 250,
+      "vr_thr": 1.1382136020277107
+    },
+    "optuna_wr": 70.6,
+    "optuna_trades": 17,
+    "optuna_pf": 2.628,
+    "optuna_pnl_pct": 68.61,
+    "forensic_wr": 53.8,
+    "forensic_n_trades": 13,
+    "forensic_pnl_pct": 47.69,
+    "gap_pp": 16.8,
+    "max_trade_pct_of_pnl": 28.2,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      -12.2632,
+      -3.8318,
+      -5.0831,
+      -7.7822,
+      -5.3571,
+      6.7838,
+      -23.2275,
+      7.3224,
+      0.5172,
+      13.3604,
+      29.58,
+      18.005,
+      29.67
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (53.8%)",
+      "gap>5pp (16.8pp)",
+      "n<dynmin (13<999)"
+    ]
+  },
+  {
+    "wave": "m27",
+    "batch": "3726",
+    "strategy": "TV_Wright_VR_SignBased",
+    "symbol": "ONDO",
+    "tf": "1d",
+    "params": {
+      "q": 8,
+      "win": 195,
+      "vr_thr": 1.3740654572834592
+    },
+    "optuna_wr": 67.1,
+    "optuna_trades": 76,
+    "optuna_pf": 1.32,
+    "optuna_pnl_pct": 77.55,
+    "forensic_wr": 52.4,
+    "forensic_n_trades": 63,
+    "forensic_pnl_pct": 5.1,
+    "gap_pp": 14.7,
+    "max_trade_pct_of_pnl": 10.0,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      -2.2879,
+      -2.1447,
+      10.4237,
+      14.6688,
+      -6.5242,
+      2.6643,
+      -14.8895,
+      3.8477,
+      1.5517,
+      0.5853,
+      -10.6312,
+      -7.2737,
+      1.2839,
+      26.0566,
+      14.5396,
+      -0.9603,
+      10.3544,
+      -0.4502,
+      -0.9138,
+      3.3217,
+      9.0374,
+      0.0955,
+      -1.0488,
+      -40.72,
+      16.7392,
+      14.3102,
+      1.4594,
+      -4.358,
+      1.1697,
+      6.5954,
+      -13.583,
+      15.7951,
+      -4.6719,
+      -17.8128,
+      3.9908,
+      -40.45,
+      15.1447,
+      10.4168,
+      -1.9045,
+      -6.557,
+      7.3271,
+      -6.3559,
+      11.032,
+      -9.985,
+      3.4173,
+      -3.8219,
+      -2.6107,
+      1.9091,
+      -19.377,
+      -0.1438,
+      20.6187,
+      11.8218,
+      -13.1949,
+      -7.8574,
+      11.397,
+      -2.7667,
+      3.528,
+      -5.1419,
+      2.4174,
+      0.5474,
+      2.9333,
+      -1.8332,
+      -5.6272
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (52.4%)",
+      "gap>5pp (14.7pp)",
+      "n<dynmin (63<999)"
+    ]
+  },
+  {
+    "wave": "m27",
+    "batch": "3726",
+    "strategy": "TV_BayesianTrend_Probability",
+    "symbol": "JTO",
+    "tf": "4h",
+    "params": {
+      "win": 11,
+      "prior": 0.5799317988856605,
+      "prob_thr": 0.8276825328268674
+    },
+    "optuna_wr": 68.4,
+    "optuna_trades": 19,
+    "optuna_pf": 1.461,
+    "optuna_pnl_pct": 7.46,
+    "forensic_wr": 47.4,
+    "forensic_n_trades": 19,
+    "forensic_pnl_pct": -11.25,
+    "gap_pp": 21.0,
+    "max_trade_pct_of_pnl": 28.9,
+    "dynamic_min_trades": 999,
+    "trade_pnls_pct": [
+      0.2932,
+      -2.053,
+      5.6366,
+      4.9074,
+      1.1492,
+      -2.0379,
+      2.832,
+      -6.3714,
+      -1.3434,
+      -5.8548,
+      -0.4652,
+      -3.9249,
+      0.2827,
+      2.2597,
+      1.7247,
+      -2.5987,
+      0.4233,
+      -6.0144,
+      -0.0976
+    ],
+    "gate1_status": "FAIL",
+    "gate1_reasons": [
+      "real_wr<70 (47.4%)",
+      "gap>5pp (21.0pp)",
+      "pnl<=0 (-11.25%)",
+      "n<dynmin (19<999)"
+    ]
+  },
+  {
+    "wave": "m27",
+    "batch": "3726",
+    "strategy": "TV_Range_Symmetry",
+    "symbol": "OP",
+    "tf": "4h",
+    "params": {
+      "win": 45,
+      "asym_thr": 0.2471426446343296
+    },
+    "optuna_wr": 70.6,
+    "optuna_trades": 17,
+    "optuna_pf": 4.726,
+    "optuna_pnl_pct": 18.59,
+    "forensic_wr": 88.2,
+    "forensic_n_trades": 17,
+    "forensic_pnl_pct": 36.19,
+    "gap_pp": -17.6,
+    "max_trade_pct_of_pnl": 21.2,
+    "dynamic_min_trades": 8,
+    "trade_pnls_pct": [
+      0.4312,
+      -0.7121,
+      0.5784,
+      1.2641,
+      8.2588,
+      1.1652,
+      1.2827,
+      7.0933,
+      2.0089,
+      6.7067,
+      1.1006,
+      0.3576,
+      1.841,
+      2.5141,
+      0.2251,
+      4.1976,
+      -2.1242
+    ],
+    "gate1_status": "PASS",
+    "gate1_reasons": [],
+    "gate_concentration_status": "PASS",
+    "plateau_n_neighbors": 63,
+    "plateau_n_passing": 2,
+    "plateau_pct_passing": 3.2,
+    "gate2_status": "FAIL",
+    "gate2_neighbors": [
+      {
+        "params": {
+          "win": 36,
+          "asym_thr": 0.2
+        },
+        "wr": 50.5,
+        "trades": 97,
+        "pnl_pct": -25.03,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 36,
+          "asym_thr": 0.210071
+        },
+        "wr": 51.9,
+        "trades": 77,
+        "pnl_pct": -10.95,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 36,
+          "asym_thr": 0.222428
+        },
+        "wr": 58.5,
+        "trades": 65,
+        "pnl_pct": 13.27,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 36,
+          "asym_thr": 0.234786
+        },
+        "wr": 53.2,
+        "trades": 47,
+        "pnl_pct": -8.88,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 36,
+          "asym_thr": 0.247143
+        },
+        "wr": 51.4,
+        "trades": 35,
+        "pnl_pct": 9.88,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 36,
+          "asym_thr": 0.2595
+        },
+        "wr": 36.8,
+        "trades": 19,
+        "pnl_pct": -24.46,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 36,
+          "asym_thr": 0.271857
+        },
+        "wr": 42.1,
+        "trades": 19,
+        "pnl_pct": -21.03,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 36,
+          "asym_thr": 0.284214
+        },
+        "wr": 41.7,
+        "trades": 12,
+        "pnl_pct": -23.9,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 36,
+          "asym_thr": 0.296571
+        },
+        "wr": 22.2,
+        "trades": 9,
+        "pnl_pct": -24.49,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 38,
+          "asym_thr": 0.2
+        },
+        "wr": 46.2,
+        "trades": 93,
+        "pnl_pct": -34.47,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 38,
+          "asym_thr": 0.210071
+        },
+        "wr": 40.3,
+        "trades": 72,
+        "pnl_pct": -63.91,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 38,
+          "asym_thr": 0.222428
+        },
+        "wr": 36.2,
+        "trades": 47,
+        "pnl_pct": -35.73,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 38,
+          "asym_thr": 0.234786
+        },
+        "wr": 43.9,
+        "trades": 41,
+        "pnl_pct": -27.55,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 38,
+          "asym_thr": 0.247143
+        },
+        "wr": 38.5,
+        "trades": 26,
+        "pnl_pct": -16.25,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 38,
+          "asym_thr": 0.2595
+        },
+        "wr": 52.9,
+        "trades": 17,
+        "pnl_pct": -10.99,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 38,
+          "asym_thr": 0.271857
+        },
+        "wr": 28.6,
+        "trades": 14,
+        "pnl_pct": -19.43,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 38,
+          "asym_thr": 0.284214
+        },
+        "wr": 50.0,
+        "trades": 12,
+        "pnl_pct": -12.92,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 38,
+          "asym_thr": 0.296571
+        },
+        "wr": 45.5,
+        "trades": 11,
+        "pnl_pct": -2.31,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 40,
+          "asym_thr": 0.2
+        },
+        "wr": 45.9,
+        "trades": 85,
+        "pnl_pct": -15.91,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 40,
+          "asym_thr": 0.210071
+        },
+        "wr": 44.6,
+        "trades": 56,
+        "pnl_pct": -11.23,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 40,
+          "asym_thr": 0.222428
+        },
+        "wr": 44.7,
+        "trades": 47,
+        "pnl_pct": -21.41,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 40,
+          "asym_thr": 0.234786
+        },
+        "wr": 39.4,
+        "trades": 33,
+        "pnl_pct": -20.88,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 40,
+          "asym_thr": 0.247143
+        },
+        "wr": 42.9,
+        "trades": 21,
+        "pnl_pct": -18.7,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 40,
+          "asym_thr": 0.2595
+        },
+        "wr": 47.4,
+        "trades": 19,
+        "pnl_pct": -23.51,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 40,
+          "asym_thr": 0.271857
+        },
+        "wr": 42.9,
+        "trades": 14,
+        "pnl_pct": -11.79,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 40,
+          "asym_thr": 0.284214
+        },
+        "wr": 40.0,
+        "trades": 10,
+        "pnl_pct": -16.67,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 40,
+          "asym_thr": 0.296571
+        },
+        "wr": 62.5,
+        "trades": 8,
+        "pnl_pct": -7.49,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 43,
+          "asym_thr": 0.2
+        },
+        "wr": 50.8,
+        "trades": 63,
+        "pnl_pct": -30.62,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 43,
+          "asym_thr": 0.210071
+        },
+        "wr": 50.0,
+        "trades": 58,
+        "pnl_pct": -19.14,
+        "passes": false
+      },
+      {
+        "params": {
+          "win": 43,
+          "asym_thr": 0.222428
+        },
+        "wr": 32.4,
+        "trades": 34,
+        "pnl_pct": -51.21,
+        "passes": false
+      }
+    ]
+  }
+]
