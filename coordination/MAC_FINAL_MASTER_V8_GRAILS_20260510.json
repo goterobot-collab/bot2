@@ -1,0 +1,85 @@
+{
+  "_doc": "Mac paralela V8 grail deliverable - FIRST CONFIRMED in 27-wave hunt",
+  "_generated_at": "2026-05-10",
+  "_generated_by": "Mac paralela (claude/grail-hunt-bot-noeIq)",
+  "_commit_base": "5b54bd5",
+  "_engine": "canary_runner.run_forensic v2 (entry OPEN next-bar, fees 0.15%/side round-trip 0.30%, SL=0.40, TP cap per TF, funding deduction, full history)",
+  "_gate_specs": {
+    "gate1_forensic": {
+      "real_wr_min": 70.0,
+      "gap_pp_max": 5.0,
+      "pnl_pct_min": 0.0,
+      "dynamic_min_trades": "R34"
+    },
+    "gate_concentration": {"max_trade_pct_of_pnl_max": 40.0},
+    "gate2_plateau": {"jitter": "+-20%", "loose_gate": "WR>=65 n>=10 PnL>0", "threshold_pct": 60.0},
+    "gate3_mc_bootstrap": {"n_permutations": 500, "pvalue_max": 0.05},
+    "fees_bps_per_side": 15
+  },
+  "_summary": {
+    "total_waves": 27,
+    "total_families_new": 135,
+    "candidates_eligible_pipeline": 210,
+    "gate1_pass": 28,
+    "gate2_pass": 2,
+    "gate3_pass": 2,
+    "confirmed_grails": 2
+  },
+  "confirmed_grails": [
+    {
+      "strategy": "TV_Calendar_QuarterEnd",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "1h",
+      "params": {"days_window": 1, "ret_len": 29},
+      "optuna_wr": 73.3,
+      "forensic_wr": 80.0,
+      "gap_pp": -6.7,
+      "n_trades_clean": 15,
+      "plateau_pct_passing": 60.0,
+      "mc_pvalue": 0.012,
+      "pnl_pct": 23.19,
+      "max_trade_pct_of_pnl": 23.8,
+      "fees_bps_per_side": 15,
+      "evidence_log": "results/mac_m26_pipeline_results.json",
+      "commit": "5b54bd5",
+      "source_paper": "End-of-quarter institutional rebalancing fade pattern",
+      "rule_summary": "In last 1 day of Mar/Jun/Sep/Dec UTC on 1h TF, fade 29-bar return direction"
+    },
+    {
+      "strategy": "TV_Calendar_QuarterEnd",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "1h",
+      "params": {"days_window": 2, "ret_len": 8},
+      "optuna_wr": 66.7,
+      "forensic_wr": 71.4,
+      "gap_pp": -4.7,
+      "n_trades_clean": 21,
+      "plateau_pct_passing": 75.0,
+      "mc_pvalue": 0.034,
+      "pnl_pct": 12.86,
+      "max_trade_pct_of_pnl": 12.5,
+      "fees_bps_per_side": 15,
+      "evidence_log": "results/mac_m26_pipeline_results.json",
+      "commit": "5b54bd5",
+      "source_paper": "End-of-quarter institutional rebalancing fade pattern",
+      "rule_summary": "In last 2 days of Mar/Jun/Sep/Dec UTC on 1h TF, fade 8-bar return direction"
+    }
+  ],
+  "_notes": [
+    "FIRST 2 CONFIRMED V10 grails after 25 waves of 0 CONFIRMED.",
+    "Both grails are TV_Calendar_QuarterEnd (batch 3725 wave m26).",
+    "Both have NEGATIVE gap_pp (forensic engine shows BETTER WR than optuna engine - very clean).",
+    "Both have low max_trade_pct (23.8% / 12.5%) - well-distributed PnL, NOT concentration risk.",
+    "Both pass plateau >=60% (one at exact threshold 60.0% on OP, cleaner 75% on LINK).",
+    "Both pass MC bootstrap p<0.05 (0.012 / 0.034).",
+    "Pattern logic: end-of-quarter institutional rebalancing creates predictable fade flows on 1h TF.",
+    "RECOMMEND for Mac prod: re-validate against Mac forensic engine + Binance forensic real data before injection to V8 production.",
+    "No relaxation of canonical V10 gates was applied to obtain these CONFIRMED grails."
+  ],
+  "_artifacts": {
+    "pipeline_json": "results/mac_m26_pipeline_results.json",
+    "hunter_shortlist": "results/mac_m26_1h_4h_1d_SHORTLIST.md",
+    "hunter_promoted": "results/mac_m26_1h_4h_1d_PROMOTED.json",
+    "strategies_source": "strategies_v7/strategies_mac_batch3725.py"
+  }
+}
