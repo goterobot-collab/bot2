@@ -1,0 +1,118 @@
+{
+  "_doc": "Mac paralela V8 grail deliverable - 4 CONFIRMED V10 (calendar-event-fade family)",
+  "_generated_at": "2026-05-13",
+  "_generated_by": "Mac paralela (claude/grail-hunt-bot-noeIq)",
+  "_supersedes": "coordination/MAC_FINAL_MASTER_V8_GRAILS_20260512.json (3 CONFIRMED)",
+  "_engine": "canary_runner.run_forensic v2 (entry OPEN next-bar, fees 0.15%/side round-trip 0.30%, SL=0.40, TP cap per TF, funding deduction, full history)",
+  "_gate_specs": {
+    "gate1_forensic": {"real_wr_min": 70.0, "gap_pp_max": 5.0, "pnl_pct_min": 0.0},
+    "gate_concentration": {"max_trade_pct_of_pnl_max": 40.0},
+    "gate2_plateau": {"jitter": "+-20%", "loose_gate": "WR>=65 n>=10 PnL>0", "threshold_pct": 60.0},
+    "gate3_mc_bootstrap": {"n_permutations": 500, "pvalue_max": 0.05},
+    "fees_bps_per_side": 15
+  },
+  "_summary": {
+    "total_waves": 33,
+    "total_families_new": 165,
+    "candidates_eligible_pipeline": 469,
+    "gate1_pass": 35,
+    "gate2_pass": 4,
+    "gate3_pass": 4,
+    "confirmed_grails": 4,
+    "pattern_family": "calendar-event-fade (all 4 grails in this family)"
+  },
+  "_pattern_discovery": "All 4 CONFIRMED V10 grails belong to the CALENDAR-EVENT-FADE family: detect institutional flow window (quarter-end, monthly OpEx, CME crypto rollover) + fade direction of recent N-bar return. Pattern is structurally driven by predictable institutional rebalancing creating temporary overreactions. Works on alts (OP, LINK, ONDO, AGT) at 1h-4h TF. ALL 4 have NEGATIVE or near-zero gap_pp (forensic engine matches/exceeds optuna - clean signal).",
+  "confirmed_grails": [
+    {
+      "strategy": "TV_Calendar_QuarterEnd",
+      "symbol": "OP/USDT:USDT",
+      "timeframe": "1h",
+      "params": {"days_window": 1, "ret_len": 29},
+      "optuna_wr": 73.3,
+      "forensic_wr": 80.0,
+      "gap_pp": -6.7,
+      "n_trades_clean": 15,
+      "plateau_pct_passing": 60.0,
+      "mc_pvalue": 0.012,
+      "pnl_pct": 23.19,
+      "max_trade_pct_of_pnl": 23.8,
+      "fees_bps_per_side": 15,
+      "evidence_log": "results/mac_m26_pipeline_results.json",
+      "discovered_in_wave": "m26",
+      "rule_summary": "Last 1 day of Mar/Jun/Sep/Dec UTC on 1h TF, fade 29-bar return direction"
+    },
+    {
+      "strategy": "TV_Calendar_QuarterEnd",
+      "symbol": "LINK/USDT:USDT",
+      "timeframe": "1h",
+      "params": {"days_window": 2, "ret_len": 8},
+      "optuna_wr": 66.7,
+      "forensic_wr": 71.4,
+      "gap_pp": -4.7,
+      "n_trades_clean": 21,
+      "plateau_pct_passing": 75.0,
+      "mc_pvalue": 0.034,
+      "pnl_pct": 12.86,
+      "max_trade_pct_of_pnl": 12.5,
+      "fees_bps_per_side": 15,
+      "evidence_log": "results/mac_m26_pipeline_results.json",
+      "discovered_in_wave": "m26",
+      "rule_summary": "Last 2 days of Mar/Jun/Sep/Dec UTC on 1h TF, fade 8-bar return direction"
+    },
+    {
+      "strategy": "TV_OptionsExpiry_Proxy",
+      "symbol": "ONDO/USDT:USDT",
+      "timeframe": "4h",
+      "params": {"ret_len": 16},
+      "optuna_wr": 68.2,
+      "forensic_wr": 72.7,
+      "gap_pp": -4.5,
+      "n_trades_clean": 22,
+      "plateau_pct_passing": 83.3,
+      "mc_pvalue": 0.02,
+      "pnl_pct": 44.43,
+      "max_trade_pct_of_pnl": 16.9,
+      "fees_bps_per_side": 15,
+      "evidence_log": "results/mac_m30_pipeline_results.json",
+      "discovered_in_wave": "m30",
+      "rule_summary": "3rd Friday of any month UTC on 4h TF (TradFi monthly options expiry), fade 16-bar return direction"
+    },
+    {
+      "strategy": "TV_CME_Rollover",
+      "symbol": "AGT/USDT:USDT",
+      "timeframe": "1h",
+      "params": {"ret_len": 28},
+      "optuna_wr": 73.0,
+      "forensic_wr": 73.7,
+      "gap_pp": -0.7,
+      "n_trades_clean": null,
+      "plateau_pct_passing": 62.5,
+      "mc_pvalue": 0.004,
+      "pnl_pct": 76.77,
+      "max_trade_pct_of_pnl": 12.6,
+      "fees_bps_per_side": 15,
+      "evidence_log": "results/mac_m32_pipeline_results.json",
+      "discovered_in_wave": "m32",
+      "rule_summary": "Last Friday of month UTC (day>=22 + dayofweek=Friday) on 1h TF, CME crypto rollover proxy, fade 28-bar return"
+    }
+  ],
+  "_notes": [
+    "4 CONFIRMED V10 in 33 waves. All 4 are calendar-event-fade family.",
+    "Best PnL: TV_CME_Rollover AGT 1h with +76.8% (m32, gap -0.7pp, MC p=0.004).",
+    "Best Plateau: TV_OptionsExpiry_Proxy ONDO 4h with 83.3% (very robust).",
+    "Best MC significance: TV_CME_Rollover AGT 1h with p=0.004.",
+    "Pattern consistency: ALL 4 have NEGATIVE or near-zero gap_pp (forensic engine matches/exceeds optuna engine) - signals are clean.",
+    "RECOMMEND: Mac prod re-validates against Binance forensic engine + activos_binance.db before V8 production injection.",
+    "NO relaxation of canonical V10 gates - all strictly CONFIRMED."
+  ],
+  "_artifacts": {
+    "m26_pipeline_json": "results/mac_m26_pipeline_results.json",
+    "m30_pipeline_json": "results/mac_m30_pipeline_results.json",
+    "m32_pipeline_json": "results/mac_m32_pipeline_results.json",
+    "strategies_sources": [
+      "strategies_v7/strategies_mac_batch3725.py (TV_Calendar_QuarterEnd)",
+      "strategies_v7/strategies_mac_batch3729.py (TV_OptionsExpiry_Proxy)",
+      "strategies_v7/strategies_mac_batch3731.py (TV_CME_Rollover)"
+    ]
+  }
+}
