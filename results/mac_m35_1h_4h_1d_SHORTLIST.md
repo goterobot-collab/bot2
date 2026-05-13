@@ -1,0 +1,100 @@
+# MAC_M35_1h_4h_1d shortlist (Mac paralela)
+
+- Batches: 3734
+- Tasks completed: 335
+- Grails passing R24-reduced gate (WR>=70 + PF>=1.2 + PnL>0): **90**
+- Strategies promoted (>=1 combo pass): **5**
+- Elapsed: 22s
+
+| Rank | Strategy | Sym | TF | WR | trades | PF | total% | params |
+|------|----------|-----|----|-----|--------|-----|--------|--------|
+| 1 | `TV_AprilTax_Window` | ARB | 1d | 100.0% | 4 | 999.00 | 16.7% | `{"ret_len":7}` |
+| 2 | `TV_AprilTax_Window` | INJ | 1d | 100.0% | 4 | 999.00 | 16.1% | `{"ret_len":6}` |
+| 3 | `TV_AprilTax_Window` | JTO | 1d | 100.0% | 4 | 999.00 | 52.2% | `{"ret_len":5}` |
+| 4 | `TV_AprilTax_Window` | JUP | 1d | 100.0% | 3 | 999.00 | 28.4% | `{"ret_len":18}` |
+| 5 | `TV_AprilTax_Window` | ONDO | 1d | 100.0% | 2 | 999.00 | 4.1% | `{"ret_len":12}` |
+| 6 | `TV_AprilTax_Window` | SUI | 1d | 100.0% | 3 | 999.00 | 13.5% | `{"ret_len":23}` |
+| 7 | `TV_AprilTax_Window` | SWARMS | 1d | 100.0% | 3 | 999.00 | 20.9% | `{"ret_len":5}` |
+| 8 | `TV_AprilTax_Window` | XRP | 1d | 100.0% | 4 | 999.00 | 23.6% | `{"ret_len":25}` |
+| 9 | `TV_Halloween_Effect` | JUP | 1d | 100.0% | 4 | 999.00 | 41.0% | `{"ret_len":25}` |
+| 10 | `TV_Halloween_Effect` | SUI | 1d | 100.0% | 5 | 999.00 | 56.3% | `{"ret_len":13}` |
+| 11 | `TV_USFiscal_YearEnd` | ARB | 1d | 100.0% | 4 | 999.00 | 21.3% | `{"ret_len":12}` |
+| 12 | `TV_USFiscal_YearEnd` | INJ | 1d | 100.0% | 3 | 999.00 | 22.3% | `{"ret_len":14}` |
+| 13 | `TV_USFiscal_YearEnd` | PYTH | 1d | 100.0% | 3 | 999.00 | 24.5% | `{"ret_len":14}` |
+| 14 | `TV_USFiscal_YearEnd` | ONDO | 1d | 100.0% | 2 | 999.00 | 15.0% | `{"ret_len":15}` |
+| 15 | `TV_USFiscal_YearEnd` | TIA | 1d | 100.0% | 2 | 999.00 | 16.6% | `{"ret_len":25}` |
+| 16 | `TV_USFiscal_YearEnd` | WLD | 1d | 100.0% | 3 | 999.00 | 21.8% | `{"ret_len":31}` |
+| 17 | `TV_AprilTax_Window` | SWARMS | 4h | 100.0% | 4 | 999.00 | 16.2% | `{"ret_len":29}` |
+| 18 | `TV_USFiscal_YearEnd` | AGT | 4h | 100.0% | 9 | 999.00 | 35.5% | `{"ret_len":21}` |
+| 19 | `TV_USFiscal_YearEnd` | SWARMS | 1h | 90.9% | 11 | 19.04 | 8.3% | `{"ret_len":7}` |
+| 20 | `TV_AprilTax_Window` | SFP | 1d | 88.9% | 9 | 7.76 | 48.1% | `{"ret_len":9}` |
+| 21 | `TV_ChineseNewYear_Window` | GMX | 1d | 88.9% | 9 | 3.83 | 22.7% | `{"ret_len":21}` |
+| 22 | `TV_USFiscal_YearEnd` | SWARMS | 4h | 88.9% | 9 | 3.08 | 5.8% | `{"ret_len":6}` |
+| 23 | `TV_USHoliday_Window` | TIA | 1d | 87.5% | 8 | 13.78 | 66.5% | `{"ret_len":29}` |
+| 24 | `TV_ChineseNewYear_Window` | JTO | 1d | 87.5% | 8 | 11.21 | 85.1% | `{"ret_len":23}` |
+| 25 | `TV_USFiscal_YearEnd` | DYDX | 1d | 86.7% | 15 | 7.85 | 40.6% | `{"ret_len":9}` |
+| 26 | `TV_USFiscal_YearEnd` | ETH | 4h | 86.4% | 22 | 6.04 | 22.4% | `{"ret_len":32}` |
+| 27 | `TV_USHoliday_Window` | SEI | 4h | 81.8% | 11 | 6.93 | 13.1% | `{"ret_len":28}` |
+| 28 | `TV_Halloween_Effect` | INJ | 4h | 80.0% | 15 | 4.90 | 35.8% | `{"ret_len":10}` |
+| 29 | `TV_USHoliday_Window` | DYDX | 1d | 78.8% | 33 | 2.11 | 77.5% | `{"ret_len":8}` |
+| 30 | `TV_ChineseNewYear_Window` | ONDO | 1d | 77.8% | 9 | 1.30 | 13.3% | `{"ret_len":30}` |
+| 31 | `TV_ChineseNewYear_Window` | JUP | 1d | 76.9% | 13 | 4.88 | 81.2% | `{"ret_len":7}` |
+| 32 | `TV_USHoliday_Window` | INJ | 1d | 76.9% | 13 | 1.97 | 29.2% | `{"ret_len":8}` |
+| 33 | `TV_ChineseNewYear_Window` | JUP | 4h | 76.7% | 30 | 5.38 | 120.6% | `{"ret_len":27}` |
+| 34 | `TV_USFiscal_YearEnd` | DYDX | 4h | 75.7% | 37 | 2.33 | 69.0% | `{"ret_len":17}` |
+| 35 | `TV_USFiscal_YearEnd` | APT | 1d | 75.0% | 8 | 22.24 | 52.4% | `{"ret_len":9}` |
+| 36 | `TV_USFiscal_YearEnd` | NEAR | 1d | 75.0% | 8 | 9.40 | 34.6% | `{"ret_len":18}` |
+| 37 | `TV_USFiscal_YearEnd` | SUI | 4h | 75.0% | 16 | 8.10 | 34.6% | `{"ret_len":26}` |
+| 38 | `TV_USHoliday_Window` | PYTH | 1d | 75.0% | 20 | 3.04 | 56.1% | `{"ret_len":6}` |
+| 39 | `TV_USHoliday_Window` | JUP | 1d | 75.0% | 12 | 2.29 | 30.5% | `{"ret_len":11}` |
+| 40 | `TV_Halloween_Effect` | JUP | 4h | 75.0% | 8 | 1.96 | 14.4% | `{"ret_len":24}` |
+| 41 | `TV_USFiscal_YearEnd` | OP | 1d | 75.0% | 8 | 1.92 | 13.8% | `{"ret_len":27}` |
+| 42 | `TV_USFiscal_YearEnd` | JUP | 4h | 75.0% | 8 | 1.86 | 6.1% | `{"ret_len":33}` |
+| 43 | `TV_USHoliday_Window` | GMX | 1d | 75.0% | 20 | 1.51 | 18.3% | `{"ret_len":9}` |
+| 44 | `TV_ChineseNewYear_Window` | ONDO | 4h | 74.4% | 43 | 2.56 | 53.4% | `{"ret_len":20}` |
+| 45 | `TV_AprilTax_Window` | INJ | 1h | 73.7% | 19 | 2.22 | 18.5% | `{"ret_len":5}` |
+| 46 | `TV_USFiscal_YearEnd` | LINK | 1d | 73.3% | 15 | 4.52 | 44.1% | `{"ret_len":5}` |
+| 47 | `TV_AprilTax_Window` | SFP | 4h | 73.1% | 26 | 2.65 | 39.4% | `{"ret_len":6}` |
+| 48 | `TV_AprilTax_Window` | TIA | 4h | 72.7% | 11 | 5.10 | 37.3% | `{"ret_len":11}` |
+| 49 | `TV_USHoliday_Window` | AVAX | 1d | 71.9% | 32 | 2.94 | 102.0% | `{"ret_len":11}` |
+| 50 | `TV_Halloween_Effect` | PYTH | 4h | 71.4% | 14 | 2.79 | 30.1% | `{"ret_len":6}` |
+| 51 | `TV_AprilTax_Window` | ARB | 1h | 71.4% | 14 | 1.76 | 6.6% | `{"ret_len":7}` |
+| 52 | `TV_USHoliday_Window` | SUI | 1d | 71.4% | 14 | 1.76 | 25.6% | `{"ret_len":18}` |
+| 53 | `TV_USHoliday_Window` | SEI | 1h | 71.4% | 14 | 1.41 | 2.0% | `{"ret_len":11}` |
+| 54 | `TV_USFiscal_YearEnd` | AVAX | 4h | 71.1% | 38 | 1.25 | 9.4% | `{"ret_len":18}` |
+| 55 | `TV_USHoliday_Window` | WLD | 4h | 71.0% | 62 | 2.38 | 74.5% | `{"ret_len":16}` |
+| 56 | `TV_USHoliday_Window` | ONDO | 4h | 71.0% | 31 | 1.56 | 20.2% | `{"ret_len":21}` |
+| 57 | `TV_USFiscal_YearEnd` | INJ | 4h | 70.6% | 17 | 2.09 | 19.8% | `{"ret_len":9}` |
+| 58 | `TV_AprilTax_Window` | JTO | 1h | 70.4% | 27 | 1.22 | 7.1% | `{"ret_len":7}` |
+| 59 | `TV_USHoliday_Window` | AGT | 4h | 70.0% | 20 | 3.69 | 29.7% | `{"ret_len":10}` |
+| 60 | `TV_USHoliday_Window` | NEAR | 1d | 69.2% | 26 | 1.24 | 14.8% | `{"ret_len":11}` |
+| 61 | `TV_AprilTax_Window` | LTC | 4h | 69.0% | 29 | 1.97 | 27.2% | `{"ret_len":7}` |
+| 62 | `TV_USHoliday_Window` | OP | 1d | 68.8% | 16 | 1.52 | 24.5% | `{"ret_len":30}` |
+| 63 | `TV_USHoliday_Window` | JUP | 4h | 68.4% | 38 | 3.27 | 47.1% | `{"ret_len":15}` |
+| 64 | `TV_USHoliday_Window` | GMX | 4h | 68.0% | 50 | 1.83 | 31.0% | `{"ret_len":30}` |
+| 65 | `TV_ChineseNewYear_Window` | SFP | 1d | 68.0% | 25 | 1.33 | 24.6% | `{"ret_len":11}` |
+| 66 | `TV_USHoliday_Window` | TIA | 4h | 67.4% | 46 | 1.31 | 25.7% | `{"ret_len":16}` |
+| 67 | `TV_ChineseNewYear_Window` | LTC | 1d | 66.7% | 30 | 2.36 | 112.4% | `{"ret_len":14}` |
+| 68 | `TV_USFiscal_YearEnd` | JTO | 1h | 66.7% | 51 | 1.21 | 6.3% | `{"ret_len":25}` |
+| 69 | `TV_ChineseNewYear_Window` | SWARMS | 4h | 65.7% | 35 | 1.46 | 69.7% | `{"ret_len":30}` |
+| 70 | `TV_USFiscal_YearEnd` | LINK | 4h | 65.5% | 29 | 1.79 | 22.1% | `{"ret_len":33}` |
+| 71 | `TV_ChineseNewYear_Window` | JTO | 4h | 65.3% | 49 | 1.27 | 28.6% | `{"ret_len":13}` |
+| 72 | `TV_AprilTax_Window` | TIA | 1h | 65.0% | 20 | 1.70 | 17.7% | `{"ret_len":12}` |
+| 73 | `TV_USHoliday_Window` | SFP | 4h | 64.9% | 94 | 3.26 | 143.0% | `{"ret_len":7}` |
+| 74 | `TV_Halloween_Effect` | OP | 4h | 64.7% | 17 | 2.59 | 41.6% | `{"ret_len":18}` |
+| 75 | `TV_ChineseNewYear_Window` | AGT | 4h | 64.7% | 17 | 2.29 | 34.4% | `{"ret_len":22}` |
+| 76 | `TV_AprilTax_Window` | NEAR | 1h | 64.4% | 59 | 1.70 | 26.2% | `{"ret_len":9}` |
+| 77 | `TV_ChineseNewYear_Window` | INJ | 4h | 64.3% | 42 | 1.48 | 25.4% | `{"ret_len":20}` |
+| 78 | `TV_USFiscal_YearEnd` | SFP | 4h | 64.3% | 28 | 1.21 | 4.7% | `{"ret_len":32}` |
+| 79 | `TV_AprilTax_Window` | SFP | 1h | 63.6% | 44 | 2.44 | 34.9% | `{"ret_len":9}` |
+| 80 | `TV_USHoliday_Window` | NEAR | 4h | 63.4% | 93 | 1.21 | 27.4% | `{"ret_len":20}` |
+| 81 | `TV_Halloween_Effect` | NEAR | 4h | 63.3% | 30 | 4.95 | 73.1% | `{"ret_len":8}` |
+| 82 | `TV_ChineseNewYear_Window` | GMX | 4h | 63.3% | 49 | 1.79 | 33.3% | `{"ret_len":27}` |
+| 83 | `TV_AprilTax_Window` | OP | 1h | 62.5% | 40 | 1.31 | 8.6% | `{"ret_len":29}` |
+| 84 | `TV_USHoliday_Window` | ARB | 4h | 62.3% | 61 | 1.41 | 24.3% | `{"ret_len":16}` |
+| 85 | `TV_USFiscal_YearEnd` | SFP | 1h | 62.1% | 66 | 1.46 | 18.7% | `{"ret_len":32}` |
+| 86 | `TV_Halloween_Effect` | GMX | 4h | 61.1% | 18 | 3.01 | 20.8% | `{"ret_len":13}` |
+| 87 | `TV_USFiscal_YearEnd` | ETH | 1h | 61.0% | 41 | 1.82 | 13.1% | `{"ret_len":15}` |
+| 88 | `TV_USHoliday_Window` | PYTH | 4h | 61.0% | 59 | 1.58 | 36.4% | `{"ret_len":16}` |
+| 89 | `TV_AprilTax_Window` | WLD | 1h | 60.6% | 33 | 2.61 | 23.2% | `{"ret_len":15}` |
+| 90 | `TV_USFiscal_YearEnd` | GMX | 4h | 60.0% | 20 | 1.37 | 6.9% | `{"ret_len":34}` |
