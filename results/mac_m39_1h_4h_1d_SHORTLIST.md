@@ -1,0 +1,102 @@
+# MAC_M39_1h_4h_1d shortlist (Mac paralela)
+
+- Batches: 3738
+- Tasks completed: 339
+- Grails passing R24-reduced gate (WR>=70 + PF>=1.2 + PnL>0): **92**
+- Strategies promoted (>=1 combo pass): **5**
+- Elapsed: 29s
+
+| Rank | Strategy | Sym | TF | WR | trades | PF | total% | params |
+|------|----------|-----|----|-----|--------|-----|--------|--------|
+| 1 | `TV_Bitcoin_HalvingCycle_v2` | AGT | 1d | 100.0% | 2 | 999.00 | 9.7% | `{"anchor_year":2021,"anchor_month":5,"anchor_day":21,"window":12,"ret_len":7}` |
+| 2 | `TV_Bitcoin_HalvingCycle_v2` | APT | 1d | 100.0% | 4 | 999.00 | 21.8% | `{"anchor_year":2021,"anchor_month":4,"anchor_day":24,"window":18,"ret_len":15}` |
+| 3 | `TV_Bitcoin_HalvingCycle_v2` | JTO | 1d | 100.0% | 4 | 999.00 | 38.1% | `{"anchor_year":2021,"anchor_month":5,"anchor_day":16,"window":11,"ret_len":7}` |
+| 4 | `TV_Bitcoin_HalvingCycle_v2` | GMX | 1d | 100.0% | 3 | 999.00 | 34.0% | `{"anchor_year":2021,"anchor_month":4,"anchor_day":23,"window":17,"ret_len":16}` |
+| 5 | `TV_Bitcoin_HalvingCycle_v2` | LINK | 1d | 100.0% | 2 | 999.00 | 2.6% | `{"anchor_year":2023,"anchor_month":5,"anchor_day":17,"window":16,"ret_len":7}` |
+| 6 | `TV_Bitcoin_HalvingCycle_v2` | ONDO | 1d | 100.0% | 2 | 999.00 | 7.7% | `{"anchor_year":2022,"anchor_month":4,"anchor_day":20,"window":26,"ret_len":24}` |
+| 7 | `TV_Bitcoin_HalvingCycle_v2` | OP | 1d | 100.0% | 2 | 999.00 | 33.3% | `{"anchor_year":2024,"anchor_month":4,"anchor_day":24,"window":13,"ret_len":24}` |
+| 8 | `TV_Bitcoin_HalvingCycle_v2` | SUI | 1d | 100.0% | 2 | 999.00 | 8.4% | `{"anchor_year":2024,"anchor_month":5,"anchor_day":23,"window":20,"ret_len":29}` |
+| 9 | `TV_Bitcoin_HalvingCycle_v2` | SWARMS | 1d | 100.0% | 3 | 999.00 | 33.9% | `{"anchor_year":2021,"anchor_month":4,"anchor_day":14,"window":7,"ret_len":5}` |
+| 10 | `TV_Bitcoin_HalvingCycle_v2` | WLD | 1d | 100.0% | 3 | 999.00 | 37.7% | `{"anchor_year":2021,"anchor_month":4,"anchor_day":11,"window":23,"ret_len":30}` |
+| 11 | `TV_Bitcoin_HalvingCycle_v2` | XRP | 1d | 100.0% | 4 | 999.00 | 23.0% | `{"anchor_year":2023,"anchor_month":5,"anchor_day":21,"window":16,"ret_len":11}` |
+| 12 | `TV_FirstWeek_NewYear` | INJ | 1d | 100.0% | 3 | 999.00 | 13.0% | `{"ret_len":20}` |
+| 13 | `TV_FirstWeek_NewYear` | JTO | 1d | 100.0% | 3 | 999.00 | 7.9% | `{"ret_len":18}` |
+| 14 | `TV_FirstWeek_NewYear` | ONDO | 1d | 100.0% | 3 | 999.00 | 31.1% | `{"ret_len":8}` |
+| 15 | `TV_FirstWeek_NewYear` | SWARMS | 1d | 100.0% | 2 | 999.00 | 19.4% | `{"ret_len":11}` |
+| 16 | `TV_USHoliday_Weekend` | APT | 1d | 100.0% | 8 | 999.00 | 15.5% | `{"ret_len":12}` |
+| 17 | `TV_USHoliday_Weekend` | ARB | 1d | 100.0% | 6 | 999.00 | 17.5% | `{"ret_len":13}` |
+| 18 | `TV_USHoliday_Weekend` | INJ | 1d | 100.0% | 5 | 999.00 | 25.9% | `{"ret_len":19}` |
+| 19 | `TV_USHoliday_Weekend` | SWARMS | 1d | 100.0% | 5 | 999.00 | 41.8% | `{"ret_len":23}` |
+| 20 | `TV_Bitcoin_HalvingCycle_v2` | ETH | 4h | 100.0% | 2 | 999.00 | 2.0% | `{"anchor_year":2024,"anchor_month":5,"anchor_day":11,"window":26,"ret_len":5}` |
+| 21 | `TV_Bitcoin_HalvingCycle_v2` | LTC | 4h | 100.0% | 2 | 999.00 | 2.0% | `{"anchor_year":2024,"anchor_month":4,"anchor_day":11,"window":29,"ret_len":11}` |
+| 22 | `TV_Bitcoin_HalvingCycle_v2` | SWARMS | 4h | 100.0% | 4 | 999.00 | 52.2% | `{"anchor_year":2022,"anchor_month":4,"anchor_day":16,"window":14,"ret_len":14}` |
+| 23 | `TV_Bitcoin_HalvingCycle_v2` | ETH | 1h | 100.0% | 2 | 999.00 | 1.8% | `{"anchor_year":2024,"anchor_month":5,"anchor_day":21,"window":20,"ret_len":17}` |
+| 24 | `TV_USHoliday_Weekend` | PYTH | 1d | 87.5% | 8 | 13.55 | 41.2% | `{"ret_len":7}` |
+| 25 | `TV_PreEarnings_MidMonth` | TIA | 1d | 85.7% | 14 | 3.02 | 58.6% | `{"ret_len":22}` |
+| 26 | `TV_USHoliday_Weekend` | LTC | 1d | 84.6% | 13 | 15.51 | 70.1% | `{"ret_len":24}` |
+| 27 | `TV_PreEarnings_MidMonth` | AGT | 4h | 84.6% | 13 | 6.50 | 72.0% | `{"ret_len":14}` |
+| 28 | `TV_SantaRally_Window` | JTO | 4h | 83.3% | 12 | 4.62 | 15.1% | `{"ret_len":8}` |
+| 29 | `TV_USHoliday_Weekend` | AVAX | 1d | 80.0% | 15 | 3.92 | 55.6% | `{"ret_len":15}` |
+| 30 | `TV_USHoliday_Weekend` | SWARMS | 4h | 80.0% | 10 | 1.40 | 7.2% | `{"ret_len":16}` |
+| 31 | `TV_SantaRally_Window` | OP | 1d | 77.8% | 9 | 3.28 | 23.3% | `{"ret_len":12}` |
+| 32 | `TV_FirstWeek_NewYear` | AVAX | 1d | 77.8% | 9 | 1.36 | 17.2% | `{"ret_len":24}` |
+| 33 | `TV_PreEarnings_MidMonth` | APT | 1d | 77.8% | 18 | 1.27 | 17.7% | `{"ret_len":28}` |
+| 34 | `TV_USHoliday_Weekend` | DYDX | 1d | 76.9% | 13 | 3.57 | 25.5% | `{"ret_len":17}` |
+| 35 | `TV_FirstWeek_NewYear` | PYTH | 4h | 76.9% | 13 | 1.66 | 18.7% | `{"ret_len":30}` |
+| 36 | `TV_PreEarnings_MidMonth` | ETH | 1d | 76.2% | 21 | 2.61 | 75.1% | `{"ret_len":9}` |
+| 37 | `TV_USHoliday_Weekend` | AGT | 4h | 75.0% | 12 | 4.61 | 30.6% | `{"ret_len":22}` |
+| 38 | `TV_Bitcoin_HalvingCycle_v2` | AVAX | 1d | 75.0% | 8 | 2.14 | 17.8% | `{"anchor_year":2024,"anchor_month":5,"anchor_day":20,"window":27,"ret_len":28}` |
+| 39 | `TV_FirstWeek_NewYear` | TIA | 4h | 75.0% | 12 | 1.83 | 25.4% | `{"ret_len":12}` |
+| 40 | `TV_USHoliday_Weekend` | XRP | 1d | 75.0% | 8 | 1.72 | 10.2% | `{"ret_len":24}` |
+| 41 | `TV_USHoliday_Weekend` | GMX | 1d | 75.0% | 8 | 1.48 | 9.6% | `{"ret_len":27}` |
+| 42 | `TV_PreEarnings_MidMonth` | SFP | 1d | 74.4% | 39 | 2.58 | 95.9% | `{"ret_len":6}` |
+| 43 | `TV_PreEarnings_MidMonth` | ARB | 1d | 73.3% | 15 | 2.94 | 63.6% | `{"ret_len":22}` |
+| 44 | `TV_PreEarnings_MidMonth` | JUP | 1d | 72.7% | 11 | 3.19 | 79.0% | `{"ret_len":22}` |
+| 45 | `TV_PreEarnings_MidMonth` | SEI | 1h | 72.7% | 11 | 1.32 | 1.0% | `{"ret_len":27}` |
+| 46 | `TV_PreEarnings_MidMonth` | GMX | 1d | 72.2% | 18 | 3.79 | 74.7% | `{"ret_len":26}` |
+| 47 | `TV_PreEarnings_MidMonth` | JTO | 1d | 71.4% | 14 | 7.71 | 107.5% | `{"ret_len":25}` |
+| 48 | `TV_PreEarnings_MidMonth` | SUI | 1d | 71.4% | 14 | 3.09 | 72.2% | `{"ret_len":21}` |
+| 49 | `TV_PreEarnings_MidMonth` | XRP | 1d | 71.4% | 14 | 2.74 | 72.4% | `{"ret_len":20}` |
+| 50 | `TV_USHoliday_Weekend` | OP | 1d | 71.4% | 14 | 1.23 | 8.4% | `{"ret_len":12}` |
+| 51 | `TV_USHoliday_Weekend` | ETH | 4h | 70.8% | 24 | 3.23 | 79.9% | `{"ret_len":30}` |
+| 52 | `TV_USHoliday_Weekend` | SFP | 1d | 70.6% | 17 | 2.80 | 46.8% | `{"ret_len":4}` |
+| 53 | `TV_USHoliday_Weekend` | PYTH | 4h | 70.6% | 17 | 2.79 | 21.4% | `{"ret_len":24}` |
+| 54 | `TV_Bitcoin_HalvingCycle_v2` | WLD | 4h | 70.6% | 17 | 2.66 | 21.1% | `{"anchor_year":2020,"anchor_month":5,"anchor_day":21,"window":16,"ret_len":23}` |
+| 55 | `TV_USHoliday_Weekend` | LINK | 1d | 70.6% | 17 | 1.72 | 29.5% | `{"ret_len":29}` |
+| 56 | `TV_Bitcoin_HalvingCycle_v2` | LINK | 4h | 70.0% | 10 | 2.08 | 4.2% | `{"anchor_year":2023,"anchor_month":5,"anchor_day":13,"window":17,"ret_len":24}` |
+| 57 | `TV_Bitcoin_HalvingCycle_v2` | APT | 4h | 70.0% | 10 | 1.49 | 4.6% | `{"anchor_year":2021,"anchor_month":4,"anchor_day":15,"window":7,"ret_len":29}` |
+| 58 | `TV_FirstWeek_NewYear` | ARB | 4h | 70.0% | 10 | 1.49 | 5.9% | `{"ret_len":24}` |
+| 59 | `TV_FirstWeek_NewYear` | LTC | 1d | 70.0% | 10 | 1.47 | 14.5% | `{"ret_len":7}` |
+| 60 | `TV_USHoliday_Weekend` | NEAR | 4h | 69.0% | 42 | 1.63 | 45.6% | `{"ret_len":29}` |
+| 61 | `TV_FirstWeek_NewYear` | APT | 4h | 68.4% | 19 | 3.39 | 43.0% | `{"ret_len":24}` |
+| 62 | `TV_USHoliday_Weekend` | JUP | 4h | 68.4% | 19 | 1.54 | 12.5% | `{"ret_len":24}` |
+| 63 | `TV_FirstWeek_NewYear` | NEAR | 4h | 68.4% | 19 | 1.50 | 20.8% | `{"ret_len":23}` |
+| 64 | `TV_PreEarnings_MidMonth` | ONDO | 4h | 67.7% | 31 | 1.93 | 28.8% | `{"ret_len":17}` |
+| 65 | `TV_USHoliday_Weekend` | SUI | 1h | 66.7% | 63 | 2.12 | 30.3% | `{"ret_len":30}` |
+| 66 | `TV_Bitcoin_HalvingCycle_v2` | SUI | 1h | 65.0% | 20 | 2.13 | 10.4% | `{"anchor_year":2022,"anchor_month":4,"anchor_day":15,"window":24,"ret_len":30}` |
+| 67 | `TV_Bitcoin_HalvingCycle_v2` | DYDX | 4h | 65.0% | 20 | 1.38 | 4.8% | `{"anchor_year":2023,"anchor_month":5,"anchor_day":19,"window":18,"ret_len":12}` |
+| 68 | `TV_Bitcoin_HalvingCycle_v2` | INJ | 1h | 64.7% | 17 | 2.74 | 12.7% | `{"anchor_year":2024,"anchor_month":4,"anchor_day":24,"window":9,"ret_len":6}` |
+| 69 | `TV_Bitcoin_HalvingCycle_v2` | AGT | 1h | 64.3% | 28 | 4.51 | 47.9% | `{"anchor_year":2021,"anchor_month":5,"anchor_day":15,"window":17,"ret_len":23}` |
+| 70 | `TV_USHoliday_Weekend` | SFP | 4h | 64.3% | 42 | 1.63 | 50.4% | `{"ret_len":21}` |
+| 71 | `TV_PreEarnings_MidMonth` | AGT | 1h | 64.1% | 39 | 2.02 | 35.5% | `{"ret_len":10}` |
+| 72 | `TV_USHoliday_Weekend` | INJ | 4h | 64.0% | 25 | 2.25 | 14.9% | `{"ret_len":21}` |
+| 73 | `TV_PreEarnings_MidMonth` | LTC | 1d | 63.6% | 44 | 2.02 | 102.8% | `{"ret_len":13}` |
+| 74 | `TV_USHoliday_Weekend` | XRP | 4h | 63.6% | 33 | 1.36 | 24.9% | `{"ret_len":5}` |
+| 75 | `TV_Bitcoin_HalvingCycle_v2` | AVAX | 1h | 63.2% | 57 | 1.33 | 35.5% | `{"anchor_year":2021,"anchor_month":5,"anchor_day":17,"window":7,"ret_len":24}` |
+| 76 | `TV_USHoliday_Weekend` | DYDX | 4h | 63.0% | 46 | 1.77 | 28.3% | `{"ret_len":6}` |
+| 77 | `TV_PreEarnings_MidMonth` | TIA | 4h | 63.0% | 46 | 1.63 | 39.6% | `{"ret_len":28}` |
+| 78 | `TV_PreEarnings_MidMonth` | WLD | 1d | 62.5% | 16 | 2.13 | 72.1% | `{"ret_len":22}` |
+| 79 | `TV_USHoliday_Weekend` | ARB | 4h | 62.5% | 24 | 1.60 | 14.8% | `{"ret_len":24}` |
+| 80 | `TV_Bitcoin_HalvingCycle_v2` | APT | 1h | 62.5% | 32 | 1.20 | 6.0% | `{"anchor_year":2021,"anchor_month":5,"anchor_day":13,"window":15,"ret_len":23}` |
+| 81 | `TV_USHoliday_Weekend` | XRP | 1h | 62.3% | 61 | 1.63 | 37.3% | `{"ret_len":25}` |
+| 82 | `TV_USHoliday_Weekend` | GMX | 1h | 62.1% | 29 | 1.71 | 8.1% | `{"ret_len":4}` |
+| 83 | `TV_USHoliday_Weekend` | JUP | 1h | 61.8% | 55 | 1.51 | 17.2% | `{"ret_len":29}` |
+| 84 | `TV_FirstWeek_NewYear` | SWARMS | 1h | 61.1% | 18 | 3.06 | 14.8% | `{"ret_len":14}` |
+| 85 | `TV_USHoliday_Weekend` | JTO | 1h | 61.1% | 54 | 1.50 | 17.2% | `{"ret_len":29}` |
+| 86 | `TV_USHoliday_Weekend` | AVAX | 4h | 60.9% | 46 | 1.98 | 49.0% | `{"ret_len":24}` |
+| 87 | `TV_USHoliday_Weekend` | JTO | 4h | 60.9% | 23 | 1.25 | 6.6% | `{"ret_len":19}` |
+| 88 | `TV_USHoliday_Weekend` | DYDX | 1h | 60.5% | 86 | 1.45 | 24.9% | `{"ret_len":26}` |
+| 89 | `TV_Bitcoin_HalvingCycle_v2` | JTO | 1h | 60.4% | 53 | 1.25 | 8.5% | `{"anchor_year":2020,"anchor_month":5,"anchor_day":17,"window":19,"ret_len":5}` |
+| 90 | `TV_SantaRally_Window` | ETH | 4h | 60.0% | 30 | 1.92 | 34.8% | `{"ret_len":4}` |
+| 91 | `TV_USHoliday_Weekend` | APT | 1h | 60.0% | 50 | 1.52 | 8.2% | `{"ret_len":17}` |
+| 92 | `TV_SantaRally_Window` | JUP | 4h | 60.0% | 15 | 1.51 | 7.3% | `{"ret_len":7}` |
